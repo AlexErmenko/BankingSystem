@@ -13,20 +13,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Sigma\BankingSystem\Banking\Views\_ViewImports.cshtml"
-using Banking;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "C:\Sigma\BankingSystem\Banking\Views\_ViewImports.cshtml"
-using Banking.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 1 "C:\Sigma\BankingSystem\Banking\Views\Shared\_LoginPartial.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -34,7 +20,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eb6b06876c970ec21dbfdcf2953e86f4184913c4", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ec2847bf89d3b21e5adc6d86b6e10a3d844d6209", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"23ac09be4bcfaa7f9829a01d1a134874eaae1f3b", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("nav-link text-dark"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -81,7 +67,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
             WriteLiteral("    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c46381", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c46068", async() => {
                 WriteLiteral("Hello ");
 #nullable restore
 #line 9 "C:\Sigma\BankingSystem\Banking\Views\Shared\_LoginPartial.cshtml"
@@ -109,7 +95,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c48269", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c47956", async() => {
                 WriteLiteral("\r\n            <button  type=\"submit\" class=\"nav-link btn btn-link text-dark\">Logout</button>\r\n        ");
             }
             );
@@ -155,7 +141,7 @@ else
 #line hidden
 #nullable disable
             WriteLiteral("    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c411416", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c411103", async() => {
                 WriteLiteral("Register");
             }
             );
@@ -174,7 +160,7 @@ else
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c412907", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb6b06876c970ec21dbfdcf2953e86f4184913c412594", async() => {
                 WriteLiteral("Login");
             }
             );
