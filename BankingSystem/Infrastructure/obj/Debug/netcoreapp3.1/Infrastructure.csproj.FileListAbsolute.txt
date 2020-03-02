@@ -9,3 +9,14 @@ C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
