@@ -9,3 +9,5 @@
 *.ide
 *.ide-wal
 *.json
+*.config
+*.dtbcache
