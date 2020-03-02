@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
   },
   "projects": {
-    "D:\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "projectUniqueName": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
         "projectName": "BankingSystem",
-        "projectPath": "D:\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
-        "packagesPath": "C:\\Users\\i7\\.nuget\\packages\\",
-        "outputPath": "D:\\Banking System\\BankingSystem\\BankingSystem\\obj\\",
+        "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\i7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
