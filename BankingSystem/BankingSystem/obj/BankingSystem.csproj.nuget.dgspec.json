@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
+    "C:\\Users\\srJ\\Source\\Repos\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {}
   },
   "projects": {
-    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
+    "C:\\Users\\srJ\\Source\\Repos\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\srJ\\Source\\Repos\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
         "projectName": "BankingSystem",
-        "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking_system\\BankingSystem\\BankingSystem\\obj\\",
+        "projectPath": "C:\\Users\\srJ\\Source\\Repos\\Banking System\\BankingSystem\\BankingSystem\\BankingSystem.csproj",
+        "packagesPath": "C:\\Users\\srJ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\srJ\\Source\\Repos\\Banking System\\BankingSystem\\BankingSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\srJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
