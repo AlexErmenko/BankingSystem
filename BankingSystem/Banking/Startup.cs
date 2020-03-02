@@ -34,6 +34,7 @@ namespace Web
 
 			services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 					.AddEntityFrameworkStores<ApplicationDbContext>();
+
 			services.AddDbContext<ApplicationDbContext>(options =>
 															options.UseSqlServer(Configuration
 																					 .GetConnectionString("DomainConnection")));
