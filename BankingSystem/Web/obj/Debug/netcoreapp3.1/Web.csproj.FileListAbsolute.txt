@@ -149,8 +149,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
@@ -174,3 +172,8 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currencies\Index.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
