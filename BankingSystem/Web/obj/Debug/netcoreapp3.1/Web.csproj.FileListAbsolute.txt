@@ -86,7 +86,6 @@ C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.pdb
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.exe
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.deps.json
