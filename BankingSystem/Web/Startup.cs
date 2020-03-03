@@ -18,7 +18,7 @@ namespace Web
 	//dotnet restore
 	//dotnet tool restore
 	//Restore AppCore
-	//dotnet ef database update -c BankingSystemContext -p ../ApplicationCore/ApplicationCore.csproj -s Web.csproj 
+	//dotnet ef database update -c BankingSystemContext  -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 	//Restore Identity
 	//dotnet ef database update -c ApplicationDbContext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
@@ -39,7 +39,7 @@ namespace Web
 			services.AddDbContext<ApplicationDbContext>(options =>
 															options.UseSqlServer(Configuration
 																					 .GetConnectionString("DefaultConnection")));
-			services.AddDbContext<ApplicationDbContext>(options =>
+			services.AddDbContext<BankingSystemContext>(options =>
 															options.UseSqlServer(Configuration
 																					 .GetConnectionString("DomainConnection")));
 

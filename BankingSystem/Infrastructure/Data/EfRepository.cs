@@ -6,6 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
 {
+	/// <summary>
+	///     Реализация интерфейса
+	/// </summary>
+	/// <typeparam name="T"></typeparam>
 	public class EfRepository<T> : IAsyncRepository<T> where T : class
 	{
 		protected readonly BankingSystemContext Context;
