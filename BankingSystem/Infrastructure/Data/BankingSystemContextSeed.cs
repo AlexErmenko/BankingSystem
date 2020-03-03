@@ -3,6 +3,5 @@
 	//Init data in db
 	public class BankingSystemContextSeed
 	{
-		
 	}
 }

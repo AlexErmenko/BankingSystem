@@ -9,6 +9,7 @@ namespace ApplicationCore.Interfaces
 		IncludeVisitor                    Visitor { get; }
 		HashSet<string>                   Paths   { get; }
 	}
+
 	public interface IIncludeQuery<TEntity, out TPreviousProperty> : IIncludeQuery
 	{
 	}

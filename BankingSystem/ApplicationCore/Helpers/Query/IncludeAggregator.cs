@@ -15,7 +15,7 @@ namespace ApplicationCore.Helpers.Query
 			var pathMap = new Dictionary<IIncludeQuery, string>();
 			var query   = new IncludeQuery<TEntity, TProperty>(pathMap);
 
-			if (!string.IsNullOrEmpty(visitor.Path)) { pathMap[query] = visitor.Path; }
+			if (!string.IsNullOrEmpty(visitor.Path)) pathMap[query] = visitor.Path;
 
 			return query;
 		}

@@ -5,6 +5,6 @@ namespace Infrastructure.Identity
 {
 	public class ApplicationDbContext : IdentityDbContext
 	{
-		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options: options) { }
+		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 	}
 }

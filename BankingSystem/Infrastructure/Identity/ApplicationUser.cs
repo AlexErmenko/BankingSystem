@@ -1,8 +1,8 @@
-﻿using System;
-
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace Infrastructure.Identity
 {
-	public class ApplicationUser : IdentityUser { }
+	public class ApplicationUser : IdentityUser
+	{
+	}
 }
