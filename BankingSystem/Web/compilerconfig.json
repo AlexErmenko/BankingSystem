@@ -1,0 +1,10 @@
+/*
+ * Конфигурация для компиляции scss в css 
+ */
+
+[
+  {
+    "outputFile": "wwwroot/css/nav.css",
+    "inputFile": "wwwroot/scss/nav.scss"
+  }
+]
