@@ -1,9 +1,6 @@
-﻿using System;
-using System.Diagnostics;
-
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-
 using Web.Models;
 
 namespace Web.Controllers
@@ -12,16 +9,16 @@ namespace Web.Controllers
 	{
 		private readonly ILogger<HomeController> _logger;
 
-		public HomeController(ILogger<HomeController> logger) => _logger = logger;
+		public HomeController(ILogger<HomeController> logger) { _logger = logger; }
 
-		public IActionResult Index() => View();
+		public IActionResult Index() { return View(); }
 
-		public IActionResult Privacy() => View();
+		public IActionResult Privacy() { return View(); }
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error() => View(model: new ErrorViewModel
+		public IActionResult Error()
 		{
-			RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
-		});
+			return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+		}
 	}
 }

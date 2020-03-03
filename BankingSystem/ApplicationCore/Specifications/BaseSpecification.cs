@@ -6,8 +6,6 @@ using ApplicationCore.Interfaces;
 
 namespace ApplicationCore.Specifications
 {
-	
-
 	public abstract class BaseSpecification<T> : ISpecification<T>
 	{
 		protected BaseSpecification(Expression<Func<T, bool>> criteria) { Criteria = criteria; }
@@ -20,7 +18,7 @@ namespace ApplicationCore.Specifications
 
 		public int  Take            { get; private set; }
 		public int  Skip            { get; private set; }
-		public bool IsPagingEnabled { get; private set; } = false;
+		public bool IsPagingEnabled { get; private set; }
 
 		protected virtual void AddInclude(Expression<Func<T, object>> includeExpression)
 		{

@@ -7,7 +7,7 @@ namespace ApplicationCore.Interfaces
 	{
 		Task<T>       GetById(int id);
 		Task<List<T>> GetAll();
-		Task       AddAsync(T    entity);
+		Task          AddAsync(T    entity);
 		Task          UpdateAsync(T entity);
 		Task          DeleteAsync(T entity);
 	}
