@@ -22,6 +22,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\srJ\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgMicrosoft_Web_LibraryManager_Build Condition=" '$(PkgMicrosoft_Web_LibraryManager_Build)' == '' ">C:\Users\srJ\.nuget\packages\microsoft.web.librarymanager.build\2.0.96</PkgMicrosoft_Web_LibraryManager_Build>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\srJ\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\srJ\.nuget\packages\microsoft.entityframeworkcore.tools\3.1.2</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgBuildWebCompiler Condition=" '$(PkgBuildWebCompiler)' == '' ">C:\Users\srJ\.nuget\packages\buildwebcompiler\1.12.394</PkgBuildWebCompiler>
   </PropertyGroup>
