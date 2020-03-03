@@ -1,4 +1,6 @@
 C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
+C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
 C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
 C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
@@ -6,15 +8,3 @@ C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.A
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
-C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
-C:\Sigma\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
-E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
