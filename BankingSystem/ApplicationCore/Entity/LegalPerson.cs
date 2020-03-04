@@ -10,23 +10,19 @@ namespace ApplicationCore.Entity
     public partial class LegalPerson
     {
         [Key]
-        [Column("id_edrpou")]
-        public int IdEdrpou { get; set; }
+        public int Id { get; set; }
         [Required]
-        [Column("name")]
         [StringLength(100)]
         public string Name { get; set; }
         [Required]
-        [Column("ownership_type")]
         [StringLength(20)]
         public string OwnershipType { get; set; }
         [Required]
-        [Column("director")]
         [StringLength(50)]
         public string Director { get; set; }
 
-        [ForeignKey(nameof(IdEdrpou))]
+        [ForeignKey(nameof(Id))]
         [InverseProperty(nameof(Client.LegalPerson))]
-        public virtual Client IdEdrpouNavigation { get; set; }
+        public virtual Client IdNavigation { get; set; }
     }
 }

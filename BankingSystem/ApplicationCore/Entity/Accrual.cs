@@ -10,14 +10,11 @@ namespace ApplicationCore.Entity
     public partial class Accrual
     {
         [Key]
-        [Column("id_accrual")]
-        public int IdAccrual { get; set; }
-        [Column("id_deposit")]
+        public int Id { get; set; }
         public int IdDeposit { get; set; }
-        [Column("date_accrual", TypeName = "date")]
+        [Column(TypeName = "date")]
         public DateTime DateAccrual { get; set; }
         [Required]
-        [Column("amount")]
         [StringLength(10)]
         public string Amount { get; set; }
 

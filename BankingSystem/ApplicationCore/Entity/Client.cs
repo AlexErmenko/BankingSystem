@@ -15,28 +15,24 @@ namespace ApplicationCore.Entity
         }
 
         [Key]
-        [Column("id_client")]
-        public int IdClient { get; set; }
+        public int Id { get; set; }
         [Required]
-        [Column("login")]
         [StringLength(100)]
         public string Login { get; set; }
         [Required]
-        [Column("password")]
         [StringLength(24)]
         public string Password { get; set; }
         [Required]
-        [Column("address")]
         [StringLength(120)]
         public string Address { get; set; }
         [Required]
-        [Column("tel_number")]
+        [Column("Tel_number")]
         [StringLength(15)]
         public string TelNumber { get; set; }
 
-        [InverseProperty("IdEdrpouNavigation")]
+        [InverseProperty("IdNavigation")]
         public virtual LegalPerson LegalPerson { get; set; }
-        [InverseProperty("IdPersonNavigation")]
+        [InverseProperty("IdNavigation")]
         public virtual PhysicalPerson PhysicalPerson { get; set; }
         [InverseProperty(nameof(BankAccount.IdClientNavigation))]
         public virtual ICollection<BankAccount> BankAccounts { get; set; }

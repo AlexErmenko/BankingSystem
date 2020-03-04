@@ -13,25 +13,20 @@ namespace ApplicationCore.Entity
         {
             Credits = new HashSet<Credit>();
             Deposits = new HashSet<Deposit>();
-            Operations = new HashSet<Operation>();
         }
 
         [Key]
-        [Column("id_account")]
-        public int IdAccount { get; set; }
-        [Column("id_client")]
+        public int Id { get; set; }
         public int IdClient { get; set; }
-        [Column("account_type")]
+        public int IdCurrency { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime DateOpen { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime? DateClose { get; set; }
+        [Column(TypeName = "decimal(10, 2)")]
+        public decimal Amount { get; set; }
         [StringLength(20)]
         public string AccountType { get; set; }
-        [Column("id_currency")]
-        public int IdCurrency { get; set; }
-        [Column("date_open", TypeName = "date")]
-        public DateTime DateOpen { get; set; }
-        [Column("date_close", TypeName = "date")]
-        public DateTime? DateClose { get; set; }
-        [Column("amount", TypeName = "decimal(10, 2)")]
-        public decimal Amount { get; set; }
 
         [ForeignKey(nameof(IdClient))]
         [InverseProperty(nameof(Client.BankAccounts))]
@@ -43,7 +38,5 @@ namespace ApplicationCore.Entity
         public virtual ICollection<Credit> Credits { get; set; }
         [InverseProperty(nameof(Deposit.IdAccountNavigation))]
         public virtual ICollection<Deposit> Deposits { get; set; }
-        [InverseProperty(nameof(Operation.IdAccountNavigation))]
-        public virtual ICollection<Operation> Operations { get; set; }
     }
 }

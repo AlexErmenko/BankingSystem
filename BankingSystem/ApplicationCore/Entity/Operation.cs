@@ -10,20 +10,14 @@ namespace ApplicationCore.Entity
     public partial class Operation
     {
         [Key]
-        [Column("operation_time", TypeName = "datetime")]
+        [Column(TypeName = "datetime")]
         public DateTime OperationTime { get; set; }
         [Key]
-        [Column("id_account")]
         public int IdAccount { get; set; }
         [Required]
-        [Column("type_operation")]
         [StringLength(30)]
         public string TypeOperation { get; set; }
-        [Column("amount", TypeName = "decimal(10, 2)")]
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
-
-        [ForeignKey(nameof(IdAccount))]
-        [InverseProperty(nameof(BankAccount.Operations))]
-        public virtual BankAccount IdAccountNavigation { get; set; }
     }
 }
