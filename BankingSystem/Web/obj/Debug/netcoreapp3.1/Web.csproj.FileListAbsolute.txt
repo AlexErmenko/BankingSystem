@@ -602,3 +602,5 @@ F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
