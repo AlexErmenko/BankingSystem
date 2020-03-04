@@ -54,10 +54,15 @@ namespace Web
 			var sp = services.BuildServiceProvider();
 			using (var scope = sp.CreateScope())
 			{
-				var existingUserManager = scope.ServiceProvider.GetService<UserManager<ApplicationUser>>();
-				if (existingUserManager == null)
-					services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI()
-							.AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+				var existingUserManager = scope.ServiceProvider
+											   .GetService<UserManager<ApplicationUser>>();
+				if(existingUserManager == null)
+				{
+					services.AddIdentity<ApplicationUser, IdentityRole>()
+							.AddDefaultUI()
+							.AddEntityFrameworkStores<ApplicationDbContext>()
+							.AddDefaultTokenProviders();
+				}
 			}
 		}
 

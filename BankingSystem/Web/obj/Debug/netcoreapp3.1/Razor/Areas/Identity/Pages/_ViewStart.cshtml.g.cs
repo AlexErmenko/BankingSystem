@@ -12,27 +12,6 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "F:\Banking System\BankingSystem\Web\Areas\Identity\Pages\_ViewImports.cshtml"
-using Microsoft.AspNetCore.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "F:\Banking System\BankingSystem\Web\Areas\Identity\Pages\_ViewImports.cshtml"
-using Web.Areas.Identity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "F:\Banking System\BankingSystem\Web\Areas\Identity\Pages\_ViewImports.cshtml"
-using Web.Areas.Identity.Pages;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 1 "F:\Banking System\BankingSystem\Web\Areas\Identity\Pages\_ViewStart.cshtml"
 using System;
 
@@ -40,7 +19,6 @@ using System;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9b91547cc83f3c058ee9bd1b1cb332b2351498fd", @"/Areas/Identity/Pages/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8c4e572aa2e57bd5986501548e11c28b29b7cdcb", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

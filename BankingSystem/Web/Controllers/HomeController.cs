@@ -18,27 +18,25 @@ namespace Web.Controllers
 	{
 		private readonly ILogger<HomeController> _logger;
 
-		public HomeController(ILogger<HomeController>    logger, IAsyncRepository<ExchangeRate> exchangeRepository,
-							  IAsyncRepository<Currency> repository)
+		public HomeController(ILogger<HomeController> logger, IAsyncRepository<Currency> repository)
 		{
-			_logger            = logger;
-			ExchangeRepository = exchangeRepository;
-			CurrencyRepository = repository;
+			_logger    = logger;
+			Repository = repository;
 		}
 
-		public IAsyncRepository<Currency>     CurrencyRepository { get; set; }
-		public IAsyncRepository<ExchangeRate> ExchangeRepository { get; set; }
+		public IAsyncRepository<Currency> Repository { get; set; }
 
 		public async Task<IActionResult> Index()
 		{
+			var list = await Repository.GetAll();
+
 			var dtos = MyMethod();
 
-			var list = await CurrencyRepository.GetAll();
 
 			foreach (var dto in dtos)
 			{
-				var currencies = list.FirstOrDefault(it => it.ShortName.Equals(dto.ShortName.Trim()));
-				if (currencies != null) { dto.Id = currencies.IdCurrency; }
+				var currencies                 = list.FirstOrDefault(it => it.ShortName.Equals(dto.ShortName.Trim()));
+				if (currencies != null) dto.Id = currencies.IdCurrency;
 			}
 
 			foreach (var item in dtos)
@@ -71,14 +69,12 @@ namespace Web.Controllers
 
 
 			foreach (var item in jArray)
-			{
 				l.Add(new CurrencyDto
 				{
 					ShortName = (string) item["ccy"],
 					Buy       = (decimal) item["buy"],
 					Sale      = (decimal) item["sale"]
 				});
-			}
 
 			// l.ForEach(s => Console.WriteLine($"Currency - {s.ShortName} | Buy - {s.Buy} | Sale - {s.Sale}"));
 			return l;

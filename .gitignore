@@ -15,7 +15,6 @@
 *.pdb
 
 *.dll.config
-*.dll
 
 *.cache
 
