@@ -7,6 +7,7 @@
 		public static class Roles
 		{
 			public const string ADMINISTRATORS = "Administrators";
+			public const string MANAGER = "Manager";
 		}
 	}
 }
