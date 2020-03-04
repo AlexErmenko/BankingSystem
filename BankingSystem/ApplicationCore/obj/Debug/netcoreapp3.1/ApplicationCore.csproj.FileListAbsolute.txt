@@ -8,16 +8,6 @@ C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.A
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
-F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
-F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
-F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
-F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
-F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
-F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
-F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
-F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
-F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
-F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
@@ -28,3 +18,13 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
+F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.deps.json
+F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.json
+F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.runtimeconfig.dev.json
+F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+F:\Banking System\BankingSystem\ApplicationCore\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+F:\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb

@@ -56,13 +56,11 @@ namespace Web
 			{
 				var existingUserManager = scope.ServiceProvider
 											   .GetService<UserManager<ApplicationUser>>();
-				if(existingUserManager == null)
-				{
+				if (existingUserManager == null)
 					services.AddIdentity<ApplicationUser, IdentityRole>()
 							.AddDefaultUI()
 							.AddEntityFrameworkStores<ApplicationDbContext>()
 							.AddDefaultTokenProviders();
-				}
 			}
 		}
 

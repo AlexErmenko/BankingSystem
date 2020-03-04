@@ -1,6 +1,5 @@
 using System;
 using System.Threading.Tasks;
-using Infrastructure.Data;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -15,7 +14,7 @@ namespace Web
 		public static async Task Main(string[] args)
 		{
 			var host = CreateHostBuilder(args).Build();
-			
+
 			using (var scope = host.Services.CreateScope())
 			{
 				var services      = scope.ServiceProvider;
@@ -23,7 +22,7 @@ namespace Web
 				try
 				{
 					// var catalogContext = services.GetRequiredService<BankingSystemContext>();
-						//await BankingSystemContextSeed.SeedAsync(catalogContext, loggerFactory);
+					//await BankingSystemContextSeed.SeedAsync(catalogContext, loggerFactory);
 
 					var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 					var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
