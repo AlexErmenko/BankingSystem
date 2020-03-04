@@ -14,6 +14,7 @@ namespace Infrastructure.Identity
 			//Adding roles
 			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.ADMINISTRATORS));
 			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.MANAGER));
+			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.CLIENT));
 			//Adding default user
 			var defaultUser = new ApplicationUser {UserName = "demouser@gmail.com", Email = "demouser@gmail.com"};
 			await userManager.CreateAsync(defaultUser, AuthorizationConstants.DEFAULT_PASSWORD);
@@ -27,7 +28,8 @@ namespace Infrastructure.Identity
 			var managerUser     = new ApplicationUser {UserName = managerUserName, Email = managerUserName};
 			await userManager.CreateAsync(managerUser, AuthorizationConstants.DEFAULT_PASSWORD);
 
-
+			await userManager.AddToRoleAsync(defaultUser, AuthorizationConstants.Roles.CLIENT);
+			await userManager.AddToRoleAsync(managerUser, AuthorizationConstants.Roles.MANAGER);
 			await userManager.AddToRoleAsync(adminUser, AuthorizationConstants.Roles.ADMINISTRATORS);
 		}
 	}
