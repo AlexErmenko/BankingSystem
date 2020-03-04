@@ -175,8 +175,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.jso
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currencies\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
@@ -427,3 +425,5 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Ac
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache

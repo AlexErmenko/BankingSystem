@@ -13,7 +13,11 @@ namespace Infrastructure.Data
 	{
 		protected readonly BankingSystemContext Context;
 
-		public EfRepository(BankingSystemContext context) { Context = context; }
+		public EfRepository(BankingSystemContext context)
+		{
+			Context = context;
+			Context.Set<T>().Load();
+		}
 
 		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
 

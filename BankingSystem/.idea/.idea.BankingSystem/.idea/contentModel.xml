@@ -5,8 +5,10 @@
       <e p=".editorconfig" t="Include" />
       <e p="ApplicationCore" t="IncludeRecursive">
         <e p="ApplicationCore.csproj" t="IncludeRecursive" />
-        <e p="BankingSystemContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Dto" t="Include">
+          <e p="CurrencyDto.cs" t="Include" />
+        </e>
         <e p="Entity" t="Include">
           <e p="Accrual.cs" t="Include" />
           <e p="BankAccount.cs" t="Include" />
@@ -21,6 +23,19 @@
           <e p="PhysicalPerson.cs" t="Include" />
           <e p="Repayment.cs" t="Include" />
         </e>
+        <e p="Helpers" t="Include">
+          <e p="Query" t="Include">
+            <e p="IncludeAggregator.cs" t="Include" />
+            <e p="IncludeQuery.cs" t="Include" />
+            <e p="IncludeQueryExtensions.cs" t="Include" />
+            <e p="IncludeVisitor.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IAsyncRepository.cs" t="Include" />
+          <e p="IIncludeQuery.cs" t="Include" />
+          <e p="ISpecification.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -28,12 +43,24 @@
             </e>
           </e>
         </e>
+        <e p="Specifications" t="Include">
+          <e p="AuthorizationConstants.cs" t="Include" />
+          <e p="BaseSpecification.cs" t="Include" />
+        </e>
       </e>
       <e p="BankingSystem.sln" t="IncludeFlat" />
       <e p="Infrastructure" t="IncludeRecursive">
-        <e p="ApplicationDbContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Data" t="Include">
+          <e p="BankingSystemContext.cs" t="Include" />
+          <e p="BankingSystemContextSeed.cs" t="Include" />
+          <e p="EfRepository.cs" t="Include" />
+          <e p="SpecificationEvaluator.cs" t="Include" />
+        </e>
+        <e p="efpt.config.json" t="Include" />
         <e p="Identity" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="ApplicationDbContextSeed.cs" t="Include" />
           <e p="ApplicationUser.cs" t="Include" />
           <e p="Migrations" t="Include">
             <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
@@ -51,22 +78,65 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PrivateBankApi" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="CurrencyController.cs" t="Include" />
+          <e p="CurrencyDto.cs" t="Include" />
+          <e p="GetCurrencyHandler.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PrivateBankApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PrivateBankApi.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
       <e p="Solution Items" t="Include" />
       <e p="Web" t="IncludeRecursive">
+        <e p=".filenesting.json" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="Areas" t="Include">
           <e p="Identity" t="Include">
+            <e p="IdentityHostingStartup.cs" t="Include" />
             <e p="Pages" t="Include">
+              <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+              <e p="_ViewImports.cshtml" t="Include" />
               <e p="_ViewStart.cshtml" t="Include" />
+              <e p="Account" t="Include">
+                <e p="_ViewImports.cshtml" t="Include" />
+                <e p="Login.cshtml" t="Include" />
+                <e p="Login.cshtml.cs" t="Include" />
+                <e p="Logout.cshtml" t="Include" />
+                <e p="Logout.cshtml.cs" t="Include" />
+                <e p="Register.cshtml" t="Include" />
+                <e p="Register.cshtml.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="bundleconfig.json" t="Include" />
+        <e p="bundleconfig.json.bindings" t="Include" />
+        <e p="compilerconfig.json" t="Include" />
+        <e p="compilerconfig.json.bindings" t="Include" />
+        <e p="compilerconfig.json.defaults" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="CurrenciesController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
         </e>
-        <e p="Data" t="Include" />
+        <e p="Features" t="Include" />
+        <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
         </e>
@@ -82,10 +152,14 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="ScaffoldingReadMe.txt" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Currencies" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
@@ -100,11 +174,17 @@
         <e p="Web.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
+            <e p="footer.css" t="Include" />
+            <e p="footer.min.css" t="Include" />
+            <e p="nav.css" t="Include" />
+            <e p="nav.min.css" t="Include" />
             <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
             <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
@@ -134,7 +214,154 @@
                   <e p="bootstrap.min.js.map" t="Include" />
                 </e>
               </e>
+              <e p="js" t="Include">
+                <e p="dist" t="Include">
+                  <e p="alert.js" t="Include" />
+                  <e p="alert.js.map" t="Include" />
+                  <e p="button.js" t="Include" />
+                  <e p="button.js.map" t="Include" />
+                  <e p="carousel.js" t="Include" />
+                  <e p="carousel.js.map" t="Include" />
+                  <e p="collapse.js" t="Include" />
+                  <e p="collapse.js.map" t="Include" />
+                  <e p="dropdown.js" t="Include" />
+                  <e p="dropdown.js.map" t="Include" />
+                  <e p="index.js" t="Include" />
+                  <e p="index.js.map" t="Include" />
+                  <e p="modal.js" t="Include" />
+                  <e p="modal.js.map" t="Include" />
+                  <e p="popover.js" t="Include" />
+                  <e p="popover.js.map" t="Include" />
+                  <e p="scrollspy.js" t="Include" />
+                  <e p="scrollspy.js.map" t="Include" />
+                  <e p="tab.js" t="Include" />
+                  <e p="tab.js.map" t="Include" />
+                  <e p="toast.js" t="Include" />
+                  <e p="toast.js.map" t="Include" />
+                  <e p="tooltip.js" t="Include" />
+                  <e p="tooltip.js.map" t="Include" />
+                  <e p="util.js" t="Include" />
+                  <e p="util.js.map" t="Include" />
+                </e>
+                <e p="src" t="Include">
+                  <e p="alert.js" t="Include" />
+                  <e p="button.js" t="Include" />
+                  <e p="carousel.js" t="Include" />
+                  <e p="collapse.js" t="Include" />
+                  <e p="dropdown.js" t="Include" />
+                  <e p="index.js" t="Include" />
+                  <e p="modal.js" t="Include" />
+                  <e p="popover.js" t="Include" />
+                  <e p="scrollspy.js" t="Include" />
+                  <e p="tab.js" t="Include" />
+                  <e p="toast.js" t="Include" />
+                  <e p="tools" t="Include">
+                    <e p="sanitizer.js" t="Include" />
+                  </e>
+                  <e p="tooltip.js" t="Include" />
+                  <e p="util.js" t="Include" />
+                </e>
+              </e>
               <e p="LICENSE" t="Include" />
+              <e p="package.json" t="Include" />
+              <e p="README.md" t="Include" />
+              <e p="scss" t="Include">
+                <e p="_alert.scss" t="Include" />
+                <e p="_badge.scss" t="Include" />
+                <e p="_breadcrumb.scss" t="Include" />
+                <e p="_button-group.scss" t="Include" />
+                <e p="_buttons.scss" t="Include" />
+                <e p="_card.scss" t="Include" />
+                <e p="_carousel.scss" t="Include" />
+                <e p="_close.scss" t="Include" />
+                <e p="_code.scss" t="Include" />
+                <e p="_custom-forms.scss" t="Include" />
+                <e p="_dropdown.scss" t="Include" />
+                <e p="_forms.scss" t="Include" />
+                <e p="_functions.scss" t="Include" />
+                <e p="_grid.scss" t="Include" />
+                <e p="_images.scss" t="Include" />
+                <e p="_input-group.scss" t="Include" />
+                <e p="_jumbotron.scss" t="Include" />
+                <e p="_list-group.scss" t="Include" />
+                <e p="_media.scss" t="Include" />
+                <e p="_mixins.scss" t="Include" />
+                <e p="_modal.scss" t="Include" />
+                <e p="_nav.scss" t="Include" />
+                <e p="_navbar.scss" t="Include" />
+                <e p="_pagination.scss" t="Include" />
+                <e p="_popover.scss" t="Include" />
+                <e p="_print.scss" t="Include" />
+                <e p="_progress.scss" t="Include" />
+                <e p="_reboot.scss" t="Include" />
+                <e p="_root.scss" t="Include" />
+                <e p="_spinners.scss" t="Include" />
+                <e p="_tables.scss" t="Include" />
+                <e p="_toasts.scss" t="Include" />
+                <e p="_tooltip.scss" t="Include" />
+                <e p="_transitions.scss" t="Include" />
+                <e p="_type.scss" t="Include" />
+                <e p="_utilities.scss" t="Include" />
+                <e p="_variables.scss" t="Include" />
+                <e p="bootstrap-grid.scss" t="Include" />
+                <e p="bootstrap-reboot.scss" t="Include" />
+                <e p="bootstrap.scss" t="Include" />
+                <e p="mixins" t="Include">
+                  <e p="_alert.scss" t="Include" />
+                  <e p="_background-variant.scss" t="Include" />
+                  <e p="_badge.scss" t="Include" />
+                  <e p="_border-radius.scss" t="Include" />
+                  <e p="_box-shadow.scss" t="Include" />
+                  <e p="_breakpoints.scss" t="Include" />
+                  <e p="_buttons.scss" t="Include" />
+                  <e p="_caret.scss" t="Include" />
+                  <e p="_clearfix.scss" t="Include" />
+                  <e p="_deprecate.scss" t="Include" />
+                  <e p="_float.scss" t="Include" />
+                  <e p="_forms.scss" t="Include" />
+                  <e p="_gradients.scss" t="Include" />
+                  <e p="_grid-framework.scss" t="Include" />
+                  <e p="_grid.scss" t="Include" />
+                  <e p="_hover.scss" t="Include" />
+                  <e p="_image.scss" t="Include" />
+                  <e p="_list-group.scss" t="Include" />
+                  <e p="_lists.scss" t="Include" />
+                  <e p="_nav-divider.scss" t="Include" />
+                  <e p="_pagination.scss" t="Include" />
+                  <e p="_reset-text.scss" t="Include" />
+                  <e p="_resize.scss" t="Include" />
+                  <e p="_screen-reader.scss" t="Include" />
+                  <e p="_size.scss" t="Include" />
+                  <e p="_table-row.scss" t="Include" />
+                  <e p="_text-emphasis.scss" t="Include" />
+                  <e p="_text-hide.scss" t="Include" />
+                  <e p="_text-truncate.scss" t="Include" />
+                  <e p="_transition.scss" t="Include" />
+                  <e p="_visibility.scss" t="Include" />
+                </e>
+                <e p="utilities" t="Include">
+                  <e p="_align.scss" t="Include" />
+                  <e p="_background.scss" t="Include" />
+                  <e p="_borders.scss" t="Include" />
+                  <e p="_clearfix.scss" t="Include" />
+                  <e p="_display.scss" t="Include" />
+                  <e p="_embed.scss" t="Include" />
+                  <e p="_flex.scss" t="Include" />
+                  <e p="_float.scss" t="Include" />
+                  <e p="_overflow.scss" t="Include" />
+                  <e p="_position.scss" t="Include" />
+                  <e p="_screenreaders.scss" t="Include" />
+                  <e p="_shadows.scss" t="Include" />
+                  <e p="_sizing.scss" t="Include" />
+                  <e p="_spacing.scss" t="Include" />
+                  <e p="_stretched-link.scss" t="Include" />
+                  <e p="_text.scss" t="Include" />
+                  <e p="_visibility.scss" t="Include" />
+                </e>
+                <e p="vendor" t="Include">
+                  <e p="_rfs.scss" t="Include" />
+                </e>
+              </e>
             </e>
             <e p="jquery" t="Include">
               <e p="dist" t="Include">
@@ -159,13 +386,17 @@
               <e p="LICENSE.txt" t="Include" />
             </e>
           </e>
+          <e p="scss" t="Include">
+            <e p="footer.scss" t="Include" />
+            <e p="nav.scss" t="Include" />
+          </e>
         </e>
       </e>
     </e>
-    <e p="C:\Users\i7\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\i7\.Rider2019.3\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\i7\.Rider2019.3\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\i7\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\i7\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_BankingSystem.-439986484.00" t="ExcludeRecursive" />
+    <e p="C:\Users\i7\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\i7\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_BankingSystem.-439986484.00" t="ExcludeRecursive" />
+    <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
   </component>
 </project>

@@ -18,10 +18,12 @@ namespace ApplicationCore.Entity
         [Key]
         [Column("id_currency")]
         public int IdCurrency { get; set; }
+
         [Required]
         [Column("name")]
         [StringLength(30)]
         public string Name { get; set; }
+
         [Required]
         [Column("short_name")]
         [StringLength(10)]
@@ -29,6 +31,7 @@ namespace ApplicationCore.Entity
 
         [InverseProperty(nameof(BankAccount.IdCurrencyNavigation))]
         public virtual ICollection<BankAccount> BankAccounts { get; set; }
+
         [InverseProperty(nameof(ExchangeRate.IdCurrencyNavigation))]
         public virtual ICollection<ExchangeRate> ExchangeRates { get; set; }
     }
