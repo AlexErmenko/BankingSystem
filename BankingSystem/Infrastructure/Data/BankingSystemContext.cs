@@ -4,7 +4,7 @@ using System;
 using ApplicationCore.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Infrastructure;
+// using Infrastructure;
 
 namespace Infrastructure.Data
 {
