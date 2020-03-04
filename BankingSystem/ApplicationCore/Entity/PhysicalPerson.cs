@@ -10,35 +10,28 @@ namespace ApplicationCore.Entity
     public partial class PhysicalPerson
     {
         [Key]
-        [Column("id_person")]
-        public int IdPerson { get; set; }
+        public int Id { get; set; }
         [Required]
-        [Column("passport_series")]
         [StringLength(2)]
         public string PassportSeries { get; set; }
         [Required]
-        [Column("passport_number")]
         [StringLength(10)]
         public string PassportNumber { get; set; }
         [Required]
-        [Column("identification_number")]
         [StringLength(10)]
         public string IdentificationNumber { get; set; }
         [Required]
-        [Column("surname")]
         [StringLength(50)]
         public string Surname { get; set; }
         [Required]
-        [Column("name")]
         [StringLength(40)]
         public string Name { get; set; }
         [Required]
-        [Column("patronymic")]
         [StringLength(80)]
         public string Patronymic { get; set; }
 
-        [ForeignKey(nameof(IdPerson))]
+        [ForeignKey(nameof(Id))]
         [InverseProperty(nameof(Client.PhysicalPerson))]
-        public virtual Client IdPersonNavigation { get; set; }
+        public virtual Client IdNavigation { get; set; }
     }
 }

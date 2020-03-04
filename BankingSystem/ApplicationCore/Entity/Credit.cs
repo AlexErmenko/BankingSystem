@@ -15,17 +15,14 @@ namespace ApplicationCore.Entity
         }
 
         [Key]
-        [Column("id_credit")]
-        public int IdCredit { get; set; }
-        [Column("id_account")]
+        public int Id { get; set; }
         public int IdAccount { get; set; }
-        [Column("percent_credit", TypeName = "decimal(10, 2)")]
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal PercentCredit { get; set; }
-        [Column("amount", TypeName = "decimal(10, 2)")]
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
-        [Column("date_credit", TypeName = "date")]
+        [Column(TypeName = "date")]
         public DateTime DateCredit { get; set; }
-        [Column("status")]
         public bool Status { get; set; }
 
         [ForeignKey(nameof(IdAccount))]

@@ -1,4 +1,5 @@
 using ApplicationCore.Interfaces;
+using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;

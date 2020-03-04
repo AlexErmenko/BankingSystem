@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-using Infrastructure.Data;
+using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
@@ -57,7 +57,7 @@ namespace Web.Controllers
 			{
 				var account = createClientAccountViewModel.Account;
 				var idCurrency = _bankingSystemContext
-								 .Currencies.FirstOrDefault(c => c.IdCurrency == account.IdCurrency)?.Name;
+								 .Currencies.FirstOrDefault(c => c.Id == account.IdCurrency)?.Name;
 
 				if (idCurrency != null)
 					_bankingSystemContext.Database.ExecuteSqlRaw($@"EXEC bank_operations.dbo.CreateAccount 

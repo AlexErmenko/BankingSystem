@@ -73,4 +73,6 @@ obj/
 
 TestResults/
 
+./BankingSystem/Web/appsettings.json
+
 ###################
