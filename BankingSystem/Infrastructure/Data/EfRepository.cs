@@ -20,7 +20,6 @@ namespace Infrastructure.Data
 		}
 
 		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
-		public async Task<T> GetById(string id) { return await Context.Set<T>().FindAsync(id); }
 
 		public async Task<List<T>> GetAll() { return await Context.Set<T>().ToListAsync(); }
 

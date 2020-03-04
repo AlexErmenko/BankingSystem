@@ -24,11 +24,8 @@ namespace Web
 					// var catalogContext = services.GetRequiredService<BankingSystemContext>();
 					//await BankingSystemContextSeed.SeedAsync(catalogContext, loggerFactory);
 
-					UserManager<ApplicationUser> userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-					RoleManager<IdentityRole> roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-
-
-
+					var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+					var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 					await ApplicationDbContextSeed.SeedAsync(userManager, roleManager);
 					// ApplicationDbContext.SeedAsync(userManager, roleManager);
 				}
