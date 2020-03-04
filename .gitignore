@@ -24,6 +24,9 @@ Project_Readme.html
 # User-specific files
 *.suo
 *.user
+*.cache
+*.txt
+*.pdb
 *.userosscache
 *.sln.docstates
 .vscode/
