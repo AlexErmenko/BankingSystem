@@ -340,8 +340,6 @@ F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAna
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
@@ -602,3 +600,5 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
