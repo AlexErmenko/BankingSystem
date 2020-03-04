@@ -5,7 +5,8 @@ namespace ApplicationCore.Interfaces
 {
 	public interface IAsyncRepository<T>
 	{
-		Task<T>       GetById(int id);
+		Task<T>       GetById(string id);
+		Task<T> GetById (int id);
 		Task<List<T>> GetAll();
 		Task          AddAsync(T    entity);
 		Task          UpdateAsync(T entity);

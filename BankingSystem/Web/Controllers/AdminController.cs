@@ -1,78 +1,144 @@
-﻿using ApplicationCore.Interfaces;
+﻿using System.Linq;
+using System.Threading.Tasks;
+using ApplicationCore.Interfaces;
+using ApplicationCore.Specifications;
 using Infrastructure.Identity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.ObjectPool;
+using Web.ViewModels;
 
 namespace Web.Controllers
 {
 	public class AdminController : Controller
 	{
-		private IAsyncRepository<IdentityRole>    _roleRepository;
-		private IAsyncRepository<ApplicationUser> _userRepository;
+		// private readonly IAsyncRepository<ApplicationUser> _userRepository;
 
-		public AdminController(IAsyncRepository<ApplicationUser> userRepository,
-							   IAsyncRepository<IdentityRole>    roleRepository)
-		{
-			_userRepository = userRepository;
-			_roleRepository = roleRepository;
-		}
+		public UserManager<ApplicationUser> UserManager { get; set; }
+		public RoleManager<ApplicationUser> RoleManager { get; set; }
+
+
+		public AdminController(UserManager<ApplicationUser> userManager) { UserManager = userManager; }
 
 		// GET: Admin
-		public ActionResult Index() { return View(); }
+		public async Task<IActionResult> Index(UserManager<ApplicationUser> userManager,
+											   RoleManager<IdentityRole>    roleManager)
+		{
+			// var users = await userManager.GetUserAsync();
+			// var UsersVM = new UsersViewModel {Users = users};
+			return View();
+		}
 
 		// GET: Admin/Details/5
-		public ActionResult Details(int id) { return View(); }
+		public async Task<IActionResult> Details(string id)
+		{
+			if (id == null) { return NotFound(); }
+
+			// var user = await _userRepository.GetById(id);
+
+
+			return View();
+		}
 
 		// GET: Admin/Create
-		public ActionResult Create() { return View(); }
+		public async Task<IActionResult> Create()
+		{
+
+			return View();
+		}
 
 		// POST: Admin/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
+		public async Task<IActionResult> Create([Bind("UserName,Password,Email,PhoneNumber")]ApplicationUser applicationUser )
 		{
-			try
+			var user = new ApplicationUser()
 			{
-				// TODO: Add insert logic here
+				UserName    = applicationUser.UserName,
+				Email       = applicationUser.Email,
+				PhoneNumber = applicationUser.PhoneNumber,
+			};
 
-				return RedirectToAction(nameof(Index));
-			}
-			catch { return View(); }
+			await UserManager.CreateAsync(user,AuthorizationConstants.DEFAULT_PASSWORD);
+
+
+
+			return View(applicationUser);
 		}
 
 		// GET: Admin/Edit/5
-		public ActionResult Edit(int id) { return View(); }
+		public  async Task<IActionResult> Edit(string id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+			// var user = await _userRepository.GetById(id);
+
+			return View();
+		}
 
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit(int id, IFormCollection collection)
+		public async Task<IActionResult> Edit(string id, IFormCollection collection, [Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
 		{
-			try
+			/*if (id != applicationUser.Id)
 			{
-				// TODO: Add update logic here
-
+				return NotFound();
+			}
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					await _userRepository.UpdateAsync(applicationUser);
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+				
+				}
 				return RedirectToAction(nameof(Index));
 			}
-			catch { return View(); }
+			*/
+
+
+
+			return View();
+
 		}
 
 		// GET: Admin/Delete/5
-		public ActionResult Delete(int id) { return View(); }
+		public async Task<IActionResult> Delete(string id)
+		{
+			
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			// var user = await _userRepository.GetById(id);
+
+			return View();
+		}
 
 		// POST: Admin/Delete/5
-		[HttpPost]
+		[HttpPost,ActionName("Delete")]
 		[ValidateAntiForgeryToken]
-		public ActionResult Delete(int id, IFormCollection collection)
+		public async Task<IActionResult> DeleteConfirmed(string id, IFormCollection collection)
 		{
-			try
+			/*try
 			{
-				// TODO: Add delete logic here
+				var user = await _userRepository.GetById(id);
+				await _userRepository.DeleteAsync(user);
+				
 
 				return RedirectToAction(nameof(Index));
 			}
-			catch { return View(); }
+	
+			catch {  }*/
+			return View();
 		}
 	}
 }
