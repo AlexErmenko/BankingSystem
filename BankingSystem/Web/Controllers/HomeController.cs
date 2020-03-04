@@ -36,7 +36,7 @@ namespace Web.Controllers
 			foreach (var dto in dtos)
 			{
 				var currencies                 = list.FirstOrDefault(it => it.ShortName.Equals(dto.ShortName.Trim()));
-				if (currencies != null) dto.Id = currencies.IdCurrency;
+				if (currencies != null) dto.Id = currencies.Id;
 			}
 
 			foreach (var item in dtos)

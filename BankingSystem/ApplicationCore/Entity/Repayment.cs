@@ -10,13 +10,11 @@ namespace ApplicationCore.Entity
     public partial class Repayment
     {
         [Key]
-        [Column("id_repayment")]
-        public int IdRepayment { get; set; }
-        [Column("id_credit")]
+        public int Id { get; set; }
         public int IdCredit { get; set; }
-        [Column("date_repayment", TypeName = "date")]
+        [Column(TypeName = "date")]
         public DateTime DateRepayment { get; set; }
-        [Column("amount", TypeName = "decimal(10, 2)")]
+        [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
 
         [ForeignKey(nameof(IdCredit))]
