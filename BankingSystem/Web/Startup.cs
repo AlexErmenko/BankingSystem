@@ -17,9 +17,11 @@ namespace Web
 	//dotnet restore
 	//dotnet tool restore
 	//Restore AppCore
-	//dotnet ef database update -c BankingSystemContext  -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
+
+	//Не забываем поставить свой сервер в appsettings
+	//dotnet ef database update -c bankingsystemcontext  -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 	//Restore Identity
-	//dotnet ef database update -c ApplicationDbContext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
+	//dotnet ef database update -c applicationbbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
 	public class Startup
 	{
