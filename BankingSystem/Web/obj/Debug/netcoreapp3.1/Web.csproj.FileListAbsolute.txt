@@ -576,7 +576,6 @@ F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currencies\Index.cshtml.g.cs
@@ -596,3 +595,10 @@ F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs

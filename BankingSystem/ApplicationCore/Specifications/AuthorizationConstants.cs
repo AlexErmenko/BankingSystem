@@ -8,6 +8,7 @@
 		{
 			public const string ADMINISTRATORS = "Administrators";
 			public const string MANAGER        = "Manager";
+			public const string CLIENT         = "Client";
 		}
 	}
 }
