@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ApplicationCore.Entity;
+using Infrastructure;
 using Infrastructure.Data;
 
 namespace Web.Controllers
@@ -66,7 +67,7 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdClient,Login,Password,Address,TelNumber")] Client client)
         {
-            if (id != client.IdClient)
+            if (id != client.Id)
             {
                 return NotFound();
             }
@@ -80,7 +81,7 @@ namespace Web.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ClientExists(client.IdClient))
+                    if (!ClientExists(client.Id))
                     {
                         return NotFound();
                     }
@@ -103,7 +104,7 @@ namespace Web.Controllers
             }
 
             var client = await _context.Clients
-                .FirstOrDefaultAsync(m => m.IdClient == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (client == null)
             {
                 return NotFound();
@@ -125,7 +126,7 @@ namespace Web.Controllers
 
         private bool ClientExists(int id)
         {
-            return _context.Clients.Any(e => e.IdClient == id);
+            return _context.Clients.Any(e => e.Id == id);
         }
     }
 }
