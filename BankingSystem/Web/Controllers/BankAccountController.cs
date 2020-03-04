@@ -12,9 +12,9 @@ namespace Web.Controllers
 	public class BankAccountController : Controller
 	{
 		private readonly BankingSystemContext             _bankingSystemContext;
-		private          IAsyncRepository<BankAccount>    _bankAccountRepository;
 		private readonly IAsyncRepository<LegalPerson>    _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
+		private          IAsyncRepository<BankAccount>    _bankAccountRepository;
 
 		public BankAccountController(IAsyncRepository<BankAccount>    bankAccountRepositoryAccount,
 									 BankingSystemContext             bankingSystemCtx,
