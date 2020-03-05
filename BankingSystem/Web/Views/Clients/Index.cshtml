@@ -8,7 +8,7 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <title>Клиенты</title>
 </head>
 <body>
@@ -17,21 +17,22 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                Логин
-            </th>
-            <th>
-                Адрес
-            </th>
-            <th>
-                Телефонный номер
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            Логин
+        </th>
+        <th>
+            Адрес
+        </th>
+        <th>
+            Телефонный номер
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Login)
@@ -47,7 +48,7 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
 </body>

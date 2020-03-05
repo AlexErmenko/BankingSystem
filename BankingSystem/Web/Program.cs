@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Web.Services;
 
 namespace Web
 {
@@ -41,10 +42,14 @@ namespace Web
 
 		public static IHostBuilder CreateHostBuilder(string[] args)
 		{
-			return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
-			{
-				webBuilder.UseStartup<Startup>();
-			});
+			return Host.CreateDefaultBuilder(args)
+					   .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); })
+					   //Configure background task
+					   .ConfigureServices(services =>
+					   {
+						   services.AddHostedService<ConsumeScopedServiceHostedService>();
+						   services.AddScoped<IScopedСurrencyService, ScopedСurrencyService>();
+					   });
 		}
 	}
 }

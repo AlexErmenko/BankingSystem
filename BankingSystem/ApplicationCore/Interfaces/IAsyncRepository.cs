@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationCore.Interfaces
 {
+	/// <typeparam name="T">Entity</typeparam>
 	public interface IAsyncRepository<T>
 	{
 		Task<T>       GetById(int id);

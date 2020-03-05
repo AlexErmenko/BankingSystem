@@ -24,6 +24,11 @@ namespace Web
 	//Restore Identity
 	//dotnet ef database update -c applicationbbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
+
+	//Коменда для добавление миграции для осн. БД. 
+	//dotnet ef migrations add InitMigration --context bankingsystemcontext --project ../Infrastructure/Infrastructure.csproj --startup-project Web.csproj
+
+
 	public class Startup
 	{
 		public Startup(IConfiguration configuration) { Configuration = configuration; }
