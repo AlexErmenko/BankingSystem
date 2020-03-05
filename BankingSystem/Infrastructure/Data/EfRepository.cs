@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -13,11 +14,7 @@ namespace Infrastructure.Data
 	{
 		protected readonly BankingSystemContext Context;
 
-		public EfRepository(BankingSystemContext context)
-		{
-			Context = context;
-			// context.Set<T>().Load();
-		}
+		public EfRepository(BankingSystemContext context) { Context = context; }
 
 		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
 
@@ -39,6 +36,16 @@ namespace Infrastructure.Data
 		{
 			Context.Set<T>().Remove(entity);
 			await Context.SaveChangesAsync();
+		}
+
+		public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
+		{
+			return await ApplySpecification(spec).ToListAsync();
+		}
+
+		private IQueryable<T> ApplySpecification(ISpecification<T> spec)
+		{
+			return SpecificationEvaluator<T>.GetQuery(Context.Set<T>().AsQueryable(), spec);
 		}
 	}
 }

@@ -44,10 +44,11 @@ namespace Web
 		{
 			return Host.CreateDefaultBuilder(args)
 					   .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); })
+					   //Configure background task
 					   .ConfigureServices(services =>
 					   {
 						   services.AddHostedService<ConsumeScopedServiceHostedService>();
-						   services.AddScoped<IScopedProcessingService, ScopedProcessingService>();
+						   services.AddScoped<IScopedСurrencyService, ScopedСurrencyService>();
 					   });
 		}
 	}

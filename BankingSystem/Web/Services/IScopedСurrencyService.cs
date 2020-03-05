@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Web.Services
 {
-	internal interface IScopedProcessingService
+	public interface IScopedСurrencyService
 	{
 		Task DoWork(CancellationToken stoppingToken);
 	}

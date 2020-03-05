@@ -11,10 +11,12 @@ namespace Web.Controllers
 {
 	public class BankAccountController : Controller
 	{
+		
 		private readonly BankingSystemContext             _bankingSystemContext;
 		private readonly IAsyncRepository<LegalPerson>    _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
 		private          IAsyncRepository<BankAccount>    _bankAccountRepository;
+
 
 		public BankAccountController(IAsyncRepository<BankAccount>    bankAccountRepositoryAccount,
 									 BankingSystemContext             bankingSystemCtx,
@@ -58,7 +60,7 @@ namespace Web.Controllers
 				var account = createClientAccountViewModel.Account;
 				var idCurrency = _bankingSystemContext
 								 .Currencies.FirstOrDefault(c => c.Id == account.IdCurrency)?.Name;
-
+				//!TODO: Почему просто руками не создать аккаунт?
 				if (idCurrency != null)
 					_bankingSystemContext.Database.ExecuteSqlRaw($@"EXEC bank_operations.dbo.CreateAccount 
                         @id_client = {account.IdClient}, @account_type = {account.AccountType}, @currency = {idCurrency}, @amount = 0");
@@ -74,6 +76,7 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public IActionResult BankAccountClose(int idAccount)
 		{
+			//TODO: перепиши на классы
 			_bankingSystemContext.Database.ExecuteSqlRaw($@"EXEC CloseAccount @idClient = {idAccount}");
 
 			return View("Index");
