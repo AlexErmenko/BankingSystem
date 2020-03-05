@@ -15,8 +15,8 @@ namespace Infrastructure.Identity
 			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.MANAGER));
 			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.CLIENT));
 
-
-			var defaultUser = new ApplicationUser {UserName = "demouser@gmail.com", Email = "demouser@gmail.com"};
+			var defaultUserName = "demouser@gmail.com";
+			var defaultUser = new ApplicationUser {UserName = defaultUserName, Email = "demouser@gmail.com"};
 			await userManager.CreateAsync(defaultUser, AuthorizationConstants.DEFAULT_PASSWORD);
 
 
@@ -34,10 +34,12 @@ namespace Infrastructure.Identity
 			var managerUserName = "manager@gmail.com";
 			var managerUser     = new ApplicationUser {UserName = managerUserName, Email = managerUserName};
 			await userManager.CreateAsync(managerUser, AuthorizationConstants.DEFAULT_PASSWORD);
+			defaultUser = await userManager.FindByNameAsync(defaultUserName);
+			adminUser = await userManager.FindByNameAsync(adminUserName);
+			managerUser = await userManager.FindByNameAsync(managerUserName);
 
-
-			// await userManager.AddToRoleAsync(defaultUser, AuthorizationConstants.Roles.CLIENT);
-			// await userManager.AddToRoleAsync(managerUser, AuthorizationConstants.Roles.MANAGER);
+			await userManager.AddToRoleAsync(defaultUser, AuthorizationConstants.Roles.CLIENT);
+			await userManager.AddToRoleAsync(managerUser, AuthorizationConstants.Roles.MANAGER);
 			await userManager.AddToRoleAsync(adminUser, AuthorizationConstants.Roles.ADMINISTRATORS);
 		}
 	}
