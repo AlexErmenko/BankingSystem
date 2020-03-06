@@ -19,7 +19,7 @@ using System;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "F:\Banking System\BankingSystem\Web\Views\_ViewImports.cshtml"
+#line 3 "C:\Sigma\BankingSystem\Web\Views\_ViewImports.cshtml"
 using React.AspNet;
 
 #line default
