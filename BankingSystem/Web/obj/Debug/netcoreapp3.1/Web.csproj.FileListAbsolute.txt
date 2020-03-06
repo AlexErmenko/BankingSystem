@@ -641,3 +641,4 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.d
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs

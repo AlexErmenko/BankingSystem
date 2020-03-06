@@ -1,25 +1,36 @@
-﻿import * as React from "../lib/react";
-
-class CommentBox extends React.Component {
+﻿class CurrencyConvertor extends React.Component {
 
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: ''
+        };
+        this.handleChangeText = this.handleChangeText.bind(this);
         console.log("From comment box");
+    }
+
+    handleChangeText(e) {
+        this.setState({text: e.target.value});
+        console.log(e.target.value);
 
     }
 
     render() {
-        return(
-            <div className="commentBox">
+        return (
+            <form className="commentBox">
                 React render
+                <input type="text"
+                       value={this.state.text}
+                       onChange={this.handleChangeText}/>
 
-            </div>
-        )
+                <h1>{this.state.text}</h1>
+            </form>
+        );
     }
 }
 
 ReactDOM.render(
-    <CommentBox/>,
+    <CurrencyConvertor/>,
     document.getElementById("content"),
 );
