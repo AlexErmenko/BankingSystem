@@ -101,7 +101,10 @@ namespace Web
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
 			// app.UseDefaultFiles();
-			app.UseReact(configuration => { });
+			app.UseReact(it =>
+			{
+				
+			});
 
 
 			app.UseRouting();
