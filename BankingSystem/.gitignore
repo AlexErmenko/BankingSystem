@@ -6,7 +6,7 @@
 *.min.css
 *.min.js
 *.map
-*.csprojAssemblyReference.cache
+
 _build/
 _site/
 Properties/
