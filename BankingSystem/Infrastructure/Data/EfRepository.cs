@@ -17,6 +17,7 @@ namespace Infrastructure.Data
 		public EfRepository(BankingSystemContext context) { Context = context; }
 
 		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
+		public async Task<T> GetById(string id) { return await Context.Set<T>().FindAsync(id); }
 
 		public async Task<List<T>> GetAll() { return await Context.Set<T>().ToListAsync(); }
 
@@ -31,6 +32,7 @@ namespace Infrastructure.Data
 			Context.Entry(entity).State = EntityState.Modified;
 			await Context.SaveChangesAsync();
 		}
+
 
 		public async Task DeleteAsync(T entity)
 		{
