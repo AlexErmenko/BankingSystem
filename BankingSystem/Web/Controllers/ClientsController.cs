@@ -10,6 +10,7 @@ namespace Web.Controllers
 	public class ClientsController : Controller
 	{
 		private readonly BankingSystemContext _context;
+
 		//TODO: Заменить на репозиторий
 		public ClientsController(BankingSystemContext context) { _context = context; }
 

@@ -6,6 +6,11 @@
       "provider": "unpkg",
       "library": "bootstrap@4.4.1",
       "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "react@16.13.0",
+      "destination": "wwwroot/lib/react/"
     }
   ]
 }

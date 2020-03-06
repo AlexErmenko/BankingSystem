@@ -74,11 +74,6 @@ namespace Web.Controllers
 		}
 
 		// GET
-		public IActionResult Index()
-		{
-			Handle();
-
-			return View();
-		}
+		public IActionResult Index() { return View(); }
 	}
 }

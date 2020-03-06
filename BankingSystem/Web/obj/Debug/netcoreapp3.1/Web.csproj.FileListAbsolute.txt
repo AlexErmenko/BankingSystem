@@ -591,8 +591,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
@@ -628,29 +626,18 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
-F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\AdvancedStringBuilder.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.ChakraCore.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
