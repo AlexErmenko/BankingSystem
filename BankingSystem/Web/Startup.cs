@@ -2,14 +2,19 @@ using ApplicationCore.Interfaces;
 using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Identity;
+using JavaScriptEngineSwitcher.ChakraCore;
+using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
+using JavaScriptEngineSwitcher.V8;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using React.AspNet;
 
 namespace Web
 {
@@ -51,8 +56,13 @@ namespace Web
 																					 .GetConnectionString("DomainConnection")));
 
 			services.AddControllersWithViews();
+
 			services.AddRazorPages();
 
+			services.AddMemoryCache();
+			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+			services.AddReact();
+			services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddV8();
 			services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
 		}
 
@@ -90,11 +100,15 @@ namespace Web
 
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
+			// app.UseDefaultFiles();
+			app.UseReact(configuration => { });
+
 
 			app.UseRouting();
 
 			app.UseAuthentication();
 			app.UseAuthorization();
+
 
 			app.UseSwagger();
 
@@ -103,6 +117,7 @@ namespace Web
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+
 				endpoints.MapRazorPages();
 			});
 		}

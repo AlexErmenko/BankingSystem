@@ -591,8 +591,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
@@ -628,3 +626,18 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\AdvancedStringBuilder.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.ChakraCore.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
