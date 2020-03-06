@@ -18,14 +18,14 @@ namespace Web.Controllers
 	public class AdminController : Controller
 	{
 		private UserManager<ApplicationUser> _userManager;
-		private IAsyncRepository<ApplicationUser> _userRepository;
+		// private IAsyncRepository<ApplicationUser> _userRepository;
 		// private ApplicationDbContext _context;
 	
 
-		public AdminController(UserManager<ApplicationUser> userManager, IAsyncRepository<ApplicationUser> userRepository)
+		public AdminController(UserManager<ApplicationUser> userManager)
 		{
 			_userManager = userManager;
-			_userRepository = userRepository;
+			// _userRepository = userRepository;
 			// _context = context;
 
 
@@ -110,16 +110,16 @@ namespace Web.Controllers
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit(string id, IFormCollection collection, [Bind("UserName,Email,PhoneNumber")] ApplicationUser user)
+		public  async Task<IActionResult> Edit(string? id, IFormCollection collection, [Bind("Id,UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
 		{
-			if (id != user.Id)
+			if (id != applicationUser.Id)
 			{
 				return NotFound();
 			}
 			if (ModelState.IsValid)
 			{
-				try { _userRepository.UpdateAsync(user); }
-				catch (DbUpdateConcurrencyException) { return NotFound(user);}
+				try {await _userManager.UpdateAsync(applicationUser); }
+				catch (DbUpdateConcurrencyException) { return NotFound(applicationUser);}
 				return RedirectToAction(nameof(Index));
 			}
 			return View();
