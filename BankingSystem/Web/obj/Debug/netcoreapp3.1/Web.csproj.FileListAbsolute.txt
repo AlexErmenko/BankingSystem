@@ -898,3 +898,4 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Delete.cshtml.g.cs

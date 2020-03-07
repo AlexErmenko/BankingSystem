@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
-using Web.ViewModels;
+using Web.ViewModels.Admin;
 
 namespace Web.Controllers
 {	
@@ -25,7 +25,6 @@ namespace Web.Controllers
 		{
 			_userManager = userManager;
 			_context = context;
-			
 		}
 
 		// GET: Admin
@@ -85,11 +84,96 @@ namespace Web.Controllers
 			user = await _userManager.FindByNameAsync(applicationUser.UserName);
 
 
-			return View(applicationUser);
+			return RedirectToAction(nameof(Index));
 		}
 
 		// GET: Admin/Edit/5
 		public async Task<IActionResult> Edit(string id)
+		{
+			// if (id == null)
+			// {
+			// 	return NotFound();
+			// }
+			//
+			// var user = await _userManager.FindByIdAsync(id);
+			// if (user == null)
+			// {
+			// 	return NotFound();
+			// }
+			// return View(user);
+			var user = await _userManager.FindByIdAsync(id);
+			if (user == null)
+			{
+				return NotFound();
+			}
+			EditUserViewModel model = new EditUserViewModel
+			{
+				UserName = user.UserName, 
+				Email = user.Email, 
+				PhoneNumber = user.PhoneNumber
+			};
+			return View(model);
+		}
+
+		// POST: Admin/Edit/5
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public  async Task<IActionResult> Edit(EditUserViewModel applicationUser)
+		{
+
+			// if (applicationUser ==null)
+			// {
+			// 	return NotFound();
+			// }
+			// if (ModelState.IsValid)
+			// {
+			// 	try
+			// 	{
+			//
+			// 		await _userManager.UpdateAsync(applicationUser);
+			// 	}
+			// 	catch (DbUpdateConcurrencyException)
+			// 	{
+			// 		if (!UserExists(applicationUser.Id))
+			// 		{
+			// 			return NotFound();
+			// 		}
+			// 		else
+			// 		{
+			// 			throw;
+			// 		}
+			// 	}
+			// 	return RedirectToAction(nameof(Index));
+			// }
+			// return View(applicationUser);
+			if (ModelState.IsValid)
+			{
+				var user = await _userManager.FindByIdAsync(applicationUser.Id);
+				if(user !=null)
+				{
+					user.Email    = applicationUser.Email;
+					user.UserName = applicationUser.UserName;
+					user.PhoneNumber     = applicationUser.PhoneNumber;
+                     
+					var result = await _userManager.UpdateAsync(user);
+					if (result.Succeeded)
+					{
+						return RedirectToAction("Index");
+					}
+					else
+					{
+						foreach (var error in result.Errors)
+						{
+							ModelState.AddModelError(string.Empty, error.Description);
+						}
+					}
+				}
+			}
+			return View(applicationUser);
+		}
+
+		// GET: Admin/Delete/5
+		public async Task<IActionResult> Delete(string id)
 		{
 			if (id == null)
 			{
@@ -101,53 +185,20 @@ namespace Web.Controllers
 			{
 				return NotFound();
 			}
+
 			return View(user);
+			
 		}
-
-		// POST: Admin/Edit/5
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public  async Task<IActionResult> Edit(string id, [Bind("Id,UserName,Email,PhoneNumber")]
-																	ApplicationUser applicationUser)
-		{
-			if (id != applicationUser.Id)
-			{
-				return NotFound();
-			}
-			if (ModelState.IsValid)
-			{
-				try
-				{
-					await _userManager.UpdateAsync(applicationUser);
-				}
-				catch (DbUpdateConcurrencyException)
-				{
-					if (!UserExists(applicationUser.Id))
-					{
-						return NotFound();
-					}
-					else
-					{
-						throw;
-					}
-				}
-				return RedirectToAction(nameof(Index));
-			}
-			return View();
-		}
-
-		// GET: Admin/Delete/5
-		public ActionResult Delete(int id) { return View(); }
 
 		// POST: Admin/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Delete(int id, IFormCollection collection)
+		public  async Task<IActionResult> Delete(string id, IFormCollection collection)
 		{
 			try
 			{
-				// TODO: Add delete logic here
-
+				var user = await _userManager.FindByIdAsync(id);
+				await _userManager.DeleteAsync(user);
 				return RedirectToAction(nameof(Index));
 			}
 			catch { return View(); }

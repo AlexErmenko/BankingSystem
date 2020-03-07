@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Infrastructure.Identity;
 
-namespace Web.ViewModels
+namespace Web.ViewModels.Admin
 {
 	public class UserViewModel
 	{
