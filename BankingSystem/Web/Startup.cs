@@ -46,6 +46,7 @@ namespace Web
 			CreateIdentityIfNotCreated(services);
 
 			services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
+			services.AddTransient(typeof(IBankAccountRepository), typeof(BankAccountEfRepository));
 
 
 			services.AddDbContext<ApplicationDbContext>(options =>
