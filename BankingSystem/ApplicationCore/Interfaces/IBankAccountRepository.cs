@@ -14,8 +14,7 @@ namespace ApplicationCore.Interfaces
 		IQueryable<BankAccount> Accounts { get; }
 
 		void SaveAccount(BankAccount account);
-		void DeleteAccount(int       accountId);
+		void DeleteAccount(int       idAccount);
 		void CloseAccount(int        idAccount);
-		void RemoveAccount(int       idAccount);
 	}
 }
