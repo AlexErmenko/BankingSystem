@@ -25,22 +25,22 @@ namespace Infrastructure.Identity
 			var adminUser     = new ApplicationUser {UserName = adminUserName, Email = adminUserName};
 			await userManager.CreateAsync(adminUser, AuthorizationConstants.DEFAULT_PASSWORD);
 
-			//Вот из за этого у нас есть админ!
-			//!TODO: Мы создали этого пользователя и сохранили в БД
-//После чего мы вытягиваем его из БД но уже со сгенерированным Id
-			adminUser = await userManager.FindByNameAsync(adminUserName);
 
+			defaultUser = await userManager.FindByNameAsync(defaultUserName);
+			adminUser = await userManager.FindByNameAsync(adminUserName);
 
 			var managerUserName = "manager@gmail.com";
 			var managerUser     = new ApplicationUser {UserName = managerUserName, Email = managerUserName};
 			await userManager.CreateAsync(managerUser, AuthorizationConstants.DEFAULT_PASSWORD);
-			defaultUser = await userManager.FindByNameAsync(defaultUserName);
-			adminUser = await userManager.FindByNameAsync(adminUserName);
+			//Вот из за этого у нас есть админ!
+			//!TODO: Мы создали этого пользователя и сохранили в БД
+			//После чего мы вытягиваем его из БД но уже со сгенерированным Id
 			managerUser = await userManager.FindByNameAsync(managerUserName);
 
-			await userManager.AddToRoleAsync(defaultUser, AuthorizationConstants.Roles.CLIENT);
-			await userManager.AddToRoleAsync(managerUser, AuthorizationConstants.Roles.MANAGER);
-			await userManager.AddToRoleAsync(adminUser, AuthorizationConstants.Roles.ADMINISTRATORS);
+			
+			
+
+			
 		}
 	}
 }

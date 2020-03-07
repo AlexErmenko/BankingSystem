@@ -27,7 +27,7 @@ namespace Web
 	//Не забываем поставить свой сервер в appsettings
 	//dotnet ef database update -c bankingsystemcontext  -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 	//Restore Identity
-	//dotnet ef database update -c applicationbbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
+	//dotnet ef database update -c applicationdbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
 
 	//Коменда для добавление миграции для осн. БД. 

@@ -11,6 +11,7 @@ namespace ApplicationCore.Interfaces
 		Task<List<T>> GetAll();
 		Task          AddAsync(T    entity);
 		Task          UpdateAsync (T entity);
+		Task          UpdateUserAsync (T entity);
 		Task          DeleteAsync (T entity);
 	}
 }

@@ -17,18 +17,15 @@ namespace Web.Controllers
 {	
 	public class AdminController : Controller
 	{
-		private UserManager<ApplicationUser> _userManager;
-		// private IAsyncRepository<ApplicationUser> _userRepository;
-		// private ApplicationDbContext _context;
-	
+		private readonly UserManager<ApplicationUser> _userManager;
+		private readonly ApplicationDbContext _context;
+		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
 
-		public AdminController(UserManager<ApplicationUser> userManager)
+		public AdminController(UserManager<ApplicationUser> userManager,  ApplicationDbContext context)
 		{
 			_userManager = userManager;
-			// _userRepository = userRepository;
-			// _context = context;
-
-
+			_context = context;
+			
 		}
 
 		// GET: Admin
@@ -92,7 +89,7 @@ namespace Web.Controllers
 		}
 
 		// GET: Admin/Edit/5
-		public async Task<IActionResult> Edit(string? id)
+		public async Task<IActionResult> Edit(string id)
 		{
 			if (id == null)
 			{
@@ -110,7 +107,8 @@ namespace Web.Controllers
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public  async Task<IActionResult> Edit(string? id, IFormCollection collection, [Bind("Id,UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
+		public  async Task<IActionResult> Edit(string id, [Bind("Id,UserName,Email,PhoneNumber")]
+																	ApplicationUser applicationUser)
 		{
 			if (id != applicationUser.Id)
 			{
@@ -118,8 +116,21 @@ namespace Web.Controllers
 			}
 			if (ModelState.IsValid)
 			{
-				try {await _userManager.UpdateAsync(applicationUser); }
-				catch (DbUpdateConcurrencyException) { return NotFound(applicationUser);}
+				try
+				{
+					await _userManager.UpdateAsync(applicationUser);
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					if (!UserExists(applicationUser.Id))
+					{
+						return NotFound();
+					}
+					else
+					{
+						throw;
+					}
+				}
 				return RedirectToAction(nameof(Index));
 			}
 			return View();

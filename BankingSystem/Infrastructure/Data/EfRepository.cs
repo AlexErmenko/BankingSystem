@@ -13,8 +13,13 @@ namespace Infrastructure.Data
 	public class EfRepository<T> : IAsyncRepository<T> where T : class
 	{
 		protected readonly BankingSystemContext Context;
+		private readonly ApplicationDbContext _context;
 
-		public EfRepository(BankingSystemContext context) { Context = context; }
+		public EfRepository(BankingSystemContext context, ApplicationDbContext usContext)
+		{
+			Context = context;
+			_context = usContext;
+		}
 
 		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
 		public async Task<T> GetById(string id) { return await Context.Set<T>().FindAsync(id); }
@@ -31,6 +36,11 @@ namespace Infrastructure.Data
 		{
 			Context.Entry(entity).State = EntityState.Modified;
 			await Context.SaveChangesAsync();
+		}
+		public async Task UpdateUserAsync(T entity)
+		{
+			_context.Entry(entity).State = EntityState.Modified;
+			await _context.SaveChangesAsync();
 		}
 
 
