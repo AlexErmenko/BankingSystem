@@ -463,13 +463,10 @@ F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm\nat
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Edit.cshtml.g.cs
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
@@ -684,7 +681,6 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Delete.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
@@ -903,3 +899,7 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs

@@ -31,7 +31,7 @@ namespace Web.Controllers
 		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
 		
 		// GET: Admin
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> ManagerList()
 		{
 			//Так читабельниее
 			if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
@@ -60,12 +60,12 @@ namespace Web.Controllers
 		public ActionResult Details(int id) { return View(); }
 
 		// GET: Admin/Create
-		public ActionResult Create() { return View(); }
+		public ActionResult AddManager() { return View(); }
 
 		// POST: Admin/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
+		public async Task<IActionResult> AddManager([Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
 		{
 			var user = new ApplicationUser
 			{
@@ -79,11 +79,11 @@ namespace Web.Controllers
 			// user = await _userManager.FindByNameAsync(applicationUser.UserName);
 
 
-			return RedirectToAction(nameof(Index));
+			return RedirectToAction(nameof(ManagerList));
 		}
 
 		// GET: Admin/Edit/5
-		public async Task<IActionResult> Edit(string id)
+		public async Task<IActionResult> EditManager(string id)
 		{
 			// if (id == null)
 			// {
@@ -108,7 +108,7 @@ namespace Web.Controllers
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(EditUserViewModel applicationUser)
+		public async Task<IActionResult> EditManager(EditUserViewModel applicationUser)
 		{
 			// if (applicationUser ==null)
 			// {
@@ -146,7 +146,7 @@ namespace Web.Controllers
 
 					var result = await _userManager.UpdateAsync(user);
 					if (result.Succeeded)
-						return RedirectToAction("Index");
+						return RedirectToAction("ManagerList");
 					foreach (var error in result.Errors) ModelState.AddModelError(string.Empty, error.Description);
 				}
 			}
@@ -155,7 +155,7 @@ namespace Web.Controllers
 		}
 
 		// GET: Admin/Delete/5
-		public async Task<IActionResult> Delete(string id)
+		public async Task<IActionResult> DeleteManager(string id)
 		{
 			if (id == null) return NotFound();
 
@@ -168,13 +168,13 @@ namespace Web.Controllers
 		// POST: Admin/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Delete(string id, IFormCollection collection)
+		public async Task<IActionResult> DeleteManager(string id, IFormCollection collection)
 		{
 			try
 			{
 				var user = await _userManager.FindByIdAsync(id);
 				await _userManager.DeleteAsync(user);
-				return RedirectToAction(nameof(Index));
+				return RedirectToAction(nameof(ManagerList));
 			}
 			catch { return View(); }
 		}
