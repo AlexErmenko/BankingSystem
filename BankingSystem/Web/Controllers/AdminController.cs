@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.Specifications;
 using Infrastructure;
 using Infrastructure.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +15,8 @@ using Web.ViewModels.Admin;
 
 namespace Web.Controllers
 {
+	
+	[Authorize(Roles = AuthorizationConstants.Roles.ADMINISTRATORS)]
 	public class AdminController : Controller
 	{
 		private readonly ApplicationDbContext         _context;
@@ -24,7 +29,7 @@ namespace Web.Controllers
 		}
 
 		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
-
+		
 		// GET: Admin
 		public async Task<IActionResult> Index()
 		{
@@ -71,7 +76,7 @@ namespace Web.Controllers
 
 			await _userManager.CreateAsync(user, AuthorizationConstants.DEFAULT_PASSWORD);
 			await _userManager.AddToRoleAsync(user, AuthorizationConstants.Roles.MANAGER);
-			user = await _userManager.FindByNameAsync(applicationUser.UserName);
+			// user = await _userManager.FindByNameAsync(applicationUser.UserName);
 
 
 			return RedirectToAction(nameof(Index));

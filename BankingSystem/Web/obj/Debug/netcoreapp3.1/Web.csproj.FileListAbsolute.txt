@@ -406,7 +406,6 @@ F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.outpu
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currencies\Index.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -902,3 +901,5 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
