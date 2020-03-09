@@ -33,7 +33,7 @@ namespace Web.Controllers
 		{
 			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson    = await _legalPersonRepository.GetById(idClient);
-				
+
 			return View(new CreateClientAccountViewModel
 			{
 				PhysicalPerson = physicalPerson, LegalPerson = legalPerson, ReturnUrl = "/"

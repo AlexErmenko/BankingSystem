@@ -13,18 +13,17 @@ namespace Web.Services
 	{
 		private readonly IAsyncRepository<Currency> _currencyRepository;
 
-		private ILogger<CurrencyViewModelSerivce> Logger { get; set; }
-
 		public CurrencyViewModelSerivce(IAsyncRepository<Currency> repository, ILogger<CurrencyViewModelSerivce> logger)
 		{
 			_currencyRepository = repository;
-			Logger = logger;
+			Logger              = logger;
 		}
+
+		private ILogger<CurrencyViewModelSerivce> Logger { get; }
 
 		public async Task<List<CurrencyViewModel>> GetCurrencyRate()
 		{
-			
-			Logger.LogInformation($"{nameof(GetCurrencyRate)} called" );
+			Logger.LogInformation($"{nameof(GetCurrencyRate)} called");
 
 			var specification = new CurrencyWithRateSpecification();
 			var listCurrency  = await _currencyRepository.ListAsync(specification);
@@ -33,7 +32,7 @@ namespace Web.Services
 			foreach (var currency in listCurrency)
 			{
 				var lastUpdate = currency.ExchangeRates.Last();
-				var viewModel = new CurrencyViewModel()
+				var viewModel = new CurrencyViewModel
 				{
 					Id       = currency.Id,
 					Name     = currency.ShortName,
@@ -42,9 +41,9 @@ namespace Web.Services
 				};
 				list.Add(viewModel);
 			}
+
 			Logger.LogInformation($"Was returned {list.Count} currency view models.");
 			return list;
 		}
-
 	}
 }

@@ -1,28 +1,17 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ApplicationCore.Dto;
-using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
-using ApplicationCore.Specifications;
-using Infrastructure;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Web.Services;
 
 namespace Web.Controllers
 {
-	
-
 	public class CurrencyController : Controller
 	{
+		private readonly CurrencyViewModelSerivce _currencyViewModelSerivce;
+
 		public CurrencyController(CurrencyViewModelSerivce currencyViewModelSerivce)
 		{
 			_currencyViewModelSerivce = currencyViewModelSerivce;
 		}
-
-		private readonly CurrencyViewModelSerivce _currencyViewModelSerivce;
 
 
 		public async Task<IActionResult> GetInfo()
@@ -33,11 +22,6 @@ namespace Web.Controllers
 
 
 		// GET
-		public async Task<IActionResult> Index()
-		{
-
-			
-			return View();
-		}
+		public async Task<IActionResult> Index() { return View(); }
 	}
 }

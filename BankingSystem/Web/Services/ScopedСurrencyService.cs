@@ -29,13 +29,11 @@ namespace Web.Services
 		{
 			while (!stoppingToken.IsCancellationRequested)
 			{
-				var rate = _context.ExchangeRates.ToList().Last();
-				DateTime value = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}");
+				var rate  = _context.ExchangeRates.ToList().Last();
+				var value = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}");
 
 				if (!rate.DateRate.Equals(value))
 				{
-
-
 					var array = await LoadJson().ConfigureAwait(continueOnCapturedContext: true);
 
 					var dtos = array.Select(it => new CurrencyDto

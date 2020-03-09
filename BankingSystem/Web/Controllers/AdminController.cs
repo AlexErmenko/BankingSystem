@@ -12,6 +12,9 @@ using Web.ViewModels.Admin;
 
 namespace Web.Controllers
 {
+	//Настроить маршрутизацию
+	//Отрисовать View 
+	//Проверка на Admin
 	public class AdminController : Controller
 	{
 		private readonly ApplicationDbContext         _context;

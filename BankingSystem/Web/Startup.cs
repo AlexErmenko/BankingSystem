@@ -47,7 +47,6 @@ namespace Web
 
 			services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
 
-			
 
 			services.AddTransient(typeof(IBankAccountRepository), typeof(BankAccountEfRepository));
 			services.AddScoped<CurrencyViewModelSerivce>();
