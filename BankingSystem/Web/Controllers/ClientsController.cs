@@ -1,21 +1,33 @@
 ﻿using System.Linq;
+using System.Reflection.Metadata;
 using System.Threading.Tasks;
 using ApplicationCore.Entity;
+using ApplicationCore.Interfaces;
+using ApplicationCore.Specifications;
 using Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Web.Controllers
 {
+	[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
 	public class ClientsController : Controller
 	{
-		private readonly BankingSystemContext _context;
-
+		private IAsyncRepository<Client> Repository { get; set; }
+		
 		//TODO: Заменить на репозиторий
-		public ClientsController(BankingSystemContext context) { _context = context; }
+		public ClientsController(IAsyncRepository<Client> repository)
+		{
+			Repository = repository;
+		}
 
 		// GET: Clients
-		public async Task<IActionResult> Index() { return View(await _context.Clients.ToListAsync()); }
+		public async Task<IActionResult> Index()
+		{
+			var task = await Repository.GetAll();
+			return View(task);
+		}
 
 		// GET: Clients/Create
 		public IActionResult Create() { return View(); }
@@ -28,8 +40,7 @@ namespace Web.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				_context.Add(client);
-				await _context.SaveChangesAsync();
+				await Repository.AddAsync(client);
 				return RedirectToAction(nameof(Index));
 			}
 
@@ -37,11 +48,9 @@ namespace Web.Controllers
 		}
 
 		// GET: Clients/Edit/5
-		public async Task<IActionResult> Edit(int? id)
+		public async Task<IActionResult> Edit(int id)
 		{
-			if (id == null) return NotFound();
-
-			var client = await _context.Clients.FindAsync(id);
+			var client = await Repository.GetById(id);
 			if (client == null) return NotFound();
 			return View(client);
 		}
@@ -58,8 +67,7 @@ namespace Web.Controllers
 			{
 				try
 				{
-					_context.Update(client);
-					await _context.SaveChangesAsync();
+					await Repository.UpdateAsync(client);
 				}
 				catch (DbUpdateConcurrencyException)
 				{
@@ -75,12 +83,9 @@ namespace Web.Controllers
 		}
 
 		// GET: Clients/Delete/5
-		public async Task<IActionResult> Delete(int? id)
+		public async Task<IActionResult> Delete(int id)
 		{
-			if (id == null) return NotFound();
-
-			var client = await _context.Clients
-									   .FirstOrDefaultAsync(m => m.Id == id);
+			var client = await Repository.GetById(id);
 			if (client == null) return NotFound();
 
 			return View(client);
@@ -92,12 +97,14 @@ namespace Web.Controllers
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> DeleteConfirmed(int id)
 		{
-			var client = await _context.Clients.FindAsync(id);
-			_context.Clients.Remove(client);
-			await _context.SaveChangesAsync();
+			var client = await Repository.GetById(id);
+			await Repository.DeleteAsync(client);
 			return RedirectToAction(nameof(Index));
 		}
 
-		private bool ClientExists(int id) { return _context.Clients.Any(e => e.Id == id); }
+		private bool ClientExists(int id)
+		{
+			return Repository.GetAll().Result.Any(e => e.Id == id);
+		}
 	}
 }
