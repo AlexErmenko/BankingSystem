@@ -11,19 +11,15 @@ namespace Web.Controllers
 {
 	public class BankAccountController : Controller
 	{
-		private readonly BankingSystemContext             _bankingSystemContext;
+		private readonly IBankAccountRepository _bankAccountRepository;
 		private readonly IAsyncRepository<LegalPerson>    _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
-		private          IAsyncRepository<BankAccount>    _bankAccountRepository;
 
 
-		public BankAccountController(IAsyncRepository<BankAccount>    bankAccountRepositoryAccount,
-									 BankingSystemContext             bankingSystemCtx,
-									 IAsyncRepository<PhysicalPerson> physicalPersonRepo,
-									 IAsyncRepository<LegalPerson>    legalPersonRepo)
+		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo, IAsyncRepository<LegalPerson>    legalPersonRepo
+								   , IBankAccountRepository bankAccountRepo)
 		{
-			_bankAccountRepository    = bankAccountRepositoryAccount;
-			_bankingSystemContext     = bankingSystemCtx;
+			_bankAccountRepository = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
 			_legalPersonRepository    = legalPersonRepo;
 		}
@@ -56,13 +52,9 @@ namespace Web.Controllers
 		{
 			if (ModelState.IsValid)
 			{
+				//сохранение счета
 				var account = createClientAccountViewModel.Account;
-				var idCurrency = _bankingSystemContext
-								 .Currencies.FirstOrDefault(c => c.Id == account.IdCurrency)?.Name;
-				//!TODO: Почему просто руками не создать аккаунт?
-				if (idCurrency != null)
-					_bankingSystemContext.Database.ExecuteSqlRaw($@"EXEC bank_operations.dbo.CreateAccount 
-                        @id_client = {account.IdClient}, @account_type = {account.AccountType}, @currency = {idCurrency}, @amount = 0");
+				_bankAccountRepository.SaveAccount(account);
 			}
 
 			return View();
@@ -75,8 +67,7 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public IActionResult BankAccountClose(int idAccount)
 		{
-			//TODO: перепиши на классы
-			_bankingSystemContext.Database.ExecuteSqlRaw($@"EXEC CloseAccount @idClient = {idAccount}");
+			_bankAccountRepository.CloseAccount(idAccount);
 
 			return View("Index");
 		}
@@ -89,8 +80,7 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public IActionResult BankAccountDelete(int idAccount)
 		{
-			_bankingSystemContext
-				.Database.ExecuteSqlRaw($@"EXEC bank_operations.dbo.DeleteAccount @id_account = {idAccount}");
+			_bankAccountRepository.DeleteAccount(idAccount);
 
 			return View("Index");
 		}

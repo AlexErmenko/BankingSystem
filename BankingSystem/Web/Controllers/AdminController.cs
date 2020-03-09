@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
 using Infrastructure;
 using Infrastructure.Identity;
@@ -9,23 +10,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Web.ViewModels;
+using Web.Models;
+using Web.ViewModels.Admin;
 
 namespace Web.Controllers
 {	
 	public class AdminController : Controller
 	{
-		private UserManager<ApplicationUser> _userManager;
-		private ApplicationDbContext _context;
-		private RoleManager<IdentityRole> _roleManager;
-		private SignInManager<ApplicationUser> _signInManager;
+		private readonly UserManager<ApplicationUser> _userManager;
+		private readonly ApplicationDbContext _context;
+		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
 
-		public AdminController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager 
-							 , SignInManager<ApplicationUser> signInManager, ApplicationDbContext context)
+		public AdminController(UserManager<ApplicationUser> userManager,  ApplicationDbContext context)
 		{
 			_userManager = userManager;
-			_roleManager = roleManager;
-			_signInManager = signInManager;
 			_context = context;
 		}
 
@@ -38,37 +36,33 @@ namespace Web.Controllers
 							 select n;
 				var UserVM = new UserViewModel
 				{
-					AppUsers     = await _users.ToListAsync()
+					AppUsers     = await _users.ToListAsync(),
+					ManagerUsers = new List<ApplicationUser>()
 				};
-				var UserVM1= new UserViewModel();
+				
 				foreach (var user in UserVM.AppUsers)
 				{
 					if (await _userManager.IsInRoleAsync(user, "Manager"))
 					{
-						// UserVM1.AppUsers  ;
+						UserVM.ManagerUsers.Add(user);
 					}
 				}
-
-				foreach (var item in UserVM1.AppUsers)
-				{
-					Console.WriteLine(item);
-				}
-				
-
-
-
-
+				// foreach (var item in UserVM.ManagerUsers)
+				// {
+				// 	Console.WriteLine(item);
+				// }
+				return View(UserVM);
 			}
 
+			return NotFound();
 
-			
-
-
-			return View();
 		}
 
 		// GET: Admin/Details/5
-		public ActionResult Details(int id) { return View(); }
+		public ActionResult Details(int id)
+		{
+			return View();
+		}
 
 		// GET: Admin/Create
 		public ActionResult Create() { return View(); }
@@ -90,38 +84,121 @@ namespace Web.Controllers
 			user = await _userManager.FindByNameAsync(applicationUser.UserName);
 
 
-			return View(applicationUser);
+			return RedirectToAction(nameof(Index));
 		}
 
 		// GET: Admin/Edit/5
-		public ActionResult Edit(int id) { return View(); }
+		public async Task<IActionResult> Edit(string id)
+		{
+			// if (id == null)
+			// {
+			// 	return NotFound();
+			// }
+			//
+			// var user = await _userManager.FindByIdAsync(id);
+			// if (user == null)
+			// {
+			// 	return NotFound();
+			// }
+			// return View(user);
+			var user = await _userManager.FindByIdAsync(id);
+			if (user == null)
+			{
+				return NotFound();
+			}
+			EditUserViewModel model = new EditUserViewModel
+			{
+				UserName = user.UserName, 
+				Email = user.Email, 
+				PhoneNumber = user.PhoneNumber
+			};
+			return View(model);
+		}
 
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit(int id, IFormCollection collection)
+		public  async Task<IActionResult> Edit(EditUserViewModel applicationUser)
 		{
-			try
-			{
-				// TODO: Add update logic here
 
-				return RedirectToAction(nameof(Index));
+			// if (applicationUser ==null)
+			// {
+			// 	return NotFound();
+			// }
+			// if (ModelState.IsValid)
+			// {
+			// 	try
+			// 	{
+			//
+			// 		await _userManager.UpdateAsync(applicationUser);
+			// 	}
+			// 	catch (DbUpdateConcurrencyException)
+			// 	{
+			// 		if (!UserExists(applicationUser.Id))
+			// 		{
+			// 			return NotFound();
+			// 		}
+			// 		else
+			// 		{
+			// 			throw;
+			// 		}
+			// 	}
+			// 	return RedirectToAction(nameof(Index));
+			// }
+			// return View(applicationUser);
+			if (ModelState.IsValid)
+			{
+				var user = await _userManager.FindByIdAsync(applicationUser.Id);
+				if(user !=null)
+				{
+					user.Email    = applicationUser.Email;
+					user.UserName = applicationUser.UserName;
+					user.PhoneNumber     = applicationUser.PhoneNumber;
+                     
+					var result = await _userManager.UpdateAsync(user);
+					if (result.Succeeded)
+					{
+						return RedirectToAction("Index");
+					}
+					else
+					{
+						foreach (var error in result.Errors)
+						{
+							ModelState.AddModelError(string.Empty, error.Description);
+						}
+					}
+				}
 			}
-			catch { return View(); }
+			return View(applicationUser);
 		}
 
 		// GET: Admin/Delete/5
-		public ActionResult Delete(int id) { return View(); }
+		public async Task<IActionResult> Delete(string id)
+		{
+			if (id == null)
+			{
+				return NotFound();
+			}
+
+			var user = await _userManager.FindByIdAsync(id);
+			if (user == null)
+			{
+				return NotFound();
+			}
+
+			return View(user);
+			
+		}
 
 		// POST: Admin/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Delete(int id, IFormCollection collection)
+		public  async Task<IActionResult> Delete(string id, IFormCollection collection)
 		{
 			try
 			{
-				// TODO: Add delete logic here
-
+				var user = await _userManager.FindByIdAsync(id);
+				await _userManager.DeleteAsync(user);
 				return RedirectToAction(nameof(Index));
 			}
 			catch { return View(); }

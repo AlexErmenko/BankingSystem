@@ -44,3 +44,18 @@ C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+F:\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
+F:\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
