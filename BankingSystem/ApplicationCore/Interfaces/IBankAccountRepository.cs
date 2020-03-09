@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using ApplicationCore.Entity;
 
 namespace ApplicationCore.Interfaces
 {
 	/// <summary>
-	/// Интерфейс репозитория счетов клиентов
+	///     Интерфейс репозитория счетов клиентов
 	/// </summary>
 	public interface IBankAccountRepository
 	{

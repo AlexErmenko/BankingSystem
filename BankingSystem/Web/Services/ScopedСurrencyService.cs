@@ -1,12 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using ApplicationCore.Dto;
 using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
+using Infrastructure;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 
 namespace Web.Services
@@ -16,70 +16,77 @@ namespace Web.Services
 	/// </summary>
 	public class ScopedСurrencyService : IScopedСurrencyService
 	{
-		private readonly IAsyncRepository<Currency>     _currencyRepository;
-		private readonly IAsyncRepository<ExchangeRate> _exchangeRepository;
-		private          List<Currency>                 _list;
+		private readonly BankingSystemContext           _context;
+		private readonly ILogger<ScopedСurrencyService> _logger;
 
-
-		public ScopedСurrencyService(IAsyncRepository<Currency>     currencyRepository,
-									 IAsyncRepository<ExchangeRate> exchangeRepository)
+		public ScopedСurrencyService(BankingSystemContext context, ILogger<ScopedСurrencyService> logger)
 		{
-			_currencyRepository = currencyRepository;
-			_exchangeRepository = exchangeRepository;
+			_context = context;
+			_logger  = logger;
 		}
-
 
 		public async Task DoWork(CancellationToken stoppingToken)
 		{
 			while (!stoppingToken.IsCancellationRequested)
 			{
-				var array = await LoadJson().ConfigureAwait(continueOnCapturedContext: true);
+				var rate = _context.ExchangeRates.ToList().Last();
+				DateTime value = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}");
 
-				var exchangeRates = await _exchangeRepository.GetAll();
-
-
-				var dtos = array.Select(it => new CurrencyDto
+				if (!rate.DateRate.Equals(value))
 				{
-					ShortName = (string) it["ccy"],
-					Buy       = (decimal) it["buy"],
-					Sale      = (decimal) it["sale"]
-				}).ToList();
 
 
-				foreach (var dto in dtos)
-				{
-					var currency                 = _list.FirstOrDefault(it => it.ShortName.Equals(dto.ShortName));
-					if (currency != null) dto.Id = currency.Id;
-				}
+					var array = await LoadJson().ConfigureAwait(continueOnCapturedContext: true);
 
-				try
-				{
-					foreach (var dto in dtos)
+					var dtos = array.Select(it => new CurrencyDto
 					{
-						Console.WriteLine(dto.Id);
-						Console.WriteLine(dto.ShortName);
-						Console.WriteLine(dto.Buy);
-						Console.WriteLine(dto.Sale);
-						/*var rate = new ExchangeRate
-						{
-							IdCurrency = dto.Id,
-							DateRate   = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}"),
-							RateBuy    = dto.Buy,
-							RateSale   = dto.Sale
-						};
+						ShortName = (string) it["ccy"],
+						Buy       = (decimal) it["buy"],
+						Sale      = (decimal) it["sale"]
+					}).ToList();
 
-						await ExchangeRepository.AddAsync(rate).ConfigureAwait(continueOnCapturedContext: true);*/
+					_logger.Log(LogLevel.Information, "Dtos" + dtos);
+
+					try
+					{
+						_logger.Log(LogLevel.Information, "Start saving");
+						foreach (var dto in dtos)
+						{
+							var firstOrDefault =
+								_context.Currencies.FirstOrDefault(currency =>
+																	   currency.ShortName.Equals(dto.ShortName));
+
+							_logger.Log(LogLevel.Information, $"Currency {firstOrDefault}");
+
+							var exchangeRate = new ExchangeRate
+							{
+								RateBuy  = dto.Buy,
+								RateSale = dto.Sale,
+								DateRate = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}")
+							};
+
+							_logger.Log(LogLevel.Information, $"Rate {exchangeRate}");
+
+
+							if (firstOrDefault != null)
+							{
+								firstOrDefault.ExchangeRates.Add(exchangeRate);
+								_context.SaveChanges();
+							}
+						}
+
+						_logger.Log(LogLevel.Information, "End saving");
+					}
+					catch (Exception e)
+					{
+						Console.WriteLine(e);
+						Console.WriteLine("Error from service");
+						_logger.Log(LogLevel.Error, e.Message);
+						throw;
 					}
 				}
-				catch (Exception e)
-				{
-					Console.WriteLine(e);
-					throw;
-				}
 
-				// !TODO : Implement save to data base value!!
-				//Delay to repeat 1 hour
-				await Task.Delay(millisecondsDelay: 3_600_000, stoppingToken);
+				await Task.Delay(millisecondsDelay: 86_400_000, stoppingToken);
 			}
 		}
 
@@ -93,7 +100,6 @@ namespace Web.Services
 			var response = await
 							   client.DownloadStringTaskAsync(new
 																  Uri("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"));
-			_list = await _currencyRepository.GetAll().ConfigureAwait(continueOnCapturedContext: true);
 			var jArray = JArray.Parse(response);
 
 			return jArray;

@@ -11,11 +11,6 @@
       "provider": "unpkg",
       "library": "react@16.13.0",
       "destination": "wwwroot/lib/react/"
-    },
-    {
-      "provider": "unpkg",
-      "library": "@material-ui/core@4.9.5",
-      "destination": "wwwroot/lib/@material-ui/core/"
     }
   ]
 }

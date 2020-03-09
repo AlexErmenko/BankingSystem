@@ -1,6 +1,6 @@
 ﻿namespace ApplicationCore.Specifications
 {
-	public class AuthorizationConstants
+	public static class AuthorizationConstants
 	{
 		public const string DEFAULT_PASSWORD = "Pass@word1";
 

@@ -1,52 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
 using Infrastructure;
 using Infrastructure.Identity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Web.Models;
 using Web.ViewModels.Admin;
 
 namespace Web.Controllers
-{	
+{
+	
+	[Authorize(Roles = AuthorizationConstants.Roles.ADMINISTRATORS)]
 	public class AdminController : Controller
 	{
+		private readonly ApplicationDbContext         _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		private readonly ApplicationDbContext _context;
-		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
 
-		public AdminController(UserManager<ApplicationUser> userManager,  ApplicationDbContext context)
+		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context)
 		{
 			_userManager = userManager;
-			_context = context;
+			_context     = context;
 		}
 
+		private bool UserExists(string id) { return _context.Users.Any(e => e.Id == id); }
+		
 		// GET: Admin
 		public async Task<IActionResult> Index()
 		{
-			if (User.IsInRole("Administrators"))
+			//Так читабельниее
+			if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
 			{
 				var _users = from n in _userManager.Users
 							 select n;
 				var UserVM = new UserViewModel
 				{
-					AppUsers     = await _users.ToListAsync(),
-					ManagerUsers = new List<ApplicationUser>()
+					AppUsers = await _users.ToListAsync(), ManagerUsers = new List<ApplicationUser>()
 				};
-				
+
 				foreach (var user in UserVM.AppUsers)
-				{
 					if (await _userManager.IsInRoleAsync(user, "Manager"))
-					{
 						UserVM.ManagerUsers.Add(user);
-					}
-				}
 				// foreach (var item in UserVM.ManagerUsers)
 				// {
 				// 	Console.WriteLine(item);
@@ -55,14 +54,10 @@ namespace Web.Controllers
 			}
 
 			return NotFound();
-
 		}
 
 		// GET: Admin/Details/5
-		public ActionResult Details(int id)
-		{
-			return View();
-		}
+		public ActionResult Details(int id) { return View(); }
 
 		// GET: Admin/Create
 		public ActionResult Create() { return View(); }
@@ -70,18 +65,18 @@ namespace Web.Controllers
 		// POST: Admin/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser )
+		public async Task<IActionResult> Create([Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
 		{
-			var user = new ApplicationUser()
+			var user = new ApplicationUser
 			{
 				UserName    = applicationUser.UserName,
 				Email       = applicationUser.Email,
-				PhoneNumber = applicationUser.PhoneNumber,
+				PhoneNumber = applicationUser.PhoneNumber
 			};
 
 			await _userManager.CreateAsync(user, AuthorizationConstants.DEFAULT_PASSWORD);
 			await _userManager.AddToRoleAsync(user, AuthorizationConstants.Roles.MANAGER);
-			user = await _userManager.FindByNameAsync(applicationUser.UserName);
+			// user = await _userManager.FindByNameAsync(applicationUser.UserName);
 
 
 			return RedirectToAction(nameof(Index));
@@ -102,15 +97,10 @@ namespace Web.Controllers
 			// }
 			// return View(user);
 			var user = await _userManager.FindByIdAsync(id);
-			if (user == null)
+			if (user == null) return NotFound();
+			var model = new EditUserViewModel
 			{
-				return NotFound();
-			}
-			EditUserViewModel model = new EditUserViewModel
-			{
-				UserName = user.UserName, 
-				Email = user.Email, 
-				PhoneNumber = user.PhoneNumber
+				UserName = user.UserName, Email = user.Email, PhoneNumber = user.PhoneNumber
 			};
 			return View(model);
 		}
@@ -118,9 +108,8 @@ namespace Web.Controllers
 		// POST: Admin/Edit/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public  async Task<IActionResult> Edit(EditUserViewModel applicationUser)
+		public async Task<IActionResult> Edit(EditUserViewModel applicationUser)
 		{
-
 			// if (applicationUser ==null)
 			// {
 			// 	return NotFound();
@@ -149,51 +138,37 @@ namespace Web.Controllers
 			if (ModelState.IsValid)
 			{
 				var user = await _userManager.FindByIdAsync(applicationUser.Id);
-				if(user !=null)
+				if (user != null)
 				{
-					user.Email    = applicationUser.Email;
-					user.UserName = applicationUser.UserName;
-					user.PhoneNumber     = applicationUser.PhoneNumber;
-                     
+					user.Email       = applicationUser.Email;
+					user.UserName    = applicationUser.UserName;
+					user.PhoneNumber = applicationUser.PhoneNumber;
+
 					var result = await _userManager.UpdateAsync(user);
 					if (result.Succeeded)
-					{
 						return RedirectToAction("Index");
-					}
-					else
-					{
-						foreach (var error in result.Errors)
-						{
-							ModelState.AddModelError(string.Empty, error.Description);
-						}
-					}
+					foreach (var error in result.Errors) ModelState.AddModelError(string.Empty, error.Description);
 				}
 			}
+
 			return View(applicationUser);
 		}
 
 		// GET: Admin/Delete/5
 		public async Task<IActionResult> Delete(string id)
 		{
-			if (id == null)
-			{
-				return NotFound();
-			}
+			if (id == null) return NotFound();
 
 			var user = await _userManager.FindByIdAsync(id);
-			if (user == null)
-			{
-				return NotFound();
-			}
+			if (user == null) return NotFound();
 
 			return View(user);
-			
 		}
 
 		// POST: Admin/Delete/5
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public  async Task<IActionResult> Delete(string id, IFormCollection collection)
+		public async Task<IActionResult> Delete(string id, IFormCollection collection)
 		{
 			try
 			{
