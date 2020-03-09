@@ -20,58 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="290421cc-2cef-4be8-a562-6c487a38b02c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/Data/Migrations/20200305012609_InitMigration.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/Data/Migrations/20200305012609_InitMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/Data/Migrations/BankingSystemContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/bin/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/bin/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/bin/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/bin/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Infrastructure.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Infrastructure.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Infrastructure/obj/Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../../Infrastructure/obj/Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Controllers/ClientConvertCurrnectController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Controllers/CurrenciesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Controllers/CurrenciesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Views/Currencies/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../Views/Currencies/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Web.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Web.csproj.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../bin/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bundleconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../bundleconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../compilerconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../compilerconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Currencies/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Currencies/Index.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Release/netcoreapp3.1/Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Release/netcoreapp3.1/Web.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Web.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Web.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../obj/Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../obj/Web.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wwwroot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wwwroot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/CurrencyConvertor.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/CurrencyConvertor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/CurrencyConvertor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/CurrencyConvertor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/site.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/site.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/site.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +51,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1YkOJCaqkv3H4AzvGeeS1jDwvcr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -99,10 +67,16 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,6 +90,7 @@
       <updated>1583483051173</updated>
       <workItem from="1583483052382" duration="1322000" />
       <workItem from="1583503728260" duration="913000" />
+      <workItem from="1583517170565" duration="1846000" />
     </task>
     <servers />
   </component>
@@ -133,5 +108,20 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="491" y="164" key="SettingsEditor" timestamp="1583517247602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="491" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583517247602" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+        <item name="wwwroot" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
