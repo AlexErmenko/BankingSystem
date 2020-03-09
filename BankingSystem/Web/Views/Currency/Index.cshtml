@@ -1,11 +1,16 @@
-﻿@{
+﻿@using Infrastructure.Identity
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
     ViewData["Title"] = "Home Page";
 }
 <h1>
     Смена валюты для аккаунта
 </h1>
-<div id="content">
-
+<div>
+    @User.Identity.Name
+    @User.Identity.IsAuthenticated
 </div>
 
 @section Scripts {

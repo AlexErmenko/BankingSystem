@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using ApplicationCore.Specifications;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,15 +20,18 @@ namespace Web.Controllers
 		public async Task<IActionResult> GetInfo()
 		{
 			var currencyRate = await _currencyViewModelSerivce.GetCurrencyRate();
+
 			return View(currencyRate);
 		}
 
 
 		// GET
-		[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
+		// [Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
 		public async Task<IActionResult> Index()
 		{
+			var clientAccountViewModels = await _currencyViewModelSerivce.GetClientAccounts(3);
 			
+
 			return View();
 		}
 	}
