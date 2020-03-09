@@ -40,6 +40,12 @@ namespace Web.Controllers
 			});
 		}
 
+
+		public void GetAccounts()
+		{
+			
+		}
+
 		/// <summary>
 		///     Создание счета на основе заполненной формы.
 		/// </summary>

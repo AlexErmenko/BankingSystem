@@ -1,4 +1,6 @@
 ﻿using System.Threading.Tasks;
+using ApplicationCore.Specifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Web.Services;
 
@@ -13,7 +15,7 @@ namespace Web.Controllers
 			_currencyViewModelSerivce = currencyViewModelSerivce;
 		}
 
-
+		[AllowAnonymous]
 		public async Task<IActionResult> GetInfo()
 		{
 			var currencyRate = await _currencyViewModelSerivce.GetCurrencyRate();
@@ -22,6 +24,11 @@ namespace Web.Controllers
 
 
 		// GET
-		public async Task<IActionResult> Index() { return View(); }
+		[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
+		public async Task<IActionResult> Index()
+		{
+			
+			return View();
+		}
 	}
 }
