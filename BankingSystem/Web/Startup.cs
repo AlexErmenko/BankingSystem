@@ -13,8 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
 using React.AspNet;
+using Web.Services;
 
 namespace Web
 {
@@ -46,8 +46,11 @@ namespace Web
 			CreateIdentityIfNotCreated(services);
 
 			services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
-			services.AddTransient(typeof(IBankAccountRepository), typeof(BankAccountEfRepository));
 
+			
+
+			services.AddTransient(typeof(IBankAccountRepository), typeof(BankAccountEfRepository));
+			services.AddScoped<CurrencyViewModelSerivce>();
 
 			services.AddDbContext<ApplicationDbContext>(options =>
 															options.UseSqlServer(Configuration
@@ -64,7 +67,7 @@ namespace Web
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddReact();
 			services.AddJsEngineSwitcher(options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddV8();
-			services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
+			// services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
 		}
 
 
@@ -102,10 +105,7 @@ namespace Web
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
 			// app.UseDefaultFiles();
-			app.UseReact(it =>
-			{
-				
-			});
+			app.UseReact(it => { });
 
 
 			app.UseRouting();
@@ -114,9 +114,10 @@ namespace Web
 			app.UseAuthorization();
 
 
-			app.UseSwagger();
+			/*app.UseSwagger();
 
 			app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); });
+			*/
 
 			app.UseEndpoints(endpoints =>
 			{
