@@ -43,12 +43,13 @@ namespace Web
 		{
 			return Host.CreateDefaultBuilder(args)
 					   .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); })
-					   //Configure background task
-					   .ConfigureServices(services =>
-					   {
-						   services.AddHostedService<ConsumeScopedServiceHostedService>();
-						   services.AddScoped<IScopedСurrencyService, ScopedСurrencyService>();
-					   });
+			//TODO: Uncomment service on Prod
+			//Configure background task
+			.ConfigureServices(services =>
+			{
+				services.AddHostedService<ConsumeScopedServiceHostedService>();
+				services.AddScoped<IScopedСurrencyService, ScopedСurrencyService>();
+			});
 		}
 	}
 }

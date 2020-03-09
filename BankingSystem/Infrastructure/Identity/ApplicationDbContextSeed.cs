@@ -16,7 +16,7 @@ namespace Infrastructure.Identity
 			await roleManager.CreateAsync(new IdentityRole(AuthorizationConstants.Roles.CLIENT));
 
 			var defaultUserName = "demouser@gmail.com";
-			var defaultUser = new ApplicationUser {UserName = defaultUserName, Email = "demouser@gmail.com"};
+			var defaultUser     = new ApplicationUser {UserName = defaultUserName, Email = "demouser@gmail.com"};
 			await userManager.CreateAsync(defaultUser, AuthorizationConstants.DEFAULT_PASSWORD);
 
 
@@ -27,7 +27,7 @@ namespace Infrastructure.Identity
 
 
 			defaultUser = await userManager.FindByNameAsync(defaultUserName);
-			adminUser = await userManager.FindByNameAsync(adminUserName);
+			adminUser   = await userManager.FindByNameAsync(adminUserName);
 
 			var managerUserName = "manager@gmail.com";
 			var managerUser     = new ApplicationUser {UserName = managerUserName, Email = managerUserName};
@@ -36,11 +36,6 @@ namespace Infrastructure.Identity
 			//!TODO: Мы создали этого пользователя и сохранили в БД
 			//После чего мы вытягиваем его из БД но уже со сгенерированным Id
 			managerUser = await userManager.FindByNameAsync(managerUserName);
-
-			
-			
-
-			
 		}
 	}
 }

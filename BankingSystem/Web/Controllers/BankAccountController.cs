@@ -1,25 +1,23 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-using Infrastructure;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Web.Models;
 
 namespace Web.Controllers
 {
 	public class BankAccountController : Controller
 	{
-		private readonly IBankAccountRepository _bankAccountRepository;
+		private readonly IBankAccountRepository           _bankAccountRepository;
 		private readonly IAsyncRepository<LegalPerson>    _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
 
 
-		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo, IAsyncRepository<LegalPerson>    legalPersonRepo
-								   , IBankAccountRepository bankAccountRepo)
+		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
+									 IAsyncRepository<LegalPerson>    legalPersonRepo
+								   , IBankAccountRepository           bankAccountRepo)
 		{
-			_bankAccountRepository = bankAccountRepo;
+			_bankAccountRepository    = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
 			_legalPersonRepository    = legalPersonRepo;
 		}
@@ -35,7 +33,7 @@ namespace Web.Controllers
 		{
 			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson    = await _legalPersonRepository.GetById(idClient);
-
+				
 			return View(new CreateClientAccountViewModel
 			{
 				PhysicalPerson = physicalPerson, LegalPerson = legalPerson, ReturnUrl = "/"

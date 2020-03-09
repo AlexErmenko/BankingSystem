@@ -12,16 +12,16 @@ namespace Infrastructure.Data
 	/// <typeparam name="T"></typeparam>
 	public class EfRepository<T> : IAsyncRepository<T> where T : class
 	{
+		private readonly   ApplicationDbContext _context;
 		protected readonly BankingSystemContext Context;
-		private readonly ApplicationDbContext _context;
 
 		public EfRepository(BankingSystemContext context, ApplicationDbContext usContext)
 		{
-			Context = context;
+			Context  = context;
 			_context = usContext;
 		}
 
-		public async Task<T> GetById(int id) { return await Context.Set<T>().FindAsync(id); }
+		public async Task<T> GetById(int    id) { return await Context.Set<T>().FindAsync(id); }
 		public async Task<T> GetById(string id) { return await Context.Set<T>().FindAsync(id); }
 
 		public async Task<List<T>> GetAll() { return await Context.Set<T>().ToListAsync(); }
@@ -37,6 +37,7 @@ namespace Infrastructure.Data
 			Context.Entry(entity).State = EntityState.Modified;
 			await Context.SaveChangesAsync();
 		}
+
 		public async Task UpdateUserAsync(T entity)
 		{
 			_context.Entry(entity).State = EntityState.Modified;
