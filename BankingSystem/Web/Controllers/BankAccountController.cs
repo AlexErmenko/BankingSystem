@@ -1,25 +1,26 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
+
 using Microsoft.AspNetCore.Mvc;
+
 using Web.Models;
 
 namespace Web.Controllers
 {
 	public class BankAccountController : Controller
 	{
-		private readonly IBankAccountRepository           _bankAccountRepository;
-		private readonly IAsyncRepository<LegalPerson>    _legalPersonRepository;
+		private readonly IBankAccountRepository _bankAccountRepository;
+		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
 
-
-		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
-									 IAsyncRepository<LegalPerson>    legalPersonRepo
-								   , IBankAccountRepository           bankAccountRepo)
+		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo, IAsyncRepository<LegalPerson> legalPersonRepo, IBankAccountRepository bankAccountRepo)
 		{
-			_bankAccountRepository    = bankAccountRepo;
+			_bankAccountRepository = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
-			_legalPersonRepository    = legalPersonRepo;
+			_legalPersonRepository = legalPersonRepo;
 		}
 
 		/// <summary>
@@ -31,20 +32,18 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> CreateClientAccountForm(int idClient)
 		{
-			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
-			var legalPerson    = await _legalPersonRepository.GetById(idClient);
+			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
+			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
 
-			return View(new CreateClientAccountViewModel
+			return View(model: new CreateClientAccountViewModel
 			{
-				PhysicalPerson = physicalPerson, LegalPerson = legalPerson, ReturnUrl = "/"
+				PhysicalPerson = physicalPerson,
+				LegalPerson = legalPerson,
+				ReturnUrl = "/"
 			});
 		}
 
-
-		public void GetAccounts()
-		{
-			
-		}
+		public void GetAccounts() { }
 
 		/// <summary>
 		///     Создание счета на основе заполненной формы.
@@ -54,11 +53,11 @@ namespace Web.Controllers
 		[HttpPost]
 		public IActionResult CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
 		{
-			if (ModelState.IsValid)
+			if(ModelState.IsValid)
 			{
 				//сохранение счета
 				var account = createClientAccountViewModel.Account;
-				_bankAccountRepository.SaveAccount(account);
+				_bankAccountRepository.SaveAccount(account: account);
 			}
 
 			return View();
@@ -71,9 +70,9 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public IActionResult BankAccountClose(int idAccount)
 		{
-			_bankAccountRepository.CloseAccount(idAccount);
+			_bankAccountRepository.CloseAccount(idAccount: idAccount);
 
-			return View("Index");
+			return View(viewName: "Index");
 		}
 
 		//Перед тем, как удалить счет, нужно его закрыть методом BankAccountClose
@@ -84,9 +83,9 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public IActionResult BankAccountDelete(int idAccount)
 		{
-			_bankAccountRepository.DeleteAccount(idAccount);
+			_bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
-			return View("Index");
+			return View(viewName: "Index");
 		}
 	}
 }

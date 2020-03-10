@@ -1,8 +1,10 @@
-﻿namespace Infrastructure.Identity
+﻿using System;
+
+namespace Infrastructure.Identity
 {
 	public class FileModel
 	{
-		public int    Id   { get; set; }
+		public int Id { get; set; }
 		public string Name { get; set; }
 		public string Path { get; set; }
 	}

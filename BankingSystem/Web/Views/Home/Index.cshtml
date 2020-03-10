@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using System
+@{
+	ViewData[index: "Title"] = "Home Page";
 }
 
 <div class="text-center">
@@ -42,13 +43,16 @@
                         Перевод на карточку
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Номер карыт" aria-label="Recipient's
+                        username" aria-describedby="button-addon2">
                         <div class="input-group-append ml-2">
                             <a class="btn btn-outline-secondary" type="button" id="button-addon2">></a>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
     </div>

@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using System
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - Banking</title>
+    <title>@ViewData[index: "Title"] - Banking</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css"/>
 </head>
@@ -23,7 +24,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="BankAccount" asp-action="GetAccounts">Мои счета</a>
                     </li>
@@ -52,6 +53,6 @@
 <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.0/umd/react-dom.development.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
 <script src="~/js/site.min.js" asp-append-version="true"></script>
-@RenderSection("Scripts", required: false)
+@RenderSection(name: "Scripts", required: false)
 </body>
 </html>
