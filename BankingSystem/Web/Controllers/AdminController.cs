@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,6 +10,7 @@ using Infrastructure;
 using Infrastructure.Identity;
 
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -23,11 +25,15 @@ namespace Web.Controllers
 	{
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
+		private IWebHostEnvironment _appEnvironment;
 
-		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context)
+
+		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context,
+									IWebHostEnvironment appEnvironment)
 		{
 			_userManager = userManager;
 			_context = context;
+			_appEnvironment = appEnvironment;
 		}
 
 		private bool UserExists(string id) { return _context.Users.Any(predicate: e => e.Id == id); }
@@ -51,10 +57,6 @@ namespace Web.Controllers
 						UserVM.ManagerUsers.Add(item: user);
 				}
 
-				// foreach (var item in UserVM.ManagerUsers)
-				// {
-				// 	Console.WriteLine(item);
-				// }
 				return View(model: UserVM);
 			}
 
@@ -69,8 +71,10 @@ namespace Web.Controllers
 
 		// POST: Admin/Create
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> AddManager([Bind("UserName,Email,PhoneNumber")] ApplicationUser applicationUser)
+		public async Task<IActionResult> AddManager([Bind("Id,UserName,Email,PhoneNumber")]
+													ApplicationUser applicationUser, IFormFile uploadedFile)
 		{
+			
 			var user = new ApplicationUser
 			{
 				UserName = applicationUser.UserName,
@@ -80,8 +84,22 @@ namespace Web.Controllers
 
 			await _userManager.CreateAsync(user: user, password: AuthorizationConstants.DEFAULT_PASSWORD);
 			await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
+			//Getting new users Id
+			var _user = await _userManager.FindByNameAsync(user.UserName);
+			//Saving file, which we get, of created user
+			if (uploadedFile != null)
+			{
+				string path = "/Files/" + uploadedFile.FileName;
+				using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+				{
+					await uploadedFile.CopyToAsync(fileStream);
+				}
+				FileModel file = new FileModel { Id =_user.Id ,Name = uploadedFile.FileName, Path = path };
+				_context.FileModel.Add(file);
+			}
 
-			// user = await _userManager.FindByNameAsync(applicationUser.UserName);
+			_context.SaveChanges();
+
 
 			return RedirectToAction(actionName: nameof(ManagerList));
 		}
@@ -89,17 +107,6 @@ namespace Web.Controllers
 		// GET: Admin/Edit/5
 		public async Task<IActionResult> EditManager(string id)
 		{
-			// if (id == null)
-			// {
-			// 	return NotFound();
-			// }
-			//
-			// var user = await _userManager.FindByIdAsync(id);
-			// if (user == null)
-			// {
-			// 	return NotFound();
-			// }
-			// return View(user);
 			var user = await _userManager.FindByIdAsync(userId: id);
 			if(user == null) return NotFound();
 
@@ -116,31 +123,6 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> EditManager(EditUserViewModel applicationUser)
 		{
-			// if (applicationUser ==null)
-			// {
-			// 	return NotFound();
-			// }
-			// if (ModelState.IsValid)
-			// {
-			// 	try
-			// 	{
-			//
-			// 		await _userManager.UpdateAsync(applicationUser);
-			// 	}
-			// 	catch (DbUpdateConcurrencyException)
-			// 	{
-			// 		if (!UserExists(applicationUser.Id))
-			// 		{
-			// 			return NotFound();
-			// 		}
-			// 		else
-			// 		{
-			// 			throw;
-			// 		}
-			// 	}
-			// 	return RedirectToAction(nameof(Index));
-			// }
-			// return View(applicationUser);
 			if(ModelState.IsValid)
 			{
 				var user = await _userManager.FindByIdAsync(userId: applicationUser.Id);
@@ -151,6 +133,7 @@ namespace Web.Controllers
 					user.PhoneNumber = applicationUser.PhoneNumber;
 
 					var result = await _userManager.UpdateAsync(user: user);
+
 					if(result.Succeeded)
 						return RedirectToAction(actionName: "ManagerList");
 
