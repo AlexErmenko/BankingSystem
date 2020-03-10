@@ -1,5 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@using System
+@{
+	ViewData[index: "Title"] = "Home Page";
 }
 
 <div class="text-center">
@@ -8,4 +9,51 @@
     >
         Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
     </p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="wallet  card  ">
+
+                <div class="wallet-title">
+                    <b>Кошелёк</b>
+                    <a href="#">Все карточки</a>
+                </div>
+
+                <div class="card m-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки1</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Кнопка1</a>
+                    </div>
+                </div>
+
+
+                <div class="card m-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Название карточки2</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Кнопка2</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="transfer card p-5">
+                <div class="card-body">
+                    <div class="card-title">
+                        Перевод на карточку
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Номер карыт" aria-label="Recipient's
+                        username" aria-describedby="button-addon2">
+                        <div class="input-group-append ml-2">
+                            <a class="btn btn-outline-secondary" type="button" id="button-addon2">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
 </div>

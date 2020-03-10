@@ -1,38 +1,40 @@
-﻿@model Web.ViewModels.Admin.UserViewModel
+﻿@using System
+@model Web.ViewModels.Admin.UserViewModel
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData[index: "Title"] = "Index";
 }
 
 <h1>Страница администратора</h1>
 <h3>Список менеджеров</h3>
 
-<table class="table">
+<table class="table table-bordered">
     <thead>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ManagerUsers[0].UserName)
+            @Html.DisplayNameFor(expression: model => model.ManagerUsers[0].UserName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ManagerUsers[0].Email)
+            @Html.DisplayNameFor(expression: model => model.ManagerUsers[0].Email)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ManagerUsers[0].PhoneNumber)
+            @Html.DisplayNameFor(expression: model => model.ManagerUsers[0].PhoneNumber)
         </th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model.ManagerUsers)
+    @foreach(var item in Model.ManagerUsers)
     {
-        <tr>
+	    <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.UserName)
+                @Html.DisplayFor(expression: modelItem => item.UserName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @Html.DisplayFor(expression: modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PhoneNumber)
+                @Html.DisplayFor(expression: modelItem => item.PhoneNumber)
             </td>
             <td>
                 <a asp-action="EditManager" asp-route-id="@item.Id">Редактировать</a> |

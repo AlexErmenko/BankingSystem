@@ -55,15 +55,16 @@
         this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
         this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
 
-        this.state = {temperature: '', scale: 'c'};
+        this.state = { temperature: "", scale: "c" };
     }
+
     componentDidMount() {
         fetch("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5")
             .then(response => response.json())
             .then(console.log)
             .then(
                 (response) => {
-                    this.setState({courses: response.data});
+                    this.setState({ courses: response.data });
                 },
                 (error) => {
                     console.log(error);
@@ -72,19 +73,19 @@
     }
 
     handleCelsiusChange(temperature) {
-        this.setState({scale: 'c', temperature});
+        this.setState({ scale: "c", temperature });
     }
 
     handleFahrenheitChange(temperature) {
-        this.setState({scale: 'f', temperature});
+        this.setState({ scale: "f", temperature });
     }
 
     render() {
         const scale = this.state.scale;
         const temperature = this.state.temperature;
 
-        const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
-        const fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
+        const celsius = scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
+        const fahrenheit = scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
 
         return (
             <div>
@@ -128,8 +129,8 @@ class CurrencyInput extends React.Component {
 }
 
 const scaleNames = {
-    c: 'Celsius',
-    f: 'Fahrenheit'
+    c: "Celsius",
+    f: "Fahrenheit"
 };
 
 function toCelsius(fahrenheit) {
@@ -143,12 +144,13 @@ function toFahrenheit(celsius) {
 function tryConvert(temperature, convert) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) {
-        return '';
+        return "";
     }
     const output = convert(input);
     const rounded = Math.round(output * 1000) / 1000;
     return rounded.toString();
 }
+
 ReactDOM.render(
     <CurrencyConvertor/>,
     document.getElementById("content"),

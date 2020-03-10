@@ -1,12 +1,12 @@
-﻿'use strict';
+﻿"use strict";
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+var _get = function get(_x, _x2, _x3) { var _again = true; while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined;  } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CurrencyConvertor = (function (_React$Component) {
     _inherits(CurrencyConvertor, _React$Component);
@@ -59,16 +59,16 @@ var CurrencyConvertor = (function (_React$Component) {
     function CurrencyConvertor(props) {
         _classCallCheck(this, CurrencyConvertor);
 
-        _get(Object.getPrototypeOf(CurrencyConvertor.prototype), 'constructor', this).call(this, props);
+        _get(Object.getPrototypeOf(CurrencyConvertor.prototype), "constructor", this).call(this, props);
 
         this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
         this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
 
-        this.state = { temperature: '', scale: 'c' };
+        this.state = { temperature: "", scale: "c" };
     }
 
     _createClass(CurrencyConvertor, [{
-        key: 'componentDidMount',
+        key: "componentDidMount",
         value: function componentDidMount() {
             var _this = this;
 
@@ -81,33 +81,33 @@ var CurrencyConvertor = (function (_React$Component) {
             });
         }
     }, {
-        key: 'handleCelsiusChange',
+        key: "handleCelsiusChange",
         value: function handleCelsiusChange(temperature) {
-            this.setState({ scale: 'c', temperature: temperature });
+            this.setState({ scale: "c", temperature: temperature });
         }
     }, {
-        key: 'handleFahrenheitChange',
+        key: "handleFahrenheitChange",
         value: function handleFahrenheitChange(temperature) {
-            this.setState({ scale: 'f', temperature: temperature });
+            this.setState({ scale: "f", temperature: temperature });
         }
     }, {
-        key: 'render',
+        key: "render",
         value: function render() {
             var scale = this.state.scale;
             var temperature = this.state.temperature;
 
-            var celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
-            var fahrenheit = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
+            var celsius = scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
+            var fahrenheit = scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
 
             return React.createElement(
-                'div',
+                "div",
                 null,
                 React.createElement(CurrencyInput, {
-                    scale: 'c',
+                    scale: "c",
                     temperature: celsius,
                     onTemperatureChange: this.handleCelsiusChange }),
                 React.createElement(CurrencyInput, {
-                    scale: 'f',
+                    scale: "f",
                     temperature: fahrenheit,
                     onTemperatureChange: this.handleFahrenheitChange })
             );
@@ -123,31 +123,31 @@ var CurrencyInput = (function (_React$Component2) {
     function CurrencyInput(props) {
         _classCallCheck(this, CurrencyInput);
 
-        _get(Object.getPrototypeOf(CurrencyInput.prototype), 'constructor', this).call(this, props);
+        _get(Object.getPrototypeOf(CurrencyInput.prototype), "constructor", this).call(this, props);
         this.handleChange = this.handleChange.bind(this);
     }
 
     _createClass(CurrencyInput, [{
-        key: 'handleChange',
+        key: "handleChange",
         value: function handleChange(e) {
             this.props.onTemperatureChange(e.target.value);
         }
     }, {
-        key: 'render',
+        key: "render",
         value: function render() {
             var temperature = this.props.temperature;
             var scale = this.props.scale;
             return React.createElement(
-                'fieldset',
+                "fieldset",
                 null,
                 React.createElement(
-                    'legend',
+                    "legend",
                     null,
-                    'Enter temperature in ',
+                    "Enter temperature in ",
                     scaleNames[scale],
-                    ':'
+                    ":"
                 ),
-                React.createElement('input', { value: temperature,
+                React.createElement("input", { value: temperature,
                     onChange: this.handleChange })
             );
         }
@@ -157,8 +157,8 @@ var CurrencyInput = (function (_React$Component2) {
 })(React.Component);
 
 var scaleNames = {
-    c: 'Celsius',
-    f: 'Fahrenheit'
+    c: "Celsius",
+    f: "Fahrenheit"
 };
 
 function toCelsius(fahrenheit) {
@@ -172,11 +172,12 @@ function toFahrenheit(celsius) {
 function tryConvert(temperature, convert) {
     var input = parseFloat(temperature);
     if (Number.isNaN(input)) {
-        return '';
+        return "";
     }
     var output = convert(input);
     var rounded = Math.round(output * 1000) / 1000;
     return rounded.toString();
 }
+
 ReactDOM.render(React.createElement(CurrencyConvertor, null), document.getElementById("content"));
 

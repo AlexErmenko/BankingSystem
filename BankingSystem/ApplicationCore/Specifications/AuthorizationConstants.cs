@@ -1,4 +1,6 @@
-﻿namespace ApplicationCore.Specifications
+﻿using System;
+
+namespace ApplicationCore.Specifications
 {
 	public static class AuthorizationConstants
 	{
@@ -7,8 +9,8 @@
 		public static class Roles
 		{
 			public const string ADMINISTRATORS = "Administrators";
-			public const string MANAGER        = "Manager";
-			public const string CLIENT         = "Client";
+			public const string MANAGER = "Manager";
+			public const string CLIENT = "Client";
 		}
 	}
 }
