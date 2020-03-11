@@ -3,13 +3,16 @@ using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-
+using ApplicationCore.Specifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 using Web.Models;
 
 namespace Web.Controllers
 {
+	[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
+	[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
