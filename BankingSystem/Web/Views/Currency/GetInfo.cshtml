@@ -1,7 +1,8 @@
-﻿@model IEnumerable<Web.ViewModels.CurrencyViewModel>
+﻿@using System
+@model IEnumerable<Web.ViewModels.CurrencyViewModel>
 
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData[index: "Title"] = "Home Page";
 }
 
 <div>
@@ -22,20 +23,20 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
+        @foreach(var item in Model)
         {
-            <tr>
+	        <tr>
                 <td hidden>
-                    @Html.DisplayFor(modelItem => item.Id)
+                    @Html.DisplayFor(expression: modelItem => item.Id)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Name)
+                    @Html.DisplayFor(expression: modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.BuyRate)
+                    @Html.DisplayFor(expression: modelItem => item.BuyRate)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SaleRate)
+                    @Html.DisplayFor(expression: modelItem => item.SaleRate)
                 </td>
             </tr>
         }

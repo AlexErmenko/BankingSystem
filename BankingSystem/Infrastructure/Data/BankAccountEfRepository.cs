@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 
@@ -9,7 +10,7 @@ namespace Infrastructure.Data
 	{
 		private readonly BankingSystemContext _context;
 
-		public BankAccountEfRepository(BankingSystemContext context) { _context = context; }
+		public BankAccountEfRepository(BankingSystemContext context) => _context = context;
 
 		public IQueryable<BankAccount> Accounts => _context.BankAccounts;
 
@@ -19,16 +20,17 @@ namespace Infrastructure.Data
 		/// <param name="account"></param>
 		public void SaveAccount(BankAccount account)
 		{
-			if (account.Id == 0) { _context.BankAccounts.AddAsync(account); } else
+			if(account.Id == 0) _context.BankAccounts.AddAsync(entity: account);
+			else
 			{
-				var bankAccount = _context.BankAccounts.FirstOrDefault(s => s.Id == account.Id);
+				var bankAccount = _context.BankAccounts.FirstOrDefault(predicate: s => s.Id == account.Id);
 
-				if (bankAccount != null)
+				if(bankAccount != null)
 				{
 					bankAccount.AccountType = account.AccountType;
-					bankAccount.Amount      = account.Amount;
-					bankAccount.DateClose   = account.DateClose;
-					bankAccount.IdCurrency  = account.IdCurrency;
+					bankAccount.Amount = account.Amount;
+					bankAccount.DateClose = account.DateClose;
+					bankAccount.IdCurrency = account.IdCurrency;
 				}
 			}
 
@@ -37,26 +39,28 @@ namespace Infrastructure.Data
 
 		public void DeleteAccount(int idAccount)
 		{
-			var bankAccount = _context.BankAccounts.FirstOrDefault(account => account.Id == idAccount);
+			var bankAccount = _context.BankAccounts.FirstOrDefault(predicate: account => account.Id == idAccount);
 
-			if (bankAccount?.DateClose != null)
+			if(bankAccount?.DateClose != null)
 			{
-				_context.BankAccounts.Remove(bankAccount);
+				_context.BankAccounts.Remove(entity: bankAccount);
 				_context.SaveChangesAsync();
 			}
 		}
 
 		public void CloseAccount(int idAccount)
 		{
-			var bankAccount = _context.BankAccounts.FirstOrDefault(account => account.Id == idAccount);
+			var bankAccount = _context.BankAccounts.FirstOrDefault(predicate: account => account.Id == idAccount);
 
-			if (bankAccount != null)
-				if (bankAccount.DateClose == null)
+			if(bankAccount != null)
+			{
+				if(bankAccount.DateClose == null)
 				{
 					bankAccount.DateClose = DateTime.Now;
 
 					_context.SaveChangesAsync();
 				}
+			}
 		}
 	}
 }

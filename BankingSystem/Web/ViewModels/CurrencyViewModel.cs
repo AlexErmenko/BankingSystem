@@ -1,4 +1,6 @@
-﻿namespace Web.ViewModels
+﻿using System;
+
+namespace Web.ViewModels
 {
 	public class CurrencyViewModel
 	{
@@ -6,6 +8,5 @@
 		public string Name { get; set; }
 		public decimal SaleRate { get; set; }
 		public decimal BuyRate { get; set; }
-
 	}
 }

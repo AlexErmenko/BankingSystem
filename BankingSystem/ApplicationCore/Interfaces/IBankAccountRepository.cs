@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+
 using ApplicationCore.Entity;
 
 namespace ApplicationCore.Interfaces
@@ -11,7 +13,7 @@ namespace ApplicationCore.Interfaces
 		IQueryable<BankAccount> Accounts { get; }
 
 		void SaveAccount(BankAccount account);
-		void DeleteAccount(int       idAccount);
-		void CloseAccount(int        idAccount);
+		void DeleteAccount(int idAccount);
+		void CloseAccount(int idAccount);
 	}
 }

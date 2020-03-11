@@ -1,7 +1,8 @@
-﻿@model IEnumerable<ApplicationCore.Entity.Client>
+﻿@using System
+@model IEnumerable<ApplicationCore.Entity.Client>
 
 @{
-    Layout = null;
+	Layout = null;
 }
 
 <!DOCTYPE html>
@@ -31,17 +32,17 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
+    @foreach(var item in Model)
     {
-        <tr>
+	    <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Login)
+                @Html.DisplayFor(expression: modelItem => item.Login)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Address)
+                @Html.DisplayFor(expression: modelItem => item.Address)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TelNumber)
+                @Html.DisplayFor(expression: modelItem => item.TelNumber)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |

@@ -3,10 +3,14 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+
 using ApplicationCore.Dto;
 using ApplicationCore.Entity;
+
 using Infrastructure;
+
 using Microsoft.Extensions.Logging;
+
 using Newtonsoft.Json.Linq;
 
 namespace Web.Services
@@ -16,77 +20,71 @@ namespace Web.Services
 	/// </summary>
 	public class ScopedСurrencyService : IScopedСurrencyService
 	{
-		private readonly BankingSystemContext           _context;
+		private readonly BankingSystemContext _context;
 		private readonly ILogger<ScopedСurrencyService> _logger;
 
 		public ScopedСurrencyService(BankingSystemContext context, ILogger<ScopedСurrencyService> logger)
 		{
 			_context = context;
-			_logger  = logger;
+			_logger = logger;
 		}
 
 		public async Task DoWork(CancellationToken stoppingToken)
 		{
-			while (!stoppingToken.IsCancellationRequested)
+			while(!stoppingToken.IsCancellationRequested)
 			{
 				var rate = _context.ExchangeRates.ToList().Last();
-				DateTime value = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}");
+				var value = Convert.ToDateTime(value: $"{DateTime.Now:dd.MM.yyyy}");
 
-				if (!rate.DateRate.Equals(value))
+				if(!rate.DateRate.Equals(value: value))
 				{
-
-
 					var array = await LoadJson().ConfigureAwait(continueOnCapturedContext: true);
 
-					var dtos = array.Select(it => new CurrencyDto
+					var dtos = array.Select(selector: it => new CurrencyDto
 					{
-						ShortName = (string) it["ccy"],
-						Buy       = (decimal) it["buy"],
-						Sale      = (decimal) it["sale"]
+						ShortName = (string)it[key: "ccy"],
+						Buy = (decimal)it[key: "buy"],
+						Sale = (decimal)it[key: "sale"]
 					}).ToList();
 
-					_logger.Log(LogLevel.Information, "Dtos" + dtos);
+					_logger.Log(logLevel: LogLevel.Information, message: "Dtos" + dtos);
 
 					try
 					{
-						_logger.Log(LogLevel.Information, "Start saving");
-						foreach (var dto in dtos)
+						_logger.Log(logLevel: LogLevel.Information, message: "Start saving");
+						foreach(var dto in dtos)
 						{
-							var firstOrDefault =
-								_context.Currencies.FirstOrDefault(currency =>
-																	   currency.ShortName.Equals(dto.ShortName));
+							var firstOrDefault = _context.Currencies.FirstOrDefault(predicate: currency => currency.ShortName.Equals(dto.ShortName));
 
-							_logger.Log(LogLevel.Information, $"Currency {firstOrDefault}");
+							_logger.Log(logLevel: LogLevel.Information, message: $"Currency {firstOrDefault}");
 
 							var exchangeRate = new ExchangeRate
 							{
-								RateBuy  = dto.Buy,
+								RateBuy = dto.Buy,
 								RateSale = dto.Sale,
-								DateRate = Convert.ToDateTime($"{DateTime.Now:dd.MM.yyyy}")
+								DateRate = Convert.ToDateTime(value: $"{DateTime.Now:dd.MM.yyyy}")
 							};
 
-							_logger.Log(LogLevel.Information, $"Rate {exchangeRate}");
+							_logger.Log(logLevel: LogLevel.Information, message: $"Rate {exchangeRate}");
 
-
-							if (firstOrDefault != null)
+							if(firstOrDefault != null)
 							{
-								firstOrDefault.ExchangeRates.Add(exchangeRate);
+								firstOrDefault.ExchangeRates.Add(item: exchangeRate);
 								_context.SaveChanges();
 							}
 						}
 
-						_logger.Log(LogLevel.Information, "End saving");
-					}
-					catch (Exception e)
+						_logger.Log(logLevel: LogLevel.Information, message: "End saving");
+					} catch(Exception e)
 					{
-						Console.WriteLine(e);
-						Console.WriteLine("Error from service");
-						_logger.Log(LogLevel.Error, e.Message);
+						Console.WriteLine(value: e);
+						Console.WriteLine(value: "Error from service");
+						_logger.Log(logLevel: LogLevel.Error, message: e.Message);
 						throw;
 					}
 				}
 
-				await Task.Delay(millisecondsDelay: 86_400_000, stoppingToken);
+				await Task.Delay(millisecondsDelay: 86_400_000, cancellationToken: stoppingToken);
 			}
 		}
 
@@ -97,10 +95,8 @@ namespace Web.Services
 		private async Task<JArray> LoadJson()
 		{
 			using var client = new WebClient();
-			var response = await
-							   client.DownloadStringTaskAsync(new
-																  Uri("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"));
-			var jArray = JArray.Parse(response);
+			var response = await client.DownloadStringTaskAsync(address: new Uri(uriString: "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5"));
+			var jArray = JArray.Parse(json: response);
 
 			return jArray;
 		}

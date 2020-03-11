@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using System;
+using System.Linq.Expressions;
 
 namespace ApplicationCore.Helpers.Query
 {
@@ -8,9 +9,9 @@ namespace ApplicationCore.Helpers.Query
 
 		protected override Expression VisitMember(MemberExpression node)
 		{
-			Path = string.IsNullOrEmpty(Path) ? node.Member.Name : $"{node.Member.Name}.{Path}";
+			Path = string.IsNullOrEmpty(value: Path) ? node.Member.Name : $"{node.Member.Name}.{Path}";
 
-			return base.VisitMember(node);
+			return base.VisitMember(node: node);
 		}
 	}
 }
