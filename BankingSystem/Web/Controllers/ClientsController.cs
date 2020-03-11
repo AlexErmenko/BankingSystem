@@ -32,7 +32,7 @@ namespace Web.Controllers
 
 		// POST: Clients/Create
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("IdClient,Login,Password,Address,TelNumber")] Client client)
+		public async Task<IActionResult> Create([Bind("Id,Login,Password,Address,TelNumber")] Client client)
 		{
 			if(ModelState.IsValid)
 			{
@@ -54,13 +54,17 @@ namespace Web.Controllers
 
 		// POST: Clients/Edit/5
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(int id, [Bind("IdClient,Login,Password,Address,TelNumber")] Client client)
+		public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Address,TelNumber")] Client client)
 		{
 			if(id != client.Id) return NotFound();
 
 			if(ModelState.IsValid)
 			{
-				try { await Repository.UpdateAsync(entity: client); } catch(DbUpdateConcurrencyException)
+				try
+				{
+					await Repository.UpdateAsync(entity: client);
+				} 
+				catch(DbUpdateConcurrencyException)
 				{
 					if(!ClientExists(id: client.Id))
 						return NotFound();
