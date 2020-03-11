@@ -11,44 +11,173 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var CurrencyConvertor = (function (_React$Component) {
     _inherits(CurrencyConvertor, _React$Component);
 
-    function CurrencyConvertor(props) {
-        _classCallCheck(this, CurrencyConvertor);
-
-        _get(Object.getPrototypeOf(CurrencyConvertor.prototype), "constructor", this).call(this, props);
+    /*constructor(props) {
+        super(props);
         this.state = {
-            text: ''
+            text: "",
+            courses: []
         };
         this.handleChangeText = this.handleChangeText.bind(this);
         console.log("From comment box");
     }
+      componentDidMount() {
+        fetch("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5")
+            .then(response => response.json())
+            .then(console.log)
+            .then(
+                (response) => {
+                    this.setState({courses: response.data});
+                },
+                (error) => {
+                    console.log(error);
+                }
+            );
+    }
+      handleChangeText(e) {
+        this.setState({text: e.target.value});
+        console.log(e.target.value);
+    }
+      render() {
+        return (
+            <div>
+                <h1>Конвертация валют</h1>
+                  <div>
+                    <label>В валюты </label>
+                    <select className="fromCurrency">
+                        <option>USD</option>
+                        <option>RUB</option>
+                        <option>UAH</option>
+                    </select>
+                    <input type="text"
+                           value={this.state.text}
+                           onChange={this.handleChangeText}/>
+                </div>
+            </div>
+        );
+    }*/
+
+    function CurrencyConvertor(props) {
+        _classCallCheck(this, CurrencyConvertor);
+
+        _get(Object.getPrototypeOf(CurrencyConvertor.prototype), "constructor", this).call(this, props);
+
+        this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
+        this.handleFahrenheitChange = this.handleFahrenheitChange.bind(this);
+
+        this.state = { temperature: "", scale: "c" };
+    }
 
     _createClass(CurrencyConvertor, [{
-        key: "handleChangeText",
-        value: function handleChangeText(e) {
-            this.setState({ text: e.target.value });
-            console.log(e.target.value);
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            var _this = this;
+
+            fetch("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5").then(function (response) {
+                return response.json();
+            }).then(console.log).then(function (response) {
+                _this.setState({ courses: response.data });
+            }, function (error) {
+                console.log(error);
+            });
+        }
+    }, {
+        key: "handleCelsiusChange",
+        value: function handleCelsiusChange(temperature) {
+            this.setState({ scale: "c", temperature: temperature });
+        }
+    }, {
+        key: "handleFahrenheitChange",
+        value: function handleFahrenheitChange(temperature) {
+            this.setState({ scale: "f", temperature: temperature });
         }
     }, {
         key: "render",
         value: function render() {
+            var scale = this.state.scale;
+            var temperature = this.state.temperature;
+
+            var celsius = scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
+            var fahrenheit = scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
+
             return React.createElement(
-                "form",
-                { className: "commentBox" },
-                "React render",
-                React.createElement("input", { type: "text",
-                    value: this.state.text,
-                    onChange: this.handleChangeText }),
-                React.createElement(
-                    "h1",
-                    null,
-                    this.state.text
-                )
+                "div",
+                null,
+                React.createElement(CurrencyInput, {
+                    scale: "c",
+                    temperature: celsius,
+                    onTemperatureChange: this.handleCelsiusChange }),
+                React.createElement(CurrencyInput, {
+                    scale: "f",
+                    temperature: fahrenheit,
+                    onTemperatureChange: this.handleFahrenheitChange })
             );
         }
     }]);
 
     return CurrencyConvertor;
 })(React.Component);
+
+var CurrencyInput = (function (_React$Component2) {
+    _inherits(CurrencyInput, _React$Component2);
+
+    function CurrencyInput(props) {
+        _classCallCheck(this, CurrencyInput);
+
+        _get(Object.getPrototypeOf(CurrencyInput.prototype), "constructor", this).call(this, props);
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    _createClass(CurrencyInput, [{
+        key: "handleChange",
+        value: function handleChange(e) {
+            this.props.onTemperatureChange(e.target.value);
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var temperature = this.props.temperature;
+            var scale = this.props.scale;
+            return React.createElement(
+                "fieldset",
+                null,
+                React.createElement(
+                    "legend",
+                    null,
+                    "Enter temperature in ",
+                    scaleNames[scale],
+                    ":"
+                ),
+                React.createElement("input", { value: temperature,
+                    onChange: this.handleChange })
+            );
+        }
+    }]);
+
+    return CurrencyInput;
+})(React.Component);
+
+var scaleNames = {
+    c: "Celsius",
+    f: "Fahrenheit"
+};
+
+function toCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+}
+
+function toFahrenheit(celsius) {
+    return celsius * 9 / 5 + 32;
+}
+
+function tryConvert(temperature, convert) {
+    var input = parseFloat(temperature);
+    if (Number.isNaN(input)) {
+        return "";
+    }
+    var output = convert(input);
+    var rounded = Math.round(output * 1000) / 1000;
+    return rounded.toString();
+}
 
 ReactDOM.render(React.createElement(CurrencyConvertor, null), document.getElementById("content"));
 

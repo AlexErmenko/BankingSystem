@@ -1,5 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
+
 using Infrastructure.Identity;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -11,13 +14,13 @@ namespace Web.Areas.Identity.Pages.Account
 	[AllowAnonymous]
 	public class LogoutModel : PageModel
 	{
-		private readonly ILogger<LogoutModel>           _logger;
+		private readonly ILogger<LogoutModel> _logger;
 		private readonly SignInManager<ApplicationUser> _signInManager;
 
 		public LogoutModel(SignInManager<ApplicationUser> signInManager, ILogger<LogoutModel> logger)
 		{
 			_signInManager = signInManager;
-			_logger        = logger;
+			_logger = logger;
 		}
 
 		public void OnGet() { }
@@ -25,9 +28,10 @@ namespace Web.Areas.Identity.Pages.Account
 		public async Task<IActionResult> OnPost(string returnUrl = null)
 		{
 			await _signInManager.SignOutAsync();
-			_logger.LogInformation("User logged out.");
-			if (returnUrl != null)
-				return LocalRedirect(returnUrl);
+			_logger.LogInformation(message: "User logged out.");
+			if(returnUrl != null)
+				return LocalRedirect(localUrl: returnUrl);
+
 			return RedirectToPage();
 		}
 	}

@@ -7179,3 +7179,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 nav.navbar {
   background: linear-gradient(#0F0, #fff); }
+
+.wallet {
+  border: 2px solid; }
+  .wallet-title {
+    display: flex;
+    justify-content: space-around; }
