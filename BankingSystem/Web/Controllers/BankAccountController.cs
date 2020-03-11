@@ -11,8 +11,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-	[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
-	[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
+	//[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
+	[Authorize(Roles = "Client, Manager")]
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
@@ -46,7 +46,7 @@ namespace Web.Controllers
 			});
 		}
 
-		public void GetAccounts() { }
+		public IActionResult GetAccounts() { return View("Index"); }
 
 		/// <summary>
 		///     Создание счета на основе заполненной формы.
