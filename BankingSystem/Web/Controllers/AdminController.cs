@@ -45,10 +45,10 @@ namespace Web.Controllers
 			//Так читабельниее
 			if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
 			{
-				var _users = from n in _userManager.Users select n;
+				var _users = await _userManager.Users.ToListAsync();
 				var UserVM = new UserViewModel
 				{
-					AppUsers = await _users.ToListAsync(),
+					AppUsers = _users,
 					ManagerUsers = new List<ApplicationUser>()
 				};
 
