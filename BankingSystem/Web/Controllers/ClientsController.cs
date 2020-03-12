@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using Web.ViewModels;
 
 namespace Web.Controllers
 {
@@ -17,14 +19,12 @@ namespace Web.Controllers
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
-		private UserManager<ApplicationUser> _userManager;
+		private readonly UserManager<ApplicationUser> _userManager;
 
-		//TODO: Заменить на репозиторий
 		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager)
 		{
 			Repository = repository;
 			_userManager = userManager;
-
 		}
 
 		// GET: Clients
@@ -34,6 +34,8 @@ namespace Web.Controllers
 			return View(model: clients);
 		}
 
+		#region Удалить после создания ClientCreate, etc
+
 		// GET: Clients/Create
 		public IActionResult Create() => View();
 
@@ -41,15 +43,93 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> Create([Bind("Id,Login,Password,Address,TelNumber")] Client client)
 		{
-			if(ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
 				await Repository.AddAsync(entity: client);
 				return RedirectToAction(actionName: nameof(Index));
 			}
-		
+
 			return View(model: client);
 		}
-		
+
+		#endregion
+
+		// GET: Clients/CreateClient
+		public IActionResult CreateClient() => View();
+
+		// POST: Clients/CreateClient
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> CreateClient(ClientCreateViewModel client)
+		{
+			if (ModelState.IsValid)
+			{
+				var passwordValidator = new PasswordValidator<ApplicationUser>();
+				var result = await passwordValidator.ValidateAsync(_userManager, null, client.Password);
+
+				if (result.Succeeded)
+				{
+					//if pass is valid
+					if (client.IsPhysicalPerson)
+					{
+						//PhysicalPerson
+
+						return RedirectToAction(nameof(CreatePhysicalPerson),
+												routeValues: new
+												{
+													client.Login,
+													client.Email,
+													client.Password,
+													client.TelNumber,
+													client.Address
+												});
+					}
+					else
+					{
+						//LegalPerson
+					}
+				} 
+				else
+				{
+					foreach (var error in result.Errors)
+					{
+						ModelState.AddModelError(string.Empty, error.Description);
+					}
+				}
+			}
+
+			return View(client);
+		}
+
+		[HttpGet]
+		public IActionResult CreatePhysicalPerson(string login,
+												  string email,
+												  string password,
+												  string telNumber,
+												  string address)
+		{
+			PhysicalPersonCreateViewModel physicalPerson = new PhysicalPersonCreateViewModel()
+			{
+				Login = login,
+				Email = email,
+				Password = password,
+				TelNumber = telNumber,
+				Address = address
+			};
+
+			return View(physicalPerson);
+		}
+
+		// POST: Clients/CreatePhysicalPerson
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> CreatePhysicalPerson(PhysicalPersonCreateViewModel physicalPerson)
+		{
+			if (ModelState.IsValid)
+			{
+				//TODO: Add in table: Identity, Client, PhysicalPerson
+			}
+
+			return View(physicalPerson);
+		}
 
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
