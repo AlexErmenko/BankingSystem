@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
-
+using Infrastructure.Identity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,9 +17,15 @@ namespace Web.Controllers
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
+		private UserManager<ApplicationUser> _userManager;
 
 		//TODO: Заменить на репозиторий
-		public ClientsController(IAsyncRepository<Client> repository) => Repository = repository;
+		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager)
+		{
+			Repository = repository;
+			_userManager = userManager;
+
+		}
 
 		// GET: Clients
 		public async Task<IActionResult> Index()
@@ -39,9 +46,10 @@ namespace Web.Controllers
 				await Repository.AddAsync(entity: client);
 				return RedirectToAction(actionName: nameof(Index));
 			}
-
+		
 			return View(model: client);
 		}
+		
 
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
