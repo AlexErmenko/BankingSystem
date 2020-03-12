@@ -681,6 +681,12 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
@@ -871,12 +877,18 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Ac
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
@@ -892,14 +904,3 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
-F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
