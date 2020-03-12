@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 using Web.ViewModels.Admin;
@@ -44,10 +45,10 @@ namespace Web.Controllers
 			//Так читабельниее
 			if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
 			{
-				var _users = from n in _userManager.Users select n;
+				var _users = await _userManager.Users.ToListAsync();
 				var UserVM = new UserViewModel
 				{
-					AppUsers = await _users.ToListAsync(),
+					AppUsers = _users,
 					ManagerUsers = new List<ApplicationUser>()
 				};
 
@@ -64,10 +65,36 @@ namespace Web.Controllers
 		}
 
 		// GET: Admin/Details/5
-		public ActionResult Details(int id) => View();
+		public async Task<IActionResult> ManagerDetails(string id, ApplicationUser applicationUser)
+		{
+			var user = await _userManager.FindByIdAsync(userId:id);
+			if (user == null)
+			{
+				return NotFound();
+			}
+
+			var photo = (from m in _context.FileModel
+						where m.Id == applicationUser.Id
+						select m.Name).FirstOrDefault();
+
+
+
+			var managerDetailsVm = new EditUserViewModel
+			{
+				UserName = user.UserName,
+				PhoneNumber = user.PhoneNumber,
+				Email = user.Email,
+				PhotoPath = photo
+			};
+			
+
+			return View(managerDetailsVm);
+		} 
 
 		// GET: Admin/Create
 		public ActionResult AddManager() => View();
+
+	
 
 		// POST: Admin/Create
 		[HttpPost, ValidateAntiForgeryToken]
@@ -77,6 +104,7 @@ namespace Web.Controllers
 			
 			var user = new ApplicationUser
 			{
+				Id = applicationUser.Id,
 				UserName = applicationUser.UserName,
 				Email = applicationUser.Email,
 				PhoneNumber = applicationUser.PhoneNumber
@@ -85,20 +113,21 @@ namespace Web.Controllers
 			await _userManager.CreateAsync(user: user, password: AuthorizationConstants.DEFAULT_PASSWORD);
 			await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
 			//Getting new users Id
-			var _user = await _userManager.FindByNameAsync(user.UserName);
 			//Saving file, which we get, of created user
 			if (uploadedFile != null)
 			{
+				// путь к папке Files
 				string path = "/Files/" + uploadedFile.FileName;
+				// сохраняем файл в папку Files в каталоге wwwroot
 				using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
 				{
 					await uploadedFile.CopyToAsync(fileStream);
 				}
-				FileModel file = new FileModel { Id =_user.Id ,Name = uploadedFile.FileName, Path = path };
+				FileModel file = new FileModel {Id = applicationUser.Id, Name = uploadedFile.FileName, Path = path };
 				_context.FileModel.Add(file);
+				_context.SaveChanges();
 			}
-
-			_context.SaveChanges();
+		
 
 
 			return RedirectToAction(actionName: nameof(ManagerList));
@@ -168,5 +197,7 @@ namespace Web.Controllers
 				return View();
 			}
 		}
+		
+		
 	}
 }

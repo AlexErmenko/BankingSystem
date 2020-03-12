@@ -15,7 +15,7 @@ using Web.ViewModels;
 
 namespace Web.Controllers
 {
-	[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
+	// [Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
@@ -30,8 +30,8 @@ namespace Web.Controllers
 		// GET: Clients
 		public async Task<IActionResult> Index()
 		{
-			var task = await Repository.GetAll();
-			return View(model: task);
+			var clients = await Repository.GetAll();
+			return View(model: clients);
 		}
 
 		#region Удалить после создания ClientCreate, etc

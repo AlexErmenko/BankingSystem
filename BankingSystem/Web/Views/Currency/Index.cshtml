@@ -2,7 +2,7 @@
 @using System
 @using Infrastructure.Identity
 @using Microsoft.AspNetCore.Identity
-@model IEnumerable<Web.Services.ClientAccountViewModel>
+@model IEnumerable<Web.ViewModels.ClientAccountViewModel>
 
 @{
 	ViewData[index: "Title"] = "Home Page";
@@ -33,6 +33,7 @@
             <th>
                 Дата закрытия
             </th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -53,6 +54,10 @@
                 </td>
                 <td>
                     @Html.DisplayFor(expression: modelItem => item.DateClose)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Изменить </a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
                 </td>
             </tr>
         }

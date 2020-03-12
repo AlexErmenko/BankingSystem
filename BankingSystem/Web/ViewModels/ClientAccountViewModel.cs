@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Web.Services
+namespace Web.ViewModels
 {
 	public class ClientAccountViewModel
 	{
@@ -9,5 +9,6 @@ namespace Web.Services
 		public string Currency { get; set; }
 		public DateTime? DateClose { get; set; }
 		public DateTime DateOpen { get; set; }
+		public int Id { get; set; }
 	}
 }
