@@ -59,11 +59,11 @@ namespace xUnitLib
 		public void Delete_ClientTest()
 		{
 			//Arrange
-			int clientId = 3;
-			var mock = new Mock<IAsyncRepository<Client>>();
-			mock.Setup(repository => repository.GetById(clientId)).ReturnsAsync(GetUser);
+			// int clientId = 3;
+			// var mock = new Mock<IAsyncRepository<Client>>();
+			// mock.Setup(repository => repository.GetById(clientId)).ReturnsAsync(GetUser);
 
-			var controller = new ClientsController(mock.Object);
+			// var controller = new ClientsController(mock.Object);
 
 			//TODO: ACT and Assert
 			// await controller.Delete(clientId);
