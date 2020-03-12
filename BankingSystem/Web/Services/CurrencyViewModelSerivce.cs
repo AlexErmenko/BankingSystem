@@ -33,7 +33,7 @@ namespace Web.Services
 			Logger.LogInformation($"{nameof(GetCurrencyRate)} called");
 
 			var specification = new CurrencyWithRateSpecification();
-			var listCurrency  = await _currencyRepository.ListAsync(specification);
+			var listCurrency  = await _currencyRepository.ListAsync(specification).ConfigureAwait(true);
 			var list = (from currency in listCurrency
 						let lastUpdate = currency.ExchangeRates.Last()
 						select new CurrencyViewModel
