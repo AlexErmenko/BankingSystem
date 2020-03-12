@@ -7,7 +7,7 @@ namespace ApplicationCore.Interfaces
 	/// <typeparam name="T">Entity</typeparam>
 	public interface IAsyncRepository<T>
 	{
-		Task<T> GetById(int id);
+		Task<T> GetById(int? id);
 		Task<T> GetById(string id);
 		Task<List<T>> GetAll();
 		Task<IReadOnlyList<T>> ListAsync(ISpecification<T> specification);
