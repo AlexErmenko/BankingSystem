@@ -60,7 +60,8 @@ namespace Web
 			services.AddControllersWithViews();
 
 			services.AddRazorPages();
-
+			services.AddHttpContextAccessor();
+			 
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddReact();
