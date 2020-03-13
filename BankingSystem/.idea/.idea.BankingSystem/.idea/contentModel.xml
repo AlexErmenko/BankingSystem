@@ -151,6 +151,7 @@
         <e p="Services" t="Include">
           <e p="ConsumeScopedServiceHostedService.cs" t="Include" />
           <e p="CurrencyViewModelSerivce.cs" t="Include" />
+          <e p="ICurrencyViewModelService.cs" t="Include" />
           <e p="IScopedСurrencyService.cs" t="Include" />
           <e p="ScopedСurrencyService.cs" t="Include" />
         </e>
@@ -183,6 +184,7 @@
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Currency" t="Include">
+            <e p="Edit.cshtml" t="Include" />
             <e p="GetInfo.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
           </e>

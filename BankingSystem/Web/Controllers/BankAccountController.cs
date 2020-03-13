@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -6,7 +8,9 @@ using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ClearScript;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 using Web.ViewModels.BankAccount;
@@ -20,16 +24,20 @@ namespace Web.Controllers
 		private readonly IBankAccountRepository _bankAccountRepository;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
+		private readonly IHttpContextAccessor _httpContextAccessor;
+		private readonly IAsyncRepository<Client> _clientRepository;
 
-		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo, 
-									 IAsyncRepository<LegalPerson> legalPersonRepo, 
-									 IBankAccountRepository bankAccountRepo)
+		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
+									 IAsyncRepository<LegalPerson> legalPersonRepo,
+									 IBankAccountRepository bankAccountRepo,
+									 IHttpContextAccessor httpContextAccessor,
+									 IAsyncRepository<Client> clientRepository)
 		{
 			_bankAccountRepository = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
 			_legalPersonRepository = legalPersonRepo;
-
-			var username = this.User.Identity.Name;
+			_clientRepository = clientRepository;
+			_httpContextAccessor = httpContextAccessor;
 		}
 
 		/// <summary>
@@ -39,10 +47,16 @@ namespace Web.Controllers
 		/// <param name="idClient"></param>
 		/// <returns></returns>
 		[HttpGet]
-		public async Task<IActionResult> CreateClientAccountForm(int idClient)
+		public async Task<IActionResult> CreateClientAccountForm()
 		{
-			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
+			var idClient = await GetUserId();
+
+			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
+
+			//проверка, что хоть какого-то клиента нашло
+			if (physicalPerson == null &&
+				legalPerson    == null) { return RedirectToAction("GetAccounts"); }
 
 			return View(model: new CreateClientAccountViewModel
 			{
@@ -73,13 +87,31 @@ namespace Web.Controllers
 		}
 
 		/// <summary>
+		/// Возвращает ID авторизованого пользователя
+		/// </summary>
+		/// <returns></returns>
+		private async Task<int?> GetUserId()
+		{
+			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
+			var clients =  await _clientRepository.GetAll();
+			var client = clients.FirstOrDefault(c => c.Login.Equals(login));
+
+			return client?.Id;
+		}
+
+		/// <summary>
 		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public IActionResult GetAccounts(int idClient)
+		public async Task<IActionResult> GetAccounts(int idClient)
 		{
-			return View(_bankAccountRepository.Accounts
-											  .Include(p => p.IdCurrencyNavigation));
+			var idUser = await GetUserId();
+			var accounts = _bankAccountRepository
+						   .Accounts
+						   .Include(p => p.IdCurrencyNavigation)
+						   .Where(c => c.Id.Equals(idUser));
+
+			return View(accounts);
 		}
 
 		/// <summary>

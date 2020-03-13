@@ -53,6 +53,7 @@ namespace Web
 
 			services.AddTransient(serviceType: typeof(IBankAccountRepository), implementationType: typeof(BankAccountEfRepository));
 			services.AddScoped<CurrencyViewModelService>();
+			services.AddScoped<ICurrencyViewModelService, CurrencyViewModelService>();
 
 			services.AddDbContext<ApplicationDbContext>(optionsAction: options => options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection")));
 			services.AddDbContext<BankingSystemContext>(optionsAction: options => options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DomainConnection")));
@@ -60,7 +61,8 @@ namespace Web
 			services.AddControllersWithViews();
 
 			services.AddRazorPages();
-
+			services.AddHttpContextAccessor();
+			 
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddReact();

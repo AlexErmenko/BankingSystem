@@ -1,0 +1,87 @@
+﻿@model Web.ViewModels.PhysicalPersonCreateViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Добавление клиента</title>
+</head>
+<body>
+
+    <h4>Добавление нового Физического Лица</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Login)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(expression: model => model.Login)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(expression: model => model.Email)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.Address)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(expression: model => model.Address)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.TelNumber)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(expression: model => model.TelNumber)
+                    </dd>
+                </dl>
+            </div>
+
+            <form asp-action="CreatePhysicalPerson">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="PassportSeries" class="control-label"></label>
+                    <input asp-for="PassportSeries" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="PassportNumber" class="control-label"></label>
+                    <input asp-for="PassportNumber" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="IdentificationNumber" class="control-label"></label>
+                    <input asp-for="IdentificationNumber" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Surname" class="control-label"></label>
+                    <input asp-for="Surname" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Patronymic" class="control-label"></label>
+                    <input asp-for="Patronymic" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Создать" class="btn btn-primary"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Вернуться к списку</a>
+    </div>
+
+</body>
+</html>
