@@ -15,7 +15,7 @@ using Web.ViewModels;
 
 namespace Web.Controllers
 {
-	// [Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
+	[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
@@ -73,15 +73,7 @@ namespace Web.Controllers
 					{
 						//PhysicalPerson
 
-						return RedirectToAction(nameof(CreatePhysicalPerson),
-												routeValues: new
-												{
-													client.Login,
-													client.Email,
-													client.Password,
-													client.TelNumber,
-													client.Address
-												});
+						return RedirectToAction(nameof(CreatePhysicalPerson), client);
 					}
 					else
 					{
@@ -101,21 +93,17 @@ namespace Web.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult CreatePhysicalPerson(string login,
-												  string email,
-												  string password,
-												  string telNumber,
-												  string address)
+		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreate)
 		{
 			PhysicalPersonCreateViewModel physicalPerson = new PhysicalPersonCreateViewModel()
 			{
-				Login = login,
-				Email = email,
-				Password = password,
-				TelNumber = telNumber,
-				Address = address
+				Login     = clientCreate.Login,
+				Email     = clientCreate.Email,
+				Password  = clientCreate.Password,
+				TelNumber = clientCreate.TelNumber,
+				Address   = clientCreate.Address
 			};
-
+			 
 			return View(physicalPerson);
 		}
 
@@ -125,7 +113,49 @@ namespace Web.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				//TODO: Add in table: Identity, Client, PhysicalPerson
+				//Add to tables Client and PhysicalPerson
+				await Repository.AddAsync(entity: new Client()
+				{
+					Login = physicalPerson.Login,
+					Password = physicalPerson.Password,
+					Address = physicalPerson.Address,
+					TelNumber = physicalPerson.TelNumber,
+
+					PhysicalPerson = new PhysicalPerson()
+					{
+						IdentificationNumber = physicalPerson.IdentificationNumber,
+						PassportNumber = physicalPerson.PassportNumber,
+						PassportSeries = physicalPerson.PassportSeries,
+						Name = physicalPerson.Name,
+						Surname = physicalPerson.Surname,
+						Patronymic = physicalPerson.Patronymic
+					}
+				});
+
+				//Add new User to Identity
+				ApplicationUser user = new ApplicationUser()
+				{
+					UserName = physicalPerson.Login,
+					Email = physicalPerson.Email,
+					PhoneNumber = physicalPerson.TelNumber
+				};
+
+				var result = await _userManager.CreateAsync(user, physicalPerson.Password);
+
+				if (result.Succeeded)
+				{
+					//Set Roles CLIENT to new User
+					await _userManager.AddToRoleAsync(user, AuthorizationConstants.Roles.CLIENT);
+
+					return RedirectToAction(nameof(Index));
+				} 
+				else
+				{
+					foreach (var error in result.Errors)
+					{
+						ModelState.AddModelError(string.Empty, error.Description);
+					}
+				}
 			}
 
 			return View(physicalPerson);
