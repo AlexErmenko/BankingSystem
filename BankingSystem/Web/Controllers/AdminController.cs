@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
 using ApplicationCore.Specifications;
-
 using Infrastructure;
 using Infrastructure.Identity;
 
@@ -14,7 +12,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 using Web.ViewModels.Admin;
@@ -141,28 +138,46 @@ namespace Web.Controllers
 
 			var model = new EditUserViewModel
 			{
+				Id= user.Id,
 				UserName = user.UserName,
 				Email = user.Email,
-				PhoneNumber = user.PhoneNumber
+				PhoneNumber = user.PhoneNumber,
 			};
 			return View(model: model);
 		}
 
 		// POST: Admin/Edit/5
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> EditManager(EditUserViewModel applicationUser)
+		public async Task<IActionResult> EditManager(EditUserViewModel applicationUser, IFormFile uploadedFile)
 		{
 			if(ModelState.IsValid)
 			{
 				var user = await _userManager.FindByIdAsync(userId: applicationUser.Id);
 				if(user != null)
 				{
+					user.Id = applicationUser.Id;
 					user.Email = applicationUser.Email;
 					user.UserName = applicationUser.UserName;
 					user.PhoneNumber = applicationUser.PhoneNumber;
 
-					var result = await _userManager.UpdateAsync(user: user);
+					// var photo = _context.Find(applicationUser.Id);
+					// _context.FileModel.Remove(photo);
+					// await _context.SaveChangesAsync();
 
+					var result = await _userManager.UpdateAsync(user: user);
+					if (uploadedFile != null)
+					{
+						// путь к папке Files
+						string path = "/Files/" + uploadedFile.FileName;
+						// сохраняем файл в папку Files в каталоге wwwroot
+						using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+						{
+							await uploadedFile.CopyToAsync(fileStream);
+						}
+						FileModel file = new FileModel {Id = user.Id, Name = uploadedFile.FileName, Path = path };
+						_context.FileModel.Update(file);
+						_context.SaveChanges();
+					}
 					if(result.Succeeded)
 						return RedirectToAction(actionName: "ManagerList");
 
