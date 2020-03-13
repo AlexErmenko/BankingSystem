@@ -1129,3 +1129,5 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerDeta
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\GetAccounts.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs

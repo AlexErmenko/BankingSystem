@@ -49,11 +49,14 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> CreateClientAccountForm()
 		{
-			var idClient = GetUserId();
+			var idClient = await GetUserId();
 
-			//!TODO: в этом месте начинает сыпаться
 			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
+
+			//проверка, что хоть какого-то клиента нашло
+			if (physicalPerson == null &&
+				legalPerson    == null) { return RedirectToAction("GetAccounts"); }
 
 			return View(model: new CreateClientAccountViewModel
 			{
