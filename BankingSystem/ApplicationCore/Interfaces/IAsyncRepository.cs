@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ApplicationCore.Entity;
 
 namespace ApplicationCore.Interfaces
 {
@@ -15,5 +16,6 @@ namespace ApplicationCore.Interfaces
 		Task UpdateAsync(T entity);
 		Task UpdateUserAsync(T entity);
 		Task DeleteAsync(T entity);
+		Task<T> GetById(Task<int?> id);
 	}
 }

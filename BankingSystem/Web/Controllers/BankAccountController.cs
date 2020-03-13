@@ -10,6 +10,7 @@ using ApplicationCore.Specifications;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ClearScript;
 using Microsoft.EntityFrameworkCore;
 using Web.Models;
 using Web.ViewModels.BankAccount;
@@ -49,9 +50,9 @@ namespace Web.Controllers
 		public async Task<IActionResult> CreateClientAccountForm()
 		{
 			var idClient = GetUserId();
-			if (idClient == null) { return View("Error"); }
 
-			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
+			//!TODO: в этом месте начинает сыпаться
+			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
 
 			return View(model: new CreateClientAccountViewModel
@@ -86,11 +87,11 @@ namespace Web.Controllers
 		/// Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
-		private int? GetUserId()
+		private async Task<int?> GetUserId()
 		{
 			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
-			var client = _clientRepository.GetAll().Result
-										  .FirstOrDefault(c => c.Login == login);
+			var clients =  await _clientRepository.GetAll();
+			var client = clients.FirstOrDefault(c => c.Login.Equals(login));
 
 			return client?.Id;
 		}
@@ -99,11 +100,15 @@ namespace Web.Controllers
 		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public IActionResult GetAccounts(int idClient)
+		public async Task<IActionResult> GetAccounts(int idClient)
 		{
-			return View(_bankAccountRepository.Accounts
-											  .Include(p => p.IdCurrencyNavigation)
-											  .Where(c => c.Id == GetUserId()));
+			var idUser = await GetUserId();
+			var accounts = _bankAccountRepository
+						   .Accounts
+						   .Include(p => p.IdCurrencyNavigation)
+						   .Where(c => c.Id.Equals(idUser));
+
+			return View(accounts);
 		}
 
 		/// <summary>

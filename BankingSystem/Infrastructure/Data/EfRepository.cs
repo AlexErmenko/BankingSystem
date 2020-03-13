@@ -56,5 +56,7 @@ namespace Infrastructure.Data
 		public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec) => await ApplySpecification(spec: spec).ToListAsync();
 
 		private IQueryable<T> ApplySpecification(ISpecification<T> spec) => SpecificationEvaluator<T>.GetQuery(inputQuery: Context.Set<T>().AsQueryable(), specification: spec);
+
+		public async Task<T> GetById(Task<int?> id) => await Context.Set<T>().FindAsync(id);
 	}
 }
