@@ -6,6 +6,7 @@
 *.min.css
 *.min.js
 *.map
+azure-pipelines.yml
 *.csprojAssemblyReference.cache
 _build/
 _site/
@@ -18,6 +19,7 @@ Properties/
 
 Web/bin/
 Web/obj/
+azure-pipelines.yml
 
 
 Project_Readme.html
