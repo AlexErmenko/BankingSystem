@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
-
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 using Web.ViewModels;
 
 namespace Web.Services
 {
+
 	public class CurrencyViewModelService : ICurrencyViewModelService
 	{
 		private readonly IAsyncRepository<BankAccount> _bankAccountRepository;
@@ -49,6 +50,7 @@ namespace Web.Services
 			return list;
 		}
 
+		[HttpGet]
 		public async Task<IEnumerable<ClientAccountViewModel>> GetClientAccounts(int id)
 		{
 			var first = await _clientRepository.GetById(id: id);

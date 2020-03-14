@@ -162,7 +162,9 @@
             <e p="CreateClientAccountViewModel.cs" t="Include" />
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
+          <e p="ClientCreateViewModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
+          <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
@@ -181,6 +183,8 @@
           </e>
           <e p="Clients" t="Include">
             <e p="Create.cshtml" t="Include" />
+            <e p="CreateClient.cshtml" t="Include" />
+            <e p="CreatePhysicalPerson.cshtml" t="Include" />
             <e p="Delete.cshtml" t="Include" />
             <e p="Edit.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
@@ -206,11 +210,7 @@
           <e p="Admin" t="Include">
             <e p="style.css" t="Include" />
           </e>
-          <e p="client" t="Include">
-            <e p="CurrencyConvertor.js" t="Include" />
-            <e p="CurrencyConvertor.jsx" t="Include" />
-            <e p="CurrencyConvertor.min.js" t="Include" />
-          </e>
+          <e p="client" t="Include" />
           <e p="css" t="Include">
             <e p="footer.css" t="Include" />
             <e p="footer.min.css" t="Include" />
@@ -221,6 +221,7 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="Files" t="Include">
+            <e p="image_2020-02-28_19-16-32.png" t="Include" />
             <e p="Снимок.PNG" t="Include" />
             <e p="Снимок1.PNG" t="Include" />
           </e>
@@ -451,6 +452,7 @@
         </e>
       </e>
       <e p="xUnitLib" t="IncludeRecursive">
+        <e p="AdminControllerTest.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="ClientControllerTest.cs" t="Include" />
         <e p="CurrencyController_Test.cs" t="Include" />

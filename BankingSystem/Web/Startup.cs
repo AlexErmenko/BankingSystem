@@ -25,7 +25,7 @@ using Web.Services;
 
 namespace Web
 {
-	//с папочки Web открываем консоль 
+	//с папочки Web открываем консоль
 	//dotnet tool install --global dotnet-ef
 	//dotnet restore
 	//dotnet tool restore
@@ -36,7 +36,7 @@ namespace Web
 	//Restore Identity
 	//dotnet ef database update -c applicationdbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
-	//Коменда для добавление миграции для осн. БД. 
+	//Коменда для добавление миграции для осн. БД.
 	//dotnet ef migrations add InitMigration --context bankingsystemcontext --project ../Infrastructure/Infrastructure.csproj --startup-project Web.csproj
 
 	public class Startup
@@ -74,12 +74,10 @@ namespace Web
 		private static void CreateIdentityIfNotCreated(IServiceCollection services)
 		{
 			var sp = services.BuildServiceProvider();
-			using(var scope = sp.CreateScope())
-			{
-				var existingUserManager = scope.ServiceProvider.GetService<UserManager<ApplicationUser>>();
-				if(existingUserManager == null)
-					services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
-			}
+			using var scope = sp.CreateScope();
+			var existingUserManager = scope.ServiceProvider.GetService<UserManager<ApplicationUser>>();
+			if(existingUserManager == null)
+				services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -101,7 +99,7 @@ namespace Web
 			app.UseStaticFiles();
 
 			// app.UseDefaultFiles();
-			app.UseReact(configure: it => { });
+			// app.UseReact(configure: it => { });
 
 			app.UseRouting();
 

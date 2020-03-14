@@ -1139,3 +1139,5 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\R
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs

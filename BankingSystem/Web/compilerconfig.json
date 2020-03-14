@@ -6,9 +6,6 @@
   {
     "outputFile": "wwwroot/css/footer.css",
     "inputFile": "wwwroot/scss/footer.scss"
-  },
-  {
-    "outputFile": "wwwroot/client/CurrencyConvertor.js",
-    "inputFile": "wwwroot/client/CurrencyConvertor.jsx"
   }
+
 ]

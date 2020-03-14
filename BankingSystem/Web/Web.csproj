@@ -72,6 +72,7 @@
 
 
   <ItemGroup>
+    <Folder Include="wwwroot\client" />
     <Folder Include="wwwroot\Files\" />
   </ItemGroup>
 
