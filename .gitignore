@@ -241,7 +241,7 @@ BankingSystem/Web/bin/Debug/netcoreapp3.1/*.pdb
 
 
 
-#*.suo
+*.suo
 #*.dll
 #*.user
 #*.targets
