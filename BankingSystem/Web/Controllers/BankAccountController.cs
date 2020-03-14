@@ -103,13 +103,14 @@ namespace Web.Controllers
 		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public async Task<IActionResult> GetAccounts(int idClient)
+		public async Task<IActionResult> GetAccounts(int? idClient)
 		{
-			var idUser = await GetUserId();
+			if (idClient == null) { idClient = await GetUserId(); }
+
 			var accounts = _bankAccountRepository
 						   .Accounts
 						   .Include(p => p.IdCurrencyNavigation)
-						   .Where(c => c.Id.Equals(idUser));
+						   .Where(c => c.IdClient == idClient);
 
 			return View(accounts);
 		}

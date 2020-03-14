@@ -641,7 +641,6 @@ E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSyst
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
-E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
