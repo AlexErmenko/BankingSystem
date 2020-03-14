@@ -6,7 +6,6 @@
 *.min.css
 *.min.js
 *.map
-azure-pipelines.yml
 *.csprojAssemblyReference.cache
 _build/
 _site/
@@ -17,8 +16,8 @@ Properties/
 # git add -f myProj.sln
 *.sln
 
-Web/bin/
-Web/obj/
+#Web/bin/
+#Web/obj/
 
 
 Project_Readme.html
@@ -251,8 +250,8 @@ Thumbs.db
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/react/LICENSE
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.SourceManifest.xml
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.Parameters.xml
-*.md
-*.sqlite
+#*.md
+#*.sqlite
 #/.vs/tasks.vs.json
 #/.vs/VSWorkspaceState.json
 #/.vs
@@ -264,4 +263,4 @@ Thumbs.db
 #/BankingSystem/ApplicationCore/obj/Release/netcoreapp3.1
 
 #/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1
-/BankingSystem/xUnitLib/obj/
+#/BankingSystem/xUnitLib/obj/
