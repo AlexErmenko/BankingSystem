@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Web.Services;
-
+using ApplicationCore;
 namespace Web.Controllers
 {
 	/// <summary>
@@ -32,6 +32,7 @@ namespace Web.Controllers
 			_BankAccountRepository    = bankAccountRepository;
 			_currencyRepository       = currencyRepository;
 			_exchangeRateRepository   = exchangeRateRepository;
+			SomeClass c = new SomeClass();
 		}
 
 		/// <summary>
