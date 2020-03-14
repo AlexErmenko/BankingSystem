@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
+﻿using System.Linq;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-using ApplicationCore.Specifications;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.ClearScript;
 using Microsoft.EntityFrameworkCore;
-using Web.Models;
+using Web.ViewModels;
 using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
@@ -80,7 +75,7 @@ namespace Web.Controllers
 				var account = createClientAccountViewModel.Account;
 				_bankAccountRepository.SaveAccount(account: account);
 
-				return RedirectToAction("GetAccounts");
+				return RedirectToAction("GetAccounts" ,"BankAccount", createClientAccountViewModel);
 			}
 
 			return View();
@@ -103,13 +98,14 @@ namespace Web.Controllers
 		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public async Task<IActionResult> GetAccounts(int idClient)
+		public async Task<IActionResult> GetAccounts(int? idClient, CreateClientAccountViewModel createClientAccountViewModel)
 		{
-			var idUser = await GetUserId();
+			if (idClient == null) { idClient = await GetUserId(); }
+
 			var accounts = _bankAccountRepository
 						   .Accounts
 						   .Include(p => p.IdCurrencyNavigation)
-						   .Where(c => c.Id.Equals(idUser));
+						   .Where(c => c.IdClient == idClient);
 
 			return View(accounts);
 		}

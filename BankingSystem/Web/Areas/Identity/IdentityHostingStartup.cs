@@ -1,6 +1,4 @@
-﻿using System;
-
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 
 using Web.Areas.Identity;
 

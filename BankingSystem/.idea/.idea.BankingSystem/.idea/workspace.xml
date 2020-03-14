@@ -11,18 +11,27 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true">
+  <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
     </option>
@@ -32,14 +41,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517F607-C12A-4B50-8364-C3F896F0FE6F/8a/6f53430f/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F11B901-D96E-46EF-A606-EAF24DCEC0A3/8/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///SomeClasses.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///CurrencyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/OperationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517F607-C12A-4B50-8364-C3F896F0FE6F/8a/6f53430f/Assert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/BankAccount/GetAccounts.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationCore/Specifications/AuthorizationConstants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/IBankAccountRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xUnitLib/ClientControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xUnitLib/AdminControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/ClientsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,20 +92,34 @@
         <option value="$PROJECT_DIR$/Web/Views/Clients/Edit.cshtml" />
         <option value="$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" />
         <option value="$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" />
-        <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
-        <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
-        <option value="$PROJECT_DIR$/Web/Startup.cs" />
         <option value="$PROJECT_DIR$/Web/compilerconfig.json" />
         <option value="$PROJECT_DIR$/Web/bundleconfig.json" />
-        <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Web/wwwroot/scss/nav.scss" />
         <option value="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" />
+        <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
+        <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Web/Program.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" />
+        <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
         <option value="$PROJECT_DIR$/../.gitignore" />
+        <option value="$PROJECT_DIR$/Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../.git/info/exclude" />
+        <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
+        <option value="$PROJECT_DIR$/Web/Pages/Operation/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1YabtoIqN9zBnOqMUYfUre5aqlF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -90,18 +129,21 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.29978356" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.50054115" />
+    <property name="DatabaseDriversLRU" value="azure" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.5445545" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3328256" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="ToolWindowProject.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.45029822" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Web: IIS Express">
     <configuration name="test\xUnitLib" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -212,6 +254,20 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.Web: Banking" />
       <item itemvalue=".NET Launch Settings Profile.Web: IIS Express" />
@@ -258,6 +314,10 @@
       <workItem from="1584199738079" duration="2211000" />
       <workItem from="1584202511024" duration="44000" />
       <workItem from="1584202636017" duration="2308000" />
+      <workItem from="1584205424833" duration="3014000" />
+      <workItem from="1584209211339" duration="2593000" />
+      <workItem from="1584211885184" duration="1640000" />
+      <workItem from="1584214407862" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -287,7 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584204743774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1584209299946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584209299946</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11">
+      <created>1584209903806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584209903806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +371,7 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="318" />
+    <option name="symbolColumnWidth" value="391" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -316,7 +390,18 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
@@ -327,16 +412,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="test exclude some files" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584202833942">
+    <state x="552" y="178" key="#Deployment" timestamp="1584209870141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584202833942" />
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1584209870141" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584215047399">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584215047399" />
     <state x="593" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584204292095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -345,98 +441,110 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="137" y="272" width="1472" height="495" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583865334324" />
+    <state x="801" y="435" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog" timestamp="1584215678167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="801" y="435" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584215678167" />
     <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1583805135016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1583805135016" />
-    <state width="1295" height="466" key="DebuggerActiveHint" timestamp="1583865847812">
+    <state width="1298" height="466" key="DebuggerActiveHint" timestamp="1584208405556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1295" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1583865847812" />
-    <state width="1879" height="461" key="GridCell.Tab.0.bottom" timestamp="1584195413748">
+    <state width="1298" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584208405556" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584213532588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.0.center" timestamp="1584195413747">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532588" />
+    <state width="1879" height="282" key="GridCell.Tab.0.bottom" timestamp="1584215616308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413747" />
-    <state width="1879" height="461" key="GridCell.Tab.0.left" timestamp="1584195413747">
+    <state width="1879" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584215616308" />
+    <state width="1879" height="282" key="GridCell.Tab.0.center" timestamp="1584215616308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413747" />
-    <state width="1879" height="461" key="GridCell.Tab.0.right" timestamp="1584195413748">
+    <state width="1879" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584215616308" />
+    <state width="1879" height="282" key="GridCell.Tab.0.left" timestamp="1584215616307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.1.bottom" timestamp="1584195413748">
+    <state width="1879" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584215616307" />
+    <state width="1879" height="282" key="GridCell.Tab.0.right" timestamp="1584215616308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.1.center" timestamp="1584195413748">
+    <state width="1879" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584215616308" />
+    <state width="1344" height="475" key="GridCell.Tab.1.bottom" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.1.left" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.1.center" timestamp="1584213532476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.1.right" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532476" />
+    <state width="1344" height="475" key="GridCell.Tab.1.left" timestamp="1584213532476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.2.bottom" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532476" />
+    <state width="1344" height="475" key="GridCell.Tab.1.right" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.2.center" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.2.bottom" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.2.left" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.2.center" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.2.right" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.2.left" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.3.bottom" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.2.right" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.3.center" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.3.bottom" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.3.left" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.3.center" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.3.right" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.3.left" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.4.bottom" timestamp="1584195413749">
+    <state width="1344" height="475" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.3.right" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413749" />
-    <state width="1879" height="461" key="GridCell.Tab.4.center" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.4.bottom" timestamp="1584213532478">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.4.left" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532478" />
+    <state width="1344" height="475" key="GridCell.Tab.4.center" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state width="1879" height="461" key="GridCell.Tab.4.right" timestamp="1584195413748">
+    <state width="1344" height="475" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.4.left" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="461" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584195413748" />
-    <state x="540" y="262" key="IDE.errors.dialog" timestamp="1584203398320">
+    <state width="1344" height="475" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="1344" height="475" key="GridCell.Tab.4.right" timestamp="1584213532477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584203398320" />
+    <state width="1344" height="475" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532477" />
+    <state width="291" height="454" key="HiddenNamespacesPopup" timestamp="1584206944898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="291" height="454" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1584206944898" />
+    <state x="540" y="262" key="IDE.errors.dialog" timestamp="1584205488948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584205488948" />
     <state x="552" y="251" key="Rider.ProjectTemplateDialog.Size" timestamp="1583267239380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -449,10 +557,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584204286554" />
-    <state x="491" y="162" key="SettingsEditor" timestamp="1584184976273">
+    <state x="491" y="162" width="1195" height="711" key="SettingsEditor" timestamp="1584215735721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584184976273" />
+    <state x="491" y="162" width="1195" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584215735721" />
     <state x="842" y="273" key="SubscriptionsDialog" timestamp="1583863133930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -461,6 +569,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="839" height="487" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1583866071548" />
+    <state x="808" y="432" key="VCS.ChangelistChooser" timestamp="1584209820593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="432" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584209820593" />
+    <state x="826" y="433" key="VCS.EditChangelistDialog" timestamp="1584209360445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="433" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584209360445" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584203526730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -489,10 +605,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584202854708" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584197870305">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584211800844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584197870305" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584211800844" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -523,22 +639,49 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs</url>
-          <line>75</line>
+          <line>76</line>
           <properties documentPath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" initialLine="71">
             <startOffsets>
-              <option value="2371" />
+              <option value="2310" />
             </startOffsets>
             <endOffsets>
-              <option value="2372" />
+              <option value="2311" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs</url>
+          <line>74</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" initialLine="75">
+            <startOffsets>
+              <option value="2251" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2411" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Controllers/BankAccountController.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" initialLine="75">
+            <startOffsets>
+              <option value="2489" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2490" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="ApplicationCore.Entity.BankAccount" fieldName="Id" />
+        <PinnedItemInfo typeName="Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[ApplicationCore.Entity.BankAccount]" fieldName="Local (InternalDbSet&lt;BankAccount&gt;)" />
       </pinned-members>
     </pin-to-top-manager>
   </component>

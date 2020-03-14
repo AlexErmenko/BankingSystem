@@ -125,6 +125,7 @@
           <e p="ClientsController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="OperationController.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
@@ -138,6 +139,7 @@
             </e>
           </e>
         </e>
+        <e p="Pages" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -198,6 +200,9 @@
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Operation" t="Include">
+            <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
@@ -479,7 +484,7 @@
     <e p="C:\Users\i7\.nuget\packages\xunit.runner.visualstudio\2.4.1\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
     <e p="C:\Users\i7\.nuget\packages\xunit.runner.visualstudio\2.4.1\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="C:\Users\i7\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\i7\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_BankingSystem.-439986484.00" t="ExcludeRecursive" />
+    <e p="C:\Users\i7\AppData\local\JetBrains\Transient\ReSharperHost\v201\SolutionCaches\_BankingSystem.-439986484.00" t="ExcludeRecursive" />
     <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
     <e p="C:\Users\i7\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />

@@ -1,6 +1,4 @@
-﻿using System;
-
-using ApplicationCore.Entity;
+﻿using ApplicationCore.Entity;
 
 namespace ApplicationCore.Specifications
 {

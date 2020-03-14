@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
@@ -10,7 +9,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Web.ViewModels;
 
 namespace Web.Controllers
@@ -34,40 +32,50 @@ namespace Web.Controllers
 			return View(model: clients);
 		}
 
+		#region Удалить после создания ClientCreate, etc
+
+		// GET: Clients/Create
+		public IActionResult Create() => View();
+
+		// POST: Clients/Create
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> Create([Bind("Id,Login,Password,Address,TelNumber")] Client client)
+		{
+			if (ModelState.IsValid)
+			{
+				await Repository.AddAsync(entity: client);
+				return RedirectToAction(actionName: nameof(Index));
+			}
+
+			return View(model: client);
+		}
+
+		#endregion
+
 		// GET: Clients/CreateClient
 		public IActionResult CreateClient() => View();
 
 		// POST: Clients/CreateClient
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> CreateClient(ClientCreateViewModel clientCreateViewModel)
+		public async Task<IActionResult> CreateClient(ClientCreateViewModel client)
 		{
 			if (ModelState.IsValid)
 			{
 				var passwordValidator = new PasswordValidator<ApplicationUser>();
-				var result = await passwordValidator.ValidateAsync(_userManager, null, clientCreateViewModel.Password);
+				var result = await passwordValidator.ValidateAsync(_userManager, null, client.Password);
 
 				if (result.Succeeded)
 				{
 					//if pass is valid
-					if (clientCreateViewModel.IsPhysicalPerson)
+					if (client.IsPhysicalPerson)
 					{
 						//PhysicalPerson
 
-						return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
-						//new ClientCreateViewModel()
-						//{
-						//	Client = clientCreateViewModel.Client,
-						//	Password = clientCreateViewModel.Password,
-						//	Email = clientCreateViewModel.Email,
-						//	PasswordConfirm = clientCreateViewModel.PasswordConfirm,
-						//	IsPhysicalPerson = clientCreateViewModel.IsPhysicalPerson
-						//});
+						return RedirectToAction(nameof(CreatePhysicalPerson), client);
 					}
 					else
 					{
 						//LegalPerson
-
-						//return RedirectToAction(nameof(CreateLegalPerson), clientCreateViewModel);
 					}
 				} 
 				else
@@ -79,43 +87,57 @@ namespace Web.Controllers
 				}
 			}
 
-			return View(clientCreateViewModel);
+			return View(client);
 		}
 
 		[HttpGet]
-		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreateViewModel)
+		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreate)
 		{
-			PhysicalPersonCreateViewModel physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
+			PhysicalPersonCreateViewModel physicalPerson = new PhysicalPersonCreateViewModel()
 			{
-				Client = clientCreateViewModel.Client,	//TODO: don't work. return null
-				Password  = clientCreateViewModel.Password,
-				Email = clientCreateViewModel.Email
+				Login     = clientCreate.Login,
+				Email     = clientCreate.Email,
+				Password  = clientCreate.Password,
+				TelNumber = clientCreate.TelNumber,
+				Address   = clientCreate.Address
 			};
 			 
-			return View(physicalPersonCreateViewModel);
+			return View(physicalPerson);
 		}
 
 		// POST: Clients/CreatePhysicalPerson
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> CreatePhysicalPerson(PhysicalPersonCreateViewModel physicalPersonCreateViewModel)
+		public async Task<IActionResult> CreatePhysicalPerson(PhysicalPersonCreateViewModel physicalPerson)
 		{
 			if (ModelState.IsValid)
 			{
-				Client client = physicalPersonCreateViewModel.Client;
-				client.PhysicalPerson = physicalPersonCreateViewModel.PhysicalPerson;
-
 				//Add to tables Client and PhysicalPerson
-				await Repository.AddAsync(client);
+				await Repository.AddAsync(entity: new Client()
+				{
+					Login = physicalPerson.Login,
+					Address = physicalPerson.Address,
+					TelNumber = physicalPerson.TelNumber,
+
+					PhysicalPerson = new PhysicalPerson()
+					{
+						IdentificationNumber = physicalPerson.IdentificationNumber,
+						PassportNumber = physicalPerson.PassportNumber,
+						PassportSeries = physicalPerson.PassportSeries,
+						Name = physicalPerson.Name,
+						Surname = physicalPerson.Surname,
+						Patronymic = physicalPerson.Patronymic
+					}
+				});
 
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName = physicalPersonCreateViewModel.Client.Login,
-					Email = physicalPersonCreateViewModel.Email,
-					PhoneNumber = physicalPersonCreateViewModel.Client.TelNumber
+					UserName = physicalPerson.Login,
+					Email = physicalPerson.Email,
+					PhoneNumber = physicalPerson.TelNumber
 				};
 
-				var result = await _userManager.CreateAsync(user, physicalPersonCreateViewModel.Password);
+				var result = await _userManager.CreateAsync(user, physicalPerson.Password);
 
 				if (result.Succeeded)
 				{
@@ -133,15 +155,9 @@ namespace Web.Controllers
 				}
 			}
 
-			return View(physicalPersonCreateViewModel);
+			return View(physicalPerson);
 		}
 
-		#region CreateLegalPerson
-
-		
-
-		#endregion
-		
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
 		{

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Web.Services;
-using ApplicationCore;
+
 namespace Web.Controllers
 {
 	/// <summary>
@@ -69,6 +69,7 @@ namespace Web.Controllers
 		}
 
 		[HttpPost]
+
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Edit(
 			int id, [Bind("Id,IdClient,IdCurrency,DateOpen,DateClose,Amount,AccountType")]

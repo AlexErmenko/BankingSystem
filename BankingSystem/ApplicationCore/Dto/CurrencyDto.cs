@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ApplicationCore.Dto
+﻿namespace ApplicationCore.Dto
 {
 	public class CurrencyDto
 	{

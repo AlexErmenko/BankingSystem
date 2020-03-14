@@ -73,7 +73,6 @@ namespace Infrastructure
 
                 entity.Property(e => e.Login).IsUnicode(false);
 
-                entity.Property(e => e.Password).IsUnicode(false);
 
                 entity.Property(e => e.TelNumber).IsUnicode(false);
             });

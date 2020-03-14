@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿using System.Collections.Generic;
 using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
-
-using Microsoft.AspNetCore.Mvc;
-
-using Moq;
-
-using Web.Controllers;
-
 using Xunit;
 
 namespace xUnitLib
@@ -53,7 +41,7 @@ namespace xUnitLib
 
 		public Client GetUser()
 		{
-			return new Client() {Id = 3, Login = "login", Password = "1111", TelNumber = "0970716227"};
+			return new Client() {Id = 3, Login = "login", TelNumber = "0970716227"};
 		}
 
 		public void Delete_ClientTest()
