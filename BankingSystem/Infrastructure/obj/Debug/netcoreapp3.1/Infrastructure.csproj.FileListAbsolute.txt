@@ -72,3 +72,5 @@ C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.Ass
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

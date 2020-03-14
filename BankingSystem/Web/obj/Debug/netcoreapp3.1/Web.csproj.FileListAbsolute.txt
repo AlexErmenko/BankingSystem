@@ -878,7 +878,6 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\R
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
-E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
