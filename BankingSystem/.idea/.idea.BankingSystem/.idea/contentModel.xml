@@ -5,9 +5,6 @@
       <e p=".editorconfig" t="Include" />
       <e p="ApplicationCore" t="IncludeRecursive">
         <e p="ApplicationCore.csproj" t="IncludeRecursive" />
-        <e p="BankingSystemContext" t="Include">
-          <e p="BankingContext.cs" t="Include" />
-        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dto" t="Include">
           <e p="CurrencyDto.cs" t="Include" />
@@ -56,7 +53,7 @@
       </e>
       <e p="BankingSystem.sln" t="IncludeFlat" />
       <e p="Infrastructure" t="IncludeRecursive">
-        <e p="BankingSystemContext.cs" t="Include" />
+        <e p="BankingContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Data" t="Include">
           <e p="BankAccountEfRepository.cs" t="Include" />
@@ -175,6 +172,7 @@
           <e p="ClientAccountViewModel.cs" t="Include" />
           <e p="ClientCreateViewModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
+          <e p="LegalPersonCreateViewModel.cs" t="Include" />
           <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
