@@ -32,7 +32,6 @@ namespace Web.Controllers
 			_BankAccountRepository    = bankAccountRepository;
 			_currencyRepository       = currencyRepository;
 			_exchangeRateRepository   = exchangeRateRepository;
-			SomeClass c = new SomeClass();
 		}
 
 		/// <summary>
