@@ -62,7 +62,7 @@ namespace Web
 
 			services.AddRazorPages();
 			services.AddHttpContextAccessor();
-			 
+
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 			services.AddReact();
@@ -77,7 +77,8 @@ namespace Web
 			using(var scope = sp.CreateScope())
 			{
 				var existingUserManager = scope.ServiceProvider.GetService<UserManager<ApplicationUser>>();
-				if(existingUserManager == null) services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+				if(existingUserManager == null)
+					services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 			}
 		}
 

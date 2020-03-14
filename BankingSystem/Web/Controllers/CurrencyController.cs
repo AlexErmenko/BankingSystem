@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
@@ -18,13 +17,14 @@ namespace Web.Controllers
 	/// </summary>
 	public class CurrencyController : Controller
 	{
-		private ICurrencyViewModelService _currencyViewModelSerivce;
+		private readonly ICurrencyViewModelService _currencyViewModelSerivce;
 
 		public IAsyncRepository<BankAccount> _BankAccountRepository { get; set; }
 		public IAsyncRepository<Currency> _currencyRepository { get; set; }
 		public IAsyncRepository<ExchangeRate> _exchangeRateRepository { get; set; }
 
 		public int ClientId { get; set; }
+
 		public CurrencyController(ICurrencyViewModelService currencyViewModelSerivce, IAsyncRepository<BankAccount> bankAccountRepository, IAsyncRepository<Currency> currencyRepository, IAsyncRepository<ExchangeRate> exchangeRateRepository)
 		{
 			_currencyViewModelSerivce = currencyViewModelSerivce;
@@ -58,13 +58,14 @@ namespace Web.Controllers
 		//GET
 		public async Task<IActionResult> Edit(int id)
 		{
-			var account = await _BankAccountRepository.GetById(id);
-			List<Currency> all = await _currencyRepository.GetAll();
+			var account = await _BankAccountRepository.GetById(id: id);
+			var all = await _currencyRepository.GetAll();
 			var exchangeRates = await _exchangeRateRepository.GetAll();
 
-			ViewBag.Currencies = new SelectList(all, "Id", "ShortName");
-			if(account == null) { return NotFound(); }
-			return View(account);
+			ViewBag.Currencies = new SelectList(items: all, dataValueField: "Id", dataTextField: "ShortName");
+			if(account == null) return NotFound();
+
+			return View(model: account);
 		}
 
 		[HttpPost, ValidateAntiForgeryToken]
@@ -73,19 +74,19 @@ namespace Web.Controllers
 			//TODO: Добавить пересчёт баланса
 			if(ModelState.IsValid)
 			{
-				Console.WriteLine(account);
+				Console.WriteLine(value: account);
 
-				try { await _BankAccountRepository.UpdateAsync(account); } catch(Exception e)
+				try { await _BankAccountRepository.UpdateAsync(entity: account); } catch(Exception e)
 				{
-					Console.WriteLine(e);
+					Console.WriteLine(value: e);
 					throw;
 				}
 				return RedirectToAction(actionName: nameof(Index));
 			}
 
-			return View(account);
+			return View(model: account);
 		}
 
-		public IActionResult Delete() { throw new NotImplementedException(); }
+		public IActionResult Delete() => throw new NotImplementedException();
 	}
 }

@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-using ApplicationCore.Specifications;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Web.Models;
+
 using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
@@ -21,10 +19,10 @@ namespace Web.Controllers
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
+		private readonly IAsyncRepository<Client> _clientRepository;
+		private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
-		private readonly IHttpContextAccessor _httpContextAccessor;
-		private readonly IAsyncRepository<Client> _clientRepository;
 
 		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
 									 IAsyncRepository<LegalPerson> legalPersonRepo,
@@ -49,7 +47,8 @@ namespace Web.Controllers
 		public async Task<IActionResult> CreateClientAccountForm()
 		{
 			var idClient = GetUserId();
-			if (idClient == null) { return View("Error"); }
+			if(idClient == null)
+				return View(viewName: "Error");
 
 			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
@@ -70,40 +69,37 @@ namespace Web.Controllers
 		[HttpPost]
 		public IActionResult CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
 		{
-			if (ModelState.IsValid)
+			if(ModelState.IsValid)
 			{
 				//сохранение счета
 				var account = createClientAccountViewModel.Account;
 				_bankAccountRepository.SaveAccount(account: account);
 
-				return RedirectToAction("GetAccounts");
+				return RedirectToAction(actionName: "GetAccounts");
 			}
 
 			return View();
 		}
 
 		/// <summary>
-		/// Возвращает ID авторизованого пользователя
+		///     Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
 		private int? GetUserId()
 		{
 			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
-			var client = _clientRepository.GetAll().Result
-										  .FirstOrDefault(c => c.Login == login);
+			var client = _clientRepository.GetAll().Result.FirstOrDefault(predicate: c => c.Login == login);
 
 			return client?.Id;
 		}
 
 		/// <summary>
-		/// Отображение всех счетов клиента
+		///     Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
 		public IActionResult GetAccounts(int idClient)
 		{
-			return View(_bankAccountRepository.Accounts
-											  .Include(p => p.IdCurrencyNavigation)
-											  .Where(c => c.Id == GetUserId()));
+			return View(model: _bankAccountRepository.Accounts.Include(navigationPropertyPath: p => p.IdCurrencyNavigation).Where(predicate: c => c.Id == GetUserId()));
 		}
 
 		/// <summary>
@@ -115,7 +111,7 @@ namespace Web.Controllers
 		{
 			_bankAccountRepository.CloseAccount(idAccount: idAccount);
 
-			return RedirectToAction("GetAccounts");
+			return RedirectToAction(actionName: "GetAccounts");
 		}
 
 		//Перед тем, как удалить счет, нужно его закрыть методом BankAccountClose
@@ -128,7 +124,7 @@ namespace Web.Controllers
 		{
 			_bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
-			return RedirectToAction("GetAccounts");
+			return RedirectToAction(actionName: "GetAccounts");
 		}
 	}
 }

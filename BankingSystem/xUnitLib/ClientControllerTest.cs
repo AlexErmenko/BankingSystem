@@ -34,27 +34,13 @@ namespace xUnitLib
 			return clients;
 		}
 
-		[Fact]
-		public async void Index_test()
+		public Client GetUser() => new Client
 		{
-			var mock = new Mock<IAsyncRepository<Client>>();
-			mock.Setup(expression: repository => repository.GetAll()).ReturnsAsync(valueFunction: Inid);
-
-			var controller = new ClientsController(repository: mock.Object);
-
-			IActionResult result =  await controller.Index();
-
-			ViewResult viewResult = await Assert.IsType<Task<IActionResult>>(@object: result) as ViewResult;
-
-			var model = Assert.IsAssignableFrom<IEnumerable<Client>>(@object: viewResult.ViewData.Model);
-
-			Assert.Equal(expected: 2, actual: model.Count());
-		}
-
-		public Client GetUser()
-		{
-			return new Client() {Id = 3, Login = "login", Password = "1111", TelNumber = "0970716227"};
-		}
+			Id = 3,
+			Login = "login",
+			Password = "1111",
+			TelNumber = "0970716227"
+		};
 
 		public void Delete_ClientTest()
 		{
@@ -67,10 +53,23 @@ namespace xUnitLib
 
 			//TODO: ACT and Assert
 			// await controller.Delete(clientId);
+		}
 
+		[Fact]
+		public async void Index_test()
+		{
+			var mock = new Mock<IAsyncRepository<Client>>();
+			mock.Setup(expression: repository => repository.GetAll()).ReturnsAsync(valueFunction: Inid);
 
+			var controller = new ClientsController(repository: mock.Object);
 
+			var result = await controller.Index();
 
+			var viewResult = await Assert.IsType<Task<IActionResult>>(@object: result) as ViewResult;
+
+			var model = Assert.IsAssignableFrom<IEnumerable<Client>>(@object: viewResult.ViewData.Model);
+
+			Assert.Equal(expected: 2, actual: model.Count());
 		}
 	}
 }

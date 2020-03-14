@@ -12,10 +12,7 @@ using Infrastructure.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.EntityFrameworkCore;
 
 using Web.ViewModels.Admin;
 
@@ -26,11 +23,9 @@ namespace Web.Controllers
 	{
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		private IWebHostEnvironment _appEnvironment;
+		private readonly IWebHostEnvironment _appEnvironment;
 
-
-		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context,
-									IWebHostEnvironment appEnvironment)
+		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context, IWebHostEnvironment appEnvironment)
 		{
 			_userManager = userManager;
 			_context = context;
@@ -67,17 +62,10 @@ namespace Web.Controllers
 		// GET: Admin/Details/5
 		public async Task<IActionResult> ManagerDetails(string id, ApplicationUser applicationUser)
 		{
-			var user = await _userManager.FindByIdAsync(userId:id);
-			if (user == null)
-			{
-				return NotFound();
-			}
+			var user = await _userManager.FindByIdAsync(userId: id);
+			if(user == null) return NotFound();
 
-			var photo = (from m in _context.FileModel
-						where m.Id == applicationUser.Id
-						select m.Name).FirstOrDefault();
-
-
+			var photo = ( from m in _context.FileModel where m.Id == applicationUser.Id select m.Name ).FirstOrDefault();
 
 			var managerDetailsVm = new EditUserViewModel
 			{
@@ -86,22 +74,17 @@ namespace Web.Controllers
 				Email = user.Email,
 				PhotoPath = photo
 			};
-			
 
-			return View(managerDetailsVm);
-		} 
+			return View(model: managerDetailsVm);
+		}
 
 		// GET: Admin/Create
 		public ActionResult AddManager() => View();
 
-	
-
 		// POST: Admin/Create
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> AddManager([Bind("Id,UserName,Email,PhoneNumber")]
-													ApplicationUser applicationUser, IFormFile uploadedFile)
+		public async Task<IActionResult> AddManager([Bind("Id,UserName,Email,PhoneNumber")] ApplicationUser applicationUser, IFormFile uploadedFile)
 		{
-			
 			var user = new ApplicationUser
 			{
 				Id = applicationUser.Id,
@@ -112,23 +95,25 @@ namespace Web.Controllers
 
 			await _userManager.CreateAsync(user: user, password: AuthorizationConstants.DEFAULT_PASSWORD);
 			await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
+
 			//Getting new users Id
 			//Saving file, which we get, of created user
-			if (uploadedFile != null)
+			if(uploadedFile != null)
 			{
 				// путь к папке Files
-				string path = "/Files/" + uploadedFile.FileName;
+				var path = "/Files/" + uploadedFile.FileName;
+
 				// сохраняем файл в папку Files в каталоге wwwroot
-				using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+				using(var fileStream = new FileStream(path: _appEnvironment.WebRootPath + path, mode: FileMode.Create)) await uploadedFile.CopyToAsync(target: fileStream);
+				var file = new FileModel
 				{
-					await uploadedFile.CopyToAsync(fileStream);
-				}
-				FileModel file = new FileModel {Id = applicationUser.Id, Name = uploadedFile.FileName, Path = path };
-				_context.FileModel.Add(file);
+					Id = applicationUser.Id,
+					Name = uploadedFile.FileName,
+					Path = path
+				};
+				_context.FileModel.Add(entity: file);
 				_context.SaveChanges();
 			}
-		
-
 
 			return RedirectToAction(actionName: nameof(ManagerList));
 		}
@@ -197,7 +182,5 @@ namespace Web.Controllers
 				return View();
 			}
 		}
-		
-		
 	}
 }

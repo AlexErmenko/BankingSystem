@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 namespace Web.ViewModels.Admin
 {
@@ -16,6 +15,7 @@ namespace Web.ViewModels.Admin
 
 		[Required, Display(Name = "Номер телефона"), Phone]
 		public string PhoneNumber { get; set; }
+
 		public string PhotoPath { get; set; }
 	}
 }

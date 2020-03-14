@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-using ApplicationCore.Specifications;
+
 using Infrastructure.Identity;
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,15 +16,14 @@ namespace Web.Controllers
 	// [Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
 	public class ClientsController : Controller
 	{
-		private IAsyncRepository<Client> Repository { get; }
 		private UserManager<ApplicationUser> _userManager;
+		private IAsyncRepository<Client> Repository { get; }
 
 		//TODO: Заменить на репозиторий
 		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager)
 		{
 			Repository = repository;
 			_userManager = userManager;
-
 		}
 
 		// GET: Clients
@@ -46,16 +45,16 @@ namespace Web.Controllers
 				await Repository.AddAsync(entity: client);
 				return RedirectToAction(actionName: nameof(Index));
 			}
-		
+
 			return View(model: client);
 		}
-		
 
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
 		{
 			var client = await Repository.GetById(id: id);
-			if(client == null) return NotFound();
+			if(client == null)
+				return NotFound();
 
 			return View(model: client);
 		}
@@ -64,18 +63,14 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Address,TelNumber")] Client client)
 		{
-			if(id != client.Id) return NotFound();
+			if(id != client.Id)
+				return NotFound();
 
 			if(ModelState.IsValid)
 			{
-				try
+				try { await Repository.UpdateAsync(entity: client); } catch(DbUpdateConcurrencyException)
 				{
-					await Repository.UpdateAsync(entity: client);
-				} 
-				catch(DbUpdateConcurrencyException)
-				{
-					if(!ClientExists(id: client.Id))
-						return NotFound();
+					if(!ClientExists(id: client.Id)) return NotFound();
 
 					throw;
 				}
@@ -90,7 +85,8 @@ namespace Web.Controllers
 		public async Task<IActionResult> Delete(int id)
 		{
 			var client = await Repository.GetById(id: id);
-			if(client == null) return NotFound();
+			if(client == null)
+				return NotFound();
 
 			return View(model: client);
 		}

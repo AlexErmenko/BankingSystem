@@ -71,10 +71,8 @@
             <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
             <e p="20200307171229_InitMigration.cs" t="Include" />
             <e p="20200307171229_InitMigration.Designer.cs" t="Include" />
-            <e p="20200309092858_FileModel.cs" t="Include" />
-            <e p="20200309092858_FileModel.Designer.cs" t="Include" />
-            <e p="20200309093647_File.cs" t="Include" />
-            <e p="20200309093647_File.Designer.cs" t="Include" />
+            <e p="20200312125524_File.cs" t="Include" />
+            <e p="20200312125524_File.Designer.cs" t="Include" />
             <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
           </e>
         </e>
@@ -129,7 +127,6 @@
         </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
-          <e p="CreateClientAccountViewModel.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -161,6 +158,9 @@
             <e p="EditUserViewModel.cs" t="Include" />
             <e p="UserViewModel.cs" t="Include" />
           </e>
+          <e p="BankAccount" t="Include">
+            <e p="CreateClientAccountViewModel.cs" t="Include" />
+          </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
         </e>
@@ -171,10 +171,12 @@
             <e p="AddManager.cshtml" t="Include" />
             <e p="DeleteManager.cshtml" t="Include" />
             <e p="EditManager.cshtml" t="Include" />
+            <e p="ManagerDetails.cshtml" t="Include" />
             <e p="ManagerList.cshtml" t="Include" />
           </e>
           <e p="BankAccount" t="Include">
             <e p="CreateClientAccountForm.cshtml" t="Include" />
+            <e p="GetAccounts.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Clients" t="Include">
@@ -201,6 +203,9 @@
         </e>
         <e p="Web.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
+          <e p="Admin" t="Include">
+            <e p="style.css" t="Include" />
+          </e>
           <e p="client" t="Include">
             <e p="CurrencyConvertor.js" t="Include" />
             <e p="CurrencyConvertor.jsx" t="Include" />
@@ -215,7 +220,10 @@
             <e p="site.min.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
-          <e p="Files" t="Include" />
+          <e p="Files" t="Include">
+            <e p="Снимок.PNG" t="Include" />
+            <e p="Снимок1.PNG" t="Include" />
+          </e>
           <e p="js" t="Include">
             <e p="site.js" t="Include" />
             <e p="site.min.js" t="Include" />
