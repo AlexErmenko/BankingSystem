@@ -19,7 +19,6 @@ Properties/
 
 Web/bin/
 Web/obj/
-azure-pipelines.yml
 
 
 Project_Readme.html
@@ -160,7 +159,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
-# TODO: Comment the next line if you want to checkin your web deploy settings 
+# TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
 *.pubxml
 *.publishproj
@@ -229,7 +228,7 @@ FakesAssemblies/
 project.lock.json
 __pycache__/
 
-#Mac OSX 
+#Mac OSX
 .DS_Store
 
 # Windows thumbnail cache files
@@ -257,13 +256,13 @@ BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cac
 /.vs/tasks.vs.json
 /.vs/VSWorkspaceState.json
 /.vs
-/BankingSystem/Web/obj
+/BankingSystem/Web/obj/Debug/netcoreapp3.1
 /BankingSystem/Web/Properties/PublishProfiles
-/BankingSystem/Web/bin
 /BankingSystem/Infrastructure/bin/Debug/netcoreapp3.1
-/BankingSystem/Infrastructure/bin/Release/netcoreapp3.1
 /BankingSystem/Infrastructure/obj/Debug/netcoreapp3.1
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1
 /BankingSystem/Infrastructure/obj/Release/netcoreapp3.1
-/BankingSystem/ApplicationCore/bin/Debug/netcoreapp3.1
-/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native
-/BankingSystem/xUnitLib/obj
+/BankingSystem/ApplicationCore/obj/Release/netcoreapp3.1
+
+/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1
+/BankingSystem/xUnitLib/obj/
