@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{441FE12E-416
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0E25FEDB-F82F-4B66-81E3-E8053E52DF47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitLib", "xUnitLib\xUnitLib.csproj", "{3DB2CD83-90B6-44B1-B5A0-F6839813894D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnitLib", "xUnitLib\xUnitLib.csproj", "{3DB2CD83-90B6-44B1-B5A0-F6839813894D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

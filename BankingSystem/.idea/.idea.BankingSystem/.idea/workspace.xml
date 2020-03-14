@@ -15,40 +15,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingSystem.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorTargetAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorTargetAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +49,12 @@
     <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517F607-C12A-4B50-8364-C3F896F0FE6F/8a/6f53430f/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F11B901-D96E-46EF-A606-EAF24DCEC0A3/8/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/xUnitLib/ClientControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/xUnitLib/AdminControllerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,7 +101,6 @@
         <option value="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" />
-        <option value="$PROJECT_DIR$/../.gitignore" />
         <option value="$PROJECT_DIR$/../.git/info/exclude" />
         <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
         <option value="$PROJECT_DIR$/Web/Startup.cs" />
@@ -134,6 +110,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
+        <option value="$PROJECT_DIR$/../.gitignore" />
       </list>
     </option>
   </component>
@@ -316,6 +293,7 @@
       <workItem from="1584202511024" duration="44000" />
       <workItem from="1584202636017" duration="2308000" />
       <workItem from="1584205424833" duration="3014000" />
+      <workItem from="1584209211339" duration="427000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -345,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584204743774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1">
+      <created>1584209299946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584209299946</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +340,7 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="362" />
+    <option name="symbolColumnWidth" value="391" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -411,6 +396,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1298" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584208405556" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584209414531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584209414531" />
     <state width="1879" height="475" key="GridCell.Tab.0.bottom" timestamp="1584208446466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -523,6 +512,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="839" height="487" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1583866071548" />
+    <state x="808" y="432" key="VCS.ChangelistChooser" timestamp="1584209317333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="432" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584209317333" />
+    <state x="826" y="433" key="VCS.EditChangelistDialog" timestamp="1584209360445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="433" key="VCS.EditChangelistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584209360445" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584203526730">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -634,45 +631,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" initialLine="39">
-            <startOffsets>
-              <option value="1169" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1256" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs</url>
-          <line>37</line>
-          <properties documentPath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" initialLine="37">
-            <startOffsets>
-              <option value="1118" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1164" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Web/Controllers/BankAccountController.cs</url>
-          <line>107</line>
-          <properties documentPath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" initialLine="107">
-            <startOffsets>
-              <option value="3428" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3459" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
