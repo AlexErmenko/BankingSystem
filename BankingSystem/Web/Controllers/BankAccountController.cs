@@ -1,15 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-
+using ApplicationCore.Specifications;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ClearScript;
 using Microsoft.EntityFrameworkCore;
-
+using Web.Models;
 using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
@@ -19,10 +22,10 @@ namespace Web.Controllers
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
-		private readonly IAsyncRepository<Client> _clientRepository;
-		private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
+		private readonly IHttpContextAccessor _httpContextAccessor;
+		private readonly IAsyncRepository<Client> _clientRepository;
 
 		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
 									 IAsyncRepository<LegalPerson> legalPersonRepo,
@@ -46,12 +49,14 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> CreateClientAccountForm()
 		{
-			var idClient = GetUserId();
-			if(idClient == null)
-				return View(viewName: "Error");
+			var idClient = await GetUserId();
 
-			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
+			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
+
+			//проверка, что хоть какого-то клиента нашло
+			if (physicalPerson == null &&
+				legalPerson    == null) { return RedirectToAction("GetAccounts"); }
 
 			return View(model: new CreateClientAccountViewModel
 			{
@@ -69,37 +74,44 @@ namespace Web.Controllers
 		[HttpPost]
 		public IActionResult CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
 		{
-			if(ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
 				//сохранение счета
 				var account = createClientAccountViewModel.Account;
 				_bankAccountRepository.SaveAccount(account: account);
 
-				return RedirectToAction(actionName: "GetAccounts");
+				return RedirectToAction("GetAccounts");
 			}
 
 			return View();
 		}
 
 		/// <summary>
-		///     Возвращает ID авторизованого пользователя
+		/// Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
-		private int? GetUserId()
+		private async Task<int?> GetUserId()
 		{
 			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
-			var client = _clientRepository.GetAll().Result.FirstOrDefault(predicate: c => c.Login == login);
+			var clients =  await _clientRepository.GetAll();
+			var client = clients.FirstOrDefault(c => c.Login.Equals(login));
 
 			return client?.Id;
 		}
 
 		/// <summary>
-		///     Отображение всех счетов клиента
+		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public IActionResult GetAccounts(int idClient)
+		public async Task<IActionResult> GetAccounts(int idClient)
 		{
-			return View(model: _bankAccountRepository.Accounts.Include(navigationPropertyPath: p => p.IdCurrencyNavigation).Where(predicate: c => c.Id == GetUserId()));
+			var idUser = await GetUserId();
+			var accounts = _bankAccountRepository
+						   .Accounts
+						   .Include(p => p.IdCurrencyNavigation)
+						   .Where(c => c.Id.Equals(idUser));
+
+			return View(accounts);
 		}
 
 		/// <summary>
@@ -111,7 +123,7 @@ namespace Web.Controllers
 		{
 			_bankAccountRepository.CloseAccount(idAccount: idAccount);
 
-			return RedirectToAction(actionName: "GetAccounts");
+			return RedirectToAction("GetAccounts");
 		}
 
 		//Перед тем, как удалить счет, нужно его закрыть методом BankAccountClose
@@ -124,7 +136,7 @@ namespace Web.Controllers
 		{
 			_bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
-			return RedirectToAction(actionName: "GetAccounts");
+			return RedirectToAction("GetAccounts");
 		}
 	}
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+using System.Threading.Tasks;
 using ApplicationCore.Entity;
 
 namespace ApplicationCore.Interfaces
@@ -12,8 +12,8 @@ namespace ApplicationCore.Interfaces
 	{
 		IQueryable<BankAccount> Accounts { get; }
 
-		void SaveAccount(BankAccount account);
-		void DeleteAccount(int idAccount);
-		void CloseAccount(int idAccount);
+		Task SaveAccount(BankAccount account);
+		Task DeleteAccount(int idAccount);
+		Task CloseAccount(int idAccount);
 	}
 }
