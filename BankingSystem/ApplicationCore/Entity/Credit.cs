@@ -22,5 +22,11 @@ namespace ApplicationCore.Entity
         [Column(TypeName = "date")]
         public DateTime DateCreditFinish { get; set; }
         public int TermCredit { get; set; }
-    }
+
+		[ForeignKey(nameof(IdAccount))]
+		[InverseProperty(nameof(BankAccount.Credits))]
+		public virtual BankAccount IdAccountNavigation { get; set; }
+		[InverseProperty(nameof(Repayment.IdCreditNavigation))]
+		public virtual ICollection<Repayment> Repayments { get; set; }
+	}
 }
