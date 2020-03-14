@@ -14,36 +14,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="test exclude some files">
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/.filenesting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.StaticWebAssets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/bundleconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/libman.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.CopyComplete" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
       <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -52,6 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F11B901-D96E-46EF-A606-EAF24DCEC0A3/8/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///SomeClasses.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///CurrencyController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" root0="FORCE_HIGHLIGHTING" />
@@ -273,7 +257,7 @@
       <workItem from="1584199505112" duration="102000" />
       <workItem from="1584199738079" duration="2211000" />
       <workItem from="1584202511024" duration="44000" />
-      <workItem from="1584202636017" duration="1710000" />
+      <workItem from="1584202636017" duration="2022000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -289,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584202946686</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1584204440213</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584204440213</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +321,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test exclude some files" />
-    <option name="LAST_COMMIT_MESSAGE" value="test exclude some files" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584202833942">
@@ -519,13 +511,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs</url>
-          <line>74</line>
+          <line>75</line>
           <properties documentPath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" initialLine="71">
             <startOffsets>
-              <option value="2331" />
+              <option value="2371" />
             </startOffsets>
             <endOffsets>
-              <option value="2332" />
+              <option value="2372" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
