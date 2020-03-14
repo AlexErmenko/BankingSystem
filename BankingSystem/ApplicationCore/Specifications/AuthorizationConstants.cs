@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ApplicationCore.Specifications
+﻿namespace ApplicationCore.Specifications
 {
 	public static class AuthorizationConstants
 	{
