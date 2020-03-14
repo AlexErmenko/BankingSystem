@@ -109,7 +109,7 @@ namespace Web.Controllers
 			var accounts = _bankAccountRepository
 						   .Accounts
 						   .Include(p => p.IdCurrencyNavigation)
-						   .Where(c => c.Id.Equals(idUser));
+						   .Where(c => c.IdClient.Equals(idUser));
 
 			return View(accounts);
 		}
