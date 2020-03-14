@@ -1,0 +1,11 @@
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.deps.json
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.dll
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.pdb
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\ApplicationCore.dll
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\ApplicationCore.pdb
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.dll
+C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.pdb
