@@ -69,6 +69,7 @@ namespace Web.Controllers
 		}
 
 		[HttpPost]
+
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Edit(
 			int id, [Bind("Id,IdClient,IdCurrency,DateOpen,DateClose,Amount,AccountType")]

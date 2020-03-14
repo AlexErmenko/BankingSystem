@@ -65,8 +65,8 @@ namespace Web
 
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-			services.AddReact();
-			services.AddJsEngineSwitcher(configure: options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddV8();
+			// services.AddReact();
+			// services.AddJsEngineSwitcher(configure: options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddV8();
 
 			// services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
 		}

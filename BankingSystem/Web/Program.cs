@@ -33,8 +33,8 @@ namespace Web
 					var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 					var repository = services.GetRequiredService<IAsyncRepository<Client>>();
 					//await ApplicationDbContextSeed.SeedAsync(userManager: userManager, roleManager: roleManager);
-					// await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager,
-					// 										  repository);
+					await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager,
+															  repository);
 				} catch(Exception ex)
 				{
 					var logger = loggerFactory.CreateLogger<Program>();
