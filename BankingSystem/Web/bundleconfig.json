@@ -1,5 +1,5 @@
 /*
- *  Файл для настройки сборки и минификации css файлов  
+ *  Файл для настройки сборки и минификации css файлов
  */
 
 [
@@ -14,8 +14,7 @@
   {
     "outputFileName": "wwwroot/js/site.min.js",
     "inputFiles": [
-      "wwwroot/js/site.js",
-      "wwwroot/client/CurrencyConvertor.js"
+      "wwwroot/js/site.js"
     ],
     "minify": {
       "enabled": true,
