@@ -940,7 +940,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -982,7 +981,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -993,15 +991,10 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.Co
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll

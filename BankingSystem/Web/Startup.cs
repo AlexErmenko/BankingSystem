@@ -28,7 +28,6 @@ namespace Web
 
 	//Коменда для добавление миграции для осн. БД.
 	//dotnet ef migrations add InitMigration --context bankingsystemcontext --project ../Infrastructure/Infrastructure.csproj --startup-project Web.csproj
-
 	public class Startup
 	{
 		public IConfiguration Configuration { get; }
