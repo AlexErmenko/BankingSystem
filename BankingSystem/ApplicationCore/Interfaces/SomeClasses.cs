@@ -1,5 +1,5 @@
 ﻿
-namespace ApplicationCore
+namespace ApplicationCore.Interfaces
 {
 	public class SomeClasses
 	{
