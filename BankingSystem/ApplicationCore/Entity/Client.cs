@@ -19,10 +19,7 @@ namespace ApplicationCore.Entity
         [Required]
         [StringLength(100)]
         public string Login { get; set; }
-        [Required]
-        [StringLength(24)]
-        public string Password { get; set; }
-        [Required]
+		[Required]
         [StringLength(120)]
         public string Address { get; set; }
         [Required]

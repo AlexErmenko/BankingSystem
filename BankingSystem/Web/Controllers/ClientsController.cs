@@ -117,7 +117,6 @@ namespace Web.Controllers
 				await Repository.AddAsync(entity: new Client()
 				{
 					Login = physicalPerson.Login,
-					Password = physicalPerson.Password,
 					Address = physicalPerson.Address,
 					TelNumber = physicalPerson.TelNumber,
 

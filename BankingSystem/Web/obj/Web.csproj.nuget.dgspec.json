@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Web\\Web.csproj": {}
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Web\\Web.csproj": {}
   },
   "projects": {
-    "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\DmitriyL\\.nuget\\packages\\",
-        "outputPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\obj\\",
+        "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DmitriyL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,24 +67,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DmitriyL\\.nuget\\packages\\",
-        "outputPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\obj\\",
+        "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DmitriyL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
+              "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -146,24 +146,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Web\\Web.csproj": {
+    "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Web\\Web.csproj",
+        "projectUniqueName": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\DmitriyL\\.nuget\\packages\\",
-        "outputPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Web\\obj\\",
+        "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DmitriyL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,11 +176,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
+              "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "e:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\Infrastructure\\Infrastructure.csproj"
+              "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "E:\\Учёба\\Универ\\Sigma\\Стажировка\\Banking System\\BankingSystem\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -283,7 +283,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

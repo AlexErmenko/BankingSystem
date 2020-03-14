@@ -23,6 +23,8 @@ namespace ApplicationCore.Entity
         public decimal Amount { get; set; }
         [Column(TypeName = "date")]
         public DateTime DateCredit { get; set; }
+		[Column(TypeName= "date")]
+		public DateTime DateCreditFinish { get; set; }
         public bool Status { get; set; }
 
         [ForeignKey(nameof(IdAccount))]

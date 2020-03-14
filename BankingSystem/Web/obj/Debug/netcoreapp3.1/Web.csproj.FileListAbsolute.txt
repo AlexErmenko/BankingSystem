@@ -1140,3 +1140,4 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
