@@ -5,6 +5,9 @@
       <e p=".editorconfig" t="Include" />
       <e p="ApplicationCore" t="IncludeRecursive">
         <e p="ApplicationCore.csproj" t="IncludeRecursive" />
+        <e p="BankingSystemContext" t="Include">
+          <e p="BankingContext.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dto" t="Include">
           <e p="CurrencyDto.cs" t="Include" />
