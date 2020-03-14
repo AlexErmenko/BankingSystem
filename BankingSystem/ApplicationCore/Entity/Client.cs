@@ -9,6 +9,11 @@ namespace ApplicationCore.Entity
     [Table("Client")]
     public partial class Client
     {
+        public Client()
+        {
+            BankAccounts = new HashSet<BankAccount>();
+        }
+
         [Key]
         public int Id { get; set; }
         [Required]
@@ -22,12 +27,11 @@ namespace ApplicationCore.Entity
         [StringLength(15)]
         public string TelNumber { get; set; }
 
-
-		[InverseProperty("IdNavigation")]
-		public virtual LegalPerson LegalPerson { get; set; }
-		[InverseProperty("IdNavigation")]
-		public virtual PhysicalPerson PhysicalPerson { get; set; }
-		[InverseProperty(nameof(BankAccount.IdClientNavigation))]
-		public virtual ICollection<BankAccount> BankAccounts { get; set; }
-	}
+        [InverseProperty("IdNavigation")]
+        public virtual LegalPerson LegalPerson { get; set; }
+        [InverseProperty("IdNavigation")]
+        public virtual PhysicalPerson PhysicalPerson { get; set; }
+        [InverseProperty(nameof(BankAccount.IdClientNavigation))]
+        public virtual ICollection<BankAccount> BankAccounts { get; set; }
+    }
 }

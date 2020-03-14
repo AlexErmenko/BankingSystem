@@ -58,3 +58,8 @@ C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.A
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
 C:\Sigma\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+F:\Banking_System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.csprojAssemblyReference.cache
+F:\Banking_System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfoInputs.cache
+F:\Banking_System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.AssemblyInfo.cs
+F:\Banking_System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.dll
+F:\Banking_System\BankingSystem\ApplicationCore\obj\Debug\netcoreapp3.1\ApplicationCore.pdb

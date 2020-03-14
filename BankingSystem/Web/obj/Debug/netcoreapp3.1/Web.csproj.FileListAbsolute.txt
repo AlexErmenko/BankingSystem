@@ -703,6 +703,7 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\J
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -744,6 +745,7 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\M
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -754,10 +756,15 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\M
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -1126,5 +1133,4 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
-E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
