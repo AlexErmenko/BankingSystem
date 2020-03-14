@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Entity;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 
 namespace Web.ViewModels
 {
 	public class ClientCreateViewModel
 	{
-		[Required]
-		[Display(Name = "Логин")]
-		public string Login { get; set; }
+		public ApplicationCore.Entity.Client Client { get; set; }
 
 		[Required]
 		[DataType(DataType.Password)]
@@ -28,14 +28,6 @@ namespace Web.ViewModels
 		[Display(Name = "Email")]
 		[DataType(DataType.EmailAddress)]
 		public string Email { get; set; }
-
-		[Required]
-		[Display(Name = "Адрес")]
-		public string Address { get; set; }
-
-		[Required]
-		[Display(Name = "Телефонный Номер")]
-		public string TelNumber { get; set; }
 
 		[Required]
 		[Display(Name = "Тип Субъекта")]
