@@ -18,7 +18,6 @@
   <ItemGroup>
     <Compile Remove="Data\**" />
     <Content Remove="Data\**" />
-    <Content Include="Pages\Operation\Index.cshtml" />
     <EmbeddedResource Remove="Data\**" />
     <None Remove="Data\**" />
   </ItemGroup>
@@ -67,6 +66,7 @@
 
 
   <ItemGroup>
+    <Folder Include="Pages\" />
     <Folder Include="wwwroot\client" />
     <Folder Include="wwwroot\Files\" />
   </ItemGroup>
