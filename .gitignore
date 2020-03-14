@@ -238,4 +238,5 @@ Thumbs.db
 
 #Remove dll
 
-BankingSystem/Web/bin/Debug
+BankingSystem/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll
+BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
