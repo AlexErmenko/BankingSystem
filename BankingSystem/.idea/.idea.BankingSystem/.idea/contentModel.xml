@@ -36,6 +36,7 @@
           <e p="IBankAccountRepository.cs" t="Include" />
           <e p="IIncludeQuery.cs" t="Include" />
           <e p="ISpecification.cs" t="Include" />
+          <e p="SomeClasses.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

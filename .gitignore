@@ -237,32 +237,31 @@ Thumbs.db
 
 #Remove dll
 
-BankingSystem/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll
-BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
+#BankingSystem/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll
+#BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
 
 
 
 *.suo
-*.dll
+#*.dll
 *.user
 *.targets
 *.cache
 *.so
-/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/react/LICENSE
-/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.SourceManifest.xml
-/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.Parameters.xml
+#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/react/LICENSE
+#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.SourceManifest.xml
+#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.Parameters.xml
 *.md
 *.sqlite
-/.vs/tasks.vs.json
-/.vs/VSWorkspaceState.json
-/.vs
-/BankingSystem/Web/obj/Debug/netcoreapp3.1
-/BankingSystem/Web/Properties/PublishProfiles
-/BankingSystem/Infrastructure/bin/Debug/netcoreapp3.1
-/BankingSystem/Infrastructure/obj/Debug/netcoreapp3.1
-/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1
-/BankingSystem/Infrastructure/obj/Release/netcoreapp3.1
-/BankingSystem/ApplicationCore/obj/Release/netcoreapp3.1
+#/.vs/tasks.vs.json
+#/.vs/VSWorkspaceState.json
+#/.vs
+#/BankingSystem/Web/obj/Debug/netcoreapp3.1
+#/BankingSystem/Web/Properties/PublishProfiles
+#/BankingSystem/Infrastructure/obj/Debug/netcoreapp3.1
+#/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1
+#/BankingSystem/Infrastructure/obj/Release/netcoreapp3.1
+#/BankingSystem/ApplicationCore/obj/Release/netcoreapp3.1
 
-/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1
+#/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1
 /BankingSystem/xUnitLib/obj/
