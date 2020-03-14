@@ -21,9 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,6 @@
         <option value="$PROJECT_DIR$/Web/Views/Clients/Edit.cshtml" />
         <option value="$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" />
         <option value="$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" />
-        <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
         <option value="$PROJECT_DIR$/Web/compilerconfig.json" />
         <option value="$PROJECT_DIR$/Web/bundleconfig.json" />
         <option value="$PROJECT_DIR$/Web/wwwroot/scss/nav.scss" />
@@ -112,6 +111,7 @@
         <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
         <option value="$PROJECT_DIR$/Web/Pages/Operation/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
       </list>
     </option>
   </component>
@@ -143,7 +143,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="ReSharper" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Web: IIS Express">
     <configuration name="test\xUnitLib" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -317,7 +317,7 @@
       <workItem from="1584205424833" duration="3014000" />
       <workItem from="1584209211339" duration="2593000" />
       <workItem from="1584211885184" duration="1640000" />
-      <workItem from="1584214407862" duration="1194000" />
+      <workItem from="1584214407862" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -413,6 +413,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="false" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="test exclude some files" />
     <MESSAGE value="1" />
@@ -438,6 +441,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="137" y="272" width="1472" height="495" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583865334324" />
+    <state x="801" y="435" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog" timestamp="1584215678167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="801" y="435" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584215678167" />
     <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1583805135016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -550,10 +557,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584204286554" />
-    <state x="491" y="162" width="1195" height="711" key="SettingsEditor" timestamp="1584212527677">
+    <state x="491" y="162" width="1195" height="711" key="SettingsEditor" timestamp="1584215735721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="162" width="1195" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584212527677" />
+    <state x="491" y="162" width="1195" height="711" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584215735721" />
     <state x="842" y="273" key="SubscriptionsDialog" timestamp="1583863133930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
