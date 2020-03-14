@@ -139,11 +139,7 @@
             </e>
           </e>
         </e>
-        <e p="Pages" t="Include">
-          <e p="Operation" t="Include">
-            <e p="Index.cshtml" t="Include" />
-          </e>
-        </e>
+        <e p="Pages" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -204,6 +200,9 @@
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Operation" t="Include">
+            <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
