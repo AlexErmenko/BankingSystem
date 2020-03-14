@@ -1,7 +1,8 @@
-﻿namespace ApplicationCore
+﻿
+namespace ApplicationCore
 {
 	public class SomeClasses
 	{
-		
+
 	}
 }

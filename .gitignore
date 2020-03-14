@@ -242,12 +242,12 @@ Thumbs.db
 
 
 
-*.suo
+#*.suo
 #*.dll
-*.user
-*.targets
-*.cache
-*.so
+#*.user
+#*.targets
+#*.cache
+#*.so
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/react/LICENSE
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.SourceManifest.xml
 #/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.Parameters.xml
