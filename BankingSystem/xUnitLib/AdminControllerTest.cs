@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ApplicationCore.Entity;
-using ApplicationCore.Specifications;
+﻿using ApplicationCore.Specifications;
+using Infrastructure;
 using Infrastructure.Identity;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
-
+using Moq;
+using Web.Controllers;
 using Xunit;
 
 namespace xUnitLib
 {
-	class AdminControllerTest
+	public class AdminControllerTest
 	{
 		UserManager<ApplicationUser> _userManager;
-		AdminControllerTest(UserManager<ApplicationUser> userManager) { _userManager = userManager; }
 		public ApplicationUser Inid()
 		{
 			var manager = new ApplicationUser
 			{
+				Id= "11",
 				UserName    = "11",
 				PhoneNumber = "24214",
 				Email       = "sdqdq@sdqqd.com",
@@ -27,9 +26,17 @@ namespace xUnitLib
 			
 			return manager;
 		}
-		public ApplicationUser GetManager()
+		[Fact]
+		public void GetManager()
 		{
-			return new ApplicationUser() {Id = "195797ec-5482-41a3-af1f-e86c450c4d6d", UserName = "31321452",Email = "sdqsqdqs142@gmail.com"};
+			//Arrange
+			var mock = new Mock<UserManager<ApplicationUser>>();
+			var m1 = new Mock<ApplicationDbContext>();
+			var m2 = new Mock<IWebHostEnvironment>();
+			mock.Setup(manager => manager.FindByIdAsync("11")).ReturnsAsync(Inid()); 
+			var controller = new AdminController(_userManager, m1.Object,m2.Object);
+			var result = controller.ManagerList();
+
 		}
 	}
 }

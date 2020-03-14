@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 
 using Web.ViewModels.Admin;
@@ -160,9 +161,9 @@ namespace Web.Controllers
 					user.UserName = applicationUser.UserName;
 					user.PhoneNumber = applicationUser.PhoneNumber;
 
-					// var photo = _context.Find(applicationUser.Id);
-					// _context.FileModel.Remove(photo);
-					// await _context.SaveChangesAsync();
+					var photoId = (from m in _context.FileModel
+								 where m.Id == applicationUser.Id
+								 select m.Id).FirstOrDefault();
 
 					var result = await _userManager.UpdateAsync(user: user);
 					if (uploadedFile != null)
@@ -175,7 +176,16 @@ namespace Web.Controllers
 							await uploadedFile.CopyToAsync(fileStream);
 						}
 						FileModel file = new FileModel {Id = user.Id, Name = uploadedFile.FileName, Path = path };
-						_context.FileModel.Update(file);
+						if (photoId == file.Id)
+						{
+							_context.FileModel.Update(file);	
+						}
+						else
+						{
+							_context.FileModel.Add(file);
+
+						}
+						
 						_context.SaveChanges();
 					}
 					if(result.Succeeded)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-
+using ApplicationCore.Entity;
+using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
 
 using Microsoft.AspNetCore.Identity;
@@ -49,6 +50,33 @@ namespace Infrastructure.Identity
 			//!TODO: Мы создали этого пользователя и сохранили в БД
 			//После чего мы вытягиваем его из БД но уже со сгенерированным Id
 			managerUser = await userManager.FindByNameAsync(userName: managerUserName);
+		}
+
+		public static async Task ClientSeed(UserManager<ApplicationUser> userManager,
+										   RoleManager<IdentityRole>    roleManager, IAsyncRepository<Client> repository)
+		{
+			var clients = await repository.GetAll();
+			string[] emails =
+			{
+				"Slowpok","Olegovna", "Pigeon","Termos228",
+				"User47","Golemchik","GoodMusic","TipTop","gus123",
+				"gus321","TestAnton","TestAnonim2","Qwerty123_","Qwerty123zz_"
+			};
+			var i = 0;
+			foreach (var item in clients)
+			{
+				var user = new ApplicationUser
+				{
+					UserName = item.Login,
+					PhoneNumber = item.TelNumber,
+					Email = emails[i]+"@mail.com"
+				};
+				await userManager.CreateAsync(user: user, password: AuthorizationConstants.DEFAULT_PASSWORD);
+				await userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.CLIENT);
+				i++;
+
+			}
+
 		}
 	}
 }
