@@ -41,7 +41,7 @@ namespace xUnitLib
 
 		public Client GetUser()
 		{
-			return new Client() {Id = 3, Login = "login", Password = "1111", TelNumber = "0970716227"};
+			return new Client() {Id = 3, Login = "login", TelNumber = "0970716227"};
 		}
 
 		public void Delete_ClientTest()

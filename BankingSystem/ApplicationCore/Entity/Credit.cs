@@ -9,11 +9,6 @@ namespace ApplicationCore.Entity
     [Table("Credit")]
     public partial class Credit
     {
-        public Credit()
-        {
-            Repayments = new HashSet<Repayment>();
-        }
-
         [Key]
         public int Id { get; set; }
         public int IdAccount { get; set; }
@@ -24,11 +19,8 @@ namespace ApplicationCore.Entity
         [Column(TypeName = "date")]
         public DateTime DateCredit { get; set; }
         public bool Status { get; set; }
-
-        [ForeignKey(nameof(IdAccount))]
-        [InverseProperty(nameof(BankAccount.Credits))]
-        public virtual BankAccount IdAccountNavigation { get; set; }
-        [InverseProperty(nameof(Repayment.IdCreditNavigation))]
-        public virtual ICollection<Repayment> Repayments { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime DateCreditFinish { get; set; }
+        public int TermCredit { get; set; }
     }
 }
