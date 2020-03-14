@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 using Moq;
 
-using Web.Controllers;
 using Web.Services;
 using Web.ViewModels;
 
@@ -46,25 +42,22 @@ namespace xUnitLib
 		{
 			var list = new List<ClientAccountViewModel>();
 
-			list.Add(new ClientAccountViewModel()
+			list.Add(item: new ClientAccountViewModel
 			{
 				Currency = "USD",
 				Amount = 20.4m,
 				AccountType = "",
 				DateClose = DateTime.Now,
 				DateOpen = DateTime.Now
-
 			});
 
-
-			list.Add(new ClientAccountViewModel()
+			list.Add(item: new ClientAccountViewModel
 			{
-				Currency    = "EUR",
-				Amount      = 19.5m,
+				Currency = "EUR",
+				Amount = 19.5m,
 				AccountType = "",
-				DateClose   = DateTime.Now,
-				DateOpen    = DateTime.Now
-
+				DateClose = DateTime.Now,
+				DateOpen = DateTime.Now
 			});
 
 			return list;
@@ -76,7 +69,7 @@ namespace xUnitLib
 			//Arrange
 			var mock = new Mock<ICurrencyViewModelService>();
 
-			mock.Setup(service => service.GetCurrencyRate()).ReturnsAsync(GetTestSessions());
+			mock.Setup(expression: service => service.GetCurrencyRate()).ReturnsAsync(value: GetTestSessions());
 
 			// var controller = new CurrencyController(currencyViewModelSerivce: mock.Object);
 
@@ -90,7 +83,6 @@ namespace xUnitLib
 			//
 			// Assert.Equal(expected: 2, actual: model.Count());
 		}
-
 
 		[Fact]
 		public async void Index_ReturnClientAccountViewModel()
