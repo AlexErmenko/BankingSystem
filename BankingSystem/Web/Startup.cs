@@ -1,15 +1,8 @@
-using System;
-
 using ApplicationCore.Interfaces;
 
 using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Identity;
-
-using JavaScriptEngineSwitcher.ChakraCore;
-using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
-using JavaScriptEngineSwitcher.V8;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -18,9 +11,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
-using React.AspNet;
-
 using Web.Services;
 
 namespace Web

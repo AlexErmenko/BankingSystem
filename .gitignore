@@ -239,42 +239,26 @@ Thumbs.db
 /BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb
 /BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.pdb
 /BankingSystem/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb
+
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csproj.FileListAbsolute.txt
-#BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfoInputs.cache
 
 /BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache
 /BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.targets
 /BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props
-/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
-*.suo
-/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb
-#*.dll
-#*.user
-/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache
-#*.targets
-/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb
-#*.cache
-#*.so
-#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Out/wwwroot/lib/react/LICENSE
-#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.SourceManifest.xml
-#/BankingSystem/Web/obj/Release/netcoreapp3.1/PubTmp/Web.Parameters.xml
-#*.md
-#*.sqlite
-#/.vs/tasks.vs.json
-#/.vs/VSWorkspaceState.json
-#/.vs
-#/BankingSystem/Web/obj/Debug/netcoreapp3.1
-#/BankingSystem/Web/Properties/PublishProfiles
-#/BankingSystem/Infrastructure/obj/Debug/netcoreapp3.1
-#/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1
-#/BankingSystem/Infrastructure/obj/Release/netcoreapp3.1
-#/BankingSystem/ApplicationCore/obj/Release/netcoreapp3.1
 
-#/BankingSystem/xUnitLib/bin/Debug/netcoreapp3.1
-#/BankingSystem/xUnitLib/obj/
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Banking.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb.pdb
+
+
+#*.dll
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb
+
 
 
 /BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb

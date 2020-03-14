@@ -88,18 +88,6 @@
           }
         }
       },
-      "JSPool/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "JavaScriptEngineSwitcher.Core": "3.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/JSPool.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/JSPool.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.2": {
         "type": "package",
         "compile": {
@@ -661,17 +649,6 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "build/Microsoft.Extensions.ApiDescription.Server.targets": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props": {},
-          "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets": {}
-        }
-      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.2": {
         "type": "package",
         "dependencies": {
@@ -1079,15 +1056,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.OpenApi/1.1.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        }
-      },
       "Microsoft.VisualStudio.Web.CodeGeneration/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -1242,7 +1210,7 @@
           "build/netstandard2.0/_._": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1261,52 +1229,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
-        }
-      },
-      "React.AspNet/5.2.2": {
-        "type": "package",
-        "dependencies": {
-          "React.AspNet.Middleware": "5.2.2",
-          "React.Core": "5.2.2"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/React.AspNet.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/React.AspNet.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "React.AspNet.Middleware/5.2.2": {
-        "type": "package",
-        "dependencies": {
-          "React.Core": "5.2.2"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/React.AspNet.Middleware.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/React.AspNet.Middleware.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "React.Core/5.2.2": {
-        "type": "package",
-        "dependencies": {
-          "JSPool": "4.0.0",
-          "JavaScriptEngineSwitcher.Core": "3.1.0",
-          "Microsoft.Extensions.DependencyModel": "2.1.0",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/React.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/React.Core.dll": {}
         }
       },
       "runtime.native.System/4.3.0": {
@@ -1455,48 +1377,6 @@
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
-      },
-      "Swashbuckle.AspNetCore/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
-          "Swashbuckle.AspNetCore.Swagger": "5.0.0",
-          "Swashbuckle.AspNetCore.SwaggerGen": "5.0.0",
-          "Swashbuckle.AspNetCore.SwaggerUI": "5.0.0"
-        },
-        "build": {
-          "build/Swashbuckle.AspNetCore.props": {}
-        }
-      },
-      "Swashbuckle.AspNetCore.Swagger/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.OpenApi": "1.1.4"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
-      "Swashbuckle.AspNetCore.SwaggerGen/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "5.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Swashbuckle.AspNetCore.SwaggerUI/5.0.0": {
         "type": "package",
@@ -2794,25 +2674,6 @@
         "v8-license.txt"
       ]
     },
-    "JSPool/4.0.0": {
-      "sha512": "r+AeQ9R50HxU+HLqASYvZz6Mvg7RmZwEnCVhQ+xGYVexFjYYqlkW6by9HaflGaHjy+/28YLbb3qxDLRJ3AbZGQ==",
-      "type": "package",
-      "path": "jspool/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "jspool.4.0.0.nupkg.sha512",
-        "jspool.nuspec",
-        "lib/net40-client/JSPool.dll",
-        "lib/net40-client/JSPool.xml",
-        "lib/net45/JSPool.dll",
-        "lib/net45/JSPool.xml",
-        "lib/netstandard1.3/JSPool.dll",
-        "lib/netstandard1.3/JSPool.xml",
-        "lib/netstandard2.0/JSPool.dll",
-        "lib/netstandard2.0/JSPool.xml"
-      ]
-    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.2": {
       "sha512": "Yi69aUt2rZsMor/eIEy7IgDoh/bZ6Lx0ZD3p9FZeU2zw+LIjERghrA8fOJUfpacJxBlWqcf9YkIzD85SSJ0u7Q==",
       "type": "package",
@@ -3550,33 +3411,6 @@
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
-    "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
-      "sha512": "LH4OE/76F6sOCslif7+Xh3fS/wUUrE5ryeXAMcoCnuwOQGT5Smw0p57IgDh/pHgHaGz/e+AmEQb7pRgb++wt0w==",
-      "type": "package",
-      "path": "microsoft.extensions.apidescription.server/3.0.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Microsoft.Extensions.ApiDescription.Server.props",
-        "build/Microsoft.Extensions.ApiDescription.Server.targets",
-        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.props",
-        "buildMultiTargeting/Microsoft.Extensions.ApiDescription.Server.targets",
-        "microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-        "microsoft.extensions.apidescription.server.nuspec",
-        "tools/Newtonsoft.Json.dll",
-        "tools/dotnet-getdocument.deps.json",
-        "tools/dotnet-getdocument.dll",
-        "tools/dotnet-getdocument.runtimeconfig.json",
-        "tools/net461-x86/GetDocument.Insider.exe",
-        "tools/net461-x86/GetDocument.Insider.exe.config",
-        "tools/net461/GetDocument.Insider.exe",
-        "tools/net461/GetDocument.Insider.exe.config",
-        "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
-        "tools/netcoreapp2.1/GetDocument.Insider.dll",
-        "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
-      ]
-    },
     "Microsoft.Extensions.Caching.Abstractions/3.1.2": {
       "sha512": "UfMC7L+8ha05PUAfVpmMS0kb7C1BoOrWxN70706D50qWohXLYgkUsu22oS7zkd9amCPTCmhRm2z/LisN8SESgg==",
       "type": "package",
@@ -4238,23 +4072,6 @@
         "runtime.json"
       ]
     },
-    "Microsoft.OpenApi/1.1.4": {
-      "sha512": "6SW0tpbJslc8LAY1XniRfLVcJa7bJUbbwvo2/ZRqfkMbJrsqIj9045vg3STtZhDhYRKhpYgjqGU11eeW4Pzyrg==",
-      "type": "package",
-      "path": "microsoft.openapi/1.1.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net46/Microsoft.OpenApi.dll",
-        "lib/net46/Microsoft.OpenApi.pdb",
-        "lib/net46/Microsoft.OpenApi.xml",
-        "lib/netstandard2.0/Microsoft.OpenApi.dll",
-        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
-        "lib/netstandard2.0/Microsoft.OpenApi.xml",
-        "microsoft.openapi.1.1.4.nupkg.sha512",
-        "microsoft.openapi.nuspec"
-      ]
-    },
     "Microsoft.VisualStudio.Web.CodeGeneration/3.1.1": {
       "sha512": "As3HZwVDwdFRKrZ5gWflHTolau+Rkb3P6YAZt9Ob+tcQdlRL5y0tDYNE1DMQIWc6rcn7LtlttT3/0FLd6A9Qjg==",
       "type": "package",
@@ -4908,10 +4725,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/12.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4934,9 +4751,8 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -4954,61 +4770,6 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
-      ]
-    },
-    "React.AspNet/5.2.2": {
-      "sha512": "2mYVvLYXKYmmS0MEDb+4lQLwkRkiKUEsLGdulbkdYpDOUHmQPQVzAKiRFqFFILBWce8DSEynP674Gv1Vf++zqw==",
-      "type": "package",
-      "path": "react.aspnet/5.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/React.AspNet.dll",
-        "lib/netcoreapp3.0/React.AspNet.xml",
-        "lib/netstandard2.0/React.AspNet.dll",
-        "lib/netstandard2.0/React.AspNet.xml",
-        "logo_64.png",
-        "react.aspnet.5.2.2.nupkg.sha512",
-        "react.aspnet.nuspec"
-      ]
-    },
-    "React.AspNet.Middleware/5.2.2": {
-      "sha512": "N8Hdle2TWIRfggVIaIYArSqLh5RR/ppu5y/L3BYFcT+8RxzlOLnjj/u0ZlUG+qtR8BkZoxC9ma8UFrvy4lirfA==",
-      "type": "package",
-      "path": "react.aspnet.middleware/5.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/React.AspNet.Middleware.dll",
-        "lib/netcoreapp3.0/React.AspNet.Middleware.pdb",
-        "lib/netcoreapp3.0/React.AspNet.Middleware.xml",
-        "lib/netstandard2.0/React.AspNet.Middleware.dll",
-        "lib/netstandard2.0/React.AspNet.Middleware.pdb",
-        "lib/netstandard2.0/React.AspNet.Middleware.xml",
-        "logo_64.png",
-        "react.aspnet.middleware.5.2.2.nupkg.sha512",
-        "react.aspnet.middleware.nuspec"
-      ]
-    },
-    "React.Core/5.2.2": {
-      "sha512": "CvahQJV3egP38u3bMEn1uwjARcwprkNCbmk/s9GN0JJlIkqRoJAoAO0K+HgWmmRVeMcQHrc9CpyHi0jFDQ5Ljw==",
-      "type": "package",
-      "path": "react.core/5.2.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/React.Core.dll",
-        "lib/net40/React.Core.pdb",
-        "lib/net40/React.Core.xml",
-        "lib/net45/React.Core.dll",
-        "lib/net45/React.Core.pdb",
-        "lib/net45/React.Core.xml",
-        "lib/netstandard2.0/React.Core.dll",
-        "lib/netstandard2.0/React.Core.pdb",
-        "lib/netstandard2.0/React.Core.xml",
-        "logo_64.png",
-        "react.core.5.2.2.nupkg.sha512",
-        "react.core.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -5154,48 +4915,6 @@
         "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll",
         "sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore/5.0.0": {
-      "sha512": "HoJbhDNyeDqr2R1H3YhtPqGacxgZKBFBS6g5U3tlJpv80G/IHW8hHbcnHSTXZpcatnD+xh8UiUrKp4Ua857LSQ==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Swashbuckle.AspNetCore.props",
-        "swashbuckle.aspnetcore.5.0.0.nupkg.sha512",
-        "swashbuckle.aspnetcore.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.Swagger/5.0.0": {
-      "sha512": "4MhbjCErPsLnkyYrNc7OFUWVYoyhJRGAoFwbuDONslIOhIn5CmM52a4hO8s/jaM5i55uDms/veh24d/fR1UvZw==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swagger/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.xml",
-        "swashbuckle.aspnetcore.swagger.5.0.0.nupkg.sha512",
-        "swashbuckle.aspnetcore.swagger.nuspec"
-      ]
-    },
-    "Swashbuckle.AspNetCore.SwaggerGen/5.0.0": {
-      "sha512": "liZs2B35w1bHNacpNoDofNCJKmEhUaHVgvtUsjt/AToKQdZQpk9dvLWrEfRHiuwZVUiKLL30lsiV4dEF/Drzlw==",
-      "type": "package",
-      "path": "swashbuckle.aspnetcore.swaggergen/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
-        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.xml",
-        "swashbuckle.aspnetcore.swaggergen.5.0.0.nupkg.sha512",
-        "swashbuckle.aspnetcore.swaggergen.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.SwaggerUI/5.0.0": {
@@ -8618,8 +8337,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.1",
       "Microsoft.Web.LibraryManager.Build >= 2.0.96",
-      "React.AspNet >= 5.2.2",
-      "Swashbuckle.AspNetCore >= 5.0.0",
       "Swashbuckle.AspNetCore.SwaggerUI >= 5.0.0"
     ]
   },
@@ -8728,14 +8445,6 @@
           "Microsoft.Web.LibraryManager.Build": {
             "target": "Package",
             "version": "[2.0.96, )"
-          },
-          "React.AspNet": {
-            "target": "Package",
-            "version": "[5.2.2, )"
-          },
-          "Swashbuckle.AspNetCore": {
-            "target": "Package",
-            "version": "[5.0.0, )"
           },
           "Swashbuckle.AspNetCore.SwaggerUI": {
             "target": "Package",

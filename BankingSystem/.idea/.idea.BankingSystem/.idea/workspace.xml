@@ -18,24 +18,135 @@
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BankingSystem.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/.filenesting.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/AdvancedStringBuilder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/ClearScript.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/JSPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/JavaScriptEngineSwitcher.ChakraCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/JavaScriptEngineSwitcher.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/JavaScriptEngineSwitcher.V8.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/React.AspNet.Middleware.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/React.AspNet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/React.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.StaticWebAssets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/Web.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/bundleconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/bin/Debug/netcoreapp3.1/libman.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorCoreGenerate.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorTargetAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.TagHelpers.input.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.TagHelpers.output.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.CopyComplete" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true">
+  <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
     </option>
@@ -101,9 +212,7 @@
         <option value="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" />
-        <option value="$PROJECT_DIR$/../.git/info/exclude" />
         <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
-        <option value="$PROJECT_DIR$/Web/Startup.cs" />
         <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" />
         <option value="$PROJECT_DIR$/Web/Program.cs" />
@@ -111,6 +220,8 @@
         <option value="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
         <option value="$PROJECT_DIR$/../.gitignore" />
+        <option value="$PROJECT_DIR$/../.git/info/exclude" />
+        <option value="$PROJECT_DIR$/Web/Startup.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +246,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Web: IIS Express">
     <configuration name="test\xUnitLib" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -293,7 +404,7 @@
       <workItem from="1584202511024" duration="44000" />
       <workItem from="1584202636017" duration="2308000" />
       <workItem from="1584205424833" duration="3014000" />
-      <workItem from="1584209211339" duration="427000" />
+      <workItem from="1584209211339" duration="2593000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -330,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584209299946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="11">
+      <created>1584209903806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584209903806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,12 +488,20 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <MESSAGE value="test exclude some files" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="11" />
+    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1584209870141">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1584209870141" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584206925993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -500,10 +626,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584204286554" />
-    <state x="491" y="162" key="SettingsEditor" timestamp="1584207129214">
+    <state x="491" y="162" key="SettingsEditor" timestamp="1584211807467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584207129214" />
+    <state x="491" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584211807467" />
     <state x="842" y="273" key="SubscriptionsDialog" timestamp="1583863133930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -512,10 +638,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="839" height="487" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1583866071548" />
-    <state x="808" y="432" key="VCS.ChangelistChooser" timestamp="1584209317333">
+    <state x="808" y="432" key="VCS.ChangelistChooser" timestamp="1584209820593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="808" y="432" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584209317333" />
+    <state x="808" y="432" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584209820593" />
     <state x="826" y="433" key="VCS.EditChangelistDialog" timestamp="1584209360445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -548,10 +674,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584202854708" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584207898092">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584211800844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584207898092" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584211800844" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

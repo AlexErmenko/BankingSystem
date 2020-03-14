@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;

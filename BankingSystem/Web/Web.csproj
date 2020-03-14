@@ -54,8 +54,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.0.96" />
-    <PackageReference Include="React.AspNet" Version="5.2.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0" />
   </ItemGroup>
 
