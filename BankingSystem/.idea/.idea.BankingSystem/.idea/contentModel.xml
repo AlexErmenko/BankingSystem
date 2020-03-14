@@ -78,6 +78,11 @@
           </e>
         </e>
         <e p="Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20200314190657_RemoveCol.cs" t="Include" />
+          <e p="20200314190657_RemoveCol.Designer.cs" t="Include" />
+          <e p="BankingSystemContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
