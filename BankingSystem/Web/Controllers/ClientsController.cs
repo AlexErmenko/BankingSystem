@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
@@ -8,6 +9,7 @@ using ApplicationCore.Specifications;
 using Infrastructure.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -57,6 +59,8 @@ namespace Web.Controllers
 				{
 					//PhysicalPerson
 
+					HttpContext.Session.SetString("NewClientData", JsonSerializer.Serialize<Client>(clientCreateViewModel.Client));
+
 					return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
 				} 
 				else
@@ -80,9 +84,12 @@ namespace Web.Controllers
 		[HttpGet]
 		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreateViewModel)
 		{
-			PhysicalPersonCreateViewModel physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
+			var value = HttpContext.Session.GetString("NewClientData");
+			var client = JsonSerializer.Deserialize<Client>(value);
+
+			var physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
 			{
-				Client = clientCreateViewModel.Client,  //TODO: don't work. return null
+				Client = client,  //TODO: don't work. return null
 				Password = clientCreateViewModel.Password,
 				Email = clientCreateViewModel.Email
 			};
