@@ -1,5 +1,5 @@
 ﻿@using System
-@model IEnumerable<Web.Commands.AccountOperationViewModel>
+@model Web.ViewModels.AccountOperationViewModel
 
 @{
 	ViewData[index: "Title"] = "Выписка по счёту";
@@ -21,8 +21,27 @@
     @* </a> *@
     @* / *@
     @* </div> *@
+
+
     <div class="col-md-3 ">
-        <input type="date" class="form-control input-daterange" asp-for="@ViewData["DateValue"]">
+        <form asp-controller="Operation" asp-action="Index" method="get">
+            <div class="form-group">
+                <div class="form-group">
+                    <label asp-for="StartPeriod" class="control-label"></label>
+                    <input asp-for="StartPeriod" type="date" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group">
+                    <label asp-for="EndPeriod" class="control-label"></label>
+                    <input asp-for="EndPeriod" type="date" class="form-control"/>
+                </div>
+            </div>
+
+
+            <input type="submit"/>
+        </form>
     </div>
 
 
@@ -43,14 +62,14 @@
             </tr>
             </thead>
             <tbody>
-            @foreach(var item in Model)
+            @foreach(var item in Model.Operations)
             {
 	            <tr>
                     <td>
                         @Html.DisplayFor(expression: modelItem => item.OperationTime)
                     </td>
                     <td>
-                        @Html.DisplayFor(expression: modelItem => item.Type)
+                        @Html.DisplayFor(expression: modelItem => item.TypeOperation)
                     </td>
                     <td>
                         @Html.DisplayFor(expression: modelItem => item.Amount)

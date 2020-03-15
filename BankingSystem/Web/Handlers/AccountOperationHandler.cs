@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -10,13 +9,14 @@ using ApplicationCore.Interfaces;
 using MediatR;
 
 using Web.Commands;
+using Web.ViewModels;
 
 namespace Web.Handlers
 {
 	/// <summary>
 	///     Обработчик для запроса по операциям по акк
 	/// </summary>
-	public class AccountOperationHandler : IRequestHandler<GetAccountOperationQuery, List<AccountOperationViewModel>>
+	public class AccountOperationHandler : IRequestHandler<GetAccountOperationQuery, AccountOperationViewModel>
 	{
 		private IAsyncRepository<BankAccount> AccountRepository { get; }
 		private IAsyncRepository<Operation> OperationRepository { get; }
@@ -27,21 +27,46 @@ namespace Web.Handlers
 			OperationRepository = operationRepository;
 		}
 
-		public async Task<List<AccountOperationViewModel>> Handle(GetAccountOperationQuery request, CancellationToken cancellationToken)
+		public async Task<AccountOperationViewModel> Handle(GetAccountOperationQuery request, CancellationToken cancellationToken)
 		{
+			//TODO:?
 			var account = await AccountRepository.GetById(id: request.Id);
+
+			//Получаем все операции
 			var operations = await OperationRepository.GetAll();
 
-			operations.Where(predicate: operation => operation.IdAccount.Equals(obj: account.Id));
-			var viewModels = operations.Select(selector: operation =>
+			//Фильтруем их по Id аккаунта
+			operations = operations.Where(predicate: operation => operation.IdAccount.Equals(obj: request.Id)).ToList();
+
+			switch (request.StartPeriod)
 			{
-				var model = new AccountOperationViewModel();
-				model.Amount = operation.Amount;
-				model.Type = operation.TypeOperation;
-				model.OperationTime = operation.OperationTime;
-				return model;
-			}).ToList();
-			return viewModels;
+				case null:
+					Console.WriteLine(value: request.StartPeriod);
+					break;
+				default:
+					operations = operations.Where(predicate: it => it.OperationTime >= request.StartPeriod).ToList();
+					break;
+			}
+
+			switch (request.EndPeriod)
+			{
+				case null:
+					Console.WriteLine(value: request.EndPeriod);
+					break;
+				default:
+					operations = operations.Where(predicate: it => it.OperationTime <= request.EndPeriod).ToList();
+					break;
+			}
+
+			var viewModel = new AccountOperationViewModel
+			{
+				IdAccount = request.Id,
+				Operations = operations,
+				StartPeriod = request.StartPeriod,
+				EndPeriod = request.EndPeriod
+			};
+
+			return viewModel;
 		}
 	}
 }
