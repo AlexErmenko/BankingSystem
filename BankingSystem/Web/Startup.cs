@@ -68,6 +68,9 @@ namespace Web
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+			services.AddDistributedMemoryCache();
+			services.AddSession();
+
 			// services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
 		}
 
@@ -106,6 +109,7 @@ namespace Web
 			app.UseAuthentication();
 			app.UseAuthorization();
 
+			app.UseSession();
 
 			app.UseEndpoints(endpoints =>
 			{
