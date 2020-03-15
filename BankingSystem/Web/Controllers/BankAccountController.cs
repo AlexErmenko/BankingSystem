@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 
+using MediatR;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,22 +21,22 @@ namespace Web.Controllers
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
-		private readonly IAsyncRepository<Client> _clientRepository;
 		private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
+		private IMediator Mediator;
+
 
 		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
 									 IAsyncRepository<LegalPerson> legalPersonRepo,
 									 IBankAccountRepository bankAccountRepo,
-									 IHttpContextAccessor httpContextAccessor,
-									 IAsyncRepository<Client> clientRepository)
+									 IHttpContextAccessor httpContextAccessor, IMediator Mediator)
 		{
 			_bankAccountRepository = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
 			_legalPersonRepository = legalPersonRepo;
-			_clientRepository = clientRepository;
 			_httpContextAccessor = httpContextAccessor;
+			this.Mediator = Mediator;
 		}
 
 		/// <summary>
@@ -88,14 +90,7 @@ namespace Web.Controllers
 		///     Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
-		private async Task<int?> GetUserId()
-		{
-			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
-			var clients = await _clientRepository.GetAll();
-			var client = clients.FirstOrDefault(predicate: c => c.Login.Equals(value: login));
-
-			return client?.Id;
-		}
+		private async Task<int?> GetUserId() => await Mediator.Send(new GetUserByIdQuery(User.Identity.Name));
 
 		/// <summary>
 		///     Отображение всех счетов клиента

@@ -135,8 +135,10 @@
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
+          <e p="GetUserByIdQuery.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
+          <e p="UserByIdHandler.cs" t="Include" />
         </e>
         <e p="Extension" t="Include">
           <e p="SessionExtension.cs" t="Include" />
@@ -210,6 +212,7 @@
           </e>
           <e p="Clients" t="Include">
             <e p="CreateClient.cshtml" t="Include" />
+            <e p="CreateLegalPerson.cshtml" t="Include" />
             <e p="CreatePhysicalPerson.cshtml" t="Include" />
             <e p="Delete.cshtml" t="Include" />
             <e p="Edit.cshtml" t="Include" />

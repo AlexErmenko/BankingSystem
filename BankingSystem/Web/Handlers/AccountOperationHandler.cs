@@ -44,7 +44,7 @@ namespace Web.Handlers
 					Console.WriteLine(value: request.StartPeriod);
 					break;
 				default:
-					operations = operations.Where(predicate: it => it.OperationTime > request.StartPeriod).ToList();
+					operations = operations.Where(predicate: it => it.OperationTime >= request.StartPeriod).ToList();
 					break;
 			}
 
@@ -54,7 +54,7 @@ namespace Web.Handlers
 					Console.WriteLine(value: request.EndPeriod);
 					break;
 				default:
-					operations = operations.Where(predicate: it => it.OperationTime < request.EndPeriod).ToList();
+					operations = operations.Where(predicate: it => it.OperationTime <= request.EndPeriod).ToList();
 					break;
 			}
 
