@@ -5,10 +5,16 @@ using System.Threading.Tasks;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using MediatR;
+using Web.Commands
+	;
 
-namespace Web.Commands
+namespace Web.Handlers
 {
-	public class AccountOperationHandler : IRequestHandler<GetAccountOperationQuery, List<AccountOperationViewModel>>
+
+	/// <summary>
+	/// Обработчик для запроса по операциям по акк
+	/// </summary>
+	public class AccountOperationHandler : IRequestHandler<GetAccountOperationQuery,List<AccountOperationViewModel>>
 	{
 		private IAsyncRepository<BankAccount> AccountRepository   { get; }
 		private IAsyncRepository<Operation>   OperationRepository { get; }

@@ -122,6 +122,7 @@
         <e p="bundleconfig.json" t="Include" />
         <e p="bundleconfig.json.bindings" t="Include" />
         <e p="Commands" t="Include">
+          <e p="GetAccountOperationQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
         </e>
         <e p="compilerconfig.json" t="Include" />
@@ -137,6 +138,7 @@
           <e p="OperationController.cs" t="Include" />
         </e>
         <e p="Handlers" t="Include">
+          <e p="AccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
@@ -169,6 +171,7 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="ViewModels" t="Include">
+          <e p="AccountOperationViewModel.cs" t="Include" />
           <e p="Admin" t="Include">
             <e p="EditUserViewModel.cs" t="Include" />
             <e p="UserViewModel.cs" t="Include" />

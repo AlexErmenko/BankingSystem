@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Web.Commands;
 using Web.Handlers;
 using Web.Services;
 
@@ -40,14 +41,13 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services);
 
-			services.AddMediatR(typeof(CurrencyConvertHandler));
+			services.AddMediatR(typeof(CurrencyConvertHandler), typeof(AccountOperationHandler));
 
 			services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
 
 			services.AddTransient(typeof(IBankAccountRepository),
 								  typeof(BankAccountEfRepository));
 			services.AddScoped<CurrencyViewModelService>();
-			// services.AddScoped<ICurrencyConvertor, CurrencyConvertor>();
 
 			services.AddScoped<ICurrencyViewModelService, CurrencyViewModelService>();
 
