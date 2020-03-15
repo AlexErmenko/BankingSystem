@@ -21,59 +21,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/Web/Controllers/AccountOperationByPeriodHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web/Controllers/GetAccountOperationByPeriod.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/ApplicationCore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/ApplicationCore.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/ConvertController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/AccountOperationByPeriodHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/GetAccountOperationByPeriod.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/compilerconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/compilerconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/libman.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/libman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Web/wwwroot/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/build-info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/cjs/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/cjs/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/umd/react.development.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/umd/react.production.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/wwwroot/lib/react/umd/react.profiling.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,55 +77,58 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/D2E6A0A0-601B-49C7-8EED-5B6223FCE56F/C/Controller.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/F2ACE85F-6C10-49DB-8CAC-F03079CCDA72/F3/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/286/TaskAwaiter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ApplicationCore/Entity/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Admin/AddManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Admin/DeleteManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/168/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5B62D830-4BB7-4BF8-AE32-CB432FDDACE6/21/5a6f9e6d/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Specifications/AuthorizationConstants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B62D830-4BB7-4BF8-AE32-CB432FDDACE6/dd/1098b335/RequestHandlerWrapperImpl`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5B62D830-4BB7-4BF8-AE32-CB432FDDACE6/9b/b3a73076/ServiceFactoryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/IBankAccountRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/2FC/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Commands/GetPasswordValidationQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Commands/GetCurrencyConvertQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationCore/Entity/BankAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Admin/AddManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Admin/DeleteManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Views/BankAccount/GetAccounts.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/51F46C83-DFBE-4B1E-AAF1-963E6E9D435A/ad/4f2b3448/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/OperationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Controllers/GetAccountOperationByPeriod.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/Migrations/ApplicationDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/Migrations/00000000000000_CreateIdentitySchema.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Controllers/AccountOperationByPeriodHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BBB3B884-123D-47EA-9CD1-5BED540D02AE/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/D8655871-A861-4024-925C-B56B78151BD6/6/WebClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/Error.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Web/Commands/GetCurrencyConvertQuery.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web/Views/Currency/GetInfo.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/xUnitLib/Class1.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/HomeController.cs" />
@@ -153,14 +142,12 @@
         <option value="$PROJECT_DIR$/Web/Views/_ViewImports.cshtml" />
         <option value="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" />
         <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Web/Program.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../.git/info/exclude" />
         <option value="$PROJECT_DIR$/Web/Pages/Operation/Index.cshtml" />
         <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
         <option value="$PROJECT_DIR$/../.gitignore" />
         <option value="$PROJECT_DIR$/Infrastructure/BankingContext.cs" />
-        <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
         <option value="$PROJECT_DIR$/Web/Services/ScopedСurrencyService.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/ConvertController.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
@@ -185,11 +172,14 @@
         <option value="$PROJECT_DIR$/Web/wwwroot/js/site.js" />
         <option value="$PROJECT_DIR$/Web/bundleconfig.json" />
         <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
-        <option value="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" />
-        <option value="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" />
         <option value="$PROJECT_DIR$/Web/Controllers/GetAccountOperationByPeriod.cs" />
-        <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/AdminController.cs" />
+        <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
+        <option value="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
+        <option value="$PROJECT_DIR$/Web/Program.cs" />
+        <option value="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" />
+        <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" />
       </list>
     </option>
   </component>
@@ -226,7 +216,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="WinFormsDesignerOptionsPage" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Web: IIS Express">
     <configuration name="test\xUnitLib" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -345,7 +335,8 @@
       <workItem from="1584275929884" duration="283000" />
       <workItem from="1584276290140" duration="446000" />
       <workItem from="1584276760622" duration="365000" />
-      <workItem from="1584277147254" duration="10034000" />
+      <workItem from="1584277147254" duration="10769000" />
+      <workItem from="1584295316736" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -472,66 +463,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="801" y="435" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.ChooseSilentCodeCleanupProfileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584215678167" />
-    <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1584287581045">
+    <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1584298330350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1584287581045" />
-    <state width="1298" height="466" key="DebuggerActiveHint" timestamp="1584284750800">
+    <state x="696" y="385" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040@0.0.1920.1040" timestamp="1584298330350" />
+    <state width="1298" height="466" key="DebuggerActiveHint" timestamp="1584296778278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1298" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584284750800" />
+    <state width="1298" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1584296778278" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584213532588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532588" />
-    <state width="1879" height="348" key="GridCell.Tab.0.bottom" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.0.bottom" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.0.center" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.0.center" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.0.left" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.0.left" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.0.right" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.0.right" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.1.bottom" timestamp="1584285745428">
+    <state width="1879" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.1.bottom" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745428" />
-    <state width="1879" height="348" key="GridCell.Tab.1.center" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.1.center" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.1.left" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.1.left" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.1.right" timestamp="1584285745427">
+    <state width="1879" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.1.right" timestamp="1584296824855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745427" />
-    <state width="1879" height="348" key="GridCell.Tab.2.bottom" timestamp="1584285745428">
+    <state width="1879" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824855" />
+    <state width="1879" height="348" key="GridCell.Tab.2.bottom" timestamp="1584296824856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745428" />
-    <state width="1879" height="348" key="GridCell.Tab.2.center" timestamp="1584285745428">
+    <state width="1879" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824856" />
+    <state width="1879" height="348" key="GridCell.Tab.2.center" timestamp="1584296824856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745428" />
-    <state width="1879" height="348" key="GridCell.Tab.2.left" timestamp="1584285745428">
+    <state width="1879" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824856" />
+    <state width="1879" height="348" key="GridCell.Tab.2.left" timestamp="1584296824856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745428" />
-    <state width="1879" height="348" key="GridCell.Tab.2.right" timestamp="1584285745428">
+    <state width="1879" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824856" />
+    <state width="1879" height="348" key="GridCell.Tab.2.right" timestamp="1584296824856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584285745428" />
+    <state width="1879" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584296824856" />
     <state width="1879" height="474" key="GridCell.Tab.3.bottom" timestamp="1584265052692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -588,10 +579,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584204286554" />
-    <state x="491" y="157" width="1195" height="883" key="SettingsEditor" timestamp="1584287568086">
+    <state x="491" y="157" width="1195" height="883" key="SettingsEditor" timestamp="1584298340936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="157" width="1195" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584287568086" />
+    <state x="491" y="157" width="1195" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584298340936" />
     <state x="842" y="273" key="SubscriptionsDialog" timestamp="1583863133930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -624,6 +615,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584274129722" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1584298317227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1584298317227" />
     <state x="597" y="256" width="726" height="528" key="find.popup" timestamp="1584287215929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -636,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584284785541" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584285199906">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584296671765">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584285199906" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584296671765" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -670,35 +665,102 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs</url>
-          <line>74</line>
+          <line>75</line>
           <properties documentPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" initialLine="75">
             <startOffsets>
-              <option value="2251" />
+              <option value="2265" />
             </startOffsets>
             <endOffsets>
-              <option value="2411" />
+              <option value="2425" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/ViewModels/CurrencyConvertModel.cs</url>
-          <line>11</line>
+          <line>13</line>
           <properties documentPath="$PROJECT_DIR$/Web/Services/ICurrencyConvertor.cs" initialLine="19" />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs</url>
-          <line>15</line>
+          <line>17</line>
           <properties documentPath="$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs" initialLine="14">
             <startOffsets>
-              <option value="380" />
+              <option value="383" />
             </startOffsets>
             <endOffsets>
-              <option value="409" />
+              <option value="412" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Controllers/OperationController.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" initialLine="19">
+            <startOffsets>
+              <option value="424" />
+            </startOffsets>
+            <endOffsets>
+              <option value="425" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="43">
+            <startOffsets>
+              <option value="1407" />
+              <option value="1430" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1479" />
+              <option value="1468" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
+          <line>57</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="52">
+            <startOffsets>
+              <option value="1634" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1716" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="32">
+            <startOffsets>
+              <option value="973" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1035" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
+          <line>31</line>
+          <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="31">
+            <startOffsets>
+              <option value="956" />
+            </startOffsets>
+            <endOffsets>
+              <option value="957" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,14 +1,15 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Web.Extension;
-using Web.ViewModels;
+
 using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
@@ -18,10 +19,10 @@ namespace Web.Controllers
 	public class BankAccountController : Controller
 	{
 		private readonly IBankAccountRepository _bankAccountRepository;
+		private readonly IAsyncRepository<Client> _clientRepository;
+		private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
-		private readonly IHttpContextAccessor _httpContextAccessor;
-		private readonly IAsyncRepository<Client> _clientRepository;
 
 		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
 									 IAsyncRepository<LegalPerson> legalPersonRepo,
@@ -45,14 +46,15 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> CreateClientAccountForm(int? idClient)
 		{
-			if (idClient == null) { idClient = await GetUserId(); }
+			if(idClient == null)
+				idClient = await GetUserId();
 
-			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
+			var physicalPerson = await _physicalPersonRepository.GetById(id: idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
 
 			//проверка, что хоть какого-то клиента нашло
-			if (physicalPerson == null &&
-				legalPerson    == null) { return RedirectToAction("GetAccounts"); }
+			if(physicalPerson == null
+			   && legalPerson == null) return RedirectToAction(actionName: "GetAccounts");
 
 			return View(model: new CreateClientAccountViewModel
 			{
@@ -70,48 +72,43 @@ namespace Web.Controllers
 		[HttpPost]
 		public IActionResult CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
 		{
-			if (ModelState.IsValid)
+			if(ModelState.IsValid)
 			{
 				//сохранение счета
 				var account = createClientAccountViewModel.Account;
 				_bankAccountRepository.SaveAccount(account: account);
 
-				return RedirectToAction("GetAccounts" ,"BankAccount", createClientAccountViewModel);
+				return RedirectToAction(actionName: "GetAccounts", controllerName: "BankAccount", routeValues: createClientAccountViewModel);
 			}
 
 			return View();
 		}
 
 		/// <summary>
-		/// Возвращает ID авторизованого пользователя
+		///     Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
 		private async Task<int?> GetUserId()
 		{
 			var login = _httpContextAccessor.HttpContext.User.Identity.Name;
-			var clients =  await _clientRepository.GetAll();
-			var client = clients.FirstOrDefault(c => c.Login.Equals(login));
+			var clients = await _clientRepository.GetAll();
+			var client = clients.FirstOrDefault(predicate: c => c.Login.Equals(value: login));
 
 			return client?.Id;
 		}
 
 		/// <summary>
-		/// Отображение всех счетов клиента
+		///     Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
 		public async Task<IActionResult> GetAccounts(int? idClient)
 		{
-			if (idClient == null && _httpContextAccessor.HttpContext.User.IsInRole("Client"))
-			{
-				idClient = await GetUserId();
-			}
+			if(idClient == null
+			   && _httpContextAccessor.HttpContext.User.IsInRole(role: "Client")) idClient = await GetUserId();
 
-			var accounts = _bankAccountRepository
-						   .Accounts
-						   .Include(p => p.IdCurrencyNavigation)
-						   .Where(c => c.IdClient == idClient);
+			var accounts = _bankAccountRepository.Accounts.Include(navigationPropertyPath: p => p.IdCurrencyNavigation).Where(predicate: c => c.IdClient == idClient);
 
-			return View(new AccountViewModel()
+			return View(model: new AccountViewModel
 			{
 				IdClient = idClient,
 				BankAccounts = accounts
@@ -127,7 +124,7 @@ namespace Web.Controllers
 		{
 			await _bankAccountRepository.CloseAccount(idAccount: idAccount);
 
-			return RedirectToAction("GetAccounts");
+			return RedirectToAction(actionName: "GetAccounts");
 		}
 
 		//Перед тем, как удалить счет, нужно его закрыть методом BankAccountClose
@@ -140,7 +137,7 @@ namespace Web.Controllers
 		{
 			await _bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
-			return RedirectToAction("GetAccounts");
+			return RedirectToAction(actionName: "GetAccounts");
 		}
 	}
 }

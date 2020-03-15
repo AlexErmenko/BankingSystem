@@ -138,7 +138,7 @@ namespace Web.Services
 			var toCurrencyName = toCurrency.ShortName;
 			var balance = account.Amount;
 
-			var convertQuery = new GetCurrencyConvertQuery(@from: fromCurrencyName, to: toCurrencyName, amount: balance);
+			var convertQuery = new GetCurrencyConvertQuery(from: fromCurrencyName, to: toCurrencyName, amount: balance);
 			return convertQuery;
 		}
 

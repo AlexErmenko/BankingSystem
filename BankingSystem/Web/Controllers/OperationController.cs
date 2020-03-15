@@ -6,6 +6,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 using Web.Commands;
+using Web.ViewModels;
 
 namespace Web.Controllers
 {
@@ -15,11 +16,12 @@ namespace Web.Controllers
 		public OperationController(IMediator mediator) => Mediator = mediator;
 
 		// GET
-		public async Task<IActionResult> Index(int id)
+		public async Task<IActionResult> Index(int id, AccountOperationViewModel formModel)
 		{
-			var viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id));
-
+			var viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id, startPeriod: formModel.StartPeriod, endPeriod: formModel.EndPeriod));
 			return View(model: viewModel);
 		}
+
+		
 	}
 }

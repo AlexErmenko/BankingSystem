@@ -1091,7 +1091,6 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\GetAccounts.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs

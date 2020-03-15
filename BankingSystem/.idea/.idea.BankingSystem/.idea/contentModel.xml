@@ -131,14 +131,16 @@
         <e p="compilerconfig.json.bindings" t="Include" />
         <e p="compilerconfig.json.defaults" t="Include" />
         <e p="Controllers" t="Include">
-          <e p="AccountOperationByPeriodHandler.cs" t="Include" />
           <e p="AdminController.cs" t="Include" />
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
-          <e p="GetAccountOperationByPeriod.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
+        </e>
+        <e p="Extension" t="Include">
+          <e p="SessionExtension.cs" t="Include" />
+          <e p="UrlExtensions.cs" t="Include" />
         </e>
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
@@ -180,6 +182,7 @@
             <e p="UserViewModel.cs" t="Include" />
           </e>
           <e p="BankAccount" t="Include">
+            <e p="AccountViewModel.cs" t="Include" />
             <e p="CreateClientAccountViewModel.cs" t="Include" />
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
@@ -462,7 +465,6 @@
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
               <e p="LICENSE.txt" t="Include" />
             </e>
-            <e p="react" t="Include" />
           </e>
           <e p="scss" t="Include">
             <e p="footer.scss" t="Include" />

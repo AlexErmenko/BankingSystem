@@ -1,11 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace Web.Commands
+using ApplicationCore.Entity;
+
+namespace Web.ViewModels
 {
 	public class AccountOperationViewModel
 	{
-		public decimal Amount { get; set; }
-		public string Type { get; set; }
-		public DateTime OperationTime { get; set; }
+		public int IdAccount { get; set; }
+		public IList<Operation> Operations { get; set; }
+
+		[DataType(dataType: DataType.Date)]
+		public DateTime? StartPeriod { get; set; }
+
+		[DataType(dataType: DataType.Date)]
+		public DateTime? EndPeriod { get; set; }
 	}
 }

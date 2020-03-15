@@ -36,7 +36,7 @@ namespace Web
 					var repository = services.GetRequiredService<IAsyncRepository<Client>>();
 
 					//await ApplicationDbContextSeed.SeedAsync(userManager: userManager, roleManager: roleManager);
-					await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager, repository: repository);
+					// await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager, repository: repository);
 				} catch(Exception ex)
 				{
 					var logger = loggerFactory.CreateLogger<Program>();
