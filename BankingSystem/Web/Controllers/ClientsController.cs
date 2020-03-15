@@ -96,7 +96,7 @@ namespace Web.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				Client client = physicalPersonCreateViewModel.Client;
+				var client = physicalPersonCreateViewModel.Client;
 				client.PhysicalPerson = physicalPersonCreateViewModel.PhysicalPerson;
 
 				//Add to tables Client and PhysicalPerson
