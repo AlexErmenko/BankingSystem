@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Web.Commands;
+using Web.Extension;
 using Web.ViewModels;
 
 namespace Web.Controllers
@@ -59,7 +60,7 @@ namespace Web.Controllers
 				{
 					//PhysicalPerson
 
-					HttpContext.Session.SetString("NewClientData", JsonSerializer.Serialize<Client>(clientCreateViewModel.Client));
+					HttpContext.Session.Set<Client>("NewClientData", clientCreateViewModel.Client);
 
 					return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
 				} 
@@ -84,12 +85,11 @@ namespace Web.Controllers
 		[HttpGet]
 		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreateViewModel)
 		{
-			var value = HttpContext.Session.GetString("NewClientData");
-			var client = JsonSerializer.Deserialize<Client>(value);
+			var client = HttpContext.Session.Get<Client>("NewClientData");
 
 			var physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
 			{
-				Client = client,  //TODO: don't work. return null
+				Client = client,  
 				Password = clientCreateViewModel.Password,
 				Email = clientCreateViewModel.Email
 			};
