@@ -13,7 +13,6 @@ using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
 {
-	//[Authorize(Roles = AuthorizationConstants.Roles.MANAGER)]
 	[Authorize(Roles = "Client, Manager")]
 	public class BankAccountController : Controller
 	{
