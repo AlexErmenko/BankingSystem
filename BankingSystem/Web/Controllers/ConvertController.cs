@@ -2,12 +2,16 @@
 
 namespace Web.Controllers
 {
+	[ApiController]
+	[Route("[controller]")]
 	public class ConvertController : Controller
 	{
 		// GET
-		public IActionResult Index()
+		[HttpGet("{id}")]
+		public string Index(int id)
 		{
-			return View();
+
+			return $"{id}";
 		}
 	}
 }

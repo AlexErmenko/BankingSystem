@@ -1,4 +1,4 @@
-﻿namespace Web.Services
+﻿namespace Web.ViewModels
 {
 	public class CurrencyConvertModel
 	{

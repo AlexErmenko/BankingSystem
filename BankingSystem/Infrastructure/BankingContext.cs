@@ -3,7 +3,6 @@ using ApplicationCore.Entity;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using ApplicationCore.Entity;
 
 namespace ApplicationCore.BankingSystemContext
 {

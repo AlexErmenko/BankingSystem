@@ -121,6 +121,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="bundleconfig.json" t="Include" />
         <e p="bundleconfig.json.bindings" t="Include" />
+        <e p="Commands" t="Include">
+          <e p="GetCurrencyConvertQuery.cs" t="Include" />
+        </e>
         <e p="compilerconfig.json" t="Include" />
         <e p="compilerconfig.json.bindings" t="Include" />
         <e p="compilerconfig.json.defaults" t="Include" />
@@ -128,9 +131,13 @@
           <e p="AdminController.cs" t="Include" />
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
+          <e p="ConvertController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="CurrencyConvertHandler.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
@@ -171,7 +178,9 @@
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
           <e p="ClientCreateViewModel.cs" t="Include" />
+          <e p="CurrencyConvertModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
+          <e p="EditBankAccountViewModel.cs" t="Include" />
           <e p="LegalPersonCreateViewModel.cs" t="Include" />
           <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
         </e>

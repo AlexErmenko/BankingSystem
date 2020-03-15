@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
-using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
+using Infrastructure.Identity;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Web.Services;
+using Web.ViewModels;
 
 namespace Web.Controllers
 {
@@ -16,22 +18,15 @@ namespace Web.Controllers
 	public class CurrencyController : Controller
 	{
 		private readonly ICurrencyViewModelService _currencyViewModelSerivce;
+		private UserManager<ApplicationUser>  UserManager            { get; set; }
+		private IMediator                     Mediator               { get; }
 
-		private IAsyncRepository<BankAccount>  _BankAccountRepository  { get; }
-		private IAsyncRepository<Currency>     _currencyRepository     { get; }
-		private IAsyncRepository<ExchangeRate> _exchangeRateRepository { get; }
-
-		private int ClientId { get; set; }
-
-		public CurrencyController(ICurrencyViewModelService      currencyViewModelSerivce,
-								  IAsyncRepository<BankAccount>  bankAccountRepository,
-								  IAsyncRepository<Currency>     currencyRepository,
-								  IAsyncRepository<ExchangeRate> exchangeRateRepository)
+		public CurrencyController(ICurrencyViewModelService     currencyViewModelSerivce,
+								  UserManager<ApplicationUser>  manager, IMediator mediator)
 		{
 			_currencyViewModelSerivce = currencyViewModelSerivce;
-			_BankAccountRepository    = bankAccountRepository;
-			_currencyRepository       = currencyRepository;
-			_exchangeRateRepository   = exchangeRateRepository;
+			UserManager               = manager;
+			Mediator                  = mediator;
 		}
 
 		/// <summary>
@@ -42,15 +37,17 @@ namespace Web.Controllers
 		public async Task<IActionResult> GetInfo()
 		{
 			var currencyRate = await _currencyViewModelSerivce.GetCurrencyRate();
-
 			return View(currencyRate);
 		}
 
+		/// <summary>
+		///     Вывод всех аккаунтов пользователя
+		/// </summary>
+		/// <returns></returns>
 		[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
 		public async Task<IActionResult> Index()
 		{
-			var clientAccountViewModels = await _currencyViewModelSerivce.GetClientAccounts(id: 3);
-			ClientId = 3;
+			var clientAccountViewModels = await _currencyViewModelSerivce.GetClientAccounts(User.Identity.Name);
 
 			return View(clientAccountViewModels);
 		}
@@ -58,29 +55,27 @@ namespace Web.Controllers
 		//GET
 		public async Task<IActionResult> Edit(int id)
 		{
-			var account       = await _BankAccountRepository.GetById(id);
-			var all           = await _currencyRepository.GetAll();
-			var exchangeRates = await _exchangeRateRepository.GetAll();
-
-			ViewBag.Currencies = new SelectList(all, "Id", "ShortName");
-			if (account == null) return NotFound();
-
-			return View(account);
+			var viewModel = await _currencyViewModelSerivce.GetBankAccountViewModel(id);
+			ViewBag.Currencies = viewModel.SelectCurrencyList;
+			var currencyConvertModel = viewModel.ConvertModel;
+			return View(currencyConvertModel);
 		}
 
 		[HttpPost]
-
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Edit(
-			int id, [Bind("Id,IdClient,IdCurrency,DateOpen,DateClose,Amount,AccountType")]
-			BankAccount account)
+			int id, [FromForm] CurrencyConvertModel convertModel)
 		{
-			//TODO: Добавить пересчёт баланса
+			var query = await _currencyViewModelSerivce.GetConvertQuery(id, convertModel.ToId);
+			var balance = await Mediator.Send(query);
 			if (ModelState.IsValid)
 			{
-				Console.WriteLine(account);
+				try
+				{
+					await _currencyViewModelSerivce.ChangeAccountCurrency(id, convertModel.ToId,balance);
 
-				try { await _BankAccountRepository.UpdateAsync(account); }
+				}
+
 				catch (Exception e)
 				{
 					Console.WriteLine(e);
@@ -90,9 +85,9 @@ namespace Web.Controllers
 				return RedirectToAction(nameof(Index));
 			}
 
-			return View(account);
+			return View();
 		}
 
-		public IActionResult Delete() { throw new NotImplementedException(); }
+		// public IActionResult Delete() { throw new NotImplementedException(); }
 	}
 }

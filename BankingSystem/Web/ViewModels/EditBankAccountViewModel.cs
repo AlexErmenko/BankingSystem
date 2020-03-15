@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace Web.Services
+namespace Web.ViewModels
 {
 	public class EditBankAccountViewModel
 	{
