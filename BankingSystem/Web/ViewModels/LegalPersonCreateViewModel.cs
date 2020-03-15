@@ -10,8 +10,6 @@ namespace Web.ViewModels
 	{
 		public Client Client { get; set; }
 
-		public string Password { get; set; }
-
 		public string Email { get; set; }
 
 		public LegalPerson LegalPerson { get; set; }

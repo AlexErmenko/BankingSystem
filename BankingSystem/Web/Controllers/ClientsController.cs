@@ -42,6 +42,8 @@ namespace Web.Controllers
 			return View(model: clients);
 		}
 
+		#region Create
+
 		// GET: Clients/CreateClient
 		public IActionResult CreateClient() => View();
 
@@ -49,29 +51,27 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> CreateClient(ClientCreateViewModel clientCreateViewModel)
 		{
-			if (!ModelState.IsValid) 
+			if (!ModelState.IsValid)
 				return View(clientCreateViewModel);
 
 			var result = await Mediator.Send(new GetPasswordValidationQuery(null, clientCreateViewModel.Password));
 			if (result.Succeeded)
 			{
+
+				HttpContext.Session.Set<Client>("NewClientData", clientCreateViewModel.Client);
+				HttpContext.Session.Set<string>("PassClient", clientCreateViewModel.Password);
+
 				//if pass is valid
 				if (clientCreateViewModel.IsPhysicalPerson)
 				{
 					//PhysicalPerson
-
-					HttpContext.Session.Set<Client>("NewClientData", clientCreateViewModel.Client);
-
 					return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
-				} 
-				else
+				} else
 				{
 					//LegalPerson
-
-					//return RedirectToAction(nameof(CreateLegalPerson), clientCreateViewModel);
+					return RedirectToAction(nameof(CreateLegalPerson), clientCreateViewModel);
 				}
-			}
-			else
+			} else
 			{
 				foreach (var error in result.Errors)
 				{
@@ -82,6 +82,10 @@ namespace Web.Controllers
 			return View(clientCreateViewModel);
 		}
 
+		#endregion
+
+		#region CreatePhysicalPerson
+
 		[HttpGet]
 		public IActionResult CreatePhysicalPerson(ClientCreateViewModel clientCreateViewModel)
 		{
@@ -89,9 +93,8 @@ namespace Web.Controllers
 
 			var physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
 			{
-				Client = client,  
-				Password = clientCreateViewModel.Password,
-				Email = clientCreateViewModel.Email
+				Client = client,
+				Email  = clientCreateViewModel.Email
 			};
 
 			return View(physicalPersonCreateViewModel);
@@ -112,12 +115,13 @@ namespace Web.Controllers
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName = physicalPersonCreateViewModel.Client.Login,
-					Email = physicalPersonCreateViewModel.Email,
+					UserName    = physicalPersonCreateViewModel.Client.Login,
+					Email       = physicalPersonCreateViewModel.Email,
 					PhoneNumber = physicalPersonCreateViewModel.Client.TelNumber
 				};
 
-				var result = await _userManager.CreateAsync(user, physicalPersonCreateViewModel.Password);
+				var password = HttpContext.Session.Get<string>("PassClient");
+				var result   = await _userManager.CreateAsync(user, password);
 
 				if (result.Succeeded)
 				{
@@ -137,11 +141,68 @@ namespace Web.Controllers
 			return View(physicalPersonCreateViewModel);
 		}
 
+		#endregion
+
 		#region CreateLegalPerson
 
+		[HttpGet]
+		public IActionResult CreateLegalPerson(ClientCreateViewModel clientCreateViewModel)
+		{
+			var client = HttpContext.Session.Get<Client>("NewClientData");
 
+			var legalPersonCreateViewModel = new LegalPersonCreateViewModel()
+			{
+				Client = client,
+				Email  = clientCreateViewModel.Email
+			};
+
+			return View(legalPersonCreateViewModel);
+		}
+
+		// POST: Clients/CreatePhysicalPerson
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> CreateLegalPerson(LegalPersonCreateViewModel legalPersonCreateViewModel)
+		{
+			if (ModelState.IsValid)
+			{
+				var client = legalPersonCreateViewModel.Client;
+				client.LegalPerson = legalPersonCreateViewModel.LegalPerson;
+
+				//Add to tables Client and LegalPerson
+				await Repository.AddAsync(client);
+
+				//Add new User to Identity
+				ApplicationUser user = new ApplicationUser()
+				{
+					UserName    = legalPersonCreateViewModel.Client.Login,
+					Email       = legalPersonCreateViewModel.Email,
+					PhoneNumber = legalPersonCreateViewModel.Client.TelNumber
+				};
+
+				var password = HttpContext.Session.Get<string>("PassClient");
+				var result   = await _userManager.CreateAsync(user, password);
+
+				if (result.Succeeded)
+				{
+					//Set Roles CLIENT to new User
+					await _userManager.AddToRoleAsync(user, AuthorizationConstants.Roles.CLIENT);
+
+					return RedirectToAction(nameof(Index));
+				} else
+				{
+					foreach (var error in result.Errors)
+					{
+						ModelState.AddModelError(string.Empty, error.Description);
+					}
+				}
+			}
+
+			return View(legalPersonCreateViewModel);
+		}
 
 		#endregion
+
+		#region Edit
 
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
@@ -178,6 +239,10 @@ namespace Web.Controllers
 			return View(model: client);
 		}
 
+		#endregion
+
+		#region Delete
+
 		// GET: Clients/Delete/5
 		public async Task<IActionResult> Delete(int id)
 		{
@@ -195,6 +260,8 @@ namespace Web.Controllers
 			await Repository.DeleteAsync(entity: client);
 			return RedirectToAction(actionName: nameof(Index));
 		}
+
+		#endregion
 
 		private bool ClientExists(int id) { return Repository.GetAll().Result.Any(predicate: e => e.Id == id); }
 	}
