@@ -24,21 +24,30 @@ namespace Web.Controllers
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
+		public IAsyncRepository<LegalPerson> LegalRepository { get; set; }
+		public IAsyncRepository<PhysicalPerson> PhysicalPerson { get; set; }
+
 		private readonly UserManager<ApplicationUser> _userManager;
 		private IMediator Mediator { get; set; }
 
 
-		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager, IMediator mediator)
+		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager, IMediator mediator, IAsyncRepository<LegalPerson> legalRepository, IAsyncRepository<PhysicalPerson> physicalPerson)
 		{
 			Repository = repository;
 			_userManager = userManager;
 			Mediator = mediator;
+			LegalRepository = legalRepository;
+			PhysicalPerson = physicalPerson;
 		}
 
 		// GET: Clients
 		public async Task<IActionResult> Index()
 		{
+
 			var clients = await Repository.GetAll();
+			var physicalClients = await PhysicalPerson.GetAll();
+			var legalClients = await LegalRepository.GetAll();
+
 			return View(model: clients);
 		}
 
