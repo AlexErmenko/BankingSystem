@@ -2,17 +2,10 @@
 @model IEnumerable<Client>
 
 @{
-	Layout = null;
+    Layout = "_Layout";
+    ViewData["Title"] = "Клиенты";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width"/>
-    <title>Клиенты</title>
-</head>
-<body>
 <p>
     <a asp-action="CreateClient">Добавить нового клиента</a>
 </p>
@@ -32,9 +25,9 @@
     </tr>
     </thead>
     <tbody>
-    @foreach(var item in Model)
+    @foreach (var item in Model)
     {
-	    <tr>
+        <tr>
             <td>
                 @Html.DisplayFor(expression: modelItem => item.Login)
             </td>
@@ -52,5 +45,3 @@
     }
     </tbody>
 </table>
-</body>
-</html>
