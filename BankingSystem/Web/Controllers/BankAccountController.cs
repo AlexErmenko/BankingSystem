@@ -115,9 +115,9 @@ namespace Web.Controllers
 		/// </summary>
 		/// <param name="idAccount"></param>
 		/// <returns></returns>
-		public IActionResult BankAccountClose(int idAccount)
+		public async Task<IActionResult> BankAccountClose(int idAccount)
 		{
-			_bankAccountRepository.CloseAccount(idAccount: idAccount);
+			await _bankAccountRepository.CloseAccount(idAccount: idAccount);
 
 			return RedirectToAction("GetAccounts");
 		}
@@ -128,9 +128,9 @@ namespace Web.Controllers
 		/// </summary>
 		/// <param name="idAccount"></param>
 		/// <returns></returns>
-		public IActionResult BankAccountDelete(int idAccount)
+		public async Task<IActionResult> BankAccountDelete(int idAccount)
 		{
-			_bankAccountRepository.DeleteAccount(idAccount: idAccount);
+			await _bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
 			return RedirectToAction("GetAccounts");
 		}
