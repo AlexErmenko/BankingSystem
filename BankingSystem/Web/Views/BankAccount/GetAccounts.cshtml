@@ -1,15 +1,15 @@
-﻿@model IEnumerable<BankAccount>
+﻿@model AccountViewModel
 
 @{
     ViewData[index: "Title"] = "Доступные счета";
 }
 
 <a class="btn btn-primary mb-3" asp-controller="BankAccount" asp-action="CreateClientAccountForm"
-   asp-route-idClient="@Model.">
+   asp-route-idClient="@Model.IdClient">
     Открыть счет
 </a>
 <div class="card-columns">
-    @foreach (var account in Model)
+    @foreach (var account in Model.BankAccounts)
     {
         <div class="card border-dark mb-3" style="width: 250px; height: 230px">
             <!-- Шапка (bg-primary - цвет фона, text-white - цвет текста) -->
