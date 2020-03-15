@@ -918,6 +918,7 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\R
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
@@ -1083,10 +1084,6 @@ C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
 C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
@@ -1120,6 +1117,7 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -1130,7 +1128,11 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.c
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
-E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Sigma\BankingSystem\Web\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache

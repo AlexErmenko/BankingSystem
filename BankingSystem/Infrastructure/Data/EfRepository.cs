@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApplicationCore.BankingSystemContext;
 using ApplicationCore.Interfaces;
-
+using Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data

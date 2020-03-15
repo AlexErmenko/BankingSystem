@@ -62,11 +62,13 @@
     </table>
     <table id="18" parent="14" name="BankAccount">
       <ObjectId>1253579504</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2020-03-04.21:43:23.283</CreatedTimestamp>
       <ModifiedTimestamp>2020-03-06.15:40:14.297</ModifiedTimestamp>
     </table>
     <table id="19" parent="14" name="Client">
       <ObjectId>1285579618</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2020-03-04.21:43:23.413</CreatedTimestamp>
       <ModifiedTimestamp>2020-03-06.15:40:14.193</ModifiedTimestamp>
     </table>

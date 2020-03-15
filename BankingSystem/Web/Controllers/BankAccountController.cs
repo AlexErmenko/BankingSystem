@@ -98,7 +98,7 @@ namespace Web.Controllers
 		/// Отображение всех счетов клиента
 		/// </summary>
 		/// <returns></returns>
-		public async Task<IActionResult> GetAccounts(int? idClient, CreateClientAccountViewModel createClientAccountViewModel)
+		public async Task<IActionResult> GetAccounts(int? idClient)
 		{
 			if (idClient == null) { idClient = await GetUserId(); }
 
