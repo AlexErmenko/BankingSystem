@@ -6,11 +6,13 @@ using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
 using ApplicationCore.Specifications;
 using Infrastructure.Identity;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using Web.Commands;
 using Web.ViewModels;
 
 namespace Web.Controllers
@@ -20,11 +22,14 @@ namespace Web.Controllers
 	{
 		private IAsyncRepository<Client> Repository { get; }
 		private readonly UserManager<ApplicationUser> _userManager;
+		private IMediator Mediator { get; set; }
 
-		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager)
+
+		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager, IMediator mediator)
 		{
 			Repository = repository;
 			_userManager = userManager;
+			Mediator = mediator;
 		}
 
 		// GET: Clients
@@ -41,39 +46,31 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> CreateClient(ClientCreateViewModel clientCreateViewModel)
 		{
-			if (ModelState.IsValid)
+			if (!ModelState.IsValid) 
+				return View(clientCreateViewModel);
+
+			var result = await Mediator.Send(new GetPasswordValidationQuery(null, clientCreateViewModel.Password));
+			if (result.Succeeded)
 			{
-				var passwordValidator = new PasswordValidator<ApplicationUser>();
-				var result = await passwordValidator.ValidateAsync(_userManager, null, clientCreateViewModel.Password);
-
-				if (result.Succeeded)
+				//if pass is valid
+				if (clientCreateViewModel.IsPhysicalPerson)
 				{
-					//if pass is valid
-					if (clientCreateViewModel.IsPhysicalPerson)
-					{
-						//PhysicalPerson
+					//PhysicalPerson
 
-						return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
-						//new ClientCreateViewModel()
-						//{
-						//	Client = clientCreateViewModel.Client,
-						//	Password = clientCreateViewModel.Password,
-						//	Email = clientCreateViewModel.Email,
-						//	PasswordConfirm = clientCreateViewModel.PasswordConfirm,
-						//	IsPhysicalPerson = clientCreateViewModel.IsPhysicalPerson
-						//});
-					} else
-					{
-						//LegalPerson
-
-						//return RedirectToAction(nameof(CreateLegalPerson), clientCreateViewModel);
-					}
-				} else
+					return RedirectToAction(nameof(CreatePhysicalPerson), clientCreateViewModel);
+				} 
+				else
 				{
-					foreach (var error in result.Errors)
-					{
-						ModelState.AddModelError(string.Empty, error.Description);
-					}
+					//LegalPerson
+
+					//return RedirectToAction(nameof(CreateLegalPerson), clientCreateViewModel);
+				}
+			}
+			else
+			{
+				foreach (var error in result.Errors)
+				{
+					ModelState.AddModelError(string.Empty, error.Description);
 				}
 			}
 
