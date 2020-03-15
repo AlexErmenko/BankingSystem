@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -13,14 +14,14 @@ namespace Web.Services
 	public class ConsumeScopedServiceHostedService : BackgroundService
 	{
 		private readonly IServiceProvider _services;
-		public ConsumeScopedServiceHostedService(IServiceProvider services) { _services = services; }
+		public ConsumeScopedServiceHostedService(IServiceProvider services) => _services = services;
 
 		protected override async Task ExecuteAsync(CancellationToken stoppingToken)
 		{
 			// _logger.LogInformation(
 			// 					   "Consume Scoped Service Hosted Service running.");
 
-			await DoWork(stoppingToken);
+			await DoWork(stoppingToken: stoppingToken);
 		}
 
 		private async Task DoWork(CancellationToken stoppingToken)
@@ -28,10 +29,10 @@ namespace Web.Services
 			// .LogInformation(
 			// "Consume Scoped Service Hosted Service is working.");
 
-			using var scope                   = _services.CreateScope();
-			var       scopedProcessingService = scope.ServiceProvider.GetRequiredService<IScopedСurrencyService>();
+			using var scope = _services.CreateScope();
+			var scopedProcessingService = scope.ServiceProvider.GetRequiredService<IScopedСurrencyService>();
 
-			await scopedProcessingService.DoWork(stoppingToken).ConfigureAwait(continueOnCapturedContext: true);
+			await scopedProcessingService.DoWork(stoppingToken: stoppingToken).ConfigureAwait(continueOnCapturedContext: true);
 		}
 
 		public override async Task StopAsync(CancellationToken stoppingToken)

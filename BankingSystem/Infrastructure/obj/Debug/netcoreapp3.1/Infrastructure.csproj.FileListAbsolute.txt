@@ -59,6 +59,8 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Infrastructure\obj\Debug\netc
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
 C:\Sigma\BankingSystem\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
@@ -72,5 +74,3 @@ C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.Ass
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Sigma\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
-F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
-F:\Banking_System\BankingSystem\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

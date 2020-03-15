@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Identity
+﻿using System;
+
+namespace Infrastructure.Identity
 {
 	public class FileModel
 	{

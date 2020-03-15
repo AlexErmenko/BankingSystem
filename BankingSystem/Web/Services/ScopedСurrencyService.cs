@@ -3,11 +3,10 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+
 using ApplicationCore.BankingSystemContext;
 using ApplicationCore.Dto;
 using ApplicationCore.Entity;
-
-using Infrastructure;
 
 using Microsoft.Extensions.Logging;
 
