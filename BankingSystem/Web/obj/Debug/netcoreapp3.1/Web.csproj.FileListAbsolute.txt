@@ -1127,3 +1127,4 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\R
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\MediatR.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
 E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateLegalPerson.cshtml.g.cs
