@@ -1,7 +1,8 @@
-﻿@model IEnumerable<BankAccount>
+﻿@using System
+@model IEnumerable<BankAccount>
 
 @{
-    ViewData[index: "Title"] = "Доступные счета";
+	ViewData[index: "Title"] = "Доступные счета";
 }
 
 <a class="btn btn-primary mb-3" asp-controller="BankAccount" asp-action="CreateClientAccountForm"
@@ -9,9 +10,9 @@
     Открыть счет
 </a>
 <div class="card-columns">
-    @foreach (var account in Model)
+    @foreach(var account in Model)
     {
-        <div class="card border-dark mb-3" style="width: 250px; height: 230px">
+	    <div class="card border-dark mb-3" style="width: 250px; height: 230px">
             <!-- Шапка (bg-primary - цвет фона, text-white - цвет текста) -->
             <div class="card-header text-center text-white bg-primary">
                 <span>Счет № @account.Id</span>
@@ -21,12 +22,12 @@
                 <div class="card-text">Тип счета: @account.AccountType</div>
                 <div class="card-text">
                     Статус:
-                    @if (account.DateClose == null)
+                    @if(account.DateClose == null)
                     {
-                        <span class="text-success">Активный</span>
+	                    <span class="text-success">Активный</span>
                     } else
                     {
-                        <span class="text-danger">Закрытый</span>
+	                    <span class="text-danger">Закрытый</span>
                     }
                 </div>
 

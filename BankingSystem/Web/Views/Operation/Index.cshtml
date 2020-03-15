@@ -1,42 +1,63 @@
-﻿@model IEnumerable<Web.Commands.AccountOperationViewModel>
-
+﻿@using System
+@model IEnumerable<Web.Commands.AccountOperationViewModel>
 
 @{
-    ViewData["Title"] = "Выписка по счёту";
+	ViewData[index: "Title"] = "Выписка по счёту";
 }
-<div>
-    <table class="table table-responsive table-bordered ">
-        <thead>
-        <tr>
-            <th>
-                Время
-            </th>
-            <th>
-                Тип
-            </th>
-            <th>
-                Сумма
-            </th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in Model)
-        {
+
+
+<div class="row">
+
+
+    @* <div class="col-md-3 mr-3"> *@
+
+    @* <input asp-action="Index" type="date" asp-format="{0:MM/dd/yyyy}" class="form-control datepicker-dropdown" *@
+    @* asp-for="@ViewData["DateValue"]" *@
+    @* asp-route-dateValue="@ViewData[index: "DateValue"]"> *@
+
+
+    @* <a asp-action="Index" asp-route-sortOrder="@ViewData[index: "DateSortParm"]"> *@
+    @* @Html.DisplayNameFor(expression: model => model.OperationTime) *@
+    @* </a> *@
+    @* / *@
+    @* </div> *@
+    <div class="col-md-3 ">
+        <input type="date" class="form-control input-daterange" asp-for="@ViewData["DateValue"]">
+    </div>
+
+
+    <div class="col-md-6">
+
+        <table class="table table-responsive table-bordered ">
+            <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.OperationTime)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Type)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Amount)
-                </td>
-                <td>
-                </td>
+                <th>
+                    Время
+                </th>
+                <th>
+                    Тип
+                </th>
+                <th>
+                    Сумма
+                </th>
             </tr>
-        }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            @foreach(var item in Model)
+            {
+	            <tr>
+                    <td>
+                        @Html.DisplayFor(expression: modelItem => item.OperationTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(expression: modelItem => item.Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(expression: modelItem => item.Amount)
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
 </div>

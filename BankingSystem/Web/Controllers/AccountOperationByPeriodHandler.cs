@@ -9,11 +9,8 @@ using Web.Commands;
 
 namespace Web.Controllers
 {
-	public class AccountOperationByPeriodHandler: IRequestHandler<GetAccountOperationByPeriod,List<AccountOperationViewModel>>
+	public class AccountOperationByPeriodHandler : IRequestHandler<GetAccountOperationByPeriod, List<AccountOperationViewModel>>
 	{
-		public Task<List<AccountOperationViewModel>> Handle(GetAccountOperationByPeriod request, CancellationToken cancellationToken)
-		{
-			throw new NotImplementedException();
-		}
+		public Task<List<AccountOperationViewModel>> Handle(GetAccountOperationByPeriod request, CancellationToken cancellationToken) => throw new NotImplementedException();
 	}
 }

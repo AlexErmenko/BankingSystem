@@ -1,27 +1,25 @@
-﻿
+﻿using System;
 using System.Threading.Tasks;
-using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
+
 using MediatR;
+
 using Microsoft.AspNetCore.Mvc;
+
 using Web.Commands;
 
 namespace Web.Controllers
 {
 	public class OperationController : Controller
 	{
-		public OperationController(IMediator mediator) { Mediator = mediator; }
-
-		private IMediator Mediator { get; set; }
-
-
+		private IMediator Mediator { get; }
+		public OperationController(IMediator mediator) => Mediator = mediator;
 
 		// GET
 		public async Task<IActionResult> Index(int id)
 		{
-			var viewModel = await Mediator.Send(new GetAccountOperationQuery(id));
+			var viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id));
 
-			return View(viewModel);
+			return View(model: viewModel);
 		}
 	}
 }

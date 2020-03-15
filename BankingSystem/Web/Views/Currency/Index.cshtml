@@ -1,10 +1,11 @@
 ﻿@inject SignInManager<ApplicationUser> SignInManager
+@using System
 @using Infrastructure.Identity
 @using Microsoft.AspNetCore.Identity
 @model IEnumerable<Web.ViewModels.ClientAccountViewModel>
 
 @{
-    ViewData["Title"] = "Home Page";
+	ViewData[index: "Title"] = "Home Page";
 }
 <h1>
     Смена валюты для аккаунта
@@ -32,23 +33,23 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var item in Model)
+        @foreach(var item in Model)
         {
-            <tr>
+	        <tr>
                 <td >
-                    @Html.DisplayFor(modelItem => item.AccountType)
+                    @Html.DisplayFor(expression: modelItem => item.AccountType)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Amount)
+                    @Html.DisplayFor(expression: modelItem => item.Amount)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Currency)
+                    @Html.DisplayFor(expression: modelItem => item.Currency)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.DateOpen)
+                    @Html.DisplayFor(expression: modelItem => item.DateOpen)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.DateClose)
+                    @Html.DisplayFor(expression: modelItem => item.DateClose)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Изменить </a> |

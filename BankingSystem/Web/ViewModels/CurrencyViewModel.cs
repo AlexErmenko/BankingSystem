@@ -1,4 +1,6 @@
-﻿namespace Web.ViewModels
+﻿using System;
+
+namespace Web.ViewModels
 {
 	public class CurrencyViewModel
 	{

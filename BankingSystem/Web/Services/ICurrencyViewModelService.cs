@@ -1,6 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using ApplicationCore.Entity;
+
 using Web.Commands;
 using Web.ViewModels;
 
@@ -12,7 +13,6 @@ namespace Web.Services
 		Task<IEnumerable<ClientAccountViewModel>> GetClientAccounts(string? id);
 		Task<EditBankAccountViewModel> GetBankAccountViewModel(int id);
 		Task<GetCurrencyConvertQuery> GetConvertQuery(int accountId, int currencyId);
-
 
 		Task ChangeAccountCurrency(int accountId, int currencyId, decimal balance);
 	}
