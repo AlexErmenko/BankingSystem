@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Threading.Tasks;
+
 using ApplicationCore.Specifications;
+
 using Infrastructure.Identity;
+
 using MediatR;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+
 using Web.Services;
 using Web.ViewModels;
 
@@ -18,15 +22,14 @@ namespace Web.Controllers
 	public class CurrencyController : Controller
 	{
 		private readonly ICurrencyViewModelService _currencyViewModelSerivce;
-		private UserManager<ApplicationUser>  UserManager            { get; set; }
-		private IMediator                     Mediator               { get; }
+		private UserManager<ApplicationUser> UserManager { get; }
+		private IMediator Mediator { get; }
 
-		public CurrencyController(ICurrencyViewModelService     currencyViewModelSerivce,
-								  UserManager<ApplicationUser>  manager, IMediator mediator)
+		public CurrencyController(ICurrencyViewModelService currencyViewModelSerivce, UserManager<ApplicationUser> manager, IMediator mediator)
 		{
 			_currencyViewModelSerivce = currencyViewModelSerivce;
-			UserManager               = manager;
-			Mediator                  = mediator;
+			UserManager = manager;
+			Mediator = mediator;
 		}
 
 		/// <summary>
@@ -37,7 +40,7 @@ namespace Web.Controllers
 		public async Task<IActionResult> GetInfo()
 		{
 			var currencyRate = await _currencyViewModelSerivce.GetCurrencyRate();
-			return View(currencyRate);
+			return View(model: currencyRate);
 		}
 
 		/// <summary>
@@ -47,42 +50,34 @@ namespace Web.Controllers
 		[Authorize(Roles = AuthorizationConstants.Roles.CLIENT)]
 		public async Task<IActionResult> Index()
 		{
-			var clientAccountViewModels = await _currencyViewModelSerivce.GetClientAccounts(User.Identity.Name);
+			var clientAccountViewModels = await _currencyViewModelSerivce.GetClientAccounts(id: User.Identity.Name);
 
-			return View(clientAccountViewModels);
+			return View(model: clientAccountViewModels);
 		}
 
 		//GET
 		public async Task<IActionResult> Edit(int id)
 		{
-			var viewModel = await _currencyViewModelSerivce.GetBankAccountViewModel(id);
+			var viewModel = await _currencyViewModelSerivce.GetBankAccountViewModel(id: id);
 			ViewBag.Currencies = viewModel.SelectCurrencyList;
 			var currencyConvertModel = viewModel.ConvertModel;
-			return View(currencyConvertModel);
+			return View(model: currencyConvertModel);
 		}
 
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(
-			int id, [FromForm] CurrencyConvertModel convertModel)
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> Edit(int id, [FromForm] CurrencyConvertModel convertModel)
 		{
-			var query = await _currencyViewModelSerivce.GetConvertQuery(id, convertModel.ToId);
-			var balance = await Mediator.Send(query);
-			if (ModelState.IsValid)
+			var query = await _currencyViewModelSerivce.GetConvertQuery(accountId: id, currencyId: convertModel.ToId);
+			var balance = await Mediator.Send(request: query);
+			if(ModelState.IsValid)
 			{
-				try
+				try { await _currencyViewModelSerivce.ChangeAccountCurrency(accountId: id, currencyId: convertModel.ToId, balance: balance); } catch(Exception e)
 				{
-					await _currencyViewModelSerivce.ChangeAccountCurrency(id, convertModel.ToId,balance);
-
-				}
-
-				catch (Exception e)
-				{
-					Console.WriteLine(e);
+					Console.WriteLine(value: e);
 					throw;
 				}
 
-				return RedirectToAction(nameof(Index));
+				return RedirectToAction(actionName: nameof(Index));
 			}
 
 			return View();

@@ -1,4 +1,6 @@
-﻿namespace ApplicationCore.Dto
+﻿using System;
+
+namespace ApplicationCore.Dto
 {
 	public class CurrencyDto
 	{

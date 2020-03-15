@@ -1,4 +1,6 @@
-﻿using ApplicationCore.Entity;
+﻿using System;
+
+using ApplicationCore.Entity;
 
 namespace Web.ViewModels.BankAccount
 {

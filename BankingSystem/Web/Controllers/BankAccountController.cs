@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Web.Extension;
 using Web.ViewModels;
 using Web.ViewModels.BankAccount;
 
@@ -42,9 +43,9 @@ namespace Web.Controllers
 		/// <param name="idClient"></param>
 		/// <returns></returns>
 		[HttpGet]
-		public async Task<IActionResult> CreateClientAccountForm()
+		public async Task<IActionResult> CreateClientAccountForm(int? idClient)
 		{
-			var idClient = await GetUserId();
+			if (idClient == null) { idClient = await GetUserId(); }
 
 			var physicalPerson = await _physicalPersonRepository.GetById(idClient);
 			var legalPerson = await _legalPersonRepository.GetById(id: idClient);
@@ -100,14 +101,21 @@ namespace Web.Controllers
 		/// <returns></returns>
 		public async Task<IActionResult> GetAccounts(int? idClient)
 		{
-			if (idClient == null) { idClient = await GetUserId(); }
+			if (idClient == null && _httpContextAccessor.HttpContext.User.IsInRole("Client"))
+			{
+				idClient = await GetUserId();
+			}
 
 			var accounts = _bankAccountRepository
 						   .Accounts
 						   .Include(p => p.IdCurrencyNavigation)
 						   .Where(c => c.IdClient == idClient);
 
-			return View(accounts);
+			return View(new AccountViewModel()
+			{
+				IdClient = idClient,
+				BankAccounts = accounts
+			});
 		}
 
 		/// <summary>
@@ -115,9 +123,9 @@ namespace Web.Controllers
 		/// </summary>
 		/// <param name="idAccount"></param>
 		/// <returns></returns>
-		public IActionResult BankAccountClose(int idAccount)
+		public async Task<IActionResult> BankAccountClose(int idAccount)
 		{
-			_bankAccountRepository.CloseAccount(idAccount: idAccount);
+			await _bankAccountRepository.CloseAccount(idAccount: idAccount);
 
 			return RedirectToAction("GetAccounts");
 		}
@@ -128,9 +136,9 @@ namespace Web.Controllers
 		/// </summary>
 		/// <param name="idAccount"></param>
 		/// <returns></returns>
-		public IActionResult BankAccountDelete(int idAccount)
+		public async Task<IActionResult> BankAccountDelete(int idAccount)
 		{
-			_bankAccountRepository.DeleteAccount(idAccount: idAccount);
+			await _bankAccountRepository.DeleteAccount(idAccount: idAccount);
 
 			return RedirectToAction("GetAccounts");
 		}
