@@ -13,6 +13,9 @@ namespace Web.Controllers
 		public OperationController(IMediator mediator) { Mediator = mediator; }
 
 		private IMediator Mediator { get; set; }
+
+
+
 		// GET
 		public async Task<IActionResult> Index(int id)
 		{

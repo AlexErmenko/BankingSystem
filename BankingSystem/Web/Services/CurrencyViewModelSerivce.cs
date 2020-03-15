@@ -19,7 +19,7 @@ namespace Web.Services
 		private readonly IAsyncRepository<Client>          _clientRepository;
 		private readonly IAsyncRepository<Currency>        _currencyRepository;
 		private          ILogger<CurrencyViewModelService> Logger   { get; }
-		private IMediator                         Mediator { get; }
+		private          IMediator                         Mediator { get; }
 
 		public CurrencyViewModelService(IAsyncRepository<BankAccount>     bankAccountRepository,
 										IAsyncRepository<Client>          clientRepository,
@@ -33,28 +33,41 @@ namespace Web.Services
 			Mediator               = mediator;
 		}
 
+		/// <summary>
+		///     Получение курса валют
+		/// </summary>
+		/// <returns></returns>
 		public async Task<List<CurrencyViewModel>> GetCurrencyRate()
 		{
 			Logger.LogInformation($"{nameof(GetCurrencyRate)} called");
 
 			var specification = new CurrencyWithRateSpecification();
+
 			var listCurrency = await _currencyRepository
 									 .ListAsync(specification)
 									 .ConfigureAwait(continueOnCapturedContext: true);
-			var list = (from currency in listCurrency
-						let lastUpdate = currency.ExchangeRates.Last()
-						select new CurrencyViewModel
-						{
-							Id       = currency.Id,
-							Name     = currency.ShortName,
-							BuyRate  = lastUpdate.RateBuy,
-							SaleRate = lastUpdate.RateSale
-						}).ToList();
+
+			var list = listCurrency.Select(currency => new {currency, lastUpdate = currency.ExchangeRates.Last()})
+								   .Select(selector: t =>
+								   {
+									   var model = new CurrencyViewModel();
+									   model.Id       = t.currency.Id;
+									   model.Name     = t.currency.ShortName;
+									   model.BuyRate  = t.lastUpdate.RateBuy;
+									   model.SaleRate = t.lastUpdate.RateSale;
+									   return model;
+								   })
+								   .ToList();
 
 			Logger.LogInformation($"Was returned {list.Count} currency view models.");
 			return list;
 		}
 
+		/// <summary>
+		///     Просмотр всех акк по клиенту
+		/// </summary>
+		/// <param name="login"></param>
+		/// <returns></returns>
 		[HttpGet]
 		public async Task<IEnumerable<ClientAccountViewModel>> GetClientAccounts(string login)
 		{
@@ -64,16 +77,7 @@ namespace Web.Services
 			var bankaccounts = await _bankAccountRepository.GetAll();
 			var currencies   = await _currencyRepository.GetAll();
 
-			// foreach (var account in bankaccounts.Where(account => account.IdClient == first.Id))
-			// first.BankAccounts.Add(account);
-
-			// foreach (var account in first.BankAccounts)
-			// {
-			// var firstOrDefault = currencies.FirstOrDefault(currency => currency.Id == account.IdCurrency);
-			// account.IdCurrencyNavigation = firstOrDefault;
-			// }
-
-			var clientAccountViewModels = first.BankAccounts.Select(it => new ClientAccountViewModel
+			return first?.BankAccounts.Select(it => new ClientAccountViewModel
 			{
 				Id          = it.Id,
 				AccountType = it.AccountType,
@@ -82,17 +86,24 @@ namespace Web.Services
 				DateClose   = it.DateClose,
 				Currency    = it.IdCurrencyNavigation.ShortName
 			});
-
-			return clientAccountViewModels;
 		}
 
+		/// <summary>
+		///     Отображаем Edit
+		/// </summary>
+		/// <param name="id">Аккаунт для которого формируем VM</param>
+		/// <returns></returns>
 		public async Task<EditBankAccountViewModel> GetBankAccountViewModel(int id)
 		{
+			//Получаем Акк
 			var account    = await _bankAccountRepository.GetById(id);
 			var currencies = await _currencyRepository.GetAll();
+
 			var viewModel = new EditBankAccountViewModel
 			{
+				//Список с валютами
 				SelectCurrencyList = new SelectList(currencies, "Id", "ShortName"),
+				//Модель данных формы
 				ConvertModel = new CurrencyConvertModel
 				{
 					From = account.IdCurrencyNavigation
@@ -104,13 +115,22 @@ namespace Web.Services
 			return viewModel;
 		}
 
+		/// <summary>
+		///     Создаёт запрос для медиатора
+		/// </summary>
+		/// <param name="accountId"></param>
+		/// <param name="currencyId"></param>
+		/// <returns></returns>
 		public async Task<GetCurrencyConvertQuery> GetConvertQuery(int accountId, int currencyId)
 		{
-			var account    = await _bankAccountRepository.GetById(accountId);
+			//Акк для которого меняем валюту
+			var account = await _bankAccountRepository.GetById(accountId);
+			//Валюта на которую меняем
 			var toCurrency = await _currencyRepository.GetById(currencyId);
+
 			var currencies = await _currencyRepository.GetAll();
 
-
+			//Аббревиатура для API
 			var fromCurrencyName = account.IdCurrencyNavigation.ShortName;
 			var toCurrencyName   = toCurrency.ShortName;
 			var balance          = account.Amount;
@@ -119,6 +139,13 @@ namespace Web.Services
 			return convertQuery;
 		}
 
+		/// <summary>
+		///     Сохраняем изменения валюты аккаунта
+		/// </summary>
+		/// <param name="accountId">Аккаунт для которого меняем валюту</param>
+		/// <param name="currencyId">Новая валюта</param>
+		/// <param name="balance">Перерасчитанный баланс</param>
+		/// <returns></returns>
 		public async Task ChangeAccountCurrency(int accountId, int currencyId, decimal balance)
 		{
 			var account = await _bankAccountRepository.GetById(accountId);
