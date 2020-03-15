@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Web.ViewModels;
 using Web.ViewModels.BankAccount;
 
 namespace Web.Controllers
@@ -74,7 +75,7 @@ namespace Web.Controllers
 				var account = createClientAccountViewModel.Account;
 				_bankAccountRepository.SaveAccount(account: account);
 
-				return RedirectToAction("GetAccounts");
+				return RedirectToAction("GetAccounts" ,"BankAccount", createClientAccountViewModel);
 			}
 
 			return View();

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Web.Commands.AccountOperationViewModel>
+
+
+@{
+    ViewData["Title"] = "Выписка по счёту";
+}
+<div>
+    <table class="table table-responsive table-bordered ">
+        <thead>
+        <tr>
+            <th>
+                Время
+            </th>
+            <th>
+                Тип
+            </th>
+            <th>
+                Сумма
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OperationTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

@@ -245,9 +245,6 @@ Thumbs.db
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfoInputs.cache
 
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.targets
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props
 
 /BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
 /BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb
@@ -267,8 +264,5 @@ Thumbs.db
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
 /BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfoInputs.cache
 
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.targets
-/BankingSystem/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props
 /BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
 /BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb

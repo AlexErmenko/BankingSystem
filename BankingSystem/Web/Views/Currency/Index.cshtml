@@ -4,16 +4,12 @@
 @model IEnumerable<Web.ViewModels.ClientAccountViewModel>
 
 @{
-	ViewData[index: "Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
 <h1>
     Смена валюты для аккаунта
 </h1>
 <div>
-    @User.Identity.Name
-    @User.Identity.IsAuthenticated
-
-
     <table class="table table-bordered table-dark">
         <thead>
         <tr>
@@ -36,34 +32,30 @@
         </tr>
         </thead>
         <tbody>
-        @foreach(var item in Model)
+        @foreach (var item in Model)
         {
-	        <tr>
+            <tr>
                 <td >
-                    @Html.DisplayFor(expression: modelItem => item.AccountType)
+                    @Html.DisplayFor(modelItem => item.AccountType)
                 </td>
                 <td>
-                    @Html.DisplayFor(expression: modelItem => item.Amount)
+                    @Html.DisplayFor(modelItem => item.Amount)
                 </td>
                 <td>
-                    @Html.DisplayFor(expression: modelItem => item.Currency)
+                    @Html.DisplayFor(modelItem => item.Currency)
                 </td>
                 <td>
-                    @Html.DisplayFor(expression: modelItem => item.DateOpen)
+                    @Html.DisplayFor(modelItem => item.DateOpen)
                 </td>
                 <td>
-                    @Html.DisplayFor(expression: modelItem => item.DateClose)
+                    @Html.DisplayFor(modelItem => item.DateClose)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Изменить </a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                    @* <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> *@
                 </td>
             </tr>
         }
         </tbody>
     </table>
 </div>
-
-@section Scripts {
-    <script type="text/javascript" src="~/client/CurrencyConvertor.js"></script>
-}
