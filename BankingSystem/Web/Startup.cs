@@ -41,7 +41,8 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services);
 
-			services.AddMediatR(typeof(CurrencyConvertHandler), typeof(AccountOperationHandler));
+			services.AddMediatR(typeof(CurrencyConvertHandler), typeof(AccountOperationHandler),
+								typeof(PasswordValidatorHendler));
 
 			services.AddScoped(typeof(IAsyncRepository<>), typeof(EfRepository<>));
 
