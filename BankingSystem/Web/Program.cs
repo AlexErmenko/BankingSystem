@@ -1,9 +1,7 @@
 using System;
 using System.Threading.Tasks;
-
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
-
 using Infrastructure.Identity;
 
 using Microsoft.AspNetCore.Hosting;
@@ -34,9 +32,9 @@ namespace Web
 					var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 					var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 					var repository = services.GetRequiredService<IAsyncRepository<Client>>();
-
 					//await ApplicationDbContextSeed.SeedAsync(userManager: userManager, roleManager: roleManager);
-					// await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager, repository: repository);
+					//await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager,
+					//										  repository);
 				} catch(Exception ex)
 				{
 					var logger = loggerFactory.CreateLogger<Program>();
