@@ -24,13 +24,9 @@ namespace Web.Controllers
 		private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly IAsyncRepository<LegalPerson> _legalPersonRepository;
 		private readonly IAsyncRepository<PhysicalPerson> _physicalPersonRepository;
-		private IMediator Mediator;
+		private readonly IMediator Mediator;
 
-
-		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo,
-									 IAsyncRepository<LegalPerson> legalPersonRepo,
-									 IBankAccountRepository bankAccountRepo,
-									 IHttpContextAccessor httpContextAccessor, IMediator Mediator)
+		public BankAccountController(IAsyncRepository<PhysicalPerson> physicalPersonRepo, IAsyncRepository<LegalPerson> legalPersonRepo, IBankAccountRepository bankAccountRepo, IHttpContextAccessor httpContextAccessor, IMediator Mediator)
 		{
 			_bankAccountRepository = bankAccountRepo;
 			_physicalPersonRepository = physicalPersonRepo;
@@ -90,7 +86,7 @@ namespace Web.Controllers
 		///     Возвращает ID авторизованого пользователя
 		/// </summary>
 		/// <returns></returns>
-		private async Task<int?> GetUserId() => await Mediator.Send(new GetUserByIdQuery(User.Identity.Name));
+		private async Task<int?> GetUserId() => await Mediator.Send(request: new GetUserByIdQuery(Login: User.Identity.Name));
 
 		/// <summary>
 		///     Отображение всех счетов клиента

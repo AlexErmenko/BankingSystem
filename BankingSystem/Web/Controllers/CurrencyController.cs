@@ -3,12 +3,9 @@ using System.Threading.Tasks;
 
 using ApplicationCore.Specifications;
 
-using Infrastructure.Identity;
-
 using MediatR;
 
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 using Web.Services;
@@ -22,13 +19,11 @@ namespace Web.Controllers
 	public class CurrencyController : Controller
 	{
 		private readonly ICurrencyViewModelService _currencyViewModelSerivce;
-		private UserManager<ApplicationUser> UserManager { get; }
 		private IMediator Mediator { get; }
 
-		public CurrencyController(ICurrencyViewModelService currencyViewModelSerivce, UserManager<ApplicationUser> manager, IMediator mediator)
+		public CurrencyController(ICurrencyViewModelService currencyViewModelSerivce, IMediator mediator)
 		{
 			_currencyViewModelSerivce = currencyViewModelSerivce;
-			UserManager = manager;
 			Mediator = mediator;
 		}
 

@@ -23,8 +23,7 @@ namespace ApplicationCore.Helpers.Query
 			query.Visitor.Visit(node: selector);
 
 			// If the visitor did not generated a path, return a new IncludeQuery with an unmodified PathMap.
-			if(string.IsNullOrEmpty(value: query.Visitor.Path))
-				return new IncludeQuery<TEntity, TNewProperty>(pathMap: query.PathMap);
+			if(string.IsNullOrEmpty(value: query.Visitor.Path)) return new IncludeQuery<TEntity, TNewProperty>(pathMap: query.PathMap);
 
 			var pathMap = query.PathMap;
 			var existingPath = pathMap[key: query];
@@ -41,8 +40,7 @@ namespace ApplicationCore.Helpers.Query
 			query.Visitor.Visit(node: selector);
 
 			// If the visitor did not generated a path, return a new IncludeQuery with an unmodified PathMap.
-			if(string.IsNullOrEmpty(value: query.Visitor.Path))
-				return new IncludeQuery<TEntity, TNewProperty>(pathMap: query.PathMap);
+			if(string.IsNullOrEmpty(value: query.Visitor.Path)) return new IncludeQuery<TEntity, TNewProperty>(pathMap: query.PathMap);
 
 			var pathMap = query.PathMap;
 			var existingPath = pathMap[key: query];

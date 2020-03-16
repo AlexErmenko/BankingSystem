@@ -33,7 +33,12 @@ namespace Web.Controllers
 			_appEnvironment = appEnvironment;
 		}
 
-		private bool UserExists(string id) { return _context.Users.Any(predicate: e => e.Id == id); }
+		//TODO: Этот оставить
+		public async Task<IActionResult> ListManagers()
+		{
+			var managers = await _userManager.GetUsersInRoleAsync(roleName: AuthorizationConstants.Roles.MANAGER);
+			return View(model: managers);
+		}
 
 		// GET: Admin
 		public async Task<IActionResult> ManagerList()

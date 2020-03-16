@@ -12,8 +12,8 @@ namespace Web.Controllers
 {
 	public class UserByIdHandler : IRequestHandler<GetUserByIdQuery, int?>
 	{
-		public UserByIdHandler(IAsyncRepository<Client> ClientRepository) { this.ClientRepository = ClientRepository; }
-		private IAsyncRepository<Client> ClientRepository { get; set; }
+		private IAsyncRepository<Client> ClientRepository { get; }
+		public UserByIdHandler(IAsyncRepository<Client> ClientRepository) => this.ClientRepository = ClientRepository;
 
 		public async Task<int?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
 		{

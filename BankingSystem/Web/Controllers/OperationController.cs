@@ -10,9 +10,13 @@ using Web.ViewModels;
 
 namespace Web.Controllers
 {
+	/// <summary>
+	///     Просмотр операций по счёту
+	/// </summary>
 	public class OperationController : Controller
 	{
-		private IMediator Mediator { get; }
+		private readonly IMediator Mediator;
+
 		public OperationController(IMediator mediator) => Mediator = mediator;
 
 		// GET
@@ -21,7 +25,5 @@ namespace Web.Controllers
 			var viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id, startPeriod: formModel.StartPeriod, endPeriod: formModel.EndPeriod));
 			return View(model: viewModel);
 		}
-
-		
 	}
 }

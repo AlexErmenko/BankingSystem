@@ -125,7 +125,7 @@
           <e p="GetAccountOperationQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
           <e p="GetPasswordValidationQuery.cs" t="Include" />
-          <e p="PasswordValidatorHendler.cs" t="Include" />
+          <e p="GetUserByIdQuery.cs" t="Include" />
         </e>
         <e p="compilerconfig.json" t="Include" />
         <e p="compilerconfig.json.bindings" t="Include" />
@@ -135,10 +135,8 @@
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
-          <e p="GetUserByIdQuery.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
-          <e p="UserByIdHandler.cs" t="Include" />
         </e>
         <e p="Extension" t="Include">
           <e p="SessionExtension.cs" t="Include" />
@@ -147,6 +145,8 @@
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
+          <e p="PasswordValidatorHendler.cs" t="Include" />
+          <e p="UserByIdHandler.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
@@ -202,6 +202,7 @@
             <e p="AddManager.cshtml" t="Include" />
             <e p="DeleteManager.cshtml" t="Include" />
             <e p="EditManager.cshtml" t="Include" />
+            <e p="ListManagers.cshtml" t="Include" />
             <e p="ManagerDetails.cshtml" t="Include" />
             <e p="ManagerList.cshtml" t="Include" />
           </e>
