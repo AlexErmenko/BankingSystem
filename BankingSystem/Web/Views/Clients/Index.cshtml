@@ -48,10 +48,11 @@
             {
                 <td>Юридическое лицо</td>
             }
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
-            </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
+            <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a> 
+        </td>
             </tr>
     }
     </tbody>

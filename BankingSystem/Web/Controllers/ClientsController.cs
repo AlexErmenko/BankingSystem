@@ -24,8 +24,8 @@ namespace Web.Controllers
 	public class ClientsController : Controller
 	{
 		private IAsyncRepository<Client> Repository { get; }
-		public IAsyncRepository<LegalPerson> LegalRepository { get; set; }
-		public IAsyncRepository<PhysicalPerson> PhysicalPerson { get; set; }
+		private IAsyncRepository<LegalPerson> LegalRepository { get; set; }
+		private IAsyncRepository<PhysicalPerson> PhysicalPerson { get; set; }
 
 		private readonly UserManager<ApplicationUser> _userManager;
 		private IMediator Mediator { get; set; }
