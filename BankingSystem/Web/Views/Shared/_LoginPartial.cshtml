@@ -7,20 +7,24 @@
 <ul class="navbar-nav">
     @if(SignInManager.IsSignedIn(principal: User))
     {
-	    <li class="nav-item dropdown">
+	    <li class="nav-item d-sm-flex dropdown">
+            <a class="nav-link  dropdown-toggle  d-sm-none d-md-block" data-toggle="dropdown" href="#" role="button"
+               aria-haspopup="true" aria-expanded="false">
+                Мой аккаунт
+            </a>
 
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мой аккаунт</a>
-            <div class="dropdown-menu">
-                <div class="nav-item ">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+            <div class="dropdown-menu d-sm-flex  d-md-block text-center flex-sm-column  ">
+                <div class="nav-item d-sm-none d-md-block">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar rounded-circle w-50 h-50">
                 </div>
 
                 <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Профиль</a>
                 <div class="nav-item">
-                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action(action: "Index", controller: "Home", values: new
-                                                                                                                  {
-	                                                                                                                  area = ""
-                                                                                                                  })" method="post">
+                    <form class="form-inline justify-content-center" asp-area="Identity" asp-page="/Account/Logout"
+                          asp-route-returnUrl="@Url.Action(action: "Index", controller: "Home", values: new
+                                               {
+	                                               area = ""
+                                               })" method="post">
                         <button type="submit" class="nav-link btn btn-link text-dark">Выйти</button>
                     </form>
                 </div>

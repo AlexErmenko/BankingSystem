@@ -2,8 +2,8 @@
 @model IEnumerable<Client>
 
 @{
-    Layout = "_Layout";
-    ViewData["Title"] = "Клиенты";
+	Layout = "_Layout";
+	ViewData[index: "Title"] = "Клиенты";
 }
 
 <p>
@@ -11,23 +11,26 @@
 </p>
 <table class="table">
     <thead>
-    <tr>
-        <th>
-            Логин
-        </th>
-        <th>
-            Адрес
-        </th>
-        <th>
-            Телефонный номер
-        </th>
-        <th></th>
-    </tr>
+        <tr>
+            <th>
+                Логин
+            </th>
+            <th>
+                Адрес
+            </th>
+            <th>
+                Телефонный номер
+            </th>
+            <th>
+                Тип субъекта
+            </th>
+            <th></th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
+    @foreach(var item in Model)
     {
-        <tr>
+	    <tr>
             <td>
                 @Html.DisplayFor(expression: modelItem => item.Login)
             </td>
@@ -37,11 +40,20 @@
             <td>
                 @Html.DisplayFor(expression: modelItem => item.TelNumber)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
-            </td>
-        </tr>
+            @if (item.PhysicalPerson != null)
+            {
+                <td>Физическое лицо</td>
+            } 
+            else
+            {
+                <td>Юридическое лицо</td>
+            }
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
+            <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a> 
+        </td>
+            </tr>
     }
     </tbody>
 </table>

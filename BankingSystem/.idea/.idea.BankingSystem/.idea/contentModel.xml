@@ -53,7 +53,7 @@
       </e>
       <e p="BankingSystem.sln" t="IncludeFlat" />
       <e p="Infrastructure" t="IncludeRecursive">
-        <e p="BankingContext.cs" t="Include" />
+        <e p="BankingSystemContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Data" t="Include">
           <e p="BankAccountEfRepository.cs" t="Include" />
@@ -122,27 +122,35 @@
         <e p="bundleconfig.json" t="Include" />
         <e p="bundleconfig.json.bindings" t="Include" />
         <e p="Commands" t="Include">
+          <e p="ClientAccountOperationCommand.cs" t="Include" />
           <e p="GetAccountOperationQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
           <e p="GetPasswordValidationQuery.cs" t="Include" />
-          <e p="PasswordValidatorHendler.cs" t="Include" />
+          <e p="GetUserByIdQuery.cs" t="Include" />
+          <e p="TransferAmountCommand.cs" t="Include" />
         </e>
         <e p="compilerconfig.json" t="Include" />
         <e p="compilerconfig.json.bindings" t="Include" />
         <e p="compilerconfig.json.defaults" t="Include" />
         <e p="Controllers" t="Include">
-          <e p="AccountOperationByPeriodHandler.cs" t="Include" />
           <e p="AdminController.cs" t="Include" />
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
-          <e p="GetAccountOperationByPeriod.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
         </e>
+        <e p="Extension" t="Include">
+          <e p="SessionExtension.cs" t="Include" />
+          <e p="UrlExtensions.cs" t="Include" />
+        </e>
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
+          <e p="ClientAccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
+          <e p="PasswordValidatorHendler.cs" t="Include" />
+          <e p="TransferAmountHandler.cs" t="Include" />
+          <e p="UserByIdHandler.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
@@ -180,6 +188,7 @@
             <e p="UserViewModel.cs" t="Include" />
           </e>
           <e p="BankAccount" t="Include">
+            <e p="AccountViewModel.cs" t="Include" />
             <e p="CreateClientAccountViewModel.cs" t="Include" />
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
@@ -189,6 +198,7 @@
           <e p="EditBankAccountViewModel.cs" t="Include" />
           <e p="LegalPersonCreateViewModel.cs" t="Include" />
           <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
+          <e p="TransferViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
@@ -197,6 +207,7 @@
             <e p="AddManager.cshtml" t="Include" />
             <e p="DeleteManager.cshtml" t="Include" />
             <e p="EditManager.cshtml" t="Include" />
+            <e p="ListManagers.cshtml" t="Include" />
             <e p="ManagerDetails.cshtml" t="Include" />
             <e p="ManagerList.cshtml" t="Include" />
           </e>
@@ -207,6 +218,7 @@
           </e>
           <e p="Clients" t="Include">
             <e p="CreateClient.cshtml" t="Include" />
+            <e p="CreateLegalPerson.cshtml" t="Include" />
             <e p="CreatePhysicalPerson.cshtml" t="Include" />
             <e p="Delete.cshtml" t="Include" />
             <e p="Edit.cshtml" t="Include" />
@@ -223,6 +235,7 @@
           </e>
           <e p="Operation" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="Transfer.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
@@ -236,7 +249,6 @@
           <e p="Admin" t="Include">
             <e p="style.css" t="Include" />
           </e>
-          <e p="client" t="Include" />
           <e p="css" t="Include">
             <e p="footer.css" t="Include" />
             <e p="footer.min.css" t="Include" />
@@ -462,7 +474,6 @@
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
               <e p="LICENSE.txt" t="Include" />
             </e>
-            <e p="react" t="Include" />
           </e>
           <e p="scss" t="Include">
             <e p="footer.scss" t="Include" />
