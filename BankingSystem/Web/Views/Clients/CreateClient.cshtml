@@ -13,12 +13,12 @@
         <form asp-action="CreateClient">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Client.Login" class="control-label"></label>
-                <input asp-for="Client.Login" class="form-control"/>
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control"/>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control"/>
+                <label asp-for="Client.Login" class="control-label">Email</label>
+                <input asp-for="Client.Login" class="form-control"/>
             </div>
             <div class="form-group">
                 <label asp-for="Password" class="control-label"></label>

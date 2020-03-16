@@ -4,11 +4,11 @@ using ApplicationCore.Entity;
 
 namespace Web.ViewModels
 {
-	public class LegalPersonCreateViewModel
+	public class LegalPersonViewModel
 	{
 		public Client Client { get; set; }
 
-		public string Email { get; set; }
+		public string UserName { get; set; }
 
 		public LegalPerson LegalPerson { get; set; }
 	}
