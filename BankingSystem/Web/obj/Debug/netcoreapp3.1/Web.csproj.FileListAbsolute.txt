@@ -864,7 +864,6 @@ E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\R
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
-E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
@@ -1130,7 +1129,6 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWeb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
-E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ListManagers.cshtml.g.cs
 E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Transfer.cshtml.g.cs
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
@@ -1354,3 +1352,9 @@ F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\AllCredits.cshtml.g.cs
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\Index.cshtml.g.cs
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\TakeCreditForm.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\AllCredits.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\TakeCreditForm.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\EditLegalPerson.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\EditPhysicalPerson.cshtml.g.cs

@@ -10,7 +10,7 @@ namespace Web.ViewModels.Credit
 	/// </summary>
 	public class AllCreditClientViewModel
 	{
-		public int IdClient { get; set; }
+		public int? IdClient { get; set; }
 		public IEnumerable<ApplicationCore.Entity.Credit> Credits { get; set; }
 	}
 }
