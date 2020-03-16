@@ -29,7 +29,8 @@ namespace Web.Areas.Identity.Pages.Account
 		{
 			await _signInManager.SignOutAsync();
 			_logger.LogInformation(message: "User logged out.");
-			if(returnUrl != null) return LocalRedirect(localUrl: returnUrl);
+			if(returnUrl != null)
+				return LocalRedirect(localUrl: returnUrl);
 
 			return RedirectToPage();
 		}

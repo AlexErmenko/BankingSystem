@@ -8,12 +8,14 @@ using ApplicationCore.Interfaces;
 
 using MediatR;
 
-namespace Web.Controllers
+using Web.Commands;
+
+namespace Web.Handlers
 {
 	public class UserByIdHandler : IRequestHandler<GetUserByIdQuery, int?>
 	{
-		public UserByIdHandler(IAsyncRepository<Client> ClientRepository) { this.ClientRepository = ClientRepository; }
-		private IAsyncRepository<Client> ClientRepository { get; set; }
+		private IAsyncRepository<Client> ClientRepository { get; }
+		public UserByIdHandler(IAsyncRepository<Client> ClientRepository) => this.ClientRepository = ClientRepository;
 
 		public async Task<int?> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
 		{
