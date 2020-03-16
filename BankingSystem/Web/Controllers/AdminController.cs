@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-
+using ApplicationCore.Entity;
 using ApplicationCore.Specifications;
 
 using Infrastructure.Identity;
-
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using Web.Commands;
+using Web.Extension;
 using Web.ViewModels.Admin;
 
 namespace Web.Controllers
@@ -25,45 +26,47 @@ namespace Web.Controllers
 		private readonly IWebHostEnvironment _appEnvironment;
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
+		private IMediator Mediator { get; set; }
 
-		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context, IWebHostEnvironment appEnvironment)
+		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context, IWebHostEnvironment appEnvironment,IMediator mediator )
 		{
 			_userManager = userManager;
 			_context = context;
 			_appEnvironment = appEnvironment;
+			Mediator = mediator;
 		}
 
 		//TODO: Этот оставить
-		public async Task<IActionResult> ListManagers()
+		public async Task<IActionResult> ManagerList()
 		{
 			IList<ApplicationUser> managers = await _userManager.GetUsersInRoleAsync(roleName: AuthorizationConstants.Roles.MANAGER);
 			return View(model: managers);
 		}
 
 		// GET: Admin
-		public async Task<IActionResult> ManagerList()
-		{
-			//Так читабельниее
-			if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
-			{
-				var _users = await _userManager.Users.ToListAsync();
-				var UserVM = new UserViewModel
-				{
-					AppUsers = _users,
-					ManagerUsers = new List<ApplicationUser>()
-				};
-
-				foreach(var user in UserVM.AppUsers)
-				{
-					if(await _userManager.IsInRoleAsync(user: user, role: "Manager"))
-						UserVM.ManagerUsers.Add(item: user);
-				}
-
-				return View(model: UserVM);
-			}
-
-			return NotFound();
-		}
+		// public async Task<IActionResult> ManagerList()
+		// {
+		// 	//Так читабельниее
+		// 	if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
+		// 	{
+		// 		var _users = await _userManager.Users.ToListAsync();
+		// 		var UserVM = new UserViewModel
+		// 		{
+		// 			AppUsers = _users,
+		// 			ManagerUsers = new List<ApplicationUser>()
+		// 		};
+		//
+		// 		foreach(var user in UserVM.AppUsers)
+		// 		{
+		// 			if(await _userManager.IsInRoleAsync(user: user, role: "Manager"))
+		// 				UserVM.ManagerUsers.Add(item: user);
+		// 		}
+		//
+		// 		return View(model: UserVM);
+		// 	}
+		//
+		// 	return NotFound();
+		// }
 
 		// GET: Admin/Details/5
 		public async Task<IActionResult> ManagerDetails(string id, ApplicationUser applicationUser)
@@ -89,8 +92,10 @@ namespace Web.Controllers
 
 		// POST: Admin/Create
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> AddManager([Bind("Id,UserName,Email,PhoneNumber")] ApplicationUser applicationUser, IFormFile uploadedFile)
+		public async Task<IActionResult> AddManager(ApplicationUser applicationUser, IFormFile uploadedFile, 
+													string password, string password_confirm)
 		{
+
 			var user = new ApplicationUser
 			{
 				Id = applicationUser.Id,
@@ -98,30 +103,43 @@ namespace Web.Controllers
 				Email = applicationUser.Email,
 				PhoneNumber = applicationUser.PhoneNumber
 			};
+			var result = await Mediator.Send(new GetPasswordValidationQuery(null, password));
+			if (result.Succeeded && password==password_confirm)
+			{
+				await _userManager.CreateAsync(user: user, password: password);
+				await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
+				if(uploadedFile != null)
+				{
+					// путь к папке Files
+					var path = "/Files/" + uploadedFile.FileName;
+			
+					// сохраняем файл в папку Files в каталоге wwwroot
+					using(var fileStream = new FileStream(path: _appEnvironment.WebRootPath + path, mode: FileMode.Create)) await uploadedFile.CopyToAsync(target: fileStream);
+					var file = new FileModel
+					{
+						Id   = applicationUser.Id,
+						Name = uploadedFile.FileName,
+						Path = path
+					};
+					_context.FileModel.Add(entity: file);
+					_context.SaveChanges();
+				}
+			
+				return RedirectToAction(actionName: nameof(ManagerList));
+			} else
+			{
+				foreach (var error in result.Errors)
+				{
+					ModelState.AddModelError(string.Empty, error.Description);
+				}
+			}
 
-			await _userManager.CreateAsync(user: user, password: AuthorizationConstants.DEFAULT_PASSWORD);
-			await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
+			return View(applicationUser);
+
 
 			//Getting new users Id
 			//Saving file, which we get, of created user
-			if(uploadedFile != null)
-			{
-				// путь к папке Files
-				var path = "/Files/" + uploadedFile.FileName;
 
-				// сохраняем файл в папку Files в каталоге wwwroot
-				using(var fileStream = new FileStream(path: _appEnvironment.WebRootPath + path, mode: FileMode.Create)) await uploadedFile.CopyToAsync(target: fileStream);
-				var file = new FileModel
-				{
-					Id = applicationUser.Id,
-					Name = uploadedFile.FileName,
-					Path = path
-				};
-				_context.FileModel.Add(entity: file);
-				_context.SaveChanges();
-			}
-
-			return RedirectToAction(actionName: nameof(ManagerList));
 		}
 
 		// GET: Admin/Edit/5
