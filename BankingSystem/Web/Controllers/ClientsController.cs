@@ -99,8 +99,7 @@ namespace Web.Controllers
 
 			var physicalPersonCreateViewModel = new PhysicalPersonViewModel()
 			{
-				Client = client,
-				UserName  = clientCreateViewModel.UserName
+				Client = client
 			};
 
 			return View(physicalPersonCreateViewModel);
@@ -121,7 +120,7 @@ namespace Web.Controllers
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName    = physicalPersonViewModel.UserName,
+					UserName    = physicalPersonViewModel.Client.Login,
 					Email       = physicalPersonViewModel.Client.Login,
 					PhoneNumber = physicalPersonViewModel.Client.TelNumber
 				};
@@ -158,8 +157,7 @@ namespace Web.Controllers
 
 			var legalPersonCreateViewModel = new LegalPersonViewModel()
 			{
-				Client = client,
-				UserName = clientCreateViewModel.UserName
+				Client = client
 			};
 
 			return View(legalPersonCreateViewModel);
@@ -180,7 +178,7 @@ namespace Web.Controllers
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName    = legalPersonViewModel.UserName,
+					UserName    = legalPersonViewModel.Client.Login,
 					Email       = legalPersonViewModel.Client.Login,
 					PhoneNumber = legalPersonViewModel.Client.TelNumber
 				};
@@ -213,18 +211,19 @@ namespace Web.Controllers
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
 		{
-			var client = await Repository.GetById(id: id);
-			if (client == null) return NotFound();
+			var physicalClients = await PhysicalPerson.GetAll();
+			var legalClients    = await LegalRepository.GetAll();
 
-			var clientIdentity = await _userManager.FindByEmailAsync(client.Login);
-			var userName = clientIdentity.UserName;
+			var client = await Repository.GetById(id: id);
+
+			if (client == null) 
+				return NotFound();
 
 			if (client.PhysicalPerson != null)
 			{
 				return View("EditPhysicalPerson", new PhysicalPersonViewModel
 				{
 					Client = client,
-					UserName = userName,
 					PhysicalPerson = client.PhysicalPerson
 				});
 			} 
@@ -233,7 +232,6 @@ namespace Web.Controllers
 				return View("EditLegalPerson", new LegalPersonViewModel
 				{
 					Client = client,
-					UserName = userName,
 					LegalPerson = client.LegalPerson
 				});
 			}

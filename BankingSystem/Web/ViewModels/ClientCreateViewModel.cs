@@ -15,9 +15,6 @@ namespace Web.ViewModels
 		[Required, Compare(otherProperty: "Password", ErrorMessage = "Пароли не совпадают!"), DataType(dataType: DataType.Password), Display(Name = "Подтвердить пароль")]
 		public string PasswordConfirm { get; set; }
 
-		[Required, Display(Name = "Login")]
-		public string UserName { get; set; }
-
 		[Required, Display(Name = "Тип Субъекта")]
 		public bool IsPhysicalPerson { get; set; }
 	}

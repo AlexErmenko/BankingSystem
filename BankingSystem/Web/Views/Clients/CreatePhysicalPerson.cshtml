@@ -13,10 +13,6 @@
         <form asp-action="CreatePhysicalPerson">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="UserName" class="control-label">Login</label>
-                <input asp-for="UserName" class="form-control" readonly="readonly"/>
-            </div>
-            <div class="form-group">
                 <label asp-for="Client.Login" class="control-label">Email</label>
                 <input asp-for="Client.Login" class="form-control" readonly="readonly"/>
             </div>

@@ -8,8 +8,6 @@ namespace Web.ViewModels
 	{
 		public Client Client { get; set; }
 
-		public string UserName { get; set; }
-
 		public LegalPerson LegalPerson { get; set; }
 	}
 }
