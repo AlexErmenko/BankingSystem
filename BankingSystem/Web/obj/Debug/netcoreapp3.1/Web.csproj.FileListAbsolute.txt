@@ -1351,3 +1351,6 @@ F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\AllCredits.cshtml.g.cs
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\Index.cshtml.g.cs
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\TakeCreditForm.cshtml.g.cs
