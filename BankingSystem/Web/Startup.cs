@@ -17,8 +17,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using Web.Commands;
-using Web.Controllers;
 using Web.Handlers;
 using Web.Services;
 
@@ -47,12 +45,13 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services: services);
 
-			services.AddMediatR(typeof(CurrencyConvertHandler), typeof(AccountOperationHandler), typeof(PasswordValidatorHendler), typeof(UserByIdHandler));
+			// services.AddMediatR(typeof(TransferAmountHandler), typeof(ClientAccountOperationHandler), typeof(CurrencyConvertHandler), typeof(AccountOperationHandler), typeof(PasswordValidatorHendler), typeof(UserByIdHandler));
+
+			services.AddMediatR(typeof(Startup));
 
 			services.AddScoped(serviceType: typeof(IAsyncRepository<>), implementationType: typeof(EfRepository<>));
 
 			services.AddTransient(serviceType: typeof(IBankAccountRepository), implementationType: typeof(BankAccountEfRepository));
-			services.AddScoped<CurrencyViewModelService>();
 
 			services.AddScoped<ICurrencyViewModelService, CurrencyViewModelService>();
 
@@ -75,7 +74,8 @@ namespace Web
 			var sp = services.BuildServiceProvider();
 			using var scope = sp.CreateScope();
 			var existingUserManager = scope.ServiceProvider.GetService<UserManager<ApplicationUser>>();
-			if(existingUserManager == null) services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+			if(existingUserManager == null)
+				services.AddIdentity<ApplicationUser, IdentityRole>().AddDefaultUI().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

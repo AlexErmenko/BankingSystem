@@ -8,7 +8,9 @@ using MediatR;
 
 using Microsoft.AspNetCore.Identity;
 
-namespace Web.Commands
+using Web.Commands;
+
+namespace Web.Handlers
 {
 	public class PasswordValidatorHendler : IRequestHandler<GetPasswordValidationQuery, IdentityResult>
 	{

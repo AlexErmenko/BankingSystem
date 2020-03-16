@@ -7,12 +7,17 @@ using ApplicationCore.Interfaces;
 
 using MediatR;
 
+using Web.Commands;
+
 namespace Web.Handlers
 {
+	/// <summary>
+	/// Обработчик для фиксации операций над счетами пользователя
+	/// </summary>
 	public class ClientAccountOperationHandler : AsyncRequestHandler<ClientAccountOperationCommand>
 	{
-		public ClientAccountOperationHandler(IAsyncRepository<Operation> Repository) { this.Repository = Repository; }
-		private IAsyncRepository<Operation> Repository { get; set; }
+		private readonly IAsyncRepository<Operation> Repository;
+		public ClientAccountOperationHandler(IAsyncRepository<Operation> Repository) => this.Repository = Repository;
 
 		protected override async Task Handle(ClientAccountOperationCommand request, CancellationToken cancellationToken)
 		{
@@ -21,7 +26,7 @@ namespace Web.Handlers
 			entity.OperationTime = DateTime.Now;
 			entity.TypeOperation = request.Type;
 			entity.Amount = request.Amount;
-			await Repository.AddAsync(entity);
+			await Repository.AddAsync(entity: entity);
 		}
 	}
 }

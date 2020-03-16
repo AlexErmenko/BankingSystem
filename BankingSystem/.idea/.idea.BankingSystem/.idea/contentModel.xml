@@ -53,7 +53,7 @@
       </e>
       <e p="BankingSystem.sln" t="IncludeFlat" />
       <e p="Infrastructure" t="IncludeRecursive">
-        <e p="BankingContext.cs" t="Include" />
+        <e p="BankingSystemContext.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Data" t="Include">
           <e p="BankAccountEfRepository.cs" t="Include" />
@@ -122,10 +122,12 @@
         <e p="bundleconfig.json" t="Include" />
         <e p="bundleconfig.json.bindings" t="Include" />
         <e p="Commands" t="Include">
+          <e p="ClientAccountOperationCommand.cs" t="Include" />
           <e p="GetAccountOperationQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
           <e p="GetPasswordValidationQuery.cs" t="Include" />
           <e p="GetUserByIdQuery.cs" t="Include" />
+          <e p="TransferAmountCommand.cs" t="Include" />
         </e>
         <e p="compilerconfig.json" t="Include" />
         <e p="compilerconfig.json.bindings" t="Include" />
@@ -144,8 +146,10 @@
         </e>
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
+          <e p="ClientAccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
           <e p="PasswordValidatorHendler.cs" t="Include" />
+          <e p="TransferAmountHandler.cs" t="Include" />
           <e p="UserByIdHandler.cs" t="Include" />
         </e>
         <e p="libman.json" t="Include" />
@@ -194,6 +198,7 @@
           <e p="EditBankAccountViewModel.cs" t="Include" />
           <e p="LegalPersonCreateViewModel.cs" t="Include" />
           <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
+          <e p="TransferViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
@@ -230,6 +235,7 @@
           </e>
           <e p="Operation" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="Transfer.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />

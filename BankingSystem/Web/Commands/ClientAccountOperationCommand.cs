@@ -2,8 +2,11 @@
 
 using MediatR;
 
-namespace Web.Handlers
+namespace Web.Commands
 {
+	///<summary>
+	/// Команда для фиксации операций с аккаунтом
+	/// </summary>
 	public class ClientAccountOperationCommand : IRequest
 	{
 		public ClientAccountOperationCommand(int IdAccount, string Type, decimal Amount)

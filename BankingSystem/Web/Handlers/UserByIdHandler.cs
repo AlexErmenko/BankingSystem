@@ -8,7 +8,9 @@ using ApplicationCore.Interfaces;
 
 using MediatR;
 
-namespace Web.Controllers
+using Web.Commands;
+
+namespace Web.Handlers
 {
 	public class UserByIdHandler : IRequestHandler<GetUserByIdQuery, int?>
 	{

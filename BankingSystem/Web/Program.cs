@@ -28,16 +28,17 @@ namespace Web
 				var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 				try
 				{
+					//!TODO: Добавить среду для Cloud
 					// var catalogContext = services.GetRequiredService<BankingSystemContext>();
 					//await BankingSystemContextSeed.SeedAsync(catalogContext, loggerFactory);
 
-					var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
-					var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
-					var repository = services.GetRequiredService<IAsyncRepository<Client>>();
+					// var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+					// var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+					// var repository = services.GetRequiredService<IAsyncRepository<Client>>();
 
-					//await ApplicationDbContextSeed.SeedAsync(userManager: userManager, roleManager: roleManager);
+					// await ApplicationDbContextSeed.SeedAsync(userManager: userManager, roleManager: roleManager);
 					// await ApplicationDbContextSeed.ClientSeed(userManager: userManager, roleManager: roleManager,
-					//										  repository);
+															  // repository);
 				} catch(Exception ex)
 				{
 					var logger = loggerFactory.CreateLogger<Program>();

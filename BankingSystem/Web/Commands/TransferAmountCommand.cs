@@ -2,7 +2,7 @@
 
 using MediatR;
 
-namespace Web.Controllers
+namespace Web.Commands
 {
 	public class TransferAmountCommand : IRequest<bool>
 	{

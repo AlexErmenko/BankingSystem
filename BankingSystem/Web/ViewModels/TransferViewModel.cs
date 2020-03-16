@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Web.Controllers
+namespace Web.ViewModels
 {
 	public class TransferViewModel
 	{
