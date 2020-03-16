@@ -11,7 +11,64 @@
 </head>
 <body>
 <header>
-    @if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
+    <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-expand-lg navbar-toggleable-lg navbar-light  border-bottom box-shadow
+                    mb-3">
+        <div class="container container-fluid-sm">
+            @if(User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
+            {
+	            <a class="navbar-brand" asp-area="" asp-controller="Admin" asp-action="ManagerList">Панель администратора</a>
+            } else
+            {
+	            <a class="navbar-brand" href="#">Banking System</a>
+            }
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse     collapse d-md-inline-flex flex-sm-row-reverse">
+                <partial name="_LoginPartial"/>
+
+                <ul class="navbar-nav flex-grow-1">
+
+                    @if(User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
+                    {
+	                    <li class="nav-item">
+                            <a class=" nav-link text-dark">Менеджеры</a>
+                        </li>
+                    } else if(User.IsInRole(AuthorizationConstants.Roles.MANAGER))
+                    {
+	                    <li class="nav-item">
+                            <a class=" nav-link text-dark">Клиенты</a>
+                        </li>
+                    } else
+                    {
+	                    <li class="nav-item">
+                            <a class=" nav-link text-dark">Депозиты </a>
+                        </li>
+
+	                    <li class="nav-item">
+                            <a class="nav-link text-dark"> Кредиты</a>
+                        </li>
+	                    <li class="nav-item">
+                            <a class="nav-link  text-dark">Переводы денег</a>
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link text-dark">Курс валют</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    @*@if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
     {
 	    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -59,9 +116,9 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Currency" asp-action="GetInfo">Курс валют</a>
                         </li>
 
-                        @*<li class="nav-item">
+                        $1$<li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Currency" asp-action="Index">Изменить валюту аккаунта</a>
-                            </li>*@
+                            </li>#1#
                     </ul>
                 </div>
             </div>
@@ -78,28 +135,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial"/>
                     <ul class="navbar-nav flex-grow-1 justify-content-center">
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="BankAccount" asp-action="GetAccounts">Мои счета</a>
                         </li>
-
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Currency" asp-action="GetInfo">Курс валют</a>
                         </li>
 
-                        <li class="nav-item">
+                        $1$<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Currency" asp-action="Index">Изменить валюту аккаунта</a>
-                        </li>
+                        </li>#1#
                     </ul>
                 </div>
             </div>
         </nav>
-    }
+    }*@
 </header>
 <div class="container">
     <main role="main" class="pb-3">

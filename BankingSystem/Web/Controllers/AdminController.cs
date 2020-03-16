@@ -36,7 +36,7 @@ namespace Web.Controllers
 		//TODO: Этот оставить
 		public async Task<IActionResult> ListManagers()
 		{
-			var managers = await _userManager.GetUsersInRoleAsync(roleName: AuthorizationConstants.Roles.MANAGER);
+			IList<ApplicationUser> managers = await _userManager.GetUsersInRoleAsync(roleName: AuthorizationConstants.Roles.MANAGER);
 			return View(model: managers);
 		}
 
