@@ -42,8 +42,8 @@ namespace xUnitLib
 			var m1 = new Mock<ApplicationDbContext>();
 			var m2 = new Mock<IWebHostEnvironment>();
 			mock.Setup(expression: manager => manager.FindByIdAsync("11")).ReturnsAsync(value: Inid());
-			var controller = new AdminController(userManager: _userManager, context: m1.Object, appEnvironment: m2.Object);
-			var result = controller.ManagerList();
+			//var controller = new AdminController(userManager: _userManager, context: m1.Object, appEnvironment: m2.Object);
+			//var result = controller.ManagerList();
 		}
 	}
 }

@@ -17,5 +17,6 @@ namespace Infrastructure.Identity
 		//[Required]
 		[Display(Name = "Номер телефона"), Phone]
 		public override string PhoneNumber { get; set; }
+	
 	}
 }

@@ -249,7 +249,6 @@
           <e p="Admin" t="Include">
             <e p="style.css" t="Include" />
           </e>
-          <e p="client" t="Include" />
           <e p="css" t="Include">
             <e p="footer.css" t="Include" />
             <e p="footer.min.css" t="Include" />
