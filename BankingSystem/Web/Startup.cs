@@ -1,8 +1,13 @@
+using System;
+
+using ApplicationCore.BankingSystemContext;
 using ApplicationCore.Interfaces;
 
-using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Identity;
+
+using MediatR;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,6 +16,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
+using Web.Handlers;
 using Web.Services;
 
 namespace Web
@@ -38,10 +45,14 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services: services);
 
+			// services.AddMediatR(typeof(TransferAmountHandler), typeof(ClientAccountOperationHandler), typeof(CurrencyConvertHandler), typeof(AccountOperationHandler), typeof(PasswordValidatorHendler), typeof(UserByIdHandler));
+
+			services.AddMediatR(typeof(Startup));
+
 			services.AddScoped(serviceType: typeof(IAsyncRepository<>), implementationType: typeof(EfRepository<>));
 
 			services.AddTransient(serviceType: typeof(IBankAccountRepository), implementationType: typeof(BankAccountEfRepository));
-			services.AddScoped<CurrencyViewModelService>();
+
 			services.AddScoped<ICurrencyViewModelService, CurrencyViewModelService>();
 
 			services.AddDbContext<ApplicationDbContext>(optionsAction: options => options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection")));
@@ -54,8 +65,6 @@ namespace Web
 
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-			// services.AddReact();
-			// services.AddJsEngineSwitcher(configure: options => options.DefaultEngineName = ChakraCoreJsEngine.EngineName).AddV8();
 
 			// services.AddSwaggerGen(it => it.SwaggerDoc("v1", new OpenApiInfo {Title = "My API", Version = "v1"}));
 		}
@@ -88,21 +97,16 @@ namespace Web
 			app.UseStaticFiles();
 
 			// app.UseDefaultFiles();
-			// app.UseReact(configure: it => { });
 
 			app.UseRouting();
 
 			app.UseAuthentication();
 			app.UseAuthorization();
 
-			/*app.UseSwagger();
-
-			app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); });
-			*/
-
 			app.UseEndpoints(configure: endpoints =>
 			{
 				endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+				endpoints.MapControllers();
 
 				endpoints.MapRazorPages();
 			});

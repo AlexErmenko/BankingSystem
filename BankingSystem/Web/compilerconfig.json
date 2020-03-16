@@ -6,6 +6,9 @@
   {
     "outputFile": "wwwroot/css/footer.css",
     "inputFile": "wwwroot/scss/footer.scss"
+  },
+  {
+    "outputFile": "wwwroot/js/site.es5.js",
+    "inputFile": "wwwroot/js/site.js"
   }
-
 ]

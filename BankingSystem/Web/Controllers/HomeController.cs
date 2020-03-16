@@ -1,6 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -10,10 +12,6 @@ namespace Web.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
-
-		public HomeController(ILogger<HomeController> logger) => _logger = logger;
-
 		public async Task<IActionResult> Index() => View();
 
 		public IActionResult Privacy() => View();
@@ -23,5 +21,6 @@ namespace Web.Controllers
 		{
 			RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
 		});
+
 	}
 }

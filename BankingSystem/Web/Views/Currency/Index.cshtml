@@ -1,4 +1,5 @@
 ﻿@inject SignInManager<ApplicationUser> SignInManager
+@using System
 @using Infrastructure.Identity
 @using Microsoft.AspNetCore.Identity
 @model IEnumerable<Web.ViewModels.ClientAccountViewModel>
@@ -10,10 +11,6 @@
     Смена валюты для аккаунта
 </h1>
 <div>
-    @User.Identity.Name
-    @User.Identity.IsAuthenticated
-
-
     <table class="table table-bordered table-dark">
         <thead>
         <tr>
@@ -56,14 +53,10 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Изменить </a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+                    @* <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> *@
                 </td>
             </tr>
         }
         </tbody>
     </table>
 </div>
-
-@section Scripts {
-    <script type="text/javascript" src="~/client/CurrencyConvertor.js"></script>
-}

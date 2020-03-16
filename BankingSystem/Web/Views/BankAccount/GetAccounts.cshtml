@@ -1,19 +1,20 @@
-﻿@model IEnumerable<BankAccount>
+﻿@using System
+@model AccountViewModel
 
 @{
 	ViewData[index: "Title"] = "Доступные счета";
 }
 
 <a class="btn btn-primary mb-3" asp-controller="BankAccount" asp-action="CreateClientAccountForm"
-   asp-route-idClient="@Model.">
+   asp-route-idClient="@Model.IdClient">
     Открыть счет
 </a>
 <div class="card-columns">
-    @foreach(var account in Model)
+    @foreach(var account in Model.BankAccounts)
     {
 	    <div class="card border-dark mb-3" style="width: 250px; height: 230px">
             <!-- Шапка (bg-primary - цвет фона, text-white - цвет текста) -->
-            <div class="card-header text-center text-white bg-primary">
+            <div class="card-header text-center text-white @(account.DateClose == null ? "bg-primary" : "bg-danger")">
                 <span>Счет № @account.Id</span>
             </div>
             <div class="card-body">
@@ -35,10 +36,21 @@
                     <span>@account.Amount</span>
                 </span>
                 <div class="text-center">
-                    <a class="btn @(account.DateClose == null ? "btn-primary" : "btn-danger disabled")"
-                       href="#">
-                        Просмотреть
-                    </a>
+                    @*<a class="btn @(account.DateClose == null ? "btn-primary" : "btn-danger disabled")"
+           asp-controller="Operation" asp-action="Index" asp-route-id="@account.Id">
+            Просмотреть
+        </a>*@
+
+                    <a class="btn btn-primary" asp-controller="Operation" asp-action="Index" asp-route-id="@account.Id" style="font-size: 14px">Просмотреть</a>
+
+                    @if(account.DateClose == null)
+                    {
+	                    <a class="btn btn-danger" asp-controller="BankAccount" asp-action="BankAccountClose" asp-route-idAccount="@account.Id" style="font-size: 14px">Закрыть</a>
+                    } else
+                    {
+	                    <a class="btn btn-danger" asp-controller="BankAccount" asp-action="BankAccountDelete" asp-route-idAccount="@account.Id" style="font-size: 14px">Удалить</a>
+                    }
+
                 </div>
             </div>
         </div>

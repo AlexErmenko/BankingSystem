@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Banking_System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {}
+    "E:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {}
   },
   "projects": {
-    "F:\\Banking_System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+    "E:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Banking_System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "E:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "F:\\Banking_System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\srJ\\.nuget\\packages\\",
-        "outputPath": "F:\\Banking_System\\BankingSystem\\ApplicationCore\\obj\\",
+        "projectPath": "E:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\DmitriyL\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECTS\\ASPNetCore\\BankingSystem\\BankingSystem\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\srJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DmitriyL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -64,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

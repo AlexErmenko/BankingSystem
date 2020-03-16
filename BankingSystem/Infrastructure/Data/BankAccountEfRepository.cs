@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+
+using ApplicationCore.BankingSystemContext;
 using ApplicationCore.Entity;
 using ApplicationCore.Interfaces;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
@@ -24,8 +27,7 @@ namespace Infrastructure.Data
 			if(account.Id == 0) await _context.BankAccounts.AddAsync(entity: account);
 			else
 			{
-				var bankAccount = await _context.BankAccounts
-												.FirstAsync(s => s.Id == account.Id); 
+				var bankAccount = await _context.BankAccounts.FirstAsync(predicate: s => s.Id == account.Id);
 
 				if(bankAccount != null)
 				{
@@ -41,8 +43,7 @@ namespace Infrastructure.Data
 
 		public async Task DeleteAccount(int idAccount)
 		{
-			var bankAccount = await _context.BankAccounts
-									  .FirstAsync(predicate: account => account.Id == idAccount);
+			var bankAccount = await _context.BankAccounts.FirstAsync(predicate: account => account.Id == idAccount);
 
 			if(bankAccount?.DateClose != null)
 			{
@@ -53,8 +54,7 @@ namespace Infrastructure.Data
 
 		public async Task CloseAccount(int idAccount)
 		{
-			var bankAccount = await _context.BankAccounts
-									  .FirstAsync(predicate: account => account.Id == idAccount);
+			var bankAccount = await _context.BankAccounts.FirstAsync(predicate: account => account.Id == idAccount);
 
 			if(bankAccount != null)
 			{

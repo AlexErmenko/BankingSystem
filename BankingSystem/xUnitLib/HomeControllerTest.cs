@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -21,15 +22,15 @@ namespace xUnitLib
 
 			var mockRepo = new Mock<ILogger<HomeController>>();
 
-			var controller = new HomeController(logger: mockRepo.Object);
+			// var controller = new HomeController(logger: mockRepo.Object);
 
 			// Act
 
-			var result = await controller.Index();
+			// var result = await controller.Index();
 
 			// Assert
 
-			var viewResult = Assert.IsType<ViewResult>(@object: result);
+			// var viewResult = Assert.IsType<ViewResult>(@object: result);
 
 			/*var model = Assert.IsAssignableFrom<IEnumerable<StormSessionViewModel>>(
 

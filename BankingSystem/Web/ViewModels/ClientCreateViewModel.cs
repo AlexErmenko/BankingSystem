@@ -1,39 +1,24 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+using ApplicationCore.Entity;
 
 namespace Web.ViewModels
 {
 	public class ClientCreateViewModel
 	{
-		[Required]
-		[Display(Name = "Логин")]
-		public string Login { get; set; }
+		public Client Client { get; set; }
 
-		[Required]
-		[DataType(DataType.Password)]
-		[Display(Name = "Пароль")]
+		[Required, DataType(dataType: DataType.Password), Display(Name = "Пароль")]
 		public string Password { get; set; }
 
-		[Required]
-		[Compare("Password", ErrorMessage = "Пароли не совпадают!")]
-		[DataType(DataType.Password)]
-		[Display(Name = "Подтвердить пароль")]
+		[Required, Compare(otherProperty: "Password", ErrorMessage = "Пароли не совпадают!"), DataType(dataType: DataType.Password), Display(Name = "Подтвердить пароль")]
 		public string PasswordConfirm { get; set; }
 
-		[Required]
-		[Display(Name = "Email")]
-		[DataType(DataType.EmailAddress)]
+		[Required, Display(Name = "Email"), DataType(dataType: DataType.EmailAddress)]
 		public string Email { get; set; }
 
-		[Required]
-		[Display(Name = "Адрес")]
-		public string Address { get; set; }
-
-		[Required]
-		[Display(Name = "Телефонный Номер")]
-		public string TelNumber { get; set; }
-
-		[Required]
-		[Display(Name = "Тип Субъекта")]
+		[Required, Display(Name = "Тип Субъекта")]
 		public bool IsPhysicalPerson { get; set; }
 	}
 }

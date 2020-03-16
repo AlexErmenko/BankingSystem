@@ -1,4 +1,4 @@
-﻿@model ApplicationCore.Entity.BankAccount
+﻿@model Web.ViewModels.CurrencyConvertModel
 
 @{
 	ViewBag.Title = "title";
@@ -11,8 +11,8 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id"/>
-            <input type="hidden" asp-for="IdClient"/>
+            <input type="hidden" asp-for="To"/>
+            <input type="hidden" asp-for="FromId"/>
 
 
             <div class="form-group">
@@ -22,16 +22,16 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="IdCurrencyNavigation.ShortName" class="control-label">Текущая валюта</label>
-                <input asp-for="IdCurrencyNavigation.ShortName" class="form-control" readonly="readonly"/>
-                <span asp-validation-for="IdCurrencyNavigation.ShortName" class="text-danger"></span>
+                <label asp-for="From" class="control-label">Текущая валюта</label>
+                <input asp-for="From" class="form-control" readonly="readonly"/>
+                <span asp-validation-for="From" class="text-danger"></span>
             </div>
 
 
             <div class="form-group">
-                <label asp-for="IdCurrencyNavigation.ShortName" class="control-label">Новая валюта аккаунта</label>
-                <select asp-for="IdCurrency" asp-items="ViewBag.Currencies" class="form-control"></select>
-                <span asp-validation-for="IdCurrencyNavigation.ShortName" class="text-danger"></span>
+                <label asp-for="To" class="control-label">Новая валюта аккаунта</label>
+                <select asp-for="ToId" asp-items="ViewBag.Currencies" class="form-control"></select>
+                <span asp-validation-for="ToId" class="text-danger"></span>
             </div>
 
             <div class="form-group">
