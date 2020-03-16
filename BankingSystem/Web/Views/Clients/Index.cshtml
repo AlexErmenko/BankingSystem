@@ -11,18 +11,21 @@
 </p>
 <table class="table">
     <thead>
-    <tr>
-        <th>
-            Логин
-        </th>
-        <th>
-            Адрес
-        </th>
-        <th>
-            Телефонный номер
-        </th>
-        <th></th>
-    </tr>
+        <tr>
+            <th>
+                Логин
+            </th>
+            <th>
+                Адрес
+            </th>
+            <th>
+                Телефонный номер
+            </th>
+            <th>
+                Тип субъекта
+            </th>
+            <th></th>
+        </tr>
     </thead>
     <tbody>
     @foreach(var item in Model)
@@ -37,11 +40,19 @@
             <td>
                 @Html.DisplayFor(expression: modelItem => item.TelNumber)
             </td>
+            @if (item.PhysicalPerson != null)
+            {
+                <td>Физическое лицо</td>
+            } 
+            else
+            {
+                <td>Юридическое лицо</td>
+            }
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
             </td>
-        </tr>
+            </tr>
     }
     </tbody>
 </table>
