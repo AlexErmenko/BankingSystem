@@ -1130,3 +1130,5 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWeb
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ListManagers.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Operation\Transfer.cshtml.g.cs
