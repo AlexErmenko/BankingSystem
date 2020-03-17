@@ -22,9 +22,11 @@ namespace ApplicationCore.Entity
         [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
         [Column(TypeName = "date")]
-        public DateTime DateDeposit { get; set; }
+        public DateTime StartDateDeposit { get; set; }
 		[Column(TypeName = "date")]
-		public DateTime StartDateDeposite { get; set; }
+		public DateTime EndDateDeposit { get; set; }
+		[Required]
+		[StringLength(20)]
 		public string TypeOfDeposit { get; set; }
         public bool Status { get; set; }
 
