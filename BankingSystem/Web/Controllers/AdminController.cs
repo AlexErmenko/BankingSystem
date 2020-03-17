@@ -26,7 +26,7 @@ namespace Web.Controllers
 		private readonly IWebHostEnvironment _appEnvironment;
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		private IMediator Mediator { get; set; }
+		private IMediator Mediator { get; }
 
 		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context, IWebHostEnvironment appEnvironment,IMediator mediator )
 		{
