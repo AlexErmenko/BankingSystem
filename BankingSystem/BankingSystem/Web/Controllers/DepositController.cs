@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Web.Commands;
+using Web.Commands.Web.Commands;
 using Web.ViewModels;
 using Web.ViewModels.Deposit;
 
@@ -47,7 +48,7 @@ namespace Web.Controllers
 			//
 			// };
 			//
-			// return View();
+			return View();
 		}
 
 		//POST: TakeDeposit
