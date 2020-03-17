@@ -19,7 +19,7 @@ namespace xUnitLib
 	{
 		private UserManager<ApplicationUser> _userManager;
 
-		public ApplicationUser Inid()
+		/*public ApplicationUser Inid()
 		{
 			var manager = new ApplicationUser
 			{
@@ -32,16 +32,16 @@ namespace xUnitLib
 			_userManager.AddToRoleAsync(user: manager, role: AuthorizationConstants.Roles.MANAGER);
 
 			return manager;
-		}
+		}*/
 
 		[Fact]
 		public void GetManager()
 		{
 			//Arrange
-			var mock = new Mock<UserManager<ApplicationUser>>();
-			var m1 = new Mock<ApplicationDbContext>();
-			var m2 = new Mock<IWebHostEnvironment>();
-			mock.Setup(expression: manager => manager.FindByIdAsync("11")).ReturnsAsync(value: Inid());
+			// var mock = new Mock<UserManager<ApplicationUser>>();
+			// var m1 = new Mock<ApplicationDbContext>();
+			// var m2 = new Mock<IWebHostEnvironment>();
+			// mock.Setup(expression: manager => manager.FindByIdAsync("11")).ReturnsAsync(value: Inid());
 			//var controller = new AdminController(userManager: _userManager, context: m1.Object, appEnvironment: m2.Object);
 			//var result = controller.ManagerList();
 		}
