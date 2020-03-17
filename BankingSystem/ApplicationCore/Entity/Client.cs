@@ -29,10 +29,8 @@ namespace ApplicationCore.Entity
 
         [InverseProperty("IdNavigation")]
         public virtual LegalPerson LegalPerson { get; set; }
-
         [InverseProperty("IdNavigation")]
         public virtual PhysicalPerson PhysicalPerson { get; set; }
-
         [InverseProperty(nameof(BankAccount.IdClientNavigation))]
         public virtual ICollection<BankAccount> BankAccounts { get; set; }
     }
