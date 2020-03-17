@@ -39,31 +39,30 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> TakeDeposit()
 		{
-			// var account = await GetUserId();
-			// var accountId = await _credit.GetById(account);
-			// var deposit = new TakeDepositViewModel
-			// {
-			// 	IdAccount = ,
-			//
-			// };
-			//
-			return View();
+			var account = await GetUserId();
+			var accountId = await _credit.GetById(account);
+			var deposit = new TakeDepositViewModel
+			{
+				IdAccount = account
+			};
+			
+			return View(deposit);
 		}
 
 		//POST: TakeDeposit
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> TakeDeposit(Deposit deposit)
+		public async Task<IActionResult> TakeDeposit(TakeDepositViewModel deposit)
 		{
 			var status = await _credit.GetById(deposit.IdAccount);
-			var result = await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
-			if (result == null)
-			{
-
-			}
+			//var result = await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
+			// if (result == null)
+			// {
+			//
+			// }
 			
 			
 			
-			return View();
+			return View(deposit);
 		}
 	}
 }

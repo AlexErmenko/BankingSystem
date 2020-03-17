@@ -8,7 +8,7 @@ namespace Web.ViewModels.Deposit
 	public class TakeDepositViewModel
 	{
 		public int Id        { get; set; }
-		public int IdAccount { get; set; }
+		public int? IdAccount { get; set; }
 
 		public decimal PercentDeposit { get; set; }
 	

@@ -14,7 +14,7 @@ namespace Web.Commands
 			this.IdAccount = IdAccount;
 			this.Status      = Status;
 		}
-		public int     IdAccount { get; }
+		public int?     IdAccount { get; }
 		public bool  Status      { get; }
 
 	}
