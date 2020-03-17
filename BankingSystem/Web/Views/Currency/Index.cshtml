@@ -1,0 +1,62 @@
+﻿@inject SignInManager<ApplicationUser> SignInManager
+@using System
+@using Infrastructure.Identity
+@using Microsoft.AspNetCore.Identity
+@model IEnumerable<Web.ViewModels.ClientAccountViewModel>
+
+@{
+	ViewData[index: "Title"] = "Home Page";
+}
+<h1>
+    Смена валюты для аккаунта
+</h1>
+<div>
+    <table class="table table-bordered table-dark">
+        <thead>
+        <tr>
+            <th>
+                Тип аккаунта
+            </th>
+            <th>
+                Баланс
+            </th>
+            <th>
+                Валюта
+            </th>
+            <th>
+                Дата открытия
+            </th>
+            <th>
+                Дата закрытия
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach(var item in Model)
+        {
+	        <tr>
+                <td >
+                    @Html.DisplayFor(expression: modelItem => item.AccountType)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.Currency)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.DateOpen)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.DateClose)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Изменить </a> |
+                    @* <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> *@
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
