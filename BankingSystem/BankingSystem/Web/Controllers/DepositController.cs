@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Web.Commands;
 using Web.ViewModels;
+using Web.ViewModels.Deposit;
 
 namespace Web.Controllers
 {
@@ -45,8 +46,8 @@ namespace Web.Controllers
 			// 	IdAccount = ,
 			//
 			// };
-
-			return View();
+			//
+			// return View();
 		}
 
 		//POST: TakeDeposit
@@ -54,7 +55,7 @@ namespace Web.Controllers
 		public async Task<IActionResult> TakeDeposit(Deposit deposit)
 		{
 			var status = await _credit.GetById(deposit.IdAccount);
-			var result =await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
+			var result = await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
 			if (result == null)
 			{
 
