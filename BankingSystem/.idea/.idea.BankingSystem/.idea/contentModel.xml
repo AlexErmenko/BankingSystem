@@ -78,11 +78,7 @@
           </e>
         </e>
         <e p="Infrastructure.csproj" t="IncludeRecursive" />
-        <e p="Migrations" t="Include">
-          <e p="20200314190657_RemoveCol.cs" t="Include" />
-          <e p="20200314190657_RemoveCol.Designer.cs" t="Include" />
-          <e p="BankingSystemContextModelSnapshot.cs" t="Include" />
-        </e>
+        <e p="Migrations" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -112,6 +108,13 @@
                 <e p="Login.cshtml.cs" t="Include" />
                 <e p="Logout.cshtml" t="Include" />
                 <e p="Logout.cshtml.cs" t="Include" />
+                <e p="Manage" t="Include">
+                  <e p="_ManageNav.cshtml" t="Include" />
+                  <e p="_ViewImports.cshtml" t="Include" />
+                  <e p="Index.cshtml" t="Include" />
+                  <e p="Index.cshtml.cs" t="Include" />
+                  <e p="ManageNavPages.cs" t="Include" />
+                </e>
                 <e p="Register.cshtml" t="Include" />
                 <e p="Register.cshtml.cs" t="Include" />
               </e>
@@ -124,6 +127,7 @@
         <e p="Commands" t="Include">
           <e p="ClientAccountOperationCommand.cs" t="Include" />
           <e p="GetAccountOperationQuery.cs" t="Include" />
+          <e p="GetClientCreditQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
           <e p="GetPasswordValidationQuery.cs" t="Include" />
           <e p="GetUserByIdQuery.cs" t="Include" />
@@ -136,7 +140,9 @@
           <e p="AdminController.cs" t="Include" />
           <e p="BankAccountController.cs" t="Include" />
           <e p="ClientsController.cs" t="Include" />
+          <e p="CreditController.cs" t="Include" />
           <e p="CurrencyController.cs" t="Include" />
+          <e p="DepositController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="OperationController.cs" t="Include" />
         </e>
@@ -146,6 +152,7 @@
         </e>
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
+          <e p="CheckByCreditHandler.cs" t="Include" />
           <e p="ClientAccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
           <e p="PasswordValidatorHendler.cs" t="Include" />
@@ -169,7 +176,9 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
           <e p="PublishProfiles" t="Include">
-            <e p="Web20200306030156 - Web Deploy.pubxml" t="Include" />
+            <e p="BankingSystem - FTP.pubxml" t="Include" />
+            <e p="BankingSystem - ReadOnly - FTP.pubxml" t="Include" />
+            <e p="BankingSystem - Web Deploy.pubxml" t="Include" />
           </e>
         </e>
         <e p="ScaffoldingReadMe.txt" t="Include" />
@@ -193,11 +202,16 @@
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
           <e p="ClientCreateViewModel.cs" t="Include" />
+          <e p="Credit" t="Include">
+            <e p="AllCreditClientViewModel.cs" t="Include" />
+            <e p="TakeCreditViewModel.cs" t="Include" />
+          </e>
           <e p="CurrencyConvertModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
           <e p="EditBankAccountViewModel.cs" t="Include" />
-          <e p="LegalPersonCreateViewModel.cs" t="Include" />
-          <e p="PhysicalPersonCreateViewModel.cs" t="Include" />
+          <e p="LegalPersonViewModel.cs" t="Include" />
+          <e p="PhysicalPersonViewModel.cs" t="Include" />
+          <e p="TakeDepositViewModel.cs" t="Include" />
           <e p="TransferViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
@@ -207,7 +221,6 @@
             <e p="AddManager.cshtml" t="Include" />
             <e p="DeleteManager.cshtml" t="Include" />
             <e p="EditManager.cshtml" t="Include" />
-            <e p="ListManagers.cshtml" t="Include" />
             <e p="ManagerDetails.cshtml" t="Include" />
             <e p="ManagerList.cshtml" t="Include" />
           </e>
@@ -221,8 +234,14 @@
             <e p="CreateLegalPerson.cshtml" t="Include" />
             <e p="CreatePhysicalPerson.cshtml" t="Include" />
             <e p="Delete.cshtml" t="Include" />
-            <e p="Edit.cshtml" t="Include" />
+            <e p="EditLegalPerson.cshtml" t="Include" />
+            <e p="EditPhysicalPerson.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Credit" t="Include">
+            <e p="AllCredits.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="TakeCreditForm.cshtml" t="Include" />
           </e>
           <e p="Currency" t="Include">
             <e p="Edit.cshtml" t="Include" />
@@ -256,6 +275,7 @@
             <e p="nav.min.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="site.min.css" t="Include" />
+            <e p="TakeCredit.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="Files" t="Include">
@@ -264,8 +284,11 @@
             <e p="4-78.jpg" t="Include" />
             <e p="84145079.jpg" t="Include" />
             <e p="A4Y2d8i2dbo.jpg" t="Include" />
+            <e p="bank-sign-6.jpg" t="Include" />
             <e p="d52d66923e0d447e9f1d98368c876bd5lg.jpg" t="Include" />
             <e p="image_2020-02-28_19-16-32.png" t="Include" />
+            <e p="images.jfif" t="Include" />
+            <e p="jmyidxcahaf4o4phainikfbh.jpg" t="Include" />
             <e p="Снимок.PNG" t="Include" />
             <e p="Снимок1.PNG" t="Include" />
           </e>

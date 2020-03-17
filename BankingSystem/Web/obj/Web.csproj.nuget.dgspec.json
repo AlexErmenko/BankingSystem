@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Banking__System\\BankingSystem\\Web\\Web.csproj": {}
+    "C:\\Sigma\\BankingSystem\\Web\\Web.csproj": {}
   },
   "projects": {
-    "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\srJ\\.nuget\\packages\\",
-        "outputPath": "F:\\Banking__System\\BankingSystem\\ApplicationCore\\obj\\",
+        "projectPath": "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\i7\\.nuget\\packages\\",
+        "outputPath": "C:\\Sigma\\BankingSystem\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\srJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,17 +75,20 @@
         }
       }
     },
-    "F:\\Banking__System\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Sigma\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Banking__System\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Sigma\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "F:\\Banking__System\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\srJ\\.nuget\\packages\\",
-        "outputPath": "F:\\Banking__System\\BankingSystem\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Sigma\\BankingSystem\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\i7\\.nuget\\packages\\",
+        "outputPath": "C:\\Sigma\\BankingSystem\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\srJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +101,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -148,17 +154,20 @@
         }
       }
     },
-    "F:\\Banking__System\\BankingSystem\\Web\\Web.csproj": {
+    "C:\\Sigma\\BankingSystem\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Banking__System\\BankingSystem\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Sigma\\BankingSystem\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "F:\\Banking__System\\BankingSystem\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\srJ\\.nuget\\packages\\",
-        "outputPath": "F:\\Banking__System\\BankingSystem\\Web\\obj\\",
+        "projectPath": "C:\\Sigma\\BankingSystem\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\i7\\.nuget\\packages\\",
+        "outputPath": "C:\\Sigma\\BankingSystem\\Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\srJ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\i7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,11 +180,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "F:\\Banking__System\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Sigma\\BankingSystem\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "F:\\Banking__System\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "F:\\Banking__System\\BankingSystem\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Sigma\\BankingSystem\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Sigma\\BankingSystem\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
