@@ -6,7 +6,7 @@
 *.min.css
 *.min.js
 *.map
-
+*.csprojAssemblyReference.cache
 _build/
 _site/
 Properties/
@@ -16,8 +16,8 @@ Properties/
 # git add -f myProj.sln
 *.sln
 
-Web/bin/
-Web/obj/
+#Web/bin/
+#Web/obj/
 
 
 Project_Readme.html
@@ -232,6 +232,37 @@ __pycache__/
 
 # Windows thumbnail cache files
 Thumbs.db
-#/ApplicationCore/ApplicationCore.csproj
 
 
+#Remove dll
+
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb
+
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csproj.FileListAbsolute.txt
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfoInputs.cache
+
+
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Banking.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/ApplicationCore.pdb.pdb
+
+
+#*.dll
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.pdb
+
+
+
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Web.Views.pdb
+/BankingSystem/Web/bin/Debug/netcoreapp3.1/Infrastructure.pdb
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csproj.FileListAbsolute.txt
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache
+/BankingSystem/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.AssemblyInfoInputs.cache
+
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.pdb
+/BankingSystem/Web/obj/Debug/netcoreapp3.1/Web.Views.pdb

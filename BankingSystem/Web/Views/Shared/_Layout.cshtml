@@ -41,7 +41,7 @@
                     } else if (User.IsInRole(AuthorizationConstants.Roles.MANAGER))
                     {
                         <li class="nav-item">
-                            <a class=" nav-link text-light">Клиенты</a>
+                            <a class=" nav-link text-light" asp-controller="Clients" asp-action="Index">Клиенты</a>
                         </li>
                     } else
                     {
