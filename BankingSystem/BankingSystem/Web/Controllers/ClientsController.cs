@@ -16,7 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Web.Commands;
 using Web.Extension;
-using Web.ViewModels;
+using Web.ViewModels.Clients;
 
 namespace Web.Controllers
 {
@@ -219,6 +219,10 @@ namespace Web.Controllers
 			if (client == null) 
 				return NotFound();
 
+			var user = await _userManager.FindByNameAsync(client.Login);
+
+			HttpContext.Session.Set<string>("IdIdentity", user.Id);
+
 			if (client.PhysicalPerson != null)
 			{
 				return View("EditPhysicalPerson", new PhysicalPersonViewModel
@@ -237,39 +241,79 @@ namespace Web.Controllers
 			}
 		}
 
-		//// POST: Clients/Edit/5
-		//[HttpPost, ValidateAntiForgeryToken]
-		//public async Task<IActionResult> EditPhysicalPerson(PhysicalPersonViewModel physicalPersonViewModel)
-		//{
-		//	if (ModelState.IsValid)
-		//	{
+		// POST: Clients/EditPhysicalPerson/5
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> EditPhysicalPerson(PhysicalPersonViewModel physicalPersonViewModel)
+		{
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					var client = physicalPersonViewModel.Client;
+					client.PhysicalPerson = physicalPersonViewModel.PhysicalPerson;
 
-		//	}
-		//}
+					await Repository.UpdateAsync(client);
 
-		//// POST: Clients/Edit/5
-		//[HttpPost, ValidateAntiForgeryToken]
-		//public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Address,TelNumber")] Client client)
-		//{
-		//	if (id != client.Id) return NotFound();
+					var userId = HttpContext.Session.Get<string>("IdIdentity");
 
-		//	if (ModelState.IsValid)
-		//	{
-		//		try
-		//		{
-		//			await Repository.UpdateAsync(entity: client);
-		//		}
-		//		catch (DbUpdateConcurrencyException)
-		//		{
-		//			if (!ClientExists(id: client.Id))
-		//				return NotFound();
+					var user = await _userManager.FindByIdAsync(userId);
 
-		//			throw;
-		//		}
+					user.UserName = physicalPersonViewModel.Client.Login;
+					user.Email = physicalPersonViewModel.Client.Login;
+					user.PhoneNumber = physicalPersonViewModel.Client.TelNumber;
 
-		//		return RedirectToAction(actionName: nameof(Index));
-		//	}
-		//}
+					await _userManager.UpdateAsync(user);
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					if (!ClientExists(id: physicalPersonViewModel.Client.Id))
+						return NotFound();
+
+					throw;
+				}
+
+				return RedirectToAction(actionName: nameof(Index));
+			}
+
+			return View(physicalPersonViewModel);
+		}
+
+		// POST: Clients/EditPhysicalPerson/5
+		[HttpPost, ValidateAntiForgeryToken]
+		public async Task<IActionResult> EditLegalPerson(LegalPersonViewModel legalPersonViewModel)
+		{
+			if (ModelState.IsValid)
+			{
+				try
+				{
+					var client = legalPersonViewModel.Client;
+					client.LegalPerson = legalPersonViewModel.LegalPerson;
+
+					await Repository.UpdateAsync(client);
+
+					var userId = HttpContext.Session.Get<string>("IdIdentity");
+
+					var user = await _userManager.FindByIdAsync(userId);
+
+					user.UserName    = legalPersonViewModel.Client.Login;
+					user.Email       = legalPersonViewModel.Client.Login;
+					user.PhoneNumber = legalPersonViewModel.Client.TelNumber;
+
+					await _userManager.UpdateAsync(user);
+				}
+				catch (DbUpdateConcurrencyException)
+				{
+					if (!ClientExists(id: legalPersonViewModel.Client.Id))
+						return NotFound();
+
+					throw;
+				}
+
+				return RedirectToAction(actionName: nameof(Index));
+			}
+
+			return View(legalPersonViewModel);
+		}
 
 		#endregion
 

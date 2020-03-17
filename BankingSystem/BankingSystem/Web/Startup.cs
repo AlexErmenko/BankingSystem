@@ -62,6 +62,9 @@ namespace Web
 			services.AddRazorPages();
 			services.AddHttpContextAccessor();
 
+			services.AddDistributedMemoryCache();
+			services.AddSession();
+
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -101,6 +104,8 @@ namespace Web
 
 			app.UseAuthentication();
 			app.UseAuthorization();
+
+			app.UseSession();
 
 			app.UseEndpoints(configure: endpoints =>
 			{
