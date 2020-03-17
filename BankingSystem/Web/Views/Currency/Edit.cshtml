@@ -1,0 +1,47 @@
+﻿@model ApplicationCore.Entity.BankAccount
+
+@{
+	ViewBag.Title = "title";
+	Layout = "_Layout";
+}
+
+<h2>Редактированние валюты аккаунта </h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id"/>
+            <input type="hidden" asp-for="IdClient"/>
+
+
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label">Текущий баланс</label>
+                <input asp-for="Amount" class="form-control" readonly="readonly"/>
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IdCurrencyNavigation.ShortName" class="control-label">Текущая валюта</label>
+                <input asp-for="IdCurrencyNavigation.ShortName" class="form-control" readonly="readonly"/>
+                <span asp-validation-for="IdCurrencyNavigation.ShortName" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="IdCurrencyNavigation.ShortName" class="control-label">Новая валюта аккаунта</label>
+                <select asp-for="IdCurrency" asp-items="ViewBag.Currencies" class="form-control"></select>
+                <span asp-validation-for="IdCurrencyNavigation.ShortName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Изменить" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div>
+    <a asp-action="Index">Вернуться к списку</a>
+</div>

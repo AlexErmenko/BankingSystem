@@ -1,0 +1,922 @@
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.exe
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.deps.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.pdb
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.Views.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Web.Views.pdb
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+C:\Sigma\BankingSystem\Banking\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.Views.pdb
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.dll
+C:\Sigma\BankingSystem\Banking\obj\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.exe
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currencies\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking_system\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.exe
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\AdvancedStringBuilder.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.ChakraCore.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+F:\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.exe
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\AdvancedStringBuilder.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.ChakraCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\.filenesting.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\bundleconfig.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\appsettings.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\libman.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.StaticWebAssets.xml
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.exe
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\AdvancedStringBuilder.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.ChakraCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Core.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ClearScript.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.V8.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\JSPool.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.AspNet.Middleware.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\React.Core.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.ChakraCore.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\ApplicationCore.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\CreateClientAccountForm.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Create.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Delete.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Edit.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.dll
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Web.pdb
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddManager.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\DeleteManager.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditManager.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerList.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\GetInfo.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Index.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\GetAccounts.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\GetAccounts.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerDetails.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerDetails.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
+E:\Учёба\Универ\Sigma\Стажировка\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
+F:\Banking System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Admin\ManagerDetails.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\BankAccount\GetAccounts.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreateClient.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Clients\CreatePhysicalPerson.cshtml.g.cs
+E:\PROJECTS\ASPNetCore\BankingSystem\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Currency\Edit.cshtml.g.cs

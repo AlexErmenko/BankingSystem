@@ -1,0 +1,62 @@
+﻿@using Infrastructure.Identity
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if(SignInManager.IsSignedIn(principal: User))
+    {
+	    <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Мой аккаунт</a>
+            <div class="dropdown-menu">
+                <div class="nav-item ">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+                </div>
+
+                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Профиль</a>
+                <div class="nav-item">
+                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action(action: "Index", controller: "Home", values: new
+                                                                                                                  {
+	                                                                                                                  area = ""
+                                                                                                                  })" method="post">
+                        <button type="submit" class="nav-link btn btn-link text-dark">Выйти</button>
+                    </form>
+                </div>
+            </div>
+
+        </li>
+
+        @*<li class="nav-item">
+
+        </li>*@
+    } else
+    {
+	    <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Регистрация</a>
+        </li>
+	    <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Вход</a>
+        </li>
+    }
+    @*         @if (User.IsInRole("Administrators"))  *@
+    @*          {  *@
+    @*              <form asp-route-returnUrl="@Url.Action("Index","Admin",new  *@
+    @*                                         {  *@
+    @*                                             area = ""  *@
+    @*                                         })" > *@
+    @*                 </form> *@
+    @*              <li class="nav-item">  *@
+    @*                  <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>  *@
+    @*              </li>  *@
+    @*              <li class="nav-item">  *@
+    @*                  <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Admin", new  *@
+    @*                                                                                                                {  *@
+    @*                                                                                                                    area = ""  *@
+    @*                                                                                                                })">  *@
+    @*                      <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>  *@
+    @*                  </form>  *@
+    @*              </li>  *@
+    @*   *@
+    @*          }  *@
+</ul>
