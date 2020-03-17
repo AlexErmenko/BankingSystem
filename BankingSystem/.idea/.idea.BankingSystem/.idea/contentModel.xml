@@ -476,6 +476,7 @@
             </e>
           </e>
           <e p="scss" t="Include">
+            <e p="_config.scss" t="Include" />
             <e p="footer.scss" t="Include" />
             <e p="nav.scss" t="Include" />
           </e>
