@@ -1,28 +1,32 @@
-﻿@using System
-@model Web.ViewModels.LegalPersonViewModel
+﻿@model Web.ViewModels.LegalPersonViewModel
 
 @{
-	Layout = "_Layout";
-	ViewData[index: "Title"] = "Добавление нового Юр. Лица";
+    Layout = "_Layout";
+    ViewData[index: "Title"] = "Изменение Юр. Лица";
 }
 
-<h4>Добавление нового Юридического Лица</h4>
-<hr/>
+<h4>Изменение данных о клиенте</h4>
+<h4>Юридическое Лицо</h4>
+<hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="CreateLegalPerson">
-            <div asp-validation-summary="All" class="text-danger"></div>
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Client.Id"/>
             <div class="form-group">
                 <label asp-for="Client.Login" class="control-label">Email</label>
-                <input asp-for="Client.Login" class="form-control" readonly="readonly"/>
+                <input asp-for="Client.Login" class="form-control"/>
+                <span asp-validation-for="Client.Login" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Client.Address" class="control-label"></label>
-                <input asp-for="Client.Address" class="form-control" readonly="readonly"/>
+                <label asp-for="Client.Address" class="control-label">Адрес</label>
+                <input asp-for="Client.Address" class="form-control"/>
+                <span asp-validation-for="Client.Address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Client.TelNumber" class="control-label"></label>
-                <input asp-for="Client.TelNumber" class="form-control" readonly="readonly"/>
+                <label asp-for="Client.TelNumber" class="control-label">Телефонный номер</label>
+                <input asp-for="Client.TelNumber" class="form-control"/>
+                <span asp-validation-for="Client.TelNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="LegalPerson.Name" class="control-label"></label>
@@ -42,13 +46,12 @@
                 <input asp-for="LegalPerson.Director" class="form-control"/>
             </div>
             <div class="form-group">
-                <input type="submit" value="Создать" class="btn btn-primary"/>
+                <input type="submit" value="Изменить" class="btn btn-primary"/>
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="CreateClient">Вернуться назад</a>
     <a asp-action="Index">Вернуться к списку</a>
 </div>

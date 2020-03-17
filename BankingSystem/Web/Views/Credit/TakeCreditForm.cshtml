@@ -1,0 +1,28 @@
+﻿@model Web.ViewModels.Credit.TakeCreditViewModel
+
+@{
+    ViewData["Title"] = "Оформление кредита";
+}
+
+<div>
+    <p>Тут будет выбор суммы кредита и расчет процентов</p>
+    <form asp-action="TakeCreditForm" method="post">
+        <div class="slidecontainer">
+            <input type="range" min="10" max="100000" value="50" class="slider" id="myRange">
+            <p>Сумма:<span id="demo"></span></p>
+        </div>
+
+        <button type="submit">Подтвердить</button>
+    </form>
+</div>
+
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>

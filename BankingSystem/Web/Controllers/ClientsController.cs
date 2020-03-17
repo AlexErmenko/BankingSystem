@@ -30,7 +30,6 @@ namespace Web.Controllers
 		private readonly UserManager<ApplicationUser> _userManager;
 		private IMediator Mediator { get; set; }
 
-
 		public ClientsController(IAsyncRepository<Client> repository, UserManager<ApplicationUser> userManager, IMediator mediator, IAsyncRepository<LegalPerson> legalRepository, IAsyncRepository<PhysicalPerson> physicalPerson)
 		{
 			Repository = repository;
@@ -43,7 +42,6 @@ namespace Web.Controllers
 		// GET: Clients
 		public async Task<IActionResult> Index()
 		{
-
 			var clients = await Repository.GetAll();
 			var physicalClients = await PhysicalPerson.GetAll();
 			var legalClients = await LegalRepository.GetAll();
@@ -66,7 +64,6 @@ namespace Web.Controllers
 			var result = await Mediator.Send(new GetPasswordValidationQuery(null, clientCreateViewModel.Password));
 			if (result.Succeeded)
 			{
-
 				HttpContext.Session.Set<Client>("NewClientData", clientCreateViewModel.Client);
 				HttpContext.Session.Set<string>("PassClient", clientCreateViewModel.Password);
 
@@ -100,10 +97,9 @@ namespace Web.Controllers
 		{
 			var client = HttpContext.Session.Get<Client>("NewClientData");
 
-			var physicalPersonCreateViewModel = new PhysicalPersonCreateViewModel()
+			var physicalPersonCreateViewModel = new PhysicalPersonViewModel()
 			{
-				Client = client,
-				Email  = clientCreateViewModel.Email
+				Client = client
 			};
 
 			return View(physicalPersonCreateViewModel);
@@ -111,12 +107,12 @@ namespace Web.Controllers
 
 		// POST: Clients/CreatePhysicalPerson
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> CreatePhysicalPerson(PhysicalPersonCreateViewModel physicalPersonCreateViewModel)
+		public async Task<IActionResult> CreatePhysicalPerson(PhysicalPersonViewModel physicalPersonViewModel)
 		{
 			if (ModelState.IsValid)
 			{
-				var client = physicalPersonCreateViewModel.Client;
-				client.PhysicalPerson = physicalPersonCreateViewModel.PhysicalPerson;
+				var client = physicalPersonViewModel.Client;
+				client.PhysicalPerson = physicalPersonViewModel.PhysicalPerson;
 
 				//Add to tables Client and PhysicalPerson
 				await Repository.AddAsync(client);
@@ -124,9 +120,9 @@ namespace Web.Controllers
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName    = physicalPersonCreateViewModel.Client.Login,
-					Email       = physicalPersonCreateViewModel.Email,
-					PhoneNumber = physicalPersonCreateViewModel.Client.TelNumber
+					UserName    = physicalPersonViewModel.Client.Login,
+					Email       = physicalPersonViewModel.Client.Login,
+					PhoneNumber = physicalPersonViewModel.Client.TelNumber
 				};
 
 				var password = HttpContext.Session.Get<string>("PassClient");
@@ -147,7 +143,7 @@ namespace Web.Controllers
 				}
 			}
 
-			return View(physicalPersonCreateViewModel);
+			return View(physicalPersonViewModel);
 		}
 
 		#endregion
@@ -159,10 +155,9 @@ namespace Web.Controllers
 		{
 			var client = HttpContext.Session.Get<Client>("NewClientData");
 
-			var legalPersonCreateViewModel = new LegalPersonCreateViewModel()
+			var legalPersonCreateViewModel = new LegalPersonViewModel()
 			{
-				Client = client,
-				Email  = clientCreateViewModel.Email
+				Client = client
 			};
 
 			return View(legalPersonCreateViewModel);
@@ -170,12 +165,12 @@ namespace Web.Controllers
 
 		// POST: Clients/CreatePhysicalPerson
 		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> CreateLegalPerson(LegalPersonCreateViewModel legalPersonCreateViewModel)
+		public async Task<IActionResult> CreateLegalPerson(LegalPersonViewModel legalPersonViewModel)
 		{
 			if (ModelState.IsValid)
 			{
-				var client = legalPersonCreateViewModel.Client;
-				client.LegalPerson = legalPersonCreateViewModel.LegalPerson;
+				var client = legalPersonViewModel.Client;
+				client.LegalPerson = legalPersonViewModel.LegalPerson;
 
 				//Add to tables Client and LegalPerson
 				await Repository.AddAsync(client);
@@ -183,9 +178,9 @@ namespace Web.Controllers
 				//Add new User to Identity
 				ApplicationUser user = new ApplicationUser()
 				{
-					UserName    = legalPersonCreateViewModel.Client.Login,
-					Email       = legalPersonCreateViewModel.Email,
-					PhoneNumber = legalPersonCreateViewModel.Client.TelNumber
+					UserName    = legalPersonViewModel.Client.Login,
+					Email       = legalPersonViewModel.Client.Login,
+					PhoneNumber = legalPersonViewModel.Client.TelNumber
 				};
 
 				var password = HttpContext.Session.Get<string>("PassClient");
@@ -206,7 +201,7 @@ namespace Web.Controllers
 				}
 			}
 
-			return View(legalPersonCreateViewModel);
+			return View(legalPersonViewModel);
 		}
 
 		#endregion
@@ -216,37 +211,65 @@ namespace Web.Controllers
 		// GET: Clients/Edit/5
 		public async Task<IActionResult> Edit(int id)
 		{
+			var physicalClients = await PhysicalPerson.GetAll();
+			var legalClients    = await LegalRepository.GetAll();
+
 			var client = await Repository.GetById(id: id);
-			if (client == null) return NotFound();
 
-			return View(model: client);
-		}
+			if (client == null) 
+				return NotFound();
 
-		// POST: Clients/Edit/5
-		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Address,TelNumber")] Client client)
-		{
-			if (id != client.Id) return NotFound();
-
-			if (ModelState.IsValid)
+			if (client.PhysicalPerson != null)
 			{
-				try
+				return View("EditPhysicalPerson", new PhysicalPersonViewModel
 				{
-					await Repository.UpdateAsync(entity: client);
-				}
-				catch (DbUpdateConcurrencyException)
+					Client = client,
+					PhysicalPerson = client.PhysicalPerson
+				});
+			} 
+			else
+			{
+				return View("EditLegalPerson", new LegalPersonViewModel
 				{
-					if (!ClientExists(id: client.Id))
-						return NotFound();
-
-					throw;
-				}
-
-				return RedirectToAction(actionName: nameof(Index));
+					Client = client,
+					LegalPerson = client.LegalPerson
+				});
 			}
-
-			return View(model: client);
 		}
+
+		//// POST: Clients/Edit/5
+		//[HttpPost, ValidateAntiForgeryToken]
+		//public async Task<IActionResult> EditPhysicalPerson(PhysicalPersonViewModel physicalPersonViewModel)
+		//{
+		//	if (ModelState.IsValid)
+		//	{
+
+		//	}
+		//}
+
+		//// POST: Clients/Edit/5
+		//[HttpPost, ValidateAntiForgeryToken]
+		//public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Address,TelNumber")] Client client)
+		//{
+		//	if (id != client.Id) return NotFound();
+
+		//	if (ModelState.IsValid)
+		//	{
+		//		try
+		//		{
+		//			await Repository.UpdateAsync(entity: client);
+		//		}
+		//		catch (DbUpdateConcurrencyException)
+		//		{
+		//			if (!ClientExists(id: client.Id))
+		//				return NotFound();
+
+		//			throw;
+		//		}
+
+		//		return RedirectToAction(actionName: nameof(Index));
+		//	}
+		//}
 
 		#endregion
 
