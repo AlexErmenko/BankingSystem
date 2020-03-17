@@ -1366,3 +1366,6 @@ C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Views\Credit\TakeCredit
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\Sigma\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+F:\Banking__System\BankingSystem\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
