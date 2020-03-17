@@ -26,7 +26,7 @@ namespace Web.Controllers
 		private readonly IWebHostEnvironment _appEnvironment;
 		private readonly ApplicationDbContext _context;
 		private readonly UserManager<ApplicationUser> _userManager;
-		private IMediator Mediator { get; set; }
+		private IMediator Mediator { get; }
 
 		public AdminController(UserManager<ApplicationUser> userManager, ApplicationDbContext context, IWebHostEnvironment appEnvironment,IMediator mediator )
 		{
@@ -36,6 +36,9 @@ namespace Web.Controllers
 			Mediator = mediator;
 		}
 
+		#region ManagerList
+
+		// GET: Admin
 		//TODO: Этот оставить
 		public async Task<IActionResult> ManagerList()
 		{
@@ -43,31 +46,9 @@ namespace Web.Controllers
 			return View(model: managers);
 		}
 
-		// GET: Admin
-		// public async Task<IActionResult> ManagerList()
-		// {
-		// 	//Так читабельниее
-		// 	if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
-		// 	{
-		// 		var _users = await _userManager.Users.ToListAsync();
-		// 		var UserVM = new UserViewModel
-		// 		{
-		// 			AppUsers = _users,
-		// 			ManagerUsers = new List<ApplicationUser>()
-		// 		};
-		//
-		// 		foreach(var user in UserVM.AppUsers)
-		// 		{
-		// 			if(await _userManager.IsInRoleAsync(user: user, role: "Manager"))
-		// 				UserVM.ManagerUsers.Add(item: user);
-		// 		}
-		//
-		// 		return View(model: UserVM);
-		// 	}
-		//
-		// 	return NotFound();
-		// }
-
+		#endregion
+		
+		#region Details
 		// GET: Admin/Details/5
 		public async Task<IActionResult> ManagerDetails(string id, ApplicationUser applicationUser)
 		{
@@ -78,33 +59,36 @@ namespace Web.Controllers
 
 			var managerDetailsVm = new EditUserViewModel
 			{
-				UserName = user.UserName,
+				UserName    = user.UserName,
 				PhoneNumber = user.PhoneNumber,
-				Email = user.Email,
-				PhotoPath = photo
+				Email       = user.Email,
+				PhotoPath   = photo
 			};
 
 			return View(model: managerDetailsVm);
 		}
 
+		#endregion
+
+		#region AddManager
 		// GET: Admin/Create
 		public ActionResult AddManager() => View();
 
 		// POST: Admin/Create
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> AddManager(ApplicationUser applicationUser, IFormFile uploadedFile, 
-													string password, string password_confirm)
+													string          password,        string    password_confirm)
 		{
 
 			var user = new ApplicationUser
 			{
-				Id = applicationUser.Id,
-				UserName = applicationUser.UserName,
-				Email = applicationUser.Email,
+				Id          = applicationUser.Id,
+				UserName    = applicationUser.UserName,
+				Email       = applicationUser.Email,
 				PhoneNumber = applicationUser.PhoneNumber
 			};
 			var result = await Mediator.Send(new GetPasswordValidationQuery(null, password));
-			if (result.Succeeded && password==password_confirm)
+			if (result.Succeeded && password ==password_confirm)
 			{
 				await _userManager.CreateAsync(user: user, password: password);
 				await _userManager.AddToRoleAsync(user: user, role: AuthorizationConstants.Roles.MANAGER);
@@ -142,6 +126,9 @@ namespace Web.Controllers
 
 		}
 
+		#endregion
+
+		#region EditManager
 		// GET: Admin/Edit/5
 		public async Task<IActionResult> EditManager(string id)
 		{
@@ -150,9 +137,9 @@ namespace Web.Controllers
 
 			var model = new EditUserViewModel
 			{
-				Id = user.Id,
-				UserName = user.UserName,
-				Email = user.Email,
+				Id          = user.Id,
+				UserName    = user.UserName,
+				Email       = user.Email,
 				PhoneNumber = user.PhoneNumber
 			};
 			return View(model: model);
@@ -167,9 +154,9 @@ namespace Web.Controllers
 				var user = await _userManager.FindByIdAsync(userId: applicationUser.Id);
 				if(user != null)
 				{
-					user.Id = applicationUser.Id;
-					user.Email = applicationUser.Email;
-					user.UserName = applicationUser.UserName;
+					user.Id          = applicationUser.Id;
+					user.Email       = applicationUser.Email;
+					user.UserName    = applicationUser.UserName;
 					user.PhoneNumber = applicationUser.PhoneNumber;
 
 					var photoId = ( from m in _context.FileModel where m.Id == applicationUser.Id select m.Id ).FirstOrDefault();
@@ -184,7 +171,7 @@ namespace Web.Controllers
 						using(var fileStream = new FileStream(path: _appEnvironment.WebRootPath + path, mode: FileMode.Create)) await uploadedFile.CopyToAsync(target: fileStream);
 						var file = new FileModel
 						{
-							Id = user.Id,
+							Id   = user.Id,
 							Name = uploadedFile.FileName,
 							Path = path
 						};
@@ -202,6 +189,11 @@ namespace Web.Controllers
 
 			return View(model: applicationUser);
 		}
+		
+
+		#endregion
+
+		#region DeleteManager
 
 		// GET: Admin/Delete/5
 		public async Task<IActionResult> DeleteManager(string id)
@@ -227,5 +219,9 @@ namespace Web.Controllers
 				return View();
 			}
 		}
+
+		#endregion
+		
+		
 	}
 }

@@ -45,7 +45,6 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services: services);
 
-			// services.AddMediatR(typeof(TransferAmountHandler), typeof(ClientAccountOperationHandler), typeof(CurrencyConvertHandler), typeof(AccountOperationHandler), typeof(PasswordValidatorHendler), typeof(UserByIdHandler));
 
 			services.AddMediatR(typeof(Startup));
 

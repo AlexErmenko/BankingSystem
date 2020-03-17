@@ -9,3 +9,5 @@ C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.A
 C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.dll
 C:\Sigma\BankingSystem\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.pdb
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.json
+C:\Sigma\BankingSystem\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json

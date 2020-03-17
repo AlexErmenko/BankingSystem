@@ -23,9 +23,12 @@ namespace ApplicationCore.Entity
         public decimal Amount { get; set; }
         [Column(TypeName = "date")]
         public DateTime DateDeposit { get; set; }
+		[Column(TypeName = "date")]
+		public DateTime StartDateDeposite { get; set; }
+		public string TypeOfDeposit { get; set; }
         public bool Status { get; set; }
 
-        [ForeignKey(nameof(IdAccount))]
+		[ForeignKey(nameof(IdAccount))]
         [InverseProperty(nameof(BankAccount.Deposits))]
         public virtual BankAccount IdAccountNavigation { get; set; }
         [InverseProperty(nameof(Accrual.IdDepositNavigation))]

@@ -21,18 +21,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/Web/wwwroot/scss/_config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/ApplicationCore.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingSystem.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.RazorAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.Manifest.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/staticwebassets/Web.StaticWebAssets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/project.assets.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +275,7 @@
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Web: IIS Express">
     <configuration name="test\xUnitLib" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -388,6 +402,8 @@
       <workItem from="1584334424612" duration="3657000" />
       <workItem from="1584338227487" duration="9703000" />
       <workItem from="1584348249944" duration="11656000" />
+      <workItem from="1584361483852" duration="851000" />
+      <workItem from="1584365227563" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -642,10 +658,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="737" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584204286554" />
-    <state x="491" y="157" width="1195" height="883" key="SettingsEditor" timestamp="1584357559523">
+    <state x="491" y="157" width="1195" height="883" key="SettingsEditor" timestamp="1584362281893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="491" y="157" width="1195" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584357559523" />
+    <state x="491" y="157" width="1195" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584362281893" />
     <state x="842" y="273" key="SubscriptionsDialog" timestamp="1583863133930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
