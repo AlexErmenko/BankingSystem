@@ -14,12 +14,12 @@
     <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-expand-lg navbar-toggleable-lg navbar-light  border-bottom box-shadow
                     mb-3">
         <div class="container container-fluid-sm">
-            @if(User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
+            @if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
             {
-	            <a class="navbar-brand" asp-area="" asp-controller="Admin" asp-action="ManagerList">Панель администратора</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Admin" asp-action="ManagerList">Панель администратора</a>
             } else
             {
-	            <a class="navbar-brand" href="#">Banking System</a>
+                <a class="navbar-brand" asp-controller="Home">Banking System</a>
             }
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
@@ -33,26 +33,26 @@
 
                 <ul class="navbar-nav flex-grow-1">
 
-                    @if(User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
+                    @if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
                     {
-	                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class=" nav-link text-dark">Менеджеры</a>
                         </li>
-                    } else if(User.IsInRole(AuthorizationConstants.Roles.MANAGER))
+                    } else if (User.IsInRole(AuthorizationConstants.Roles.MANAGER))
                     {
-	                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class=" nav-link text-dark">Клиенты</a>
                         </li>
                     } else
                     {
-	                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class=" nav-link text-dark">Депозиты </a>
                         </li>
 
-	                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark"> Кредиты</a>
                         </li>
-	                    <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link  text-dark">Переводы денег</a>
                         </li>
                     }
