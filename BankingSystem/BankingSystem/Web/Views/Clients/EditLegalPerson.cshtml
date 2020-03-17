@@ -1,0 +1,57 @@
+﻿@model Web.ViewModels.LegalPersonViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData[index: "Title"] = "Изменение Юр. Лица";
+}
+
+<h4>Изменение данных о клиенте</h4>
+<h4>Юридическое Лицо</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Client.Id"/>
+            <div class="form-group">
+                <label asp-for="Client.Login" class="control-label">Email</label>
+                <input asp-for="Client.Login" class="form-control"/>
+                <span asp-validation-for="Client.Login" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Client.Address" class="control-label">Адрес</label>
+                <input asp-for="Client.Address" class="form-control"/>
+                <span asp-validation-for="Client.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Client.TelNumber" class="control-label">Телефонный номер</label>
+                <input asp-for="Client.TelNumber" class="form-control"/>
+                <span asp-validation-for="Client.TelNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LegalPerson.Name" class="control-label"></label>
+                <input asp-for="LegalPerson.Name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="LegalPerson.OwnershipType" class="control-label"></label>
+                <select asp-for="LegalPerson.OwnershipType" class="form-control">
+                    <option value="частная">Частная</option>
+                    <option value="государственная">Государственная</option>
+                    <option value="муниципальная">Муниципальная</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="LegalPerson.Director" class="control-label"></label>
+                <input asp-for="LegalPerson.Director" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Изменить" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Вернуться к списку</a>
+</div>

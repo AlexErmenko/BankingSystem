@@ -1,0 +1,61 @@
+﻿@using System
+@model Web.ViewModels.PhysicalPersonViewModel
+
+@{
+	Layout = "_Layout";
+	ViewData[index: "Title"] = "Добавление нового Физ. Лица";
+}
+
+<h4>Добавление нового Физического Лица</h4>
+<hr/>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreatePhysicalPerson">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Client.Login" class="control-label">Email</label>
+                <input asp-for="Client.Login" class="form-control" readonly="readonly"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Client.Address" class="control-label"></label>
+                <input asp-for="Client.Address" class="form-control" readonly="readonly"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Client.TelNumber" class="control-label"></label>
+                <input asp-for="Client.TelNumber" class="form-control" readonly="readonly"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.PassportSeries" class="control-label"></label>
+                <input asp-for="PhysicalPerson.PassportSeries" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.PassportNumber" class="control-label"></label>
+                <input asp-for="PhysicalPerson.PassportNumber" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.IdentificationNumber" class="control-label"></label>
+                <input asp-for="PhysicalPerson.IdentificationNumber" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.Name" class="control-label"></label>
+                <input asp-for="PhysicalPerson.Name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.Surname" class="control-label"></label>
+                <input asp-for="PhysicalPerson.Surname" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalPerson.Patronymic" class="control-label"></label>
+                <input asp-for="PhysicalPerson.Patronymic" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="CreateClient">Вернуться назад</a>
+    <a asp-action="Index">Вернуться к списку</a>
+</div>
