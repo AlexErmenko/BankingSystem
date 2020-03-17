@@ -49,20 +49,20 @@ namespace Web.Controllers
 			return View();
 		}
 
-		//POST: TakeDeposit
-		[HttpPost, ValidateAntiForgeryToken]
-		public async Task<IActionResult> TakeDeposit(Deposit deposit)
-		{
-			var status = await _credit.GetById(deposit.IdAccount);
-			var result =await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
-			if (result == null)
-			{
+		////POST: TakeDeposit
+		//[HttpPost, ValidateAntiForgeryToken]
+		//public async Task<IActionResult> TakeDeposit(Deposit deposit)
+		//{
+		//	var status = await _credit.GetById(deposit.IdAccount);
+		//	var result =await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
+		//	if (result == null)
+		//	{
 
-			}
+		//	}
 			
 			
 			
-			return View();
-		}
+		//	return View();
+		//}
 	}
 }

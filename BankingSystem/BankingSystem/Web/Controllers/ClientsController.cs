@@ -322,18 +322,48 @@ namespace Web.Controllers
 		// GET: Clients/Delete/5
 		public async Task<IActionResult> Delete(int id)
 		{
-			var client = await Repository.GetById(id: id);
-			if (client == null) return NotFound();
+			var physicalClients = await PhysicalPerson.GetAll();
+			var legalClients    = await LegalRepository.GetAll();
 
-			return View(model: client);
+			var client = await Repository.GetById(id: id);
+
+			if (client == null)
+				return NotFound();
+
+			var user = await _userManager.FindByNameAsync(client.Login);
+
+			HttpContext.Session.Set<string>("IdIdentity", user.Id);
+
+			if (client.PhysicalPerson != null)
+			{
+				return View("DeletePhysicalPerson", new PhysicalPersonViewModel
+				{
+					Client         = client,
+					PhysicalPerson = client.PhysicalPerson
+				});
+			} else
+			{
+				return View("DeleteLegalPerson", new LegalPersonViewModel
+				{
+					Client      = client,
+					LegalPerson = client.LegalPerson
+				});
+			}
 		}
 
 		// POST: Clients/Delete/5
 		[HttpPost, ActionName(name: "Delete"), ValidateAntiForgeryToken]
 		public async Task<IActionResult> DeleteConfirmed(int id)
 		{
+			//Delete client from Clients and (PhysicalPerson or LegalPerson)
 			var client = await Repository.GetById(id: id);
 			await Repository.DeleteAsync(entity: client);
+
+			//Delete user from Identity
+			var userId = HttpContext.Session.Get<string>("IdIdentity");
+			var user = await _userManager.FindByIdAsync(userId);
+			await _userManager.DeleteAsync(user);
+
 			return RedirectToAction(actionName: nameof(Index));
 		}
 
