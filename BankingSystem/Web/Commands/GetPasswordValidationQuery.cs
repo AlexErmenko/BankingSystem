@@ -12,7 +12,7 @@ namespace Web.Commands
 	{
 		public ApplicationUser? User { get; set; }
 		public string Password { get; set; }
-
+		 
 		public GetPasswordValidationQuery(ApplicationUser? user, string password)
 		{
 			User = user;
