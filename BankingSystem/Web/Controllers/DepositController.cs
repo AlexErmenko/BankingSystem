@@ -45,7 +45,6 @@ namespace Web.Controllers
 			{
 				IdAccount = account
 			};
-			
 			return View(deposit);
 		}
 
@@ -54,11 +53,22 @@ namespace Web.Controllers
 		public async Task<IActionResult> TakeDeposit(TakeDepositViewModel deposit)
 		{
 			var status = await _credit.GetById(deposit.IdAccount);
-			//var result = await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
-			// if (result == null)
-			// {
-			//
-			// }
+			var result = await  Mediator.Send(new GetClientCreditQuery(deposit.IdAccount, status.Status));
+			if (result == null)
+			{
+				var data = new Deposit
+				{
+					IdAccount = deposit.IdAccount,
+					Amount = deposit.Amount,
+					StartDateDeposit = DateTime.Now,
+					TypeOfDeposit = deposit.TypeOfDeposit,
+					PercentDeposit = deposit.PercentDeposit,
+					Status = true
+				};
+				if (data.TypeOfDeposit == "Годовой") { data.EndDateDeposit = data.StartDateDeposit; }
+				else { data.EndDateDeposit = data.StartDateDeposit;}
+					await _deposit.AddAsync(data);
+			}
 			
 			
 			

@@ -9,7 +9,7 @@ namespace Web.Commands
 {
 	public class GetClientCreditQuery : IRequest<Credit>
 	{
-		public GetClientCreditQuery(int IdAccount, bool Status)
+		public GetClientCreditQuery(int? IdAccount, bool Status)
 		{
 			this.IdAccount = IdAccount;
 			this.Status      = Status;
