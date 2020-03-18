@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Web.ViewModels.Deposit
 {
 	public class TakeDepositViewModel
 	{
 		public int Id        { get; set; }
-		public int IdAccount { get; set; }
+		public int? IdAccount { get; set; }
 
 		public decimal PercentDeposit { get; set; }
 	
@@ -20,5 +21,6 @@ namespace Web.ViewModels.Deposit
 		
 		public string TypeOfDeposit { get; set; }
 		public bool Status { get;          set; }
+		public SelectList BankAccounts { get; set; }
 	}
 }

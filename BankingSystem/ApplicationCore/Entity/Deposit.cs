@@ -16,7 +16,7 @@ namespace ApplicationCore.Entity
 
         [Key]
         public int Id { get; set; }
-        public int IdAccount { get; set; }
+        public int? IdAccount { get; set; }
         [Column(TypeName = "decimal(6, 2)")]
         public decimal PercentDeposit { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
