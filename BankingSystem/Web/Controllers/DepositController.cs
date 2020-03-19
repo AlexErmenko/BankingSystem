@@ -44,9 +44,7 @@ namespace Web.Controllers
 										   select m.Id;
 			return View(new TakeDepositViewModel
 			{
-				IdAccount = userId,
 				BankAccounts = new SelectList(await bankaccounts.Distinct().ToListAsync()),
-				StartDateDeposit = DateTime.Now
 			});
 		}
 
@@ -54,11 +52,25 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> TakeDeposit(TakeDepositViewModel deposit)
 		{
+			if (ModelState.IsValid)
+			{
+				var TakeDepositVM = new Deposit
+				{
+					Id = deposit.Id,
+					IdAccount        = deposit.IdAccount,
+					StartDateDeposit = DateTime.Now,
+					EndDateDeposit   = deposit.EndDateDeposit,
+					TypeOfDeposit    = deposit.TypeOfDeposit,
+					Amount           = deposit.Amount,
+					PercentDeposit   = deposit.PercentDeposit,
+					Status           = true,
+				};
+				await _deposit.AddAsync(TakeDepositVM);
+			}
 
-			
-			
-			
-			return View(deposit);
+
+
+			return View();
 		}
 	}
 }
