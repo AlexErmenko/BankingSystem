@@ -6,15 +6,6 @@
 
 <hr />
 
-<form asp-controller="Deposit" asp-action="TakeDeposit" method="get">
-    <div class="form-group">
-
-        <select asp-for="@Model.IdAccount" asp-items="Model.BankAccounts">
-            <option value=""></option>
-        </select>
-
-    </div>
-</form>
 <body>
 <div class="row">
     <div class="col-md-4">
@@ -22,31 +13,35 @@
             <div asp-validation-summary="All" class="text-danger"></div>
             
             <div class="container">
+                <div class="form-group">
+                    <label asp-for="IdAccount">Выберете счёт</label>
+                    <select asp-for="IdAccount" asp-items="Model.BankAccounts"></select>
 
+                </div>
                 <div>
                     <div class="slidecontainer">
-                        <input asp-for="@Model.Amount" type="range" min="10" max="100000" value="50" class="slider" id="myRange">
+                        <input asp-for="Amount" type="range" min="10" max="100000" value="50" class="slider" id="myRange">
                         <a>Сумма депозита:<span id="demo"></span></a>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.PercentDeposit">Выбор типа депозита</label>
-                    <select class="form-control" asp-for="@Model.PercentDeposit">
-                        <option value="0.08">8 % євро</option>
-                        <option value="0.1">10 % доллар</option>
-                        <option value="0.12">12 % гривна</option>
+                    @* <label asp-for="PercentDeposit">Тип депозита</label> *@
+                    <select class="form-control" asp-for="PercentDeposit">
+                        <option value="0,08">8 % Евро</option>
+                        <option value="0,1">10 % Доллар</option>
+                        <option value="0,12">12 % Рубль</option>
                     </select>
                 </div>
 
                 <div>
-                    <label asp-for="@Model.EndDateDeposit">Окончание депозита</label>
-                    <input asp-for="EndDateDeposit" type="date" value="@Model.StartDateDeposit" />
+                    <label asp-for="EndDateDeposit">Окончание депозита</label>
+                    <input asp-for="EndDateDeposit" type="date" value="StartDateDeposit" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.TypeOfDeposit">Тип депозита</label>
-                    <select class="form-control" asp-for="@Model.TypeOfDeposit">
+
+                    <select class="form-control" asp-for="TypeOfDeposit">
                         <option value="Месячный">Месячный</option>
-                        <option value="Годовой">Месячный</option>
+                        <option value="Годовой">Годовой</option>
                     </select>
                 </div>
 

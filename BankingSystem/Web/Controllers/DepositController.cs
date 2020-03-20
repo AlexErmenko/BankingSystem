@@ -52,25 +52,25 @@ namespace Web.Controllers
 		[HttpPost, ValidateAntiForgeryToken]
 		public async Task<IActionResult> TakeDeposit(TakeDepositViewModel deposit)
 		{
+			var TakeDepositVM = new Deposit
+			{
+				IdAccount        = deposit.IdAccount,
+				StartDateDeposit = DateTime.Now,
+				EndDateDeposit   = deposit.EndDateDeposit,
+				TypeOfDeposit    = deposit.TypeOfDeposit,
+				Amount           = deposit.Amount,
+				PercentDeposit   = deposit.PercentDeposit,
+				Status           = true,
+			};
 			if (ModelState.IsValid)
 			{
-				var TakeDepositVM = new Deposit
-				{
-					Id = deposit.Id,
-					IdAccount        = deposit.IdAccount,
-					StartDateDeposit = DateTime.Now,
-					EndDateDeposit   = deposit.EndDateDeposit,
-					TypeOfDeposit    = deposit.TypeOfDeposit,
-					Amount           = deposit.Amount,
-					PercentDeposit   = deposit.PercentDeposit,
-					Status           = true,
-				};
+				
 				await _deposit.AddAsync(TakeDepositVM);
 			}
 
 
 
-			return View();
+			return View(deposit);
 		}
 	}
 }
