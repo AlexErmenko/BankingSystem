@@ -55,6 +55,7 @@ namespace Infrastructure.Data
 			Context.Set<T>().Remove(entity: entity);
 			await Context.SaveChangesAsync();
 		}
+		
 
 		public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec) => await ApplySpecification(spec: spec).ToListAsync();
 

@@ -1,0 +1,67 @@
+﻿@model Web.ViewModels.Deposit.TakeDepositViewModel
+
+
+
+<h1>Сделать депозитный счёт</h1>
+
+<hr />
+
+<body>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="TakeDeposit">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <div class="container">
+                <div class="form-group">
+                    <label asp-for="IdAccount">Выберете счёт</label>
+                    <select asp-for="IdAccount" asp-items="Model.BankAccounts"></select>
+
+                </div>
+                <div>
+                    <div class="slidecontainer">
+                        <input asp-for="Amount" type="range" min="10" max="100000" value="50" class="slider" id="myRange">
+                        <a>Сумма депозита:<span id="demo"></span></a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    @* <label asp-for="PercentDeposit">Тип депозита</label> *@
+                    <select class="form-control" asp-for="PercentDeposit">
+                        <option value="0,08">8 % Евро</option>
+                        <option value="0,1">10 % Доллар</option>
+                        <option value="0,12">12 % Рубль</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label asp-for="EndDateDeposit">Окончание депозита</label>
+                    <input asp-for="EndDateDeposit" type="date" value="StartDateDeposit" />
+                </div>
+                <div class="form-group">
+
+                    <select class="form-control" asp-for="TypeOfDeposit">
+                        <option value="Месячный">Месячный</option>
+                        <option value="Годовой">Годовой</option>
+                    </select>
+                </div>
+
+
+                <input type="submit" value="Далее" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+@* <div> *@
+@*     <a asp-action="ManagerList">Вернуться к списку</a> *@
+@* </div> *@
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+    }
+</script>
