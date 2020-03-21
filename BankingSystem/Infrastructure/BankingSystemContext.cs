@@ -3,6 +3,7 @@ using ApplicationCore.Entity;
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ApplicationCore.Entity;
 
 namespace ApplicationCore.BankingSystemContext
 {
@@ -91,6 +92,8 @@ namespace ApplicationCore.BankingSystemContext
 
             modelBuilder.Entity<Deposit>(entity =>
             {
+                entity.Property(e => e.TypeOfDeposit).IsFixedLength();
+
                 entity.HasOne(d => d.IdAccountNavigation)
                     .WithMany(p => p.Deposits)
                     .HasForeignKey(d => d.IdAccount)

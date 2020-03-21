@@ -1,5 +1,5 @@
 ﻿{
-   "ContextClassName": "BankingContext",
+   "ContextClassName": "BankingSystemContext",
    "ContextNamespace": null,
    "DefaultDacpacSchema": null,
    "DoNotCombineNamespace": false,

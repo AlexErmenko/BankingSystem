@@ -31,7 +31,7 @@ namespace Web
 	//Не забываем поставить свой сервер в appsettings
 	//dotnet ef database update -c bankingsystemcontext  -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 	//Restore Identity
-	//dotnet ef database update -c applicationdbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
+	 //dotnet ef database update -c applicationdbcontext -p ../Infrastructure/Infrastructure.csproj -s Web.csproj
 
 	//Коменда для добавление миграции для осн. БД.
 	//dotnet ef migrations add InitMigration --context bankingsystemcontext --project ../Infrastructure/Infrastructure.csproj --startup-project Web.csproj
@@ -45,7 +45,6 @@ namespace Web
 		{
 			CreateIdentityIfNotCreated(services: services);
 
-			// services.AddMediatR(typeof(TransferAmountHandler), typeof(ClientAccountOperationHandler), typeof(CurrencyConvertHandler), typeof(AccountOperationHandler), typeof(PasswordValidatorHendler), typeof(UserByIdHandler));
 
 			services.AddMediatR(typeof(Startup));
 
@@ -62,6 +61,9 @@ namespace Web
 
 			services.AddRazorPages();
 			services.AddHttpContextAccessor();
+
+			services.AddDistributedMemoryCache();
+			services.AddSession();
 
 			services.AddMemoryCache();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
@@ -102,6 +104,8 @@ namespace Web
 
 			app.UseAuthentication();
 			app.UseAuthorization();
+
+			app.UseSession();
 
 			app.UseEndpoints(configure: endpoints =>
 			{

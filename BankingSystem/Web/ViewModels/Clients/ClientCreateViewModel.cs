@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 using ApplicationCore.Entity;
 
-namespace Web.ViewModels
+namespace Web.ViewModels.Clients
 {
 	public class ClientCreateViewModel
 	{
