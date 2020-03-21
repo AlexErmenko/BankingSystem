@@ -68,13 +68,13 @@ namespace Web.Controllers
 		/// <param name="createClientAccountViewModel"></param>
 		/// <returns></returns>
 		[HttpPost]
-		public IActionResult CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
+		public async Task<IActionResult> CreateClientAccountForm(CreateClientAccountViewModel createClientAccountViewModel)
 		{
 			if(ModelState.IsValid)
 			{
 				//сохранение счета
 				var account = createClientAccountViewModel.Account;
-				_bankAccountRepository.SaveAccount(account: account);
+				await _bankAccountRepository.SaveAccount(account: account);
 
 				return RedirectToAction(actionName: "GetAccounts", controllerName: "BankAccount", routeValues: createClientAccountViewModel);
 			}
