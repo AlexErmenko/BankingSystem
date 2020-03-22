@@ -42,7 +42,7 @@ namespace Web.Controllers
 		{
 			var userId = await GetUserId();
 			var bankaccounts = from m in _context.BankAccounts
-										   where userId == m.IdClient
+										   where (userId == m.IdClient) && ("депозитный"== m.AccountType)
 										   select m.Id;
 			return View(new TakeDepositViewModel
 			{

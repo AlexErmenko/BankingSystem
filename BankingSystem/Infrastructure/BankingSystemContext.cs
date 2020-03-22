@@ -41,10 +41,6 @@ namespace ApplicationCore.BankingSystemContext
         {
             modelBuilder.Entity<Accrual>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
-                entity.Property(e => e.Amount).IsFixedLength();
-
                 entity.HasOne(d => d.IdDepositNavigation)
                     .WithMany(p => p.Accruals)
                     .HasForeignKey(d => d.IdDeposit)

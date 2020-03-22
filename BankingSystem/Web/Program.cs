@@ -62,6 +62,7 @@ namespace Web
 					   {
 						   services.AddHostedService<ConsumeScopedServiceHostedService>();
 						   services.AddScoped<IScopedСurrencyService, ScopedСurrencyService>();
+						   services.AddScoped<IScopedСurrencyService, UpdateDeposit>();
 					   });
 		}
 	}
