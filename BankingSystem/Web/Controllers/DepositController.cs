@@ -23,12 +23,14 @@ namespace Web.Controllers
 		private readonly IAsyncRepository<Deposit> _deposit;
 		private readonly BankingSystemContext _context;
 		private readonly IMediator Mediator;
-		public DepositController(IAsyncRepository<Deposit> deposit,
+		private readonly IAsyncRepository<BankAccount> _bankaccount;
+		public DepositController(IAsyncRepository<Deposit> deposit, IAsyncRepository<BankAccount> bankaccount,
 								 IMediator mediator,BankingSystemContext context)
 		{
 			_deposit = deposit;
 			_context = context;
 			Mediator = mediator;
+			_bankaccount = bankaccount;
 		}
 
 		public async Task<IActionResult> DepositConditions() => View();
@@ -64,13 +66,23 @@ namespace Web.Controllers
 			};
 			if (ModelState.IsValid)
 			{
-				
+				var bankaccount = await _bankaccount.GetById(deposit.IdAccount);
+				if (bankaccount.Amount < deposit.Amount)
+				{ 
+					ModelState.AddModelError(string.Empty, errorMessage:"Недостаточно средств на счету");
+					return View(deposit);
+				}
+
+				bankaccount.Amount = bankaccount.Amount - TakeDepositVM.Amount;
+				await _bankaccount.UpdateAsync(bankaccount);
 				await _deposit.AddAsync(TakeDepositVM);
+				
+				
 			}
 
 
-
-			return View(deposit);
+			 return View(deposit);
+			
 		}
 	}
 }
