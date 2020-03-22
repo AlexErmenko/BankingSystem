@@ -2,64 +2,73 @@
 @model IEnumerable<Client>
 
 @{
-	Layout = "_Layout";
-	ViewData[index: "Title"] = "Клиенты";
+    Layout = "_Layout";
+    ViewData[index: "Title"] = "Клиенты";
 }
+
+@*<link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>*@
+
+@*<link href="lib/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="lib/bootstrap-table/dist/bootstrap-table.min.js"></script>*@
 
 <p>
     <a asp-action="CreateClient" class="btn btn-secondary">Добавить нового клиента</a>
 </p>
-<table class="table table-hover table-sm">
+<table data-toggle="table"
+       data-search="true"
+       data-show-columns="true">
     <thead>
         <tr>
-            <th scope="col">
+            <th scope="col" data-sortable="true">
                 Логин
             </th>
-            <th scope="col">
+            <th scope="col" data-sortable="true">
                 Адрес
             </th>
-            <th scope="col"> 
+            <th scope="col" data-sortable="true">
                 Телефонный номер
             </th>
-            <th scope="col">
+            <th scope="col" data-sortable="true">
                 Тип субъекта
             </th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-    @foreach(var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(expression: modelItem => item.Login)
-            </td>
-            <td>
-                @Html.DisplayFor(expression: modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(expression: modelItem => item.TelNumber)
-            </td>
-            @if (item.PhysicalPerson != null)
-            {
-                <td>Физическое лицо</td>
-            } 
-            else
-            {
-                <td>Юридическое лицо</td>
-            }
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
-                <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a> 
-            </td>
-        </tr>
-        <tr scope="row">
-            <td colspan="5" class="d-flex justify-content-end">
-                <a class="" asp-controller="Credit" asp-action="AllCredits" asp-route-idClient="@item.Id">Кредиты</a> |
-                <a class="" asp-controller="Deposit" asp-action="" asp-route-id="@item.Id">Депозиты</a>
-            </td>
-        </tr>
-    }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.Login)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(expression: modelItem => item.TelNumber)
+                </td>
+                @if (item.PhysicalPerson != null)
+                {
+                    <td>Физическое лицо</td>
+                }
+                else
+                {
+                    <td>Юридическое лицо</td>
+                }
+                <td>
+                    <a class="btn btn-secondary" asp-controller="Credit" asp-action="AllCredits" asp-route-idClient="@item.Id">Кредиты</a>
+                    <a class="btn btn-secondary" asp-controller="Deposit" asp-action="" asp-route-id="@item.Id">Депозиты</a>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
+                    <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

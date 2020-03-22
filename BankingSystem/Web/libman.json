@@ -6,7 +6,11 @@
       "provider": "unpkg",
       "library": "bootstrap@4.4.1",
       "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap-table@1.16.0",
+      "destination": "wwwroot/lib/bootstrap-table/"
     }
-    
   ]
 }
