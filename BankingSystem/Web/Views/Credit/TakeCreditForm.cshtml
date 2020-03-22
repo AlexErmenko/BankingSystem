@@ -1,29 +1,167 @@
-﻿@using System
-@model Web.ViewModels.Credit.TakeCreditViewModel
+﻿@model Web.ViewModels.Credit.TakeCreditViewModel
 
 @{
-  ViewData[index: "Title"] = "Оформление кредита";
+    ViewData["Title"] = "Оформление кредита";
 }
 
 <div>
-	<p>Тут будет выбор суммы кредита и расчет процентов</p>
-	<form asp-action="TakeCreditForm" method="post">
-		<div class="slidecontainer">
-			<input type="range" min="10" max="100000" value="50" class="slider" id="myRange">
-			<p>Сумма:<span id="demo"></span></p>
-		</div>
+    <form class="p-5 border border-primary rounded" asp-action="TakeCreditForm" method="post">
+        <!--Select bank account-->
+        <div class="form-group">
+            <label asp-for="Credit.IdAccount">Выберите кредитый счёт </label>
+            <select class="form-control" asp-for="Credit.IdAccount">
+                @foreach (var account in Model.BankAccounts)
+                {
+                    <option value="@account.Id">@account.Id</option>
+                }
+            </select>
+        </div>
+        
+        <!--Select amount-->
+        <div class="card mb-3 border border-primary">
+            <div class="card-body">
+                <label asp-for="Credit.Amount">Выберите или введите сумму кредита</label>
+                <p>Сумма: <input type="text" asp-for="Credit.Amount" value="50" /></p>
+                <input id="myRange" class="slider form-control" type="range" min="10" max="20000" value="50">
+            </div>
+        </div>
 
-		<button type="submit">Подтвердить</button>
-	</form>
+        <!--how long-->
+        <div class="card border border-primary mb-3">
+            <div class="card-body">
+                <label asp-for="Credit.TermCredit">Срок (дни)</label>
+                <p><input class="form-control" value="1" asp-for="Credit.TermCredit" /></p>
+
+                <div>
+                    <div class="range">
+                        <input type="range" min="1" max="7" steps="1" value="1">
+                    </div>
+
+                    <ul class="range-labels">
+                        <li class="active selected">Today</li>
+                        <li>2 days</li>
+                        <li>3 days</li>
+                        <li>4 days</li>
+                        <li>5 days</li>
+                        <li>6 days</li>
+                        <li>7 days</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="card border border-primary">
+            <div class="card-body">
+                <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Вернуть до: </div>
+                    <div class="p-2 bd-highlight" id="Credit_DateCreditFinish"></div>
+                </div>
+                <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Сумма, грн: </div>
+                    <div class="p-2 bd-highlight" id="display_Amount"></div>
+                </div>
+                <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Проценты, грн: </div>
+                    <div class="p-2 bd-highlight" id="procent_credit">133</div>
+                </div>
+                <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Вернуть: </div>
+                    <div class="p-2 bd-highlight" id="final_Amount">133</div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Final-->
+        <div>
+
+        </div>
+        
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" type="submit">Подтвердить</button>
+        </div>
+    </form>
 </div>
 
 <script>
     var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value; // Display the default slider value
+    var output = document.getElementById("Credit_Amount");
+    var output2 = document.getElementById("display_Amount");
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function () {
+        output.value = this.value;
+        output2.innerHTML = this.value;
 
-// Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-        output.innerHTML = this.value;
+        var amount = $('#Credit_Amount').val();
+        var curVal = $('.range input').val();
+        $("#procent_credit").html(Number(amount) * 0.0001 * Number(curVal));
+
+        $("#final_Amount").html(Number(amount) + Number(amount) * 0.0001 * Number(curVal));
     }
 </script>
+
+<script>
+    var sheet = document.createElement('style'),  
+        $rangeInput = $('.range input'),
+        prefs = ['webkit-slider-runnable-track', 'moz-range-track', 'ms-track'];
+
+    document.body.appendChild(sheet);
+
+    var getTrackStyle = function (el) {  
+        var curVal = el.value,
+            val = (curVal - 1) * 16.666666667,
+            style = '';
+  
+        // Set active label
+        $('.range-labels li').removeClass('active selected');
+
+        var curLabel = $('.range-labels').find('li:nth-child(' + curVal + ')');
+  
+        curLabel.addClass('active selected');
+        curLabel.prevAll().addClass('selected');
+
+        //print value to input
+        $("#Credit_TermCredit").val(curVal);
+
+        //pritn finish date for credit
+        var newDate = new Date();
+        newDate.setDate(newDate.getDate() + Number(curVal));
+        var dd = newDate.getDate();
+        var mm = newDate.getMonth() + 1;
+        var y = newDate.getFullYear();
+        var someFormattedDate = dd + '/' + mm + '/' + y;
+        $("#Credit_DateCreditFinish").html(someFormattedDate);
+
+        // Change background gradient
+        for (var i = 0; i < prefs.length; i++) {
+            style += '.range {background: linear-gradient(to right, #37adbf 0%, #37adbf ' + val + '%, #fff ' + val + '%, #fff 100%)}';
+            style += '.range input::-' + prefs[i] + '{background: linear-gradient(to right, #37adbf 0%, #37adbf ' + val + '%, #b2b2b2 ' + val + '%, #b2b2b2 100%)}';
+        }
+
+        var amount = $('#Credit_Amount').val();
+        $("#procent_credit").html(Number(amount) * 0.0001 * Number(curVal));
+
+        $("#final_Amount").html(Number(amount) + Number(amount) * 0.0001 * Number(curVal));
+
+        return style;
+    }
+
+    $rangeInput.on('input', function () {
+        sheet.textContent = getTrackStyle(this);
+    });
+
+// Change input value on label click
+    $('.range-labels li').on('click', function () {
+        var index = $(this).index();
+  
+        $rangeInput.val(index + 1).trigger('input');
+
+        var amount = $('#Credit_Amount').val();
+        $("#procent_credit").html(Number(amount) * 0.0001 * (index + 1));
+
+        $("#final_Amount").html(Number(amount) + Number(amount) * 0.0001 * Number(index + 1));
+    });
+
+    $( ".range-labels li" ).trigger( "click" );
+</script>
+

@@ -16,21 +16,21 @@ namespace ApplicationCore.Entity
 
         [Key]
         public int Id { get; set; }
-        public int? IdAccount { get; set; }
+        public int IdAccount { get; set; }
         [Column(TypeName = "decimal(6, 2)")]
         public decimal PercentDeposit { get; set; }
         [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
         [Column(TypeName = "date")]
         public DateTime StartDateDeposit { get; set; }
-		[Column(TypeName = "date")]
-		public DateTime EndDateDeposit { get; set; }
-		[Required]
-		[StringLength(20)]
-		public string TypeOfDeposit { get; set; }
         public bool Status { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime EndDateDeposit { get; set; }
+        [Required]
+        [StringLength(20)]
+        public string TypeOfDeposit { get; set; }
 
-		[ForeignKey(nameof(IdAccount))]
+        [ForeignKey(nameof(IdAccount))]
         [InverseProperty(nameof(BankAccount.Deposits))]
         public virtual BankAccount IdAccountNavigation { get; set; }
         [InverseProperty(nameof(Accrual.IdDepositNavigation))]

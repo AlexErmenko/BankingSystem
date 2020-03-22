@@ -1,62 +1,96 @@
 ﻿@using System
 @{
-  ViewData[index: "Title"] = "Home Page";
+    ViewData[index: "Title"] = "Home Page";
 }
 
-@*
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p
-    >
-        Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
-    </p>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="wallet  card  ">
+@*@if (!User.IsInRole("Client") && !User.IsInRole("Admin") && !User.IsInRole("Manager"))*@
 
-                <div class="wallet-title">
-                    <b>Кошелёк</b>
-                    <a href="#">Все карточки</a>
-                </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
-                <div class="card m-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Название карточки1</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Кнопка1</a>
-                    </div>
-                </div>
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
 
-
-                <div class="card m-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Название карточки2</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Кнопка2</a>
-                    </div>
-                </div>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Files/bank-sign-6.jpg" alt="Los Angeles" width="1100" height="500">
             </div>
+            <div class="carousel-item">
+                <img src="~/Files/bank_new.jpg" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Files/jmyidxcahaf4o4phainikfbh.jpg" alt="New York" width="1100" height="500">
+            </div>
+        </div>
 
-            <form asp-controller="Home">
-                <div class="transfer card p-5">
-                    <div class="card-body">
-                        <div class="card-title">
-                            Перевод на карточку
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+
+@*
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p
+        >
+            Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wallet  card  ">
+
+                    <div class="wallet-title">
+                        <b>Кошелёк</b>
+                        <a href="#">Все карточки</a>
+                    </div>
+
+                    <div class="card m-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки1</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Кнопка1</a>
                         </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Номер карыт" aria-label="Recipient's
-                                    username" aria-describedby="button-addon2">
-                            <div class="input-group-append ml-2">
-                                <a class="btn btn-outline-secondary" type="button" id="button-addon2">></a>
+                    </div>
+
+
+                    <div class="card m-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Название карточки2</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Кнопка2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form asp-controller="Home">
+                    <div class="transfer card p-5">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Перевод на карточку
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Номер карыт" aria-label="Recipient's
+                                        username" aria-describedby="button-addon2">
+                                <div class="input-group-append ml-2">
+                                    <a class="btn btn-outline-secondary" type="button" id="button-addon2">></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
 
+
+            </div>
 
         </div>
-
     </div>
-</div>
 *@

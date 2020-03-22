@@ -9,6 +9,7 @@
       "wwwroot/css/site.css",
       "wwwroot/css/nav.min.css",
       "wwwroot/css/footer.min.css",
+      "wwwroot/lib/bootstrap-table/dist/bootstrap-table.min.css",
       "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     ]
   },
@@ -17,6 +18,7 @@
     "inputFiles": [
       "wwwroot/js/site.js",
       "wwwroot/lib/jquery/dist/jquery.min.js",
+      "wwwroot/lib/bootstrap-table/dist/bootstrap-table.min.js",
       "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     ],
     "minify": {

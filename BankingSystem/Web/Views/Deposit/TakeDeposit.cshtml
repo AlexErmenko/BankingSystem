@@ -1,63 +1,58 @@
-﻿@using System
-@model Web.ViewModels.Deposit.TakeDepositViewModel
-@{
-  ViewData[index: "Title"] = "Положить средства на депозит";
-}
+﻿@model Web.ViewModels.Deposit.TakeDepositViewModel
+
 
 
 <h1>Сделать депозитный счёт</h1>
 
-<hr/>
+<hr />
+
+<body>
 <div class="row">
-	<div class="col-md-4">
-		<form asp-action="TakeDeposit">
-			<div asp-validation-summary="All" class="text-danger"></div>
-			<div class="container">
-				<div class="form-group">
+    <div class="col-md-4">
+        <form asp-action="TakeDeposit">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <div class="container">
+                <div class="form-group">
+                    <label asp-for="IdAccount">Выберете счёт</label>
+                    <select asp-for="IdAccount" asp-items="Model.BankAccounts"></select>
 
-					<select asp-for="IdAccount" asp-items="Model.BankAccounts">
-						<option value="@Model.BankAccounts"></option>
-					</select>
+                </div>
+                <div>
+                    <div class="slidecontainer">
+                        <input asp-for="Amount" type="range" min="10" max="100000" value="50" class="slider" id="myRange">
+                        <a>Сумма депозита:<span id="demo"></span></a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PercentDeposit">Тип депозита</label>
+                    <select class="form-control" asp-for="PercentDeposit">
+                        <option value="0,08">8 %</option>
+                        <option value="0,1">10 %</option>
+                        <option value="0,12">12 %</option>
+                    </select>
+                </div>
 
-					<div>
-						<div class="slidecontainer">
-							<input asp-for="@Model.Amount" type="range" min="10" max="100000" value="50" class="slider" id="myRange">
-							<a>Сумма депозита:<span id="demo"></span></a>
-						</div>
-					</div>
-					<div class="form-group">
-						<label asp-for="@Model.PercentDeposit">Выбор типа депозита</label>
-						<select class="form-control" asp-for="@Model.PercentDeposit">
-							<option value="0.08">8 % месячных</option>
-							<option value="0.1">10 % годовых</option>
-							<option value="0.12">12 % год и более</option>
-						</select>
-					</div>
+                <div>
+                    <label asp-for="EndDateDeposit">Окончание депозита</label>
+                    <input asp-for="EndDateDeposit" type="date" value="@DateTime.Now" />
+                </div>
+                <div class="form-group">
 
-					<div>
-						<label asp-for="@Model.EndDateDeposit">Окончание депозита</label>
-						<input asp-for="EndDateDeposit" type="date" value="@Model.StartDateDeposit"/>
-					</div>
+                    <select class="form-control" asp-for="TypeOfDeposit">
+                        <option value="Месячный">Месячный</option>
+                        <option value="Годовой">Годовой</option>
+                    </select>
+                </div>
 
 
-				</div>
-
-				<input type="submit" value="Далее" class="btn btn-primary"/>
-			</div>
-		</form>
-	</div>
+                <input type="submit" value="Далее" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
 </div>
-
+</body>
 @* <div> *@
 @*     <a asp-action="ManagerList">Вернуться к списку</a> *@
-@* </div> *@
-<script>
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-</script>
+@* </div> *@ 
+<script asp-src-include="js/slider.js" ></script>
