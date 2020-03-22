@@ -9,19 +9,19 @@
 <p>
     <a asp-action="CreateClient" class="btn btn-secondary">Добавить нового клиента</a>
 </p>
-<table class="table">
+<table class="table table-hover table-sm">
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 Логин
             </th>
-            <th>
+            <th scope="col">
                 Адрес
             </th>
-            <th>
+            <th scope="col"> 
                 Телефонный номер
             </th>
-            <th>
+            <th scope="col">
                 Тип субъекта
             </th>
             <th></th>
@@ -30,7 +30,7 @@
     <tbody>
     @foreach(var item in Model)
     {
-	    <tr>
+        <tr>
             <td>
                 @Html.DisplayFor(expression: modelItem => item.Login)
             </td>
@@ -48,12 +48,18 @@
             {
                 <td>Юридическое лицо</td>
             }
-        <td>
-            <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
-            <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
-            <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a> 
-        </td>
-            </tr>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a> |
+                <a asp-controller="BankAccount" asp-action="GetAccounts" asp-route-idClient="@item.Id">Просмотреть счета</a> 
+            </td>
+        </tr>
+        <tr scope="row">
+            <td colspan="5" class="d-flex justify-content-end">
+                <a class="" asp-controller="Credit" asp-action="AllCredits" asp-route-idClient="@item.Id">Кредиты</a> |
+                <a class="" asp-controller="Deposit" asp-action="" asp-route-id="@item.Id">Депозиты</a>
+            </td>
+        </tr>
     }
     </tbody>
 </table>
