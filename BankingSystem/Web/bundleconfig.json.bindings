@@ -1,1 +1,1 @@
-﻿///<binding BeforeBuild='Update all files' />
+﻿///<binding BeforeBuild='Update all files, wwwroot/js/site.min.js, wwwroot/css/site.min.css' />
