@@ -7,6 +7,7 @@ using ApplicationCore.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Web.Commands;
 using Web.ViewModels.Credit;
 
@@ -23,10 +24,12 @@ namespace Web.Controllers
 		private IAsyncRepository<Currency> _currencyRepository;
 		private readonly IMediator _mediator;
 
-		public CreditController(IAsyncRepository<Credit> creditRepository, IMediator mediator)
+		public CreditController(IAsyncRepository<Credit> creditRepository, IBankAccountRepository bankAccountRepository, 
+								IMediator mediator)
 		{
 			_creditRepository = creditRepository;
 			_mediator = mediator;
+			_bankAccountRepository = bankAccountRepository;
 		}
 
 		/// <summary>
@@ -36,9 +39,12 @@ namespace Web.Controllers
 		[HttpGet]
 		public async Task<IActionResult> TakeCreditForm(int idAccount)
 		{
+			var accounts = _bankAccountRepository.Accounts.Where(p => p.AccountType == "кредитный");
+
 			return View(new TakeCreditViewModel()
 			{
-				IdAccount = idAccount
+				IdAccount = idAccount,
+				BankAccounts = accounts
 			});
 		}
 
