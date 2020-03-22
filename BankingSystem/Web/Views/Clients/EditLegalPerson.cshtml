@@ -46,7 +46,8 @@
                 <input asp-for="LegalPerson.Director" class="form-control"/>
             </div>
             <div class="form-group">
-                <input type="submit" value="Изменить" class="btn btn-primary"/>
+                <input type="submit" value="Изменить" class="btn btn-primary" />
+                <a class="btn btn-secondary" asp-action="ChangePassword" asp-route-email="@Model.Client.Login">Сменить пароль</a>
             </div>
         </form>
     </div>

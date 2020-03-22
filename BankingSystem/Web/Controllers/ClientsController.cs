@@ -16,6 +16,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Web.Commands;
 using Web.Extension;
+using Web.ViewModels;
 using Web.ViewModels.Clients;
 
 namespace Web.Controllers
@@ -365,6 +366,66 @@ namespace Web.Controllers
 			await _userManager.DeleteAsync(user);
 
 			return RedirectToAction(actionName: nameof(Index));
+		}
+
+		#endregion
+
+		#region ChangePassword
+
+		public async Task<IActionResult> ChangePassword(string email)
+		{
+			ApplicationUser user = await _userManager.FindByNameAsync(email);
+
+			if (user == null)
+			{
+				return NotFound();
+			}
+
+			ChangePasswordViewModel model = new ChangePasswordViewModel { Email = user.Email };
+
+			return View(model);
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+		{
+			if (!ModelState.IsValid) 
+				return View(model);
+
+			ApplicationUser user = await _userManager.FindByNameAsync(model.Email);
+
+			if (user != null)
+			{
+				var resultPassValid = await Mediator.Send(new GetPasswordValidationQuery(null, model.NewPassword));
+
+				if (resultPassValid.Succeeded)
+				{
+					var resultChange = await _userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword);
+
+					if (resultChange.Succeeded)
+					{
+						return RedirectToAction("Index");
+					} 
+					else
+					{
+						foreach (var error in resultChange.Errors)
+						{
+							ModelState.AddModelError(string.Empty, error.Description);
+						}
+					}
+				} 
+				else
+				{
+					foreach (var error in resultPassValid.Errors)
+					{
+						ModelState.AddModelError(string.Empty, error.Description);
+					}
+				}
+			} else
+			{
+				ModelState.AddModelError(string.Empty, "Пользователь не найден");
+			}
+			return View(model);
 		}
 
 		#endregion
