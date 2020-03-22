@@ -78,10 +78,7 @@
           </e>
         </e>
         <e p="Infrastructure.csproj" t="IncludeRecursive" />
-        <e p="Migrations" t="Include">
-          <e p="20200314190657_RemoveCol.Designer.cs" t="Include" />
-          <e p="BankingSystemContextModelSnapshot.cs" t="Include" />
-        </e>
+        <e p="Migrations" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -190,6 +187,7 @@
           <e p="ICurrencyViewModelService.cs" t="Include" />
           <e p="IScopedСurrencyService.cs" t="Include" />
           <e p="ScopedСurrencyService.cs" t="Include" />
+          <e p="UpdateDeposit.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="ViewModels" t="Include">
@@ -202,8 +200,8 @@
             <e p="AccountViewModel.cs" t="Include" />
             <e p="CreateClientAccountViewModel.cs" t="Include" />
           </e>
+          <e p="ChangePasswordViewModel.cs" t="Include" />
           <e p="ClientAccountViewModel.cs" t="Include" />
-          <e p="ClientCreateViewModel.cs" t="Include" />
           <e p="Clients" t="Include">
             <e p="ClientCreateViewModel.cs" t="Include" />
             <e p="LegalPersonViewModel.cs" t="Include" />
@@ -219,8 +217,6 @@
             <e p="TakeDepositViewModel.cs" t="Include" />
           </e>
           <e p="EditBankAccountViewModel.cs" t="Include" />
-          <e p="LegalPersonViewModel.cs" t="Include" />
-          <e p="PhysicalPersonViewModel.cs" t="Include" />
           <e p="TransferViewModel.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
@@ -239,6 +235,7 @@
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Clients" t="Include">
+            <e p="ChangePassword.cshtml" t="Include" />
             <e p="CreateClient.cshtml" t="Include" />
             <e p="CreateLegalPerson.cshtml" t="Include" />
             <e p="CreatePhysicalPerson.cshtml" t="Include" />
@@ -286,6 +283,8 @@
             <e p="footer.min.css" t="Include" />
             <e p="nav.css" t="Include" />
             <e p="nav.min.css" t="Include" />
+            <e p="RangeDays.css" t="Include" />
+            <e p="RangeSelectors.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="TakeCredit.css" t="Include" />
           </e>
@@ -297,6 +296,7 @@
             <e p="84145079.jpg" t="Include" />
             <e p="A4Y2d8i2dbo.jpg" t="Include" />
             <e p="bank-sign-6.jpg" t="Include" />
+            <e p="bank_new.jpg" t="Include" />
             <e p="d52d66923e0d447e9f1d98368c876bd5lg.jpg" t="Include" />
             <e p="image_2020-02-28_19-16-32.png" t="Include" />
             <e p="images.jfif" t="Include" />
@@ -304,10 +304,14 @@
             <e p="Снимок.PNG" t="Include" />
             <e p="Снимок1.PNG" t="Include" />
           </e>
+          <e p="jquery" t="Include">
+            <e p="RangeSelectors.js" t="Include" />
+          </e>
           <e p="js" t="Include">
             <e p="site.es5.js" t="Include" />
             <e p="site.es5.min.js" t="Include" />
             <e p="site.js" t="Include" />
+            <e p="slider.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
@@ -483,6 +487,387 @@
                 </e>
                 <e p="vendor" t="Include">
                   <e p="_rfs.scss" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="bootstrap-table" t="Include">
+              <e p="bootstrap-table.jquery.json" t="Include" />
+              <e p="bower.json" t="Include" />
+              <e p="CHANGELOG.md" t="Include" />
+              <e p="composer.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="bootstrap-table-locale-all.js" t="Include" />
+                <e p="bootstrap-table-vue.esm.js" t="Include" />
+                <e p="bootstrap-table-vue.js" t="Include" />
+                <e p="bootstrap-table.css" t="Include" />
+                <e p="bootstrap-table.js" t="Include" />
+                <e p="extensions" t="Include">
+                  <e p="accent-neutralise" t="Include">
+                    <e p="bootstrap-table-accent-neutralise.js" t="Include" />
+                  </e>
+                  <e p="addrbar" t="Include">
+                    <e p="bootstrap-table-addrbar.js" t="Include" />
+                  </e>
+                  <e p="auto-refresh" t="Include">
+                    <e p="bootstrap-table-auto-refresh.js" t="Include" />
+                  </e>
+                  <e p="cell-input" t="Include">
+                    <e p="bootstrap-table-cell-input.css" t="Include" />
+                    <e p="bootstrap-table-cell-input.js" t="Include" />
+                  </e>
+                  <e p="cookie" t="Include">
+                    <e p="bootstrap-table-cookie.js" t="Include" />
+                  </e>
+                  <e p="copy-rows" t="Include">
+                    <e p="bootstrap-table-copy-rows.js" t="Include" />
+                  </e>
+                  <e p="defer-url" t="Include">
+                    <e p="bootstrap-table-defer-url.js" t="Include" />
+                  </e>
+                  <e p="editable" t="Include">
+                    <e p="bootstrap-table-editable.js" t="Include" />
+                  </e>
+                  <e p="export" t="Include">
+                    <e p="bootstrap-table-export.js" t="Include" />
+                  </e>
+                  <e p="filter-control" t="Include">
+                    <e p="bootstrap-table-filter-control.css" t="Include" />
+                    <e p="bootstrap-table-filter-control.js" t="Include" />
+                  </e>
+                  <e p="fixed-columns" t="Include">
+                    <e p="bootstrap-table-fixed-columns.css" t="Include" />
+                    <e p="bootstrap-table-fixed-columns.js" t="Include" />
+                  </e>
+                  <e p="group-by-v2" t="Include">
+                    <e p="bootstrap-table-group-by.css" t="Include" />
+                    <e p="bootstrap-table-group-by.js" t="Include" />
+                  </e>
+                  <e p="i18n-enhance" t="Include">
+                    <e p="bootstrap-table-i18n-enhance.js" t="Include" />
+                  </e>
+                  <e p="key-events" t="Include">
+                    <e p="bootstrap-table-key-events.js" t="Include" />
+                  </e>
+                  <e p="mobile" t="Include">
+                    <e p="bootstrap-table-mobile.js" t="Include" />
+                  </e>
+                  <e p="multiple-sort" t="Include">
+                    <e p="bootstrap-table-multiple-sort.js" t="Include" />
+                  </e>
+                  <e p="page-jump-to" t="Include">
+                    <e p="bootstrap-table-page-jump-to.css" t="Include" />
+                    <e p="bootstrap-table-page-jump-to.js" t="Include" />
+                  </e>
+                  <e p="pipeline" t="Include">
+                    <e p="bootstrap-table-pipeline.js" t="Include" />
+                  </e>
+                  <e p="print" t="Include">
+                    <e p="bootstrap-table-print.js" t="Include" />
+                  </e>
+                  <e p="reorder-columns" t="Include">
+                    <e p="bootstrap-table-reorder-columns.js" t="Include" />
+                  </e>
+                  <e p="reorder-rows" t="Include">
+                    <e p="bootstrap-table-reorder-rows.css" t="Include" />
+                    <e p="bootstrap-table-reorder-rows.js" t="Include" />
+                  </e>
+                  <e p="resizable" t="Include">
+                    <e p="bootstrap-table-resizable.js" t="Include" />
+                  </e>
+                  <e p="sticky-header" t="Include">
+                    <e p="bootstrap-table-sticky-header.css" t="Include" />
+                    <e p="bootstrap-table-sticky-header.js" t="Include" />
+                  </e>
+                  <e p="toolbar" t="Include">
+                    <e p="bootstrap-table-toolbar.js" t="Include" />
+                  </e>
+                  <e p="treegrid" t="Include">
+                    <e p="bootstrap-table-treegrid.js" t="Include" />
+                  </e>
+                </e>
+                <e p="locale" t="Include">
+                  <e p="bootstrap-table-af-ZA.js" t="Include" />
+                  <e p="bootstrap-table-ar-SA.js" t="Include" />
+                  <e p="bootstrap-table-ca-ES.js" t="Include" />
+                  <e p="bootstrap-table-cs-CZ.js" t="Include" />
+                  <e p="bootstrap-table-da-DK.js" t="Include" />
+                  <e p="bootstrap-table-de-DE.js" t="Include" />
+                  <e p="bootstrap-table-el-GR.js" t="Include" />
+                  <e p="bootstrap-table-en-US.js" t="Include" />
+                  <e p="bootstrap-table-es-AR.js" t="Include" />
+                  <e p="bootstrap-table-es-CL.js" t="Include" />
+                  <e p="bootstrap-table-es-CR.js" t="Include" />
+                  <e p="bootstrap-table-es-ES.js" t="Include" />
+                  <e p="bootstrap-table-es-MX.js" t="Include" />
+                  <e p="bootstrap-table-es-NI.js" t="Include" />
+                  <e p="bootstrap-table-es-SP.js" t="Include" />
+                  <e p="bootstrap-table-et-EE.js" t="Include" />
+                  <e p="bootstrap-table-eu-EU.js" t="Include" />
+                  <e p="bootstrap-table-fa-IR.js" t="Include" />
+                  <e p="bootstrap-table-fi-FI.js" t="Include" />
+                  <e p="bootstrap-table-fr-BE.js" t="Include" />
+                  <e p="bootstrap-table-fr-CH.js" t="Include" />
+                  <e p="bootstrap-table-fr-FR.js" t="Include" />
+                  <e p="bootstrap-table-fr-LU.js" t="Include" />
+                  <e p="bootstrap-table-he-IL.js" t="Include" />
+                  <e p="bootstrap-table-hr-HR.js" t="Include" />
+                  <e p="bootstrap-table-hu-HU.js" t="Include" />
+                  <e p="bootstrap-table-id-ID.js" t="Include" />
+                  <e p="bootstrap-table-it-IT.js" t="Include" />
+                  <e p="bootstrap-table-ja-JP.js" t="Include" />
+                  <e p="bootstrap-table-ka-GE.js" t="Include" />
+                  <e p="bootstrap-table-ko-KR.js" t="Include" />
+                  <e p="bootstrap-table-ms-MY.js" t="Include" />
+                  <e p="bootstrap-table-nb-NO.js" t="Include" />
+                  <e p="bootstrap-table-nl-BE.js" t="Include" />
+                  <e p="bootstrap-table-nl-NL.js" t="Include" />
+                  <e p="bootstrap-table-pl-PL.js" t="Include" />
+                  <e p="bootstrap-table-pt-BR.js" t="Include" />
+                  <e p="bootstrap-table-pt-PT.js" t="Include" />
+                  <e p="bootstrap-table-ro-RO.js" t="Include" />
+                  <e p="bootstrap-table-ru-RU.js" t="Include" />
+                  <e p="bootstrap-table-sk-SK.js" t="Include" />
+                  <e p="bootstrap-table-sr-Cyrl-RS.js" t="Include" />
+                  <e p="bootstrap-table-sr-Latn-RS.js" t="Include" />
+                  <e p="bootstrap-table-sv-SE.js" t="Include" />
+                  <e p="bootstrap-table-th-TH.js" t="Include" />
+                  <e p="bootstrap-table-tr-TR.js" t="Include" />
+                  <e p="bootstrap-table-uk-UA.js" t="Include" />
+                  <e p="bootstrap-table-ur-PK.js" t="Include" />
+                  <e p="bootstrap-table-uz-Latn-UZ.js" t="Include" />
+                  <e p="bootstrap-table-vi-VN.js" t="Include" />
+                  <e p="bootstrap-table-zh-CN.js" t="Include" />
+                  <e p="bootstrap-table-zh-TW.js" t="Include" />
+                </e>
+                <e p="themes" t="Include">
+                  <e p="bulma" t="Include">
+                    <e p="bootstrap-table-bulma.css" t="Include" />
+                    <e p="bootstrap-table-bulma.js" t="Include" />
+                  </e>
+                  <e p="foundation" t="Include">
+                    <e p="bootstrap-table-foundation.css" t="Include" />
+                    <e p="bootstrap-table-foundation.js" t="Include" />
+                  </e>
+                  <e p="materialize" t="Include">
+                    <e p="bootstrap-table-materialize.css" t="Include" />
+                    <e p="bootstrap-table-materialize.js" t="Include" />
+                  </e>
+                  <e p="semantic" t="Include">
+                    <e p="bootstrap-table-semantic.css" t="Include" />
+                    <e p="bootstrap-table-semantic.js" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="FUNDING.yml" t="Include" />
+              <e p="index.d.ts" t="Include" />
+              <e p="LICENSE" t="Include" />
+              <e p="package.json" t="Include" />
+              <e p="README.md" t="Include" />
+              <e p="rollup.config.js" t="Include" />
+              <e p="src" t="Include">
+                <e p=".babelrc" t="Include" />
+                <e p="bootstrap-table.js" t="Include" />
+                <e p="bootstrap-table.scss" t="Include" />
+                <e p="constants" t="Include">
+                  <e p="index.js" t="Include" />
+                </e>
+                <e p="extensions" t="Include">
+                  <e p="accent-neutralise" t="Include">
+                    <e p="bootstrap-table-accent-neutralise.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="addrbar" t="Include">
+                    <e p="bootstrap-table-addrbar.js" t="Include" />
+                  </e>
+                  <e p="auto-refresh" t="Include">
+                    <e p="bootstrap-table-auto-refresh.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="cell-input" t="Include">
+                    <e p="bootstrap-table-cell-input.js" t="Include" />
+                    <e p="bootstrap-table-cell-input.scss" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="cookie" t="Include">
+                    <e p="bootstrap-table-cookie.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="copy-rows" t="Include">
+                    <e p="bootstrap-table-copy-rows.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="defer-url" t="Include">
+                    <e p="bootstrap-table-defer-url.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="editable" t="Include">
+                    <e p="bootstrap-table-editable.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="export" t="Include">
+                    <e p="bootstrap-table-export.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="filter-control" t="Include">
+                    <e p="bootstrap-table-filter-control.js" t="Include" />
+                    <e p="bootstrap-table-filter-control.scss" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="fixed-columns" t="Include">
+                    <e p="bootstrap-table-fixed-columns.js" t="Include" />
+                    <e p="bootstrap-table-fixed-columns.scss" t="Include" />
+                  </e>
+                  <e p="group-by-v2" t="Include">
+                    <e p="bootstrap-table-group-by.js" t="Include" />
+                    <e p="bootstrap-table-group-by.scss" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="i18n-enhance" t="Include">
+                    <e p="bootstrap-table-i18n-enhance.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="key-events" t="Include">
+                    <e p="bootstrap-table-key-events.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="mobile" t="Include">
+                    <e p="bootstrap-table-mobile.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="multiple-sort" t="Include">
+                    <e p="bootstrap-table-multiple-sort.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="page-jump-to" t="Include">
+                    <e p="bootstrap-table-page-jump-to.js" t="Include" />
+                    <e p="bootstrap-table-page-jump-to.scss" t="Include" />
+                  </e>
+                  <e p="pipeline" t="Include">
+                    <e p="bootstrap-table-pipeline.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                    <e p="LICENSE" t="Include" />
+                    <e p="README.md" t="Include" />
+                  </e>
+                  <e p="print" t="Include">
+                    <e p="bootstrap-table-print.js" t="Include" />
+                  </e>
+                  <e p="reorder-columns" t="Include">
+                    <e p="bootstrap-table-reorder-columns.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="reorder-rows" t="Include">
+                    <e p="bootstrap-table-reorder-rows.js" t="Include" />
+                    <e p="bootstrap-table-reorder-rows.scss" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="resizable" t="Include">
+                    <e p="bootstrap-table-resizable.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="sticky-header" t="Include">
+                    <e p="bootstrap-table-sticky-header.js" t="Include" />
+                    <e p="bootstrap-table-sticky-header.scss" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="toolbar" t="Include">
+                    <e p="bootstrap-table-toolbar.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                  <e p="treegrid" t="Include">
+                    <e p="bootstrap-table-treegrid.js" t="Include" />
+                    <e p="extension.json" t="Include" />
+                  </e>
+                </e>
+                <e p="locale" t="Include">
+                  <e p="bootstrap-table-af-ZA.js" t="Include" />
+                  <e p="bootstrap-table-ar-SA.js" t="Include" />
+                  <e p="bootstrap-table-ca-ES.js" t="Include" />
+                  <e p="bootstrap-table-cs-CZ.js" t="Include" />
+                  <e p="bootstrap-table-da-DK.js" t="Include" />
+                  <e p="bootstrap-table-de-DE.js" t="Include" />
+                  <e p="bootstrap-table-el-GR.js" t="Include" />
+                  <e p="bootstrap-table-en-US.js" t="Include" />
+                  <e p="bootstrap-table-es-AR.js" t="Include" />
+                  <e p="bootstrap-table-es-CL.js" t="Include" />
+                  <e p="bootstrap-table-es-CR.js" t="Include" />
+                  <e p="bootstrap-table-es-ES.js" t="Include" />
+                  <e p="bootstrap-table-es-MX.js" t="Include" />
+                  <e p="bootstrap-table-es-NI.js" t="Include" />
+                  <e p="bootstrap-table-es-SP.js" t="Include" />
+                  <e p="bootstrap-table-et-EE.js" t="Include" />
+                  <e p="bootstrap-table-eu-EU.js" t="Include" />
+                  <e p="bootstrap-table-fa-IR.js" t="Include" />
+                  <e p="bootstrap-table-fi-FI.js" t="Include" />
+                  <e p="bootstrap-table-fr-BE.js" t="Include" />
+                  <e p="bootstrap-table-fr-CH.js" t="Include" />
+                  <e p="bootstrap-table-fr-FR.js" t="Include" />
+                  <e p="bootstrap-table-fr-LU.js" t="Include" />
+                  <e p="bootstrap-table-he-IL.js" t="Include" />
+                  <e p="bootstrap-table-hr-HR.js" t="Include" />
+                  <e p="bootstrap-table-hu-HU.js" t="Include" />
+                  <e p="bootstrap-table-id-ID.js" t="Include" />
+                  <e p="bootstrap-table-it-IT.js" t="Include" />
+                  <e p="bootstrap-table-ja-JP.js" t="Include" />
+                  <e p="bootstrap-table-ka-GE.js" t="Include" />
+                  <e p="bootstrap-table-ko-KR.js" t="Include" />
+                  <e p="bootstrap-table-ms-MY.js" t="Include" />
+                  <e p="bootstrap-table-nb-NO.js" t="Include" />
+                  <e p="bootstrap-table-nl-BE.js" t="Include" />
+                  <e p="bootstrap-table-nl-NL.js" t="Include" />
+                  <e p="bootstrap-table-pl-PL.js" t="Include" />
+                  <e p="bootstrap-table-pt-BR.js" t="Include" />
+                  <e p="bootstrap-table-pt-PT.js" t="Include" />
+                  <e p="bootstrap-table-ro-RO.js" t="Include" />
+                  <e p="bootstrap-table-ru-RU.js" t="Include" />
+                  <e p="bootstrap-table-sk-SK.js" t="Include" />
+                  <e p="bootstrap-table-sr-Cyrl-RS.js" t="Include" />
+                  <e p="bootstrap-table-sr-Latn-RS.js" t="Include" />
+                  <e p="bootstrap-table-sv-SE.js" t="Include" />
+                  <e p="bootstrap-table-th-TH.js" t="Include" />
+                  <e p="bootstrap-table-tr-TR.js" t="Include" />
+                  <e p="bootstrap-table-uk-UA.js" t="Include" />
+                  <e p="bootstrap-table-ur-PK.js" t="Include" />
+                  <e p="bootstrap-table-uz-Latn-UZ.js" t="Include" />
+                  <e p="bootstrap-table-vi-VN.js" t="Include" />
+                  <e p="bootstrap-table-zh-CN.js" t="Include" />
+                  <e p="bootstrap-table-zh-TW.js" t="Include" />
+                  <e p="README.md" t="Include" />
+                </e>
+                <e p="themes" t="Include">
+                  <e p="_theme.scss" t="Include" />
+                  <e p="bootstrap" t="Include">
+                    <e p="_variables.scss" t="Include" />
+                  </e>
+                  <e p="bulma" t="Include">
+                    <e p="_variables.scss" t="Include" />
+                    <e p="bootstrap-table-bulma.js" t="Include" />
+                    <e p="bootstrap-table-bulma.scss" t="Include" />
+                  </e>
+                  <e p="foundation" t="Include">
+                    <e p="_variables.scss" t="Include" />
+                    <e p="bootstrap-table-foundation.js" t="Include" />
+                    <e p="bootstrap-table-foundation.scss" t="Include" />
+                  </e>
+                  <e p="materialize" t="Include">
+                    <e p="_variables.scss" t="Include" />
+                    <e p="bootstrap-table-materialize.js" t="Include" />
+                    <e p="bootstrap-table-materialize.scss" t="Include" />
+                  </e>
+                  <e p="semantic" t="Include">
+                    <e p="_variables.scss" t="Include" />
+                    <e p="bootstrap-table-semantic.js" t="Include" />
+                    <e p="bootstrap-table-semantic.scss" t="Include" />
+                  </e>
+                </e>
+                <e p="utils" t="Include">
+                  <e p="index.js" t="Include" />
+                </e>
+                <e p="virtual-scroll" t="Include">
+                  <e p="index.js" t="Include" />
+                </e>
+                <e p="vue" t="Include">
+                  <e p="BootstrapTable.vue" t="Include" />
+                  <e p="index.js" t="Include" />
                 </e>
               </e>
             </e>
