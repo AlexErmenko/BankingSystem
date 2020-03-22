@@ -1,63 +1,63 @@
 ﻿@model Web.ViewModels.Clients.PhysicalPersonViewModel
 
 @{
-    Layout = "_Layout";
-    ViewData["Title"] = "Изменение Физ. Лица";
+  Layout = "_Layout";
+  ViewData[index: "Title"] = "Изменение Физ. Лица";
 }
 
 <h4>Изменение данных о клиенте</h4>
 <h4>Физическое Лицо</h4>
-<hr />
+<hr/>
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="EditPhysicalPerson">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Client.Id" />
-            <div class="form-group">
-                <label asp-for="Client.Login" class="control-label">Email</label>
-                <input asp-for="Client.Login" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Client.Address" class="control-label">Адрес</label>
-                <input asp-for="Client.Address" class="form-control" />
-                <span asp-validation-for="Client.Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Client.TelNumber" class="control-label">Телефонный номер</label>
-                <input asp-for="Client.TelNumber" class="form-control" />
-                <span asp-validation-for="Client.TelNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.PassportSeries" class="control-label"></label>
-                <input asp-for="PhysicalPerson.PassportSeries" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.PassportNumber" class="control-label"></label>
-                <input asp-for="PhysicalPerson.PassportNumber" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.IdentificationNumber" class="control-label"></label>
-                <input asp-for="PhysicalPerson.IdentificationNumber" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.Name" class="control-label"></label>
-                <input asp-for="PhysicalPerson.Name" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.Surname" class="control-label"></label>
-                <input asp-for="PhysicalPerson.Surname" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="PhysicalPerson.Patronymic" class="control-label"></label>
-                <input asp-for="PhysicalPerson.Patronymic" class="form-control" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Изменить" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+	<div class="col-md-4">
+		<form asp-action="EditPhysicalPerson">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<input type="hidden" asp-for="Client.Id"/>
+			<div class="form-group">
+				<label asp-for="Client.Login" class="control-label">Email</label>
+				<input asp-for="Client.Login" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="Client.Address" class="control-label">Адрес</label>
+				<input asp-for="Client.Address" class="form-control"/>
+				<span asp-validation-for="Client.Address" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Client.TelNumber" class="control-label">Телефонный номер</label>
+				<input asp-for="Client.TelNumber" class="form-control"/>
+				<span asp-validation-for="Client.TelNumber" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.PassportSeries" class="control-label"></label>
+				<input asp-for="PhysicalPerson.PassportSeries" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.PassportNumber" class="control-label"></label>
+				<input asp-for="PhysicalPerson.PassportNumber" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.IdentificationNumber" class="control-label"></label>
+				<input asp-for="PhysicalPerson.IdentificationNumber" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.Name" class="control-label"></label>
+				<input asp-for="PhysicalPerson.Name" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.Surname" class="control-label"></label>
+				<input asp-for="PhysicalPerson.Surname" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<label asp-for="PhysicalPerson.Patronymic" class="control-label"></label>
+				<input asp-for="PhysicalPerson.Patronymic" class="form-control"/>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Изменить" class="btn btn-primary"/>
+			</div>
+		</form>
+	</div>
 </div>
 
 <div>
-    <a asp-action="Index">Вернуться к списку</a>
+	<a asp-action="Index">Вернуться к списку</a>
 </div>

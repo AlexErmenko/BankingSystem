@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 using Moq;
@@ -12,34 +11,34 @@ using Xunit;
 
 namespace xUnitLib
 {
-	public class HomeControllerTest
-	{
-		[Fact]
-		public async Task Index_ReturnsAViewResult_WithAListOfBrainstormSessions()
+  public class HomeControllerTest
+  {
+    [Fact]
+    public async Task Index_ReturnsAViewResult_WithAListOfBrainstormSessions()
 
-		{
-			// Arrange
+    {
+      // Arrange
 
-			var mockRepo = new Mock<ILogger<HomeController>>();
+      var mockRepo = new Mock<ILogger<HomeController>>();
 
-			// var controller = new HomeController(logger: mockRepo.Object);
+      // var controller = new HomeController(logger: mockRepo.Object);
 
-			// Act
+      // Act
 
-			// var result = await controller.Index();
+      // var result = await controller.Index();
 
-			// Assert
+      // Assert
 
-			// var viewResult = Assert.IsType<ViewResult>(@object: result);
+      // var viewResult = Assert.IsType<ViewResult>(@object: result);
 
-			/*var model = Assert.IsAssignableFrom<IEnumerable<StormSessionViewModel>>(
+      /*var model = Assert.IsAssignableFrom<IEnumerable<StormSessionViewModel>>(
 
                 viewResult.ViewData.Model);
 
             Assert.Equal(2, model.Count());*/
-		}
+    }
 
-		/*#region snippet_ModelState_ValidOrInvalid
+    /*#region snippet_ModelState_ValidOrInvalid
 
         [Fact]
 
@@ -127,7 +126,7 @@ namespace xUnitLib
 
         #endregion*/
 
-		/*#region snippet_GetTestSessions
+    /*#region snippet_GetTestSessions
 
         private List<BrainstormSession> GetTestSessions()
 
@@ -164,5 +163,5 @@ namespace xUnitLib
         }
 
         #endregion*/
-	}
+  }
 }

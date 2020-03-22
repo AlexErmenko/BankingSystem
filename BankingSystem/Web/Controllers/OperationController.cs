@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using ApplicationCore.Entity;
-using ApplicationCore.Interfaces;
-
 using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
@@ -13,51 +10,50 @@ using Web.ViewModels;
 
 namespace Web.Controllers
 {
-	/// <summary>
-	///     Просмотр операций по счёту
-	/// </summary>
-	public class OperationController : Controller
-	{
-		private readonly IMediator Mediator;
-		public IAsyncRepository<BankAccount> Repository { get; set; }
-		public OperationController(IMediator mediator, IAsyncRepository<BankAccount> Repository)
-		{
-			Mediator = mediator;
-			this.Repository = Repository;
-		}
+  /// <summary>
+  ///     Просмотр операций по счёту
+  /// </summary>
+  public class OperationController : Controller
+  {
+    private readonly IMediator Mediator;
 
-		// GET
-		public async Task<IActionResult> Index(int id, AccountOperationViewModel formModel)
-		{
-			var viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id, startPeriod: formModel.StartPeriod, endPeriod: formModel.EndPeriod));
-			return View(model: viewModel);
-		}
+    public OperationController(IMediator mediator) => Mediator = mediator;
 
-		[HttpGet]
-		public IActionResult Transfer()
-		{
-			var transferViewModel = new TransferViewModel();
-			return View(transferViewModel);
-		}
+    // GET
+    public async Task<IActionResult> Index(int id, AccountOperationViewModel formModel)
+    {
+      AccountOperationViewModel viewModel = await Mediator.Send(request: new GetAccountOperationQuery(id: id, startPeriod: formModel.StartPeriod, endPeriod: formModel.EndPeriod));
+      return View(model: viewModel);
+    }
 
+    [HttpGet]
+    public IActionResult Transfer(int id)
+    {
+      var transferViewModel = new TransferViewModel
+      {
+        IdFrom = id
+      };
 
-		[HttpPost]
-		public async Task<IActionResult> Transfer([FromForm] TransferViewModel TransferViewModel)
-		{
-			// var fromAccount = await Repository.GetById(TransferViewModel.IdFrom);
-			// var toAccount = await Repository.GetById(TransferViewModel.IdTo);
-			//
-			// if(fromAccount.Amount < TransferViewModel.Amount) { throw new NotImplementedException(); }
-			//
-			// fromAccount.Amount -= TransferViewModel.Amount;
-			// toAccount.Amount += TransferViewModel.Amount;
-			//
-			// await Repository.UpdateAsync(fromAccount);
-			//
-			// await Repository.UpdateAsync(toAccount);
-			var result = await Mediator.Send(new TransferAmountCommand(TransferViewModel.IdFrom, TransferViewModel.IdTo, TransferViewModel.Amount));
+      return View(model: transferViewModel);
+    }
 
-			return LocalRedirect("~/BankAccount/GetAccounts");
-		}
-	}
+    [HttpPost]
+    public async Task<IActionResult> Transfer([FromForm] TransferViewModel TransferViewModel)
+    {
+      // var fromAccount = await Repository.GetById(TransferViewModel.IdFrom);
+      // var toAccount = await Repository.GetById(TransferViewModel.IdTo);
+      //
+      // if(fromAccount.Amount < TransferViewModel.Amount) { throw new NotImplementedException(); }
+      //
+      // fromAccount.Amount -= TransferViewModel.Amount;
+      // toAccount.Amount += TransferViewModel.Amount;
+      //
+      // await Repository.UpdateAsync(fromAccount);
+      //
+      // await Repository.UpdateAsync(toAccount);
+      bool result = await Mediator.Send(request: new TransferAmountCommand(From: TransferViewModel.IdFrom, To: TransferViewModel.IdTo, Amount: TransferViewModel.Amount));
+
+      return LocalRedirect(localUrl: "~/BankAccount/GetAccounts");
+    }
+  }
 }

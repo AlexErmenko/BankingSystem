@@ -3,72 +3,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData[index: "Title"] - Banking</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.min.css"/>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>@ViewData[index: "Title"] - Banking</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="~/css/site.min.css"/>
 </head>
 <body>
 <header>
-    @* navbar-expand-lg navbar-toggleable-lg *@
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary border-bottom box-shadow mb-3">
-        <div class="container">
-            @if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
-            {
-                <a class="navbar-brand" asp-area="" asp-controller="Admin" asp-action="ManagerList">Панель администратора</a>
-            } else
-            {
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banking System</a>
-            }
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary border-bottom box-shadow mb-3">
+		<div class="container">
+			@if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
+			{
+			  <a class="navbar-brand" asp-area="" asp-controller="Admin" asp-action="ManagerList">Панель администратора</a>
+			} else
+			{
+			  <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banking System</a>
+			}
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+			        aria-controls="navbarSupportedContent"
+			        aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-            <div class="navbar-collapse collapse d-md-inline-flex flex-sm-row-reverse">
-                <partial name="_LoginPartial"/>
+			<div class="navbar-collapse collapse d-md-inline-flex flex-sm-row-reverse">
+				<partial name="_LoginPartial"/>
 
-                <ul class="navbar-nav flex-grow-1">
+				<ul class="navbar-nav flex-grow-1">
 
-                    @if (User.IsInRole(AuthorizationConstants.Roles.ADMINISTRATORS))
-                    {
-                        <li class="nav-item">
-                            <a class=" nav-link text-light">Менеджеры</a>
-                        </li>
-                    } else if (User.IsInRole(AuthorizationConstants.Roles.MANAGER))
-                    {
-                        <li class="nav-item">
-                            <a class=" nav-link text-light" asp-controller="Clients" asp-action="Index">Клиенты</a>
-                        </li>
-                    } else
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-controller="Deposit" asp-action="TakeDeposit">Депозиты </a>
-                        </li>
+					@if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
+					{
+					  <li class="nav-item">
+						  <a class=" nav-link text-light">Менеджеры</a>
+					  </li>
+					} else if(User.IsInRole(role: AuthorizationConstants.Roles.MANAGER))
+					{
+					  <li class="nav-item">
+						  <a class=" nav-link text-light" asp-controller="Clients" asp-action="Index">Клиенты</a>
+					  </li>
+					} else
+					{
+					  <li class="nav-item">
+						  <a class="nav-link text-light" asp-controller="Deposit" asp-action="TakeDeposit">Депозиты </a>
+					  </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-light"> Кредиты</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-light">Переводы денег</a>
-                        </li>
-                    }
-                    <li class="nav-item">
-                        <a class="nav-link text-light" asp-controller="Currency" asp-action="GetInfo">Курс валют</a>
-                    </li>
+					  <li class="nav-item">
+						  <a class="nav-link text-light"> Кредиты</a>
+					  </li>
+
+					  <li class="nav-item">
+						  <a class="nav-link text-dark" asp-area="" asp-controller="BankAccount" asp-action="GetAccounts">Мои счета</a>
+					  </li>
+
+                        @*<li class="nav-item">
+                            <a class="nav-link  text-light" asp-acti>Переводы денег</a>
+                        </li>*@
+					}
+					<li class="nav-item">
+						<a class="nav-link text-light" asp-controller="Currency" asp-action="GetInfo">Курс валют</a>
+					</li>
 
 
-                </ul>
-            </div>
+				</ul>
+			</div>
 
 
-        </div>
-    </nav>
+		</div>
+	</nav>
 
-    @*@if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
+	@*@if(User.IsInRole(role: AuthorizationConstants.Roles.ADMINISTRATORS))
         {
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container">
@@ -153,15 +157,15 @@
         }*@
 </header>
 <div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+	<main role="main" class="pb-3">
+		@RenderBody()
+	</main>
 </div>
 
 <footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2020 - Banking - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
+	<div class="container">
+		&copy; 2020 - Banking - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+	</div>
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

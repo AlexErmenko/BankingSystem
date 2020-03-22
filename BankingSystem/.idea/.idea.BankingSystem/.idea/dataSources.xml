@@ -14,5 +14,11 @@
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
       <jdbc-url>jdbc:sqlserver://bankingserver.database.windows.net:1433;database=Banking.Identity</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Banking Google Cloud" uuid="86b269b0-26dd-442e-8fa6-c4d7f7866d6c">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://34.89.127.7</jdbc-url>
+    </data-source>
   </component>
 </project>

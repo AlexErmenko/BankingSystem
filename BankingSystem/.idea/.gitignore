@@ -228,3 +228,5 @@ __pycache__/
 
 # Windows thumbnail cache files
 Thumbs.db
+# Datasource local storage ignored files
+/.idea.BankingSystem/.idea/dataSources/

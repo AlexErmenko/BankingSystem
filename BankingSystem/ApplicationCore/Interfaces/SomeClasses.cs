@@ -2,5 +2,5 @@
 
 namespace ApplicationCore.Interfaces
 {
-	public class SomeClasses { }
+  public class SomeClasses { }
 }

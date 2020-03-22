@@ -2,81 +2,81 @@
 @model CreateClientAccountViewModel
 
 @{
-	ViewData[index: "Title"] = "Создание счета";
+  ViewData[index: "Title"] = "Создание счета";
 }
 
 <div>
-    <h5 class="text-center mb-4">
-        <strong>Данные про новый счет</strong>
-    </h5>
+	<h5 class="text-center mb-4">
+		<strong>Данные про новый счет</strong>
+	</h5>
 
-    <div>
-        @if(Model.PhysicalPerson == null)
-        {
-	        <div>
-                <label asp-for="LegalPerson.Name">Наименование:</label>
-                <input class="form-control" asp-for="LegalPerson.Name" value="@Model.LegalPerson.Name" readonly="readonly"/>
-            </div>
+	<div>
+		@if(Model.PhysicalPerson == null)
+		{
+		  <div>
+			  <label asp-for="LegalPerson.Name">Наименование:</label>
+			  <input class="form-control" asp-for="LegalPerson.Name" value="@Model.LegalPerson.Name" readonly="readonly"/>
+		  </div>
 
-	        <div>
-                <label asp-for="LegalPerson.OwnershipType">Тип собственности:</label>
-                <input class="form-control" asp-for="LegalPerson.OwnershipType" value="@Model.LegalPerson.OwnershipType" readonly="readonly"/>
-            </div>
+		  <div>
+			  <label asp-for="LegalPerson.OwnershipType">Тип собственности:</label>
+			  <input class="form-control" asp-for="LegalPerson.OwnershipType" value="@Model.LegalPerson.OwnershipType" readonly="readonly"/>
+		  </div>
 
-	        <div>
-                <label asp-for="LegalPerson.Director">Директор:</label>
-                <input class="form-control" asp-for="LegalPerson.Director" value="@Model.LegalPerson.Director" readonly="readonly"/>
-            </div>
-        } else
-        {
-	        <div>
-                <label asp-for="PhysicalPerson.Surname">Фамилия:</label>
-                <input class="form-control" asp-for="PhysicalPerson.Surname" value="@Model.PhysicalPerson.Surname" readonly="readonly"/>
-            </div>
+		  <div>
+			  <label asp-for="LegalPerson.Director">Директор:</label>
+			  <input class="form-control" asp-for="LegalPerson.Director" value="@Model.LegalPerson.Director" readonly="readonly"/>
+		  </div>
+		} else
+		{
+		  <div>
+			  <label asp-for="PhysicalPerson.Surname">Фамилия:</label>
+			  <input class="form-control" asp-for="PhysicalPerson.Surname" value="@Model.PhysicalPerson.Surname" readonly="readonly"/>
+		  </div>
 
-	        <div>
-                <label asp-for="PhysicalPerson.Name">Имя:</label>
-                <input class="form-control" asp-for="PhysicalPerson.Name" value="@Model.PhysicalPerson.Name" readonly="readonly"/>
-            </div>
+		  <div>
+			  <label asp-for="PhysicalPerson.Name">Имя:</label>
+			  <input class="form-control" asp-for="PhysicalPerson.Name" value="@Model.PhysicalPerson.Name" readonly="readonly"/>
+		  </div>
 
-	        <div>
-                <label asp-for="PhysicalPerson.Patronymic">Отчество:</label>
-                <input class="form-control" asp-for="PhysicalPerson.Patronymic" value="@Model.PhysicalPerson.Patronymic" readonly="readonly"/>
-            </div>
-        }
-    </div>
+		  <div>
+			  <label asp-for="PhysicalPerson.Patronymic">Отчество:</label>
+			  <input class="form-control" asp-for="PhysicalPerson.Patronymic" value="@Model.PhysicalPerson.Patronymic" readonly="readonly"/>
+		  </div>
+		}
+	</div>
 
-    <form asp-action="CreateClientAccountForm" method="post">
-        <div asp-validation-summary="All"></div>
+	<form asp-action="CreateClientAccountForm" method="post">
+		<div asp-validation-summary="All"></div>
 
-        <input asp-for="Account.IdClient" value="@(Model.PhysicalPerson?.Id ?? Model.LegalPerson.Id)"
-               type="hidden"/>
+		<input asp-for="Account.IdClient" value="@(Model.PhysicalPerson?.Id ?? Model.LegalPerson.Id)"
+		       type="hidden"/>
 
-        <div class="form-group">
-            <label asp-for="@Model.Account.AccountType">Тип аккаунта:</label>
-            <select class="form-control" asp-for="@Model.Account.AccountType">
-                <option value="специальный">Специальный</option>
-                <option value="карточный">Карточный</option>
-                <option value="лицевой">Лицевой</option>
-                <option value="депозитный">Депозитный</option>
-                <option value="текущий">Текущий</option>
-                <option value="ссудный">Ссудный</option>
-                <option value="расчетный">Расчетный</option>
-            </select>
-        </div>
+		<div class="form-group">
+			<label asp-for="@Model.Account.AccountType">Тип аккаунта:</label>
+			<select class="form-control" asp-for="@Model.Account.AccountType">
+				<option value="специальный">Специальный</option>
+				<option value="карточный">Карточный</option>
+				<option value="лицевой">Лицевой</option>
+				<option value="депозитный">Депозитный</option>
+				<option value="текущий">Текущий</option>
+				<option value="ссудный">Ссудный</option>
+				<option value="расчетный">Расчетный</option>
+			</select>
+		</div>
 
-        <div class="form-group">
-            <label asp-for="@Model.Account.IdCurrency">Валюта</label>
-            <select class="form-control" asp-for="Account.IdCurrency">
-                <option value="1">Доллары</option>
-                <option value="2">Рубли</option>
-                <option value="3">Евро</option>
-            </select>
-        </div>
+		<div class="form-group">
+			<label asp-for="@Model.Account.IdCurrency">Валюта</label>
+			<select class="form-control" asp-for="Account.IdCurrency">
+				<option value="1">Доллары</option>
+				<option value="2">Рубли</option>
+				<option value="3">Евро</option>
+			</select>
+		</div>
 
-        <div class="text-center mt-3">
-            <button class="btn btn-primary" type="submit">Подтвердить</button>
-            <a class="btn btn-danger ml-4" href="@Model.ReturnUrl">Отменить</a>
-        </div>
-    </form>
+		<div class="text-center mt-3">
+			<button class="btn btn-primary" type="submit">Подтвердить</button>
+			<a class="btn btn-danger ml-4" href="@Model.ReturnUrl">Отменить</a>
+		</div>
+	</form>
 </div>

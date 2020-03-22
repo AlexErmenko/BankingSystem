@@ -79,7 +79,6 @@
         </e>
         <e p="Infrastructure.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
-          <e p="20200314190657_RemoveCol.cs" t="Include" />
           <e p="20200314190657_RemoveCol.Designer.cs" t="Include" />
           <e p="BankingSystemContextModelSnapshot.cs" t="Include" />
         </e>
@@ -131,6 +130,7 @@
         <e p="Commands" t="Include">
           <e p="ClientAccountOperationCommand.cs" t="Include" />
           <e p="GetAccountOperationQuery.cs" t="Include" />
+          <e p="GetClientCreditQuery.cs" t="Include" />
           <e p="GetCurrencyConvertQuery.cs" t="Include" />
           <e p="GetPasswordValidationQuery.cs" t="Include" />
           <e p="GetUserByIdQuery.cs" t="Include" />
@@ -155,6 +155,7 @@
         </e>
         <e p="Handlers" t="Include">
           <e p="AccountOperationHandler.cs" t="Include" />
+          <e p="CheckByCreditHandler.cs" t="Include" />
           <e p="ClientAccountOperationHandler.cs" t="Include" />
           <e p="CurrencyConvertHandler.cs" t="Include" />
           <e p="PasswordValidatorHendler.cs" t="Include" />
@@ -183,7 +184,6 @@
             <e p="BankingSystem - Web Deploy.pubxml" t="Include" />
           </e>
         </e>
-        <e p="ScaffoldingReadMe.txt" t="Include" />
         <e p="Services" t="Include">
           <e p="ConsumeScopedServiceHostedService.cs" t="Include" />
           <e p="CurrencyViewModelSerivce.cs" t="Include" />
@@ -204,12 +204,20 @@
           </e>
           <e p="ClientAccountViewModel.cs" t="Include" />
           <e p="ClientCreateViewModel.cs" t="Include" />
+          <e p="Clients" t="Include">
+            <e p="ClientCreateViewModel.cs" t="Include" />
+            <e p="LegalPersonViewModel.cs" t="Include" />
+            <e p="PhysicalPersonViewModel.cs" t="Include" />
+          </e>
           <e p="Credit" t="Include">
             <e p="AllCreditClientViewModel.cs" t="Include" />
             <e p="TakeCreditViewModel.cs" t="Include" />
           </e>
           <e p="CurrencyConvertModel.cs" t="Include" />
           <e p="CurrencyViewModel.cs" t="Include" />
+          <e p="Deposit" t="Include">
+            <e p="TakeDepositViewModel.cs" t="Include" />
+          </e>
           <e p="EditBankAccountViewModel.cs" t="Include" />
           <e p="LegalPersonViewModel.cs" t="Include" />
           <e p="PhysicalPersonViewModel.cs" t="Include" />
@@ -234,7 +242,8 @@
             <e p="CreateClient.cshtml" t="Include" />
             <e p="CreateLegalPerson.cshtml" t="Include" />
             <e p="CreatePhysicalPerson.cshtml" t="Include" />
-            <e p="Delete.cshtml" t="Include" />
+            <e p="DeleteLegalPerson.cshtml" t="Include" />
+            <e p="DeletePhysicalPerson.cshtml" t="Include" />
             <e p="EditLegalPerson.cshtml" t="Include" />
             <e p="EditPhysicalPerson.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
@@ -248,6 +257,9 @@
             <e p="Edit.cshtml" t="Include" />
             <e p="GetInfo.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Deposit" t="Include">
+            <e p="TakeDeposit.cshtml" t="Include" />
           </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
@@ -275,7 +287,6 @@
             <e p="nav.css" t="Include" />
             <e p="nav.min.css" t="Include" />
             <e p="site.css" t="Include" />
-            <e p="site.min.css" t="Include" />
             <e p="TakeCredit.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
@@ -297,7 +308,6 @@
             <e p="site.es5.js" t="Include" />
             <e p="site.es5.min.js" t="Include" />
             <e p="site.js" t="Include" />
-            <e p="site.min.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
@@ -479,24 +489,17 @@
             <e p="jquery" t="Include">
               <e p="dist" t="Include">
                 <e p="jquery.js" t="Include" />
-                <e p="jquery.min.js" t="Include" />
-                <e p="jquery.min.map" t="Include" />
               </e>
-              <e p="LICENSE.txt" t="Include" />
             </e>
             <e p="jquery-validation" t="Include">
               <e p="dist" t="Include">
                 <e p="additional-methods.js" t="Include" />
-                <e p="additional-methods.min.js" t="Include" />
                 <e p="jquery.validate.js" t="Include" />
-                <e p="jquery.validate.min.js" t="Include" />
               </e>
               <e p="LICENSE.md" t="Include" />
             </e>
             <e p="jquery-validation-unobtrusive" t="Include">
               <e p="jquery.validate.unobtrusive.js" t="Include" />
-              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
-              <e p="LICENSE.txt" t="Include" />
             </e>
           </e>
           <e p="scss" t="Include">

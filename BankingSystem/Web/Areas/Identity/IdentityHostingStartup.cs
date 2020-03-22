@@ -8,8 +8,11 @@ using Web.Areas.Identity;
 
 namespace Web.Areas.Identity
 {
-	public class IdentityHostingStartup : IHostingStartup
-	{
-		public void Configure(IWebHostBuilder builder) { builder.ConfigureServices(configureServices: (context, services) => { }); }
-	}
+  public class IdentityHostingStartup : IHostingStartup
+  {
+    public void Configure(IWebHostBuilder builder)
+    {
+      builder.ConfigureServices(configureServices: (context, services) => { });
+    }
+  }
 }

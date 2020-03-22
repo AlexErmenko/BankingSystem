@@ -21,15 +21,147 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a61cbbc1-ba14-47bd-ba17-71f0d96b44f5" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/Web/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources/a3542efd-b407-4afa-83d4-f066d7aca6de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources/a3542efd-b407-4afa-83d4-f066d7aca6de.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources/bf750c32-cf64-4365-9ce9-d43aa6b08c28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/dataSources/bf750c32-cf64-4365-9ce9-d43aa6b08c28.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BankingSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/BankingSystem/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Dto/CurrencyDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Dto/CurrencyDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeAggregator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeAggregator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeQueryExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeQueryExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeVisitor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Helpers/Query/IncludeVisitor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/IAsyncRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/IAsyncRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/IBankAccountRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/IBankAccountRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/IIncludeQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/IIncludeQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/ISpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Specifications/AuthorizationConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Specifications/AuthorizationConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Specifications/BaseSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Specifications/BaseSpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Specifications/CurrencyWithRateSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Specifications/CurrencyWithRateSpecification.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/netcoreapp3.1/ApplicationCore.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BankingSystem.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/EfRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/EfRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/ApplicationUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/FileModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/FileModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/00000000000000_CreateIdentitySchema.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/00000000000000_CreateIdentitySchema.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/20200307171229_InitMigration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/20200307171229_InitMigration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/20200312125524_File.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/20200312125524_File.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Identity/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Migrations/BankingSystemContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Migrations/BankingSystemContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/IdentityHostingStartup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/IdentityHostingStartup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Logout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Logout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Logout.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Logout.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/ManageNavPages.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/ManageNavPages.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Register.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/ClientAccountOperationCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/ClientAccountOperationCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetAccountOperationQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetClientCreditQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetClientCreditQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetCurrencyConvertQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetCurrencyConvertQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetPasswordValidationQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetPasswordValidationQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/GetUserByIdQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/GetUserByIdQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Commands/TransferAmountCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Commands/TransferAmountCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/CreditController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/CreditController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/DepositController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/DepositController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Extension/SessionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Extension/SessionExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Extension/UrlExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Extension/UrlExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/CheckByCreditHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/CheckByCreditHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/ClientAccountOperationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/ClientAccountOperationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/PasswordValidatorHendler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/PasswordValidatorHendler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/TransferAmountHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/TransferAmountHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Handlers/UserByIdHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Handlers/UserByIdHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Models/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Services/ConsumeScopedServiceHostedService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Services/ConsumeScopedServiceHostedService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Services/CurrencyViewModelSerivce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Services/CurrencyViewModelSerivce.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Services/ICurrencyViewModelService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Services/ICurrencyViewModelService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Services/IScopedСurrencyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Services/IScopedСurrencyService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Services/ScopedСurrencyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Services/ScopedСurrencyService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Admin/EditUserViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Admin/EditUserViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Admin/UserViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Admin/UserViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/BankAccount/AccountViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/BankAccount/AccountViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/BankAccount/CreateClientAccountViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/BankAccount/CreateClientAccountViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/ClientAccountViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/ClientAccountViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/ClientCreateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/ClientCreateViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Clients/ClientCreateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Clients/ClientCreateViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Clients/LegalPersonViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Clients/LegalPersonViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Clients/PhysicalPersonViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Clients/PhysicalPersonViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Credit/AllCreditClientViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Credit/AllCreditClientViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Credit/TakeCreditViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Credit/TakeCreditViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/CurrencyConvertModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/CurrencyConvertModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/CurrencyViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/CurrencyViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/Deposit/TakeDepositViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/Deposit/TakeDepositViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/EditBankAccountViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/EditBankAccountViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/LegalPersonViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/LegalPersonViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/PhysicalPersonViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/PhysicalPersonViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/ViewModels/TransferViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Web/ViewModels/TransferViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Admin/AddManager.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Admin/AddManager.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Admin/DeleteManager.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Admin/DeleteManager.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Admin/EditManager.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Admin/EditManager.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Admin/ManagerDetails.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Admin/ManagerDetails.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Admin/ManagerList.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Admin/ManagerList.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/BankAccount/CreateClientAccountForm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/BankAccount/CreateClientAccountForm.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/BankAccount/GetAccounts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/BankAccount/GetAccounts.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/BankAccount/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/BankAccount/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/CreateClient.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/CreateClient.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/CreateLegalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/CreateLegalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/CreatePhysicalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/CreatePhysicalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/DeleteLegalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/DeleteLegalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/DeletePhysicalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/DeletePhysicalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/EditLegalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/EditLegalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/EditPhysicalPerson.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/EditPhysicalPerson.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Clients/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Clients/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Credit/AllCredits.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Credit/AllCredits.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Credit/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Credit/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Credit/TakeCreditForm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Credit/TakeCreditForm.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Currency/GetInfo.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Currency/GetInfo.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Currency/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Currency/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Deposit/TakeDeposit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Deposit/TakeDeposit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Operation/Transfer.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Operation/Transfer.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/Web.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/Web/Web.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/Debug/netcoreapp3.1/Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Web/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitLib/AdminControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitLib/AdminControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitLib/ClientControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitLib/ClientControllerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitLib/CurrencyController_Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xUnitLib/HomeControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/xUnitLib/HomeControllerTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +172,9 @@
     <option name="groupingKeys">
       <option value="directory" />
     </option>
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <option name="in-editor" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -55,52 +190,49 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
         <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
-        <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
         <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
         <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="__EFMigrationsHistory: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
         <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Operation: table" type="63ab2ba1:MsImplModel$Table" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Azure SQL Database - bankingserver - Banking" type="feb32156:DbDataSourceImpl" />
-        <item name="Banking: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking.Identity: database" type="ccb7ac2a:MsImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Banking Google Cloud" type="feb32156:DbDataSourceImpl" />
+        <item name="Banking.Identity: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sysdiagrams: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
     <select />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -114,6 +246,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/286/TaskAwaiter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Handlers/TransferAmountHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.editorconfig" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/168/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5B62D830-4BB7-4BF8-AE32-CB432FDDACE6/21/5a6f9e6d/Mediator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,8 +263,11 @@
     <setting file="file://$PROJECT_DIR$/ApplicationCore/Interfaces/SomeClasses.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DB9CEB1E-F6C3-448D-8D4A-C9F8963779FB/2FC/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Data/BankAccountEfRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ApplicationCore/Dto/CurrencyDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/BankingSystemContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Services/ScopedСurrencyService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Commands/GetPasswordValidationQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Controllers/DepositController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -152,6 +288,7 @@
     <setting file="file://$PROJECT_DIR$/Web/Views/Admin/AddManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Admin/DeleteManager.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Currency/Edit.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Manage/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/Currency/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/ViewModels/AccountOperationViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Web/Views/BankAccount/CreateClientAccountForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -180,9 +317,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/../.git/info/exclude" />
         <option value="$PROJECT_DIR$/Web/Pages/Operation/Index.cshtml" />
         <option value="$PROJECT_DIR$/Web/Controllers/ClientsController.cs" />
         <option value="$PROJECT_DIR$/../.gitignore" />
@@ -210,27 +344,30 @@
         <option value="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/BankAccountController.cs" />
         <option value="$PROJECT_DIR$/Web/Views/Admin/ListManagers.cshtml" />
-        <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Identity/ApplicationDbContextSeed.cs" />
         <option value="$PROJECT_DIR$/Web/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/xUnitLib/HomeControllerTest.cs" />
         <option value="$PROJECT_DIR$/Web/Commands/TransferAmountCommand.cs" />
         <option value="$PROJECT_DIR$/Web/Commands/GetCurrencyConvertQuery.cs" />
-        <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
         <option value="$PROJECT_DIR$/Web/Commands/ClientAccountOperationCommand.cs" />
         <option value="$PROJECT_DIR$/Web/Handlers/ClientAccountOperationHandler.cs" />
-        <option value="$PROJECT_DIR$/Web/Views/Operation/Transfer.cshtml" />
         <option value="$PROJECT_DIR$/Web/Handlers/TransferAmountHandler.cs" />
         <option value="$PROJECT_DIR$/Web/Program.cs" />
-        <option value="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" />
         <option value="$PROJECT_DIR$/Web/wwwroot/scss/nav.scss" />
         <option value="$PROJECT_DIR$/Web/bundleconfig.json" />
         <option value="$PROJECT_DIR$/Web/Areas/Identity/Pages/Account/Login.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/Web/Views/Shared/_LoginPartial.cshtml" />
         <option value="$PROJECT_DIR$/Web/Controllers/AdminController.cs" />
         <option value="$PROJECT_DIR$/Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/Web/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Web/ViewModels/TransferViewModel.cs" />
+        <option value="$PROJECT_DIR$/Web/Views/Operation/Transfer.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Views/Operation/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Web/Controllers/OperationController.cs" />
+        <option value="$PROJECT_DIR$/Web/Controllers/CurrencyController.cs" />
+        <option value="$PROJECT_DIR$/Web/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/Web/appsettings.json" />
       </list>
     </option>
   </component>
@@ -253,7 +390,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="azure" />
+    <property name="DatabaseDriversLRU" value="azure&#10;sqlserver" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.36038962" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.061147187" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
@@ -319,8 +456,9 @@
       <option name="USE_EXTERNAL_CONSOLE" value="1" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="1" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
@@ -406,6 +544,16 @@
       <workItem from="1584361483852" duration="851000" />
       <workItem from="1584365227563" duration="3000" />
       <workItem from="1584448351799" duration="2091000" />
+      <workItem from="1584574985338" duration="190000" />
+      <workItem from="1584576007197" duration="1113000" />
+      <workItem from="1584578378017" duration="6000" />
+      <workItem from="1584605692633" duration="1795000" />
+      <workItem from="1584614364584" duration="27000" />
+      <workItem from="1584717155059" duration="18000" />
+      <workItem from="1584796878997" duration="999000" />
+      <workItem from="1584820715739" duration="100000" />
+      <workItem from="1584821304542" duration="477000" />
+      <workItem from="1584909052322" duration="2021000" />
     </task>
     <task id="LOCAL-00001" summary="test exclude some files">
       <created>1584198257139</created>
@@ -520,14 +668,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="536" y="164" key="#Inspection_severity/0.0.1920.1040@0.0.1920.1040" timestamp="1584275015495" />
-    <state x="552" y="177" key="#Web_Browsers" timestamp="1584325520404">
+    <state x="666" y="234" key="#Web:_IIS_Express" timestamp="1584575168949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="177" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1584325520404" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584449862305">
+    <state x="666" y="234" key="#Web:_IIS_Express/0.0.1920.1040@0.0.1920.1040" timestamp="1584575168949" />
+    <state x="552" y="177" key="#Web_Browsers" timestamp="1584576747884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584449862305" />
+    <state x="552" y="177" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1584576747884" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584909628587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584909628587" />
     <state x="593" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584204292095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -556,54 +708,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584213532588" />
-    <state width="1921" height="356" key="GridCell.Tab.0.bottom" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.0.bottom" timestamp="1584911627253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.0.center" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627253" />
+    <state width="1921" height="426" key="GridCell.Tab.0.center" timestamp="1584911627253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.0.left" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627253" />
+    <state width="1921" height="426" key="GridCell.Tab.0.left" timestamp="1584911627253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.0.right" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627253" />
+    <state width="1921" height="426" key="GridCell.Tab.0.right" timestamp="1584911627253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.1.bottom" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627253" />
+    <state width="1921" height="426" key="GridCell.Tab.1.bottom" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.1.center" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.1.center" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.1.left" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.1.left" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.1.right" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.1.right" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.2.bottom" timestamp="1584360510113">
+    <state width="1921" height="426" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.2.bottom" timestamp="1584911627255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510113" />
-    <state width="1921" height="356" key="GridCell.Tab.2.center" timestamp="1584360510113">
+    <state width="1921" height="426" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627255" />
+    <state width="1921" height="426" key="GridCell.Tab.2.center" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510113" />
-    <state width="1921" height="356" key="GridCell.Tab.2.left" timestamp="1584360510112">
+    <state width="1921" height="426" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.2.left" timestamp="1584911627254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510112" />
-    <state width="1921" height="356" key="GridCell.Tab.2.right" timestamp="1584360510113">
+    <state width="1921" height="426" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627254" />
+    <state width="1921" height="426" key="GridCell.Tab.2.right" timestamp="1584911627255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584360510113" />
+    <state width="1921" height="426" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584911627255" />
     <state width="1879" height="474" key="GridCell.Tab.3.bottom" timestamp="1584265052692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -636,10 +788,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1879" height="474" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584264208820" />
-    <state width="291" height="454" key="HiddenNamespacesPopup" timestamp="1584237210489">
+    <state width="332" height="454" key="HiddenNamespacesPopup" timestamp="1584909646023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="291" height="454" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1584237210489" />
+    <state width="332" height="454" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1584909646023" />
     <state x="540" y="262" key="IDE.errors.dialog" timestamp="1584275077427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -712,18 +864,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="418" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584198310861" />
-    <state width="300" height="66" key="javadoc.popup.new" timestamp="1584356836422">
+    <state width="300" height="66" key="javadoc.popup.new" timestamp="1584606812717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="300" height="66" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1584356836422" />
+    <state width="300" height="66" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1584606812717" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1584359520573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584359520573" />
-    <state x="623" y="225" width="673" height="678" key="search.everywhere.popup" timestamp="1584360155120">
+    <state x="623" y="225" width="673" height="678" key="search.everywhere.popup" timestamp="1584909185040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="673" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584360155120" />
+    <state x="623" y="225" width="673" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584909185040" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -763,17 +915,17 @@
           <line>17</line>
           <properties documentPath="$PROJECT_DIR$/Web/Handlers/CurrencyConvertHandler.cs" initialLine="14">
             <startOffsets>
-              <option value="383" />
+              <option value="392" />
             </startOffsets>
             <endOffsets>
-              <option value="412" />
+              <option value="421" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
-          <line>46</line>
+          <line>47</line>
           <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="43">
             <startOffsets>
               <option value="1380" />
@@ -788,7 +940,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs</url>
-          <line>56</line>
+          <line>57</line>
           <properties documentPath="$PROJECT_DIR$/Web/Handlers/AccountOperationHandler.cs" initialLine="52">
             <startOffsets>
               <option value="1626" />
@@ -798,32 +950,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Web/Controllers/OperationController.cs</url>
-          <line>45</line>
-          <properties documentPath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" initialLine="40">
-            <startOffsets>
-              <option value="1150" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1151" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Web/Controllers/OperationController.cs</url>
-          <line>56</line>
-          <properties documentPath="$PROJECT_DIR$/Web/Controllers/OperationController.cs" initialLine="55">
-            <startOffsets>
-              <option value="1582" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1622" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -32,5 +32,23 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="Banking Google Cloud" uuid="86b269b0-26dd-442e-8fa6-c4d7f7866d6c">
+      <database-info product="Microsoft SQL Server" version="14.00.3281" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.4 for SQL Server" driver-version="7.4.1.0" dbms="MSSQL" exact-version="14.0.3281" exact-driver-version="7.4">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sqlserver</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database">
+            <name qname="Banking" />
+            <name qname="Banking.Identity" />
+            <node kind="schema" qname="dbo" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

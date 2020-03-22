@@ -1,19 +1,20 @@
-﻿@model Web.ViewModels.Credit.TakeCreditViewModel
+﻿@using System
+@model Web.ViewModels.Credit.TakeCreditViewModel
 
 @{
-    ViewData["Title"] = "Оформление кредита";
+  ViewData[index: "Title"] = "Оформление кредита";
 }
 
 <div>
-    <p>Тут будет выбор суммы кредита и расчет процентов</p>
-    <form asp-action="TakeCreditForm" method="post">
-        <div class="slidecontainer">
-            <input type="range" min="10" max="100000" value="50" class="slider" id="myRange">
-            <p>Сумма:<span id="demo"></span></p>
-        </div>
+	<p>Тут будет выбор суммы кредита и расчет процентов</p>
+	<form asp-action="TakeCreditForm" method="post">
+		<div class="slidecontainer">
+			<input type="range" min="10" max="100000" value="50" class="slider" id="myRange">
+			<p>Сумма:<span id="demo"></span></p>
+		</div>
 
-        <button type="submit">Подтвердить</button>
-    </form>
+		<button type="submit">Подтвердить</button>
+	</form>
 </div>
 
 <script>
