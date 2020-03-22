@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    @* <label asp-for="PercentDeposit">Тип депозита</label> *@
+                    <label asp-for="PercentDeposit">Тип депозита</label>
                     <select class="form-control" asp-for="PercentDeposit">
                         <option value="0,08">8 %</option>
                         <option value="0,1">10 %</option>
@@ -35,7 +35,7 @@
 
                 <div>
                     <label asp-for="EndDateDeposit">Окончание депозита</label>
-                    <input asp-for="EndDateDeposit" type="date" value="StartDateDeposit" />
+                    <input asp-for="EndDateDeposit" type="date" value="@DateTime.Now" />
                 </div>
                 <div class="form-group">
 

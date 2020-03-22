@@ -14,9 +14,8 @@ namespace ApplicationCore.Entity
         public int IdDeposit { get; set; }
         [Column(TypeName = "date")]
         public DateTime DateAccrual { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string Amount { get; set; }
+        [Column(TypeName = "decimal(10, 4)")]
+        public decimal Amount { get; set; }
 
         [ForeignKey(nameof(IdDeposit))]
         [InverseProperty(nameof(Deposit.Accruals))]
